@@ -1,5 +1,5 @@
 import Header from "./components/Header/Header";
-import { Roboto, Ms_Madi, Source_Sans_3, Sen } from "next/font/google";
+import { Roboto, Ms_Madi, Source_Sans_3} from "next/font/google";
 import "./globals.css";
 
 // Import et configuration des polices
@@ -21,11 +21,6 @@ const sourceSans3 = Source_Sans_3({
   weight: ["400", "500", "600", "700"],
 });
 
-const sen = Sen({
-  variable: "--font-sen",
-  subsets: ["latin"],
-  weight: ["400", "600"],
-});
 // Configuration des métadonnées pour le site
 export const metadata = {
   title: "L'Agula Marina - Croisières",

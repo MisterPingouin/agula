@@ -61,7 +61,7 @@ const MobileMenu = ({ onClose }) => {
               />
             </a>
           </div>
-          <p className="text-black font-sen font-bold text-9px">
+          <p className="text-black font-content font-bold text-9px">
             ©lagulamarinacroisieres
           </p>
         </div>

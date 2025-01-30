@@ -28,7 +28,6 @@ export default {
         title: ["var(--font-roboto)", "sans-serif"],
         subtitle: ["var(--font-ms-madi)", "cursive"],
         content: ["var(--font-source-sans-3)", "sans-serif"],
-        sen: ["var(--font-sen)", "sans-serif"],
       },
       fontSize: {
         '9px'  : '0.563rem',
