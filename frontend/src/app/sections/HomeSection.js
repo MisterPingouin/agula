@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const HeroSection = () => {
+const HomeSection = () => {
   return (
     <section className="relative h-screen w-full">
       {/* Image pleine hauteur */}
@@ -31,4 +31,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HomeSection;

@@ -1,12 +1,12 @@
 import Header from "./components/Header/Header";
-import HeroSection from "./sections/HeroSection";
+import HomeSection from "./sections/HomeSection";
 
 export default function HomePage() {
   return (
     <>
       <Header />
       <main>
-        <HeroSection />
+        <HomeSection />
 
         {/* Section suivante */}
         <section className="p-6 text-gray-900">
