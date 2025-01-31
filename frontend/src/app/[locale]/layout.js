@@ -14,7 +14,7 @@ export const viewport = {
 };
 
 export default function RootLayout({ children, params }) {
-  const locale = params?.locale || 'en';
+  const locale =  params?.locale || 'en';
   return (
     <html lang={locale}>
       <head>
