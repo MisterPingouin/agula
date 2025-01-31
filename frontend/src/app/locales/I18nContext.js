@@ -3,27 +3,31 @@
 import React, { createContext, useContext, useMemo, useState, useEffect } from "react";
 import fr from "./fr";
 import en from "./en";
+import { usePathname } from "next/navigation";
 
 const translations = { fr, en };
 
 const I18nContext = createContext();
 
 export const I18nProvider = ({ children }) => {
-  // Charger la langue depuis localStorage ou prendre FR par défaut
+  const pathname = usePathname(); // Récupère l'URL courante
+  const detectedLocale = pathname.split("/")[1]; // Extrait "en" ou "fr"
+
+  // Détermine la locale en fonction de l'URL
   const [locale, setLocale] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("locale") || "fr";
+    if (["fr", "en"].includes(detectedLocale)) {
+      return detectedLocale;
     }
-    return "fr";
+    return "fr"; // Par défaut si l'URL n'a pas de locale valide
   });
 
   useEffect(() => {
-    localStorage.setItem("locale", locale); // Sauvegarde la langue actuelle
+    localStorage.setItem("locale", locale);
   }, [locale]);
 
   const dictionary = translations[locale] || translations["fr"];
 
-  const t = (key) => key.split('.').reduce((obj, k) => (obj && obj[k] !== undefined ? obj[k] : key), dictionary);
+  const t = (key) => key.split(".").reduce((obj, k) => (obj && obj[k] !== undefined ? obj[k] : key), dictionary);
 
   const value = useMemo(() => ({ locale, setLocale, t }), [locale]);
 
