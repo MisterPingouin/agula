@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react";
-import { useScopedI18n } from "next-international/client";
+import { useScopedI18n } from "./../../locales/I18nContext";
 
 const NavLinks = () => {
   const t = useScopedI18n("navigation");
