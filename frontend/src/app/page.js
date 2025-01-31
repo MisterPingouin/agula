@@ -1,13 +1,15 @@
 import { redirect } from "next/navigation";
+import { headers } from "next/headers";
 
-export default function HomePage() {
-  // Détection de la langue depuis les headers
-  const acceptLanguage = typeof window !== "undefined"
-    ? navigator.language.slice(0, 2) // Pour test côté client
-    : "fr"; // Langue par défaut (à personnaliser si besoin)
+export default async function HomePage() {
+  // Obtenir les headers correctement avec await
+  const requestHeaders = await headers();
+  const acceptLanguage = requestHeaders.get("accept-language") || "fr";
 
-  const locale = ["en", "fr"].includes(acceptLanguage) ? acceptLanguage : "fr";
+  // Extraction de la langue préférée
+  const preferredLanguage = acceptLanguage.split(",")[0].slice(0, 2);
+  const locale = ["en", "fr"].includes(preferredLanguage) ? preferredLanguage : "fr";
 
-  // Redirige vers la locale détectée
+  // Redirection vers la locale détectée
   redirect(`/${locale}`);
 }

@@ -8,9 +8,7 @@ import { useI18n } from "../../../locales/I18nContext";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { t, locale } = useI18n();
-
-  console.log("Locale in Header:", locale);
+  const { t} = useI18n();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
