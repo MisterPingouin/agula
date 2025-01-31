@@ -1,12 +1,16 @@
+"use client"
+
 import React from "react";
+import { useScopedI18n } from "next-international/client";
 
 const NavLinks = () => {
+  const t = useScopedI18n("navigation");
   const links = [
-    { name: "Nos circuits", href: "#circuits" },
-    { name: "Notre bateau", href: "#bateau" },
-    { name: "Notre équipe", href: "#equipe" },
-    { name: "Nos engagements", href: "#engagements" },
-    { name: "Privatisation", href: "#privatisation" },
+    { name: t('circuits'), href: "#circuits" },
+    { name: t('boat'), href: "#bateau" },
+    { name: t('team'), href: "#equipe" },
+    { name: t('commitments'), href: "#engagements" },
+    { name: t('private'), href: "#privatisation" },
   ];
 
   return (
@@ -26,5 +30,4 @@ const NavLinks = () => {
     </nav>
   );
 };
-
 export default NavLinks;
