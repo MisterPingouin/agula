@@ -19,7 +19,6 @@ export default function RootLayout({ children, params }) {
     <html lang={locale}>
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content={`width=${viewport.width}, initial-scale=${viewport.initialScale}, minimum-scale=${viewport.minimumScale}, maximum-scale=${viewport.maximumScale}, user-scalable=${viewport.userScalable}`} />
         <link rel="icon" href="/images/favicon.ico" />
       </head>
       <body className={`${roboto.variable} ${msMadi.variable} ${sourceSans3.variable} antialiased`}>

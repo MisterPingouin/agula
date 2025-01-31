@@ -1,11 +1,19 @@
 "use client";
 
 import React, { createContext, useContext, useMemo } from "react";
+import fr from "./fr"; 
+import en from "./en";
+
+const translations = { fr, en };
 
 const I18nContext = createContext();
 
-export const I18nProvider = ({ children, locale }) => {
-  const t = (key) => `${locale}.${key}`;  // Remplace cette logique par la tienne
+export const I18nProvider = ({ children, locale = "fr" }) => {
+  const dictionary = translations[locale] || translations["fr"]; 
+
+  const t = (key) => {
+    return key.split('.').reduce((obj, k) => (obj && obj[k] !== undefined ? obj[k] : key), dictionary);
+  };
 
   const value = useMemo(() => ({ locale, t }), [locale]);
 
@@ -24,7 +32,7 @@ export const useI18n = () => {
   return context;
 };
 
-// Nouvelle fonction pour les traductions scindées
+// Fonction pour récupérer une traduction dans un scope spécifique
 export const useScopedI18n = (scope) => {
   const { t } = useI18n();
   return (key) => t(`${scope}.${key}`);
