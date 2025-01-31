@@ -20,7 +20,7 @@ const fr = {
       image_alt: "Vue aérienne",
     },
     page: {
-      title: "Découvrez nos circuits",
+      title: "Choisissez",
       content: "Explorez les trésors cachés de nos côtes grâce à nos croisières.",
     },
     menu: {

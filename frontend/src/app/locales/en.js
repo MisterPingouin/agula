@@ -20,7 +20,7 @@ const en = {
       image_alt: "Aerial view",
     },
     page: {
-      title: "Discover our circuits",
+      title: "Choose",
       content: "Explore the hidden treasures of our coasts with our cruises.",
     },
     menu: {
