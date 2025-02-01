@@ -12,6 +12,8 @@ const en = {
     commitments: "Our commitments",
     private: "Private booking",
     gallery : "gallery",
+    book: "BOOK",
+
   },
   home: {
     title: "Sail",

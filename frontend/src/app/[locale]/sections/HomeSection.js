@@ -90,7 +90,7 @@ const HomeSection = () => {
             height={78}
           />
         </Link>
-        <nav className="flex font-medium pt-6 gap-16 px-16 font-content text-15px text-white">
+        <nav className="flex font-medium pt-6 gap-10 px-16 font-content text-15px text-white">
         <a
               href="#"
             >

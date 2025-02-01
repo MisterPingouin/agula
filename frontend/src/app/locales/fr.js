@@ -12,6 +12,7 @@ const fr = {
     commitments: "Nos engagements",
     private: "Privatisation",
     gallery: "Galerie",
+    book: "RÉSERVER",
   },
   home: {
     title: "Naviguez",
