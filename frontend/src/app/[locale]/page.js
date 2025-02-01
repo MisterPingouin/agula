@@ -3,14 +3,13 @@
 import HomeSection from "./sections/HomeSection";
 import { useScopedI18n } from "./../locales/I18nContext";
 import Image from "next/image";
-
+import Card from "./components/Cards/Card"; 
 
 export default function HomePage() {
   const t = useScopedI18n("page");
 
   return (
     <main>
-      {/* éventuelle section pleine page */}
       <HomeSection />
 
       <section className="relative w-full h-[120px] mt-2">
@@ -25,17 +24,13 @@ export default function HomePage() {
           className="
             absolute inset-0 flex items-center justify-center
             z-10 text-blue font-subtitle
-            text-[50px] mt-4
+            text-50px mt-4
           "
         >
           {t("title")}
         </h2>
       </section>
-       <section className="relative h-[260px] mb-6">
-
-        {/* Image de la mer (derrière) 
-            => top/left en px pour l'avoir plus bas et plus à droite
-        */}
+      <section className="relative h-[260px] mb-6">
         <div
           className="
             absolute 
@@ -46,13 +41,12 @@ export default function HomePage() {
           <Image
             src="/images/sea.jpg"
             alt="Mer"
-            width={320}    // taille fixe du design
+            width={320}
             height={226}
-              className="img-fixed object-cover"
+            className="img-fixed object-cover"
           />
         </div>
 
-        {/* Image de la montagne (devant, en haut à gauche) */}
         <div
           className="
             absolute
@@ -69,7 +63,6 @@ export default function HomePage() {
           />
         </div>
 
-        {/* Texte overlay (absolu) */}
         <div
           className="
             absolute inset-0
@@ -78,29 +71,27 @@ export default function HomePage() {
           "
         >
           <p className="text-white font-bold font-title text-27px leading-none t px-2">
-            {t("subtitle1")}<br />
-            {t("subtitle2")}<br />
+            {t("subtitle1")}
+            <br />
+            {t("subtitle2")}
+            <br />
             {t("subtitle3")}
           </p>
         </div>
       </section>
 
-        {/*
-          3) — PARAGRAPHE DESCRIPTIF
-          En dessous des images
-        */}
-        <p className="px-9 text-15px leading-23px font-content pt-4">
-          {t("content")}
-        </p>
+      <p className="px-9 text-15px leading-23px font-content pt-4">
+        {t("content")}
+      </p>
 
-        {/*
-          4) — BOUTON (inchangé), tu le gères
-        */}
-        <div className="flex items-center justify-center mt-5">
+      <div className="flex items-center justify-center mt-5">
         <button className="px-14 py-2 text-white text-20px bg-blue-3 font-content font-semibold">
           {t("circuits_button")}
         </button>
-        </div>
+      </div>
+      <section className="mt-8 px-4 max-w-md mx-auto">
+        <Card tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
+      </section>
     </main>
   );
 }

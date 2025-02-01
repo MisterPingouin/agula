@@ -15,5 +15,5 @@ export const msMadi = Ms_Madi({
 export const sourceSans3 = Source_Sans_3({
   variable: '--font-source-sans-3',
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['300','400', '500', '600', '700'],
 });

@@ -14,7 +14,6 @@ export const viewport = {
 };
 
 export default async function RootLayout({ children, params }) {
-  // `params` est potentiellement asynchrone en Next.js 15 (segmentation dynamique)
   const { locale } = await params;
   const finalLocale = ["en", "fr"].includes(locale) ? locale : "fr";
 
