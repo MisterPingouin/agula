@@ -27,7 +27,7 @@ const HomeSection = () => {
       />
       <div className="hidden lg:flex justify-center item-center">
       <div className="flex flex-col">
-      <div className="relative z-50 flex items-center self-end gap-2 pt-4 text-white -mb-4">
+      <div className="relative z-50 flex items-center self-end gap-2 pt-4 text-white translate-y-2 ">
         <button
           onClick={() => changeLanguage("fr")}
           className={`text-15px font-medium font-title ${
@@ -81,7 +81,7 @@ const HomeSection = () => {
           +33 (0)6 43 04 00 14
         </p>
       </div>
-      <div className="flex relative z-50 items-center">
+      <div className="flex relative z-50 items-center -translate-y-1">
         <Link href="/" className="cursor-pointer">
           <Image
             src="/images/logowhite.svg"
