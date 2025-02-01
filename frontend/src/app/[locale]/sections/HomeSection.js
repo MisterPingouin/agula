@@ -17,7 +17,7 @@ const HomeSection = () => {
   };
 
   return (
-    <section className="relative h-screen w-full">
+    <section className="relative flex items-center justify-center h-screen w-full">
       <Image
         src="/images/1500x950-lagula.webp"
         alt={t("image_alt")}
@@ -25,26 +25,16 @@ const HomeSection = () => {
         className="object-cover object-center"
         priority
       />
-      <div className="hidden lg:flex justify-center item-center">
+      <div className="hidden lg:flex justify-center self-start">
       <div className="flex flex-col">
       <div className="relative z-50 flex items-center self-end gap-2 pt-4 text-white translate-y-2 ">
-        <button
-          onClick={() => changeLanguage("fr")}
-          className={`text-15px font-medium font-title ${
-            locale === "fr" ? "font-bold" : "font-bold"
-          }`}
-        >
-          FR
-        </button>
-        <p>/</p>
-        <button
-          onClick={() => changeLanguage("en")}
-          className={`text-15px font-medium font-title ${
-            locale === "en" ? "font-bold" : "font-bold"
-          }`}
-        >
-          EN
-        </button>
+      <button onClick={() => changeLanguage("fr")} className={`text-15px font-title ${locale === "fr" ? "font-bold" : ""}`}>
+            FR
+          </button>
+          <span>/</span>
+          <button onClick={() => changeLanguage("en")} className={`text-15px font-title ${locale === "en" ? "font-bold" : ""}`}>
+            EN
+          </button>
         <a href="#">
           <Image
             src="/images/whitephone.svg"
@@ -135,6 +125,15 @@ const HomeSection = () => {
       <button className="absolute bottom-0 inset-x-0 w-full mt-8 py-2 px-6 bg-blue-3 text-white font-content text-20px font-semibold md:hidden">
         {t("book_button")}
       </button>
+      <div className="hidden md:flex absolute bottom-0 w-full justify-center items-center py-4">
+        <Image
+          src="/images/arrowdown.svg"
+          alt="Arrow Down"
+          width={30}
+          height={30}
+          className="animate-bounce"
+        />
+      </div>
     </section>
   );
 };
