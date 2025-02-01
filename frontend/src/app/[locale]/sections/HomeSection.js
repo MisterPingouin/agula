@@ -115,7 +115,7 @@ const HomeSection = () => {
       </div>
       </div>
       </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white -top-56 leading-none">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white md:-top-56 leading-none">
         <h1 className="text-35px font-bold font-title">{t("title")}</h1>
         <p className="text-26px mx-4 font-light font-title leading-28px">
           {t("description")}
@@ -125,10 +125,10 @@ const HomeSection = () => {
       <button className="absolute bottom-0 inset-x-0 w-full mt-8 py-2 px-6 bg-blue-3 text-white font-content text-20px font-semibold md:hidden">
         {t("book_button")}
       </button>
-      <div className="absolute bottom-[32%] left-1/2 transform -translate-x-1/2 w-11/12 bg-white py-8 px-6 md:px-12 flex justify-between items-center">
+      <div className="hidden absolute bottom-[32%] left-1/2 transform -translate-x-1/2 w-11/12 bg-white py-8 px-6 md:px-12 md:flex justify-between items-center">
       <p>rechercher</p>
       </div>
-      <div className="absolute bottom-[10%]  left-1/2 transform -translate-x-1/2 w-11/12 text-white py-8  flex justify-between">
+      <div className="hidden absolute bottom-[10%]  left-1/2 transform -translate-x-1/2 w-11/12 text-white py-8  md:flex justify-between">
       <div className="max-w-[20%]">
           <h3 className="text-20px font-title font-bold"><span className="font-medium pr-1">01</span>{t("embark_title")}</h3>
           <p className="text-14px font-content mt-2">{t("embark_description")}</p>
@@ -142,7 +142,7 @@ const HomeSection = () => {
           <p className="text-14px font-content mt-2">{t("live_description")}</p>
         </div>
 </div>
-<div className="absolute bottom-[10%] w-11/12 h-0.5 opacity-50 bg-white"></div>
+<div className="hidden md:flex absolute bottom-[10%] w-11/12 h-0.5 opacity-50 bg-white"></div>
       <div className="hidden md:flex absolute bottom-0 w-full justify-center items-center py-4">
         <Image
           src="/images/arrowdown.svg"
