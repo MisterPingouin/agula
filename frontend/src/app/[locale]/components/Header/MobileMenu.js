@@ -8,10 +8,9 @@ import { useI18n, useScopedI18n  } from "./../../../locales/I18nContext";
 const MobileMenu = ({ onClose }) => {
   const { locale, setLocale } = useI18n();
 
-  const toggleLanguage = () => {
-    const newLocale = locale === "fr" ? "en" : "fr";
-    setLocale(newLocale);
-    localStorage.setItem("locale", newLocale);
+  const changeLanguage = (lang) => {
+    setLocale(lang);
+    localStorage.setItem("locale", lang);
   };
 
     const t = useScopedI18n("header");
@@ -45,13 +44,25 @@ const MobileMenu = ({ onClose }) => {
 
 
       {/* Bouton de changement de langue */}
+      <div className="flex items-center p-3 mt-6 text-20px gap-2 font-title font-bold text-green-3 self-start">
       <button
-        onClick={toggleLanguage}
-        className="text-20px p-3 mt-6 font-title font-bold text-green-3 self-start"
-      >
-        FR / EN
-      </button>
-
+          onClick={() => changeLanguage("fr")}
+          className={` ${
+            locale === "fr" ? "font-bold" : ""
+          }`}
+        >
+          FR
+        </button>
+        <p className="">/</p>
+        <button
+          onClick={() => changeLanguage("en")}
+          className={`${
+            locale === "en" ? "" : "font-bold"
+          }`}
+        >
+          EN
+        </button>
+        </div>
       {/* Section des réseaux sociaux */}
       <div className="flex flex-col px-4 mt-auto">
         <div className="flex flex-col space-y-1">
