@@ -4,31 +4,103 @@ import HomeSection from "./sections/HomeSection";
 import { useScopedI18n } from "./../locales/I18nContext";
 import Image from "next/image";
 
+
 export default function HomePage() {
   const t = useScopedI18n("page");
 
   return (
-    <>
-      <main>
-        <HomeSection />
-        <section className="relative flex flex-col items-center mt-8">
+    <main>
+      {/* éventuelle section pleine page */}
+      <HomeSection />
+
+      <section className="relative w-full h-[120px] mt-2">
+        <Image
+          src="/images/Tracebleu.svg"
+          alt="Vague décorative"
+          fill
+          className="object-contain"
+          priority
+        />
+        <h2
+          className="
+            absolute inset-0 flex items-center justify-center
+            z-10 text-blue font-subtitle
+            text-[50px] mt-4
+          "
+        >
+          {t("title")}
+        </h2>
+      </section>
+       <section className="relative h-[260px] mb-6">
+
+        {/* Image de la mer (derrière) 
+            => top/left en px pour l'avoir plus bas et plus à droite
+        */}
+        <div
+          className="
+            absolute 
+            bottom-0 left-[120px] 
+            z-0 
+          "
+        >
           <Image
-            src="/images/Tracebleu.svg"
-            alt="Ligne décorative"
-            width={600}
-            height={100}
-            className="absolute top-[37%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-auto z-0"
+            src="/images/sea.jpg"
+            alt="Mer"
+            width={320}    // taille fixe du design
+            height={226}
+              className="img-fixed object-cover"
           />
+        </div>
 
-          <h2 className="relative z-10 mt-8 text-4xl md:text-5xl lg:text-6xl font-subtitle text-blue text-center">
-            {t("title")}
-          </h2>
+        {/* Image de la montagne (devant, en haut à gauche) */}
+        <div
+          className="
+            absolute
+            top-0 left-0
+            z-10
+          "
+        >
+          <Image
+            src="/images/montagne.jpg"
+            alt="Montagne"
+            width={188}
+            height={234}
+            className="object-cover"
+          />
+        </div>
 
-          <p className="relative z-10 mt-4 leading-7 md:leading-8 font-title font-light">
-            {t("content")}
+        {/* Texte overlay (absolu) */}
+        <div
+          className="
+            absolute inset-0
+            flex items-center justify-center
+            z-20
+          "
+        >
+          <p className="text-white font-bold font-title text-27px leading-none t px-2">
+            {t("subtitle1")}<br />
+            {t("subtitle2")}<br />
+            {t("subtitle3")}
           </p>
-        </section>
-      </main>
-    </>
+        </div>
+      </section>
+
+        {/*
+          3) — PARAGRAPHE DESCRIPTIF
+          En dessous des images
+        */}
+        <p className="px-9 text-15px leading-23px font-content pt-4">
+          {t("content")}
+        </p>
+
+        {/*
+          4) — BOUTON (inchangé), tu le gères
+        */}
+        <div className="flex items-center justify-center mt-5">
+        <button className="px-14 py-2 text-white text-20px bg-blue-3 font-content font-semibold">
+          {t("circuits_button")}
+        </button>
+        </div>
+    </main>
   );
 }

@@ -38,6 +38,7 @@ export default {
         '20px' : '1.3rem',
         '26px' : '1.625rem',
         '25px' : '1.5625rem',
+        '27px' : '1.688rem',
         '30px' : '1.875rem',
         '35px' : '2.188rem',
         '45px' : '2.813rem',
@@ -46,6 +47,7 @@ export default {
       },
       lineHeight: {
         '22px' : '22px',
+        '23px' : '23px',
         '28px' : '28px',
         '31px' : '31px',
         '50px' : '50px',

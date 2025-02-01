@@ -21,7 +21,11 @@ const fr = {
     },
     page: {
       title: "Choisissez",
-      content: "Explorez les trésors cachés de nos côtes grâce à nos croisières.",
+      subtitle1 : "Une balade",
+      subtitle2 : "fascinante",
+      subtitle3: "et inoubliable",
+      circuits_button: "NOS CIRCUITS",
+      content: "Jean-Baptiste CAPODIMACCI a grandi avec la mer. Il connaît les passages secrets que seul un enfant du pays peut découvrir. Avec lui, plongez au cœur des paysages spectaculaires de sa région natale : la réserve naturelle de Scandola, le village de Girolata, les calanques de Piana… En journée ou au coucher du soleil, choisissez le circuit qui vous ressemble. ",
     },
     menu: {
       close: "Fermer",

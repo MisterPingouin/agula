@@ -21,7 +21,11 @@ const en = {
     },
     page: {
       title: "Choose",
-      content: "Explore the hidden treasures of our coasts with our cruises.",
+      subtitle1 : "A walk",
+      subtitle2 : "fascinating",
+      subtitle3: "and unforgettable",
+      circuits_button: "OUR TOURS",
+      content: "Jean-Baptiste CAPODIMACCI grew up with the sea. He knows the secret passages that only a local child can discover. With him, immerse yourself in the heart of the spectacular landscapes of his native region: the Scandola nature reserve, the village of Girolata, the coves of Piana… During the day or at sunset, choose the circuit that suits you.",
     },
     menu: {
       close: "Close",
