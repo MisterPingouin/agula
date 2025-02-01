@@ -13,16 +13,19 @@ export const viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({ children, params }) {
-  const locale =  params?.locale || 'en';
+export default async function RootLayout({ children, params }) {
+  // `params` est potentiellement asynchrone en Next.js 15 (segmentation dynamique)
+  const { locale } = await params;
+  const finalLocale = ["en", "fr"].includes(locale) ? locale : "fr";
+
   return (
-    <html lang={locale}>
+    <html lang={finalLocale}>
       <head>
         <meta charSet="utf-8" />
         <link rel="icon" href="/images/favicon.ico" />
       </head>
       <body className={`${roboto.variable} ${msMadi.variable} ${sourceSans3.variable} antialiased`}>
-        <I18nProvider locale={locale}>
+        <I18nProvider locale={finalLocale}>
           <Header />
           {children}
         </I18nProvider>

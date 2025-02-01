@@ -54,7 +54,7 @@ const Header = () => {
             </Link>
           </div>
           <div className="flex space-x-12">
-            <div className="pt-2 flex space-x-1">
+            <div className="pt-2 flex space-x-1 md:hidden">
               <a href="#">
                 <Image src="/images/phone.svg" alt="Phone" width={24} height={24} />
               </a>
@@ -68,7 +68,7 @@ const Header = () => {
                 <Image src="/images/phone.svg" alt="Facebook" width={24} height={24} />
               </a>
             </div>
-            <MenuButton isOpen={menuOpen} toggleMenu={toggleMenu} />
+            <MenuButton isOpen={menuOpen} toggleMenu={toggleMenu}/>
           </div>
         </div>
       </motion.div>

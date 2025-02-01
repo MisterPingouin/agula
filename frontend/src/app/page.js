@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 import { headers } from "next/headers";
 
 export default async function HomePage() {
-  // Obtenir les headers correctement avec await
+  // Obtenir les headers en mode asynchrone
   const requestHeaders = await headers();
   const acceptLanguage = requestHeaders.get("accept-language") || "fr";
 
