@@ -20,7 +20,14 @@ const fr = {
     agency: "Avec l'Agence Marina Croisières",
     book_button: "RÉSERVER",
     image_alt: "Vue aérienne",
+    embark_title: "EMBARQUEZ",
+    embark_description: "Avec Jean-Baptiste CAPODIMACCI, fils et petit-fils de pêcheurs à bord du Sacha dans une atmosphère intimiste et conviviale.",
+    enjoy_title: "PROFITEZ",
+    enjoy_description: "Et observez la biodiversité de la réserve naturelle de Scandola avec une traversée dans une ambiance magique",
+    live_title: "VIVEZ",
+    live_description: "Une expérience de navigation paisible et confortable au cœur des plus beaux sites de nos côtes",
   },
+
   page: {
     title: "Choisissez",
     subtitle1: "Une balade",

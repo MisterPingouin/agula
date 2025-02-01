@@ -21,7 +21,14 @@ const en = {
     agency: "With Marina Cruises Agency",
     book_button: "BOOK",
     image_alt: "Aerial view",
+    embark_title: "EMBARK",
+    embark_description: "With Jean-Baptiste CAPODIMACCI, son and grandson of fishermen aboard the Sacha in an intimate and friendly atmosphere.",
+    enjoy_title: "ENJOY",
+    enjoy_description: "And observe the biodiversity of the Scandola nature reserve with a crossing in a magical atmosphere",
+    live_title: "LIVE",
+    live_description: "A peaceful and comfortable sailing experience in the heart of the most beautiful sites on our coasts",
   },
+
   page: {
     title: "Choose",
     subtitle1: "A walk",
