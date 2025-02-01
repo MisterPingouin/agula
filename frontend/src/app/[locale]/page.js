@@ -30,56 +30,33 @@ export default function HomePage() {
           {t("title")}
         </h2>
       </section>
-      <section className="relative h-[260px] mb-6">
-        <div
-          className="
-            absolute 
-            bottom-0 left-[120px] 
-            z-0 
-          "
-        >
-          <Image
-            src="/images/sea.jpg"
-            alt="Mer"
-            width={320}
-            height={226}
-            className="img-fixed object-cover"
-          />
-        </div>
-
-        <div
-          className="
-            absolute
-            top-0 left-0
-            z-10
-          "
-        >
-          <Image
-            src="/images/montagne.jpg"
-            alt="Montagne"
-            width={188}
-            height={234}
-            className="object-cover"
-          />
-        </div>
-
-        <div
-          className="
-            absolute inset-0
-            flex items-center justify-center
-            z-20
-          "
-        >
-          <p className="text-white font-bold font-title text-27px leading-none t px-2">
-            {t("subtitle1")}
-            <br />
-            {t("subtitle2")}
-            <br />
-            {t("subtitle3")}
-          </p>
-        </div>
-      </section>
-
+      <section className="relative w-full mx-auto h-[280px]">
+  <div className="absolute top-0 left-0 z-10">
+    <Image
+      src="/images/montagne.jpg"
+      alt="Montagne"
+      width={180}
+      height={220}
+      className="object-cover"
+    />
+  </div>
+  <div className="absolute top-6 right-0 z-0">
+    <Image
+      src="/images/sea.jpg"
+      alt="Mer"
+      width={320}
+      height={226}
+      className="object-cover"
+    />
+  </div>
+  <div className="absolute inset-0 flex items-center justify-center z-20">
+    <p className="text-white font-bold font-title text-27px leading-none">
+      {t("subtitle1")}<br/>
+      {t("subtitle2")}<br/>
+      {t("subtitle3")}
+    </p>
+  </div>
+</section>
       <p className="px-9 text-15px leading-23px font-content pt-4">
         {t("content")}
       </p>

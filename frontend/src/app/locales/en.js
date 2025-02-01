@@ -11,7 +11,7 @@ const en = {
     team: "Our team",
     commitments: "Our commitments",
     private: "Private booking",
-    gallery : "gallery",
+    gallery : "Gallery",
     book: "BOOK",
 
   },
