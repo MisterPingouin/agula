@@ -11,6 +11,7 @@ const fr = {
     team: "Notre équipe",
     commitments: "Nos engagements",
     private: "Privatisation",
+    gallery: "Galerie",
   },
   home: {
     title: "Naviguez",

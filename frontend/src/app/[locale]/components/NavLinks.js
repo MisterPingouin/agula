@@ -11,6 +11,7 @@ const NavLinks = () => {
     { name: t('team'), href: "#equipe" },
     { name: t('commitments'), href: "#engagements" },
     { name: t('private'), href: "#privatisation" },
+    { name: t('gallery'), href: "#privatisation" },
   ];
 
   return (

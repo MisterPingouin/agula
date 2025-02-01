@@ -41,8 +41,6 @@ const MobileMenu = ({ onClose }) => {
         {t('offer')} 
         </button>
       </div>
-
-
       {/* Bouton de changement de langue */}
       <div className="flex items-center p-3 mt-6 text-20px gap-2 font-title font-bold text-green-3 self-start">
       <button

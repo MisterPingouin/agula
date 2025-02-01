@@ -41,7 +41,7 @@ const MenuButton = ({ isOpen, toggleMenu }) => {
   return (
     <button
       onClick={toggleMenu}
-      className="pt-3 md:hidden focus:outline-none z-50 relative"
+      className="pt-3 lg:hidden focus:outline-none z-50 relative"
       aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
     >
       <motion.svg

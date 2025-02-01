@@ -40,9 +40,9 @@ const Header = () => {
           y: visible ? "0%" : "-100%", // Descend quand on scroll, remonte sinon
         }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="hidden md:block"
+        className="hidden lg:block"
       >
-        <div className="flex items-center justify-between px-4 py-3 lg:px-8 bg-white/80 shadow-md backdrop-blur-md">
+        <div className="flex items-center justify-between px-4 py-3 lg:px-8 bg-white shadow-md backdrop-blur-md">
           <div>
             <Link href="/" className="cursor-pointer">
               <Image
@@ -74,7 +74,7 @@ const Header = () => {
       </motion.div>
 
       {/** Header mobile toujours visible sans animation **/}
-      <div className="block md:hidden bg-white shadow-md">
+      <div className="block lg:hidden bg-white shadow-md">
         <div className="flex items-center justify-between px-4 py-3 lg:px-8">
           <div>
             <Link href="/" className="cursor-pointer">
