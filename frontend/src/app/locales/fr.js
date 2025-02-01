@@ -14,8 +14,8 @@ const fr = {
   },
   home: {
     title: "Naviguez",
-    description: "Au cœur des plus beaux sites côtiers",
-    agency: "Avec L'Agula Marina Croisières",
+    description: "Au cœur des plus beaux sites de la côte",
+    agency: "Avec l'Agence Marina Croisières",
     book_button: "RÉSERVER",
     image_alt: "Vue aérienne",
   },
@@ -32,15 +32,48 @@ const fr = {
     close: "Fermer",
   },
 
-  // --- Bloc "cards" ---
+  // Les cartes
   cards: {
     grandTour: {
       title: "Le Grand Tour",
       description:
-        "Capu Rossu - Calanques de Piana (10 min de baignade) - Golfe de Porto - Girolata (arrêt 30 min) - Scandola",
+        "Capu Rossu - Calanques de Piana (baignade 10 min) - Golfe de Porto - Girolata (arrêt 30 min) - Scandola",
       price: "Adultes : 80€ - Enfants : 70€",
       duration: "Durée : 3h45",
     },
+    calanquesPiana: {
+      title: "Les Calanques de Piana",
+      description: "Capu Rossu - Calanques de Piana (baignade 10 min)",
+      price: "Adultes : 45€ - Enfants : 35€",
+      duration: "Durée : 1h45",
+    },
+    scandolaGirolata: {
+      title: "Scandola Girolata",
+      description: "Scandola - Girolata (arrêt 30 min)",
+      price: "Adultes : 65€ - Enfants : 55€",
+      duration: "Durée : 2h45",
+    },
+
+    grandTourSunset: {
+      title: "Le Grand Tour coucher soleil",
+      description:
+        "Capu Rossu - Calanques de Piana (baignade 10 min) - Golfe de Porto - Girolata (arrêt 30 min) - Scandola",
+      price: "Adultes : 80€ - Enfants : 70€",
+      duration: "Durée : 3h45",
+    },
+    calanquesPianaSunset: {
+      title: "Les Calanques de Piana coucher soleil",
+      description: "Capu Rossu - Calanques de Piana (baignade 10 min)",
+      price: "Adultes : 45€ - Enfants : 35€",
+      duration: "Durée : 1h45",
+    },
+    scandolaGirolataSunset: {
+      title: "Scandola Girolata coucher soleil",
+      description: "Scandola - Girolata (arrêt 30 min)",
+      price: "Adultes : 65€ - Enfants : 55€",
+      duration: "Durée : 2h45",
+    },
+
     reserveButton: "RÉSERVER",
     learnMoreButton: "EN SAVOIR PLUS",
   },

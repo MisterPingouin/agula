@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useScopedI18n } from "../../../locales/I18nContext"; // ajuste si besoin
+import { useScopedI18n } from "../../../locales/I18nContext"; ""
 
 export default function Card({ tourKey, imageSrc }) {
   const t = useScopedI18n("cards");

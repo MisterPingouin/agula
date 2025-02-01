@@ -32,15 +32,48 @@ const en = {
     close: "Close",
   },
 
-  // --- Bloc "cards" ---
+  // Cards
   cards: {
     grandTour: {
       title: "The Grand Tour",
       description:
         "Capu Rossu - Calanques de Piana (10 min swim) - Porto Gulf - Girolata (30 min stop) - Scandola",
-      price: "Adults: 80€ - Children: 70€",
+      price: "Adults: €80 - Children: €70",
       duration: "Duration: 3h45",
     },
+    calanquesPiana: {
+      title: "The Calanques of Piana",
+      description: "Capu Rossu - Calanques de Piana (10 min swim)",
+      price: "Adults: €45 - Children: €35",
+      duration: "Duration: 1h45",
+    },
+    scandolaGirolata: {
+      title: "Scandola Girolata",
+      description: "Scandola - Girolata (30 min stop)",
+      price: "Adults: €65 - Children: €55",
+      duration: "Duration: 2h45",
+    },
+
+    grandTourSunset: {
+      title: "The Grand Tour sunset",
+      description:
+        "Capu Rossu - Calanques de Piana (10 min swim) - Porto Gulf - Girolata (30 min stop) - Scandola",
+      price: "Adults: €80 - Children: €70",
+      duration: "Duration: 3h45",
+    },
+    calanquesPianaSunset: {
+      title: "The Calanques of Piana sunset",
+      description: "Capu Rossu - Calanques de Piana (10 min swim)",
+      price: "Adults: €45 - Children: €35",
+      duration: "Duration: 1h45",
+    },
+    scandolaGirolataSunset: {
+      title: "Scandola Girolata sunset",
+      description: "Scandola - Girolata (30 min stop)",
+      price: "Adults: €65 - Children: €55",
+      duration: "Duration: 2h45",
+    },
+
     reserveButton: "BOOK",
     learnMoreButton: "LEARN MORE",
   },

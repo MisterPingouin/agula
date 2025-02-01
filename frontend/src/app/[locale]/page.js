@@ -89,8 +89,16 @@ export default function HomePage() {
           {t("circuits_button")}
         </button>
       </div>
-      <section className="mt-8 px-4 max-w-md mx-auto">
+      <section className="flex flex-col mt-8 px-4 gap-4 max-w-md mx-auto">
         <Card tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
+        <Card
+            tourKey="calanquesPiana"
+            imageSrc="/images/calanques-piana.jpg"
+          />
+                    <Card
+            tourKey="scandolaGirolata"
+            imageSrc="/images/scandola-girolata.jpg"
+          />
       </section>
     </main>
   );
