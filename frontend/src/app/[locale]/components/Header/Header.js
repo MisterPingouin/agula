@@ -48,7 +48,6 @@ const Header = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
       {isHomePage ? (
-        /** Animation activée uniquement sur la homepage **/
         <motion.div
           initial={{ y: "-100%" }}
           animate={{ y: visible ? "0%" : "-100%" }}
@@ -64,7 +63,6 @@ const Header = () => {
           />
         </motion.div>
       ) : (
-        /** Pas d'animation sur les autres pages **/
         <div className="hidden lg:block">
           <HeaderContent
             t={t}
@@ -85,48 +83,46 @@ const Header = () => {
   );
 };
 
-const HeaderContent = ({ t, t1, menuOpen, toggleMenu, localLink }) => (
-  <div className="flex items-center justify-center px-4 py-3 bg-white">
-    <div className="flex items-center justify-center">
-      <Link href="/" className="cursor-pointer">
-        <Image src="/images/logo.svg" alt={t("header.logo_alt")} width={128} height={55} />
-      </Link>
-      <nav className="flex font-medium pt-5 gap-10 px-16 font-content text-15px text-blue-3">
-      <Link
-          href={localLink("/nos-circuits")}
-        >
-          {t1("circuits")}
-        </Link>        <a href="#">{t1("boat")}</a>
-        <a href="#">{t1("team")}</a>
-        <a href="#">{t1("commitments")}</a>
-        <a href="#">{t1("private")}</a>
-        <a href="#">{t1("gallery")}</a>
-      </nav>
-      <button className="bg-blue-3 text-white mt-5 px-14 py-2 font-semibold text-14px">
-        {t1("book")}
-      </button>
-    </div>
-    <div className="flex space-x-12">
-      <div className="pt-2 flex space-x-1 lg:hidden">
-        <a href="#">
-          <Image src="/images/phone.svg" alt="Phone" width={24} height={24} />
-        </a>
-        <a href="#">
-          <Image src="/images/phone.svg" alt="Tripadvisor" width={24} height={24} />
-        </a>
-        <a href="#">
-          <Image src="/images/phone.svg" alt="Instagram" width={24} height={24} />
-        </a>
-        <a href="#">
-          <Image src="/images/phone.svg" alt="Facebook" width={24} height={24} />
-        </a>
-      </div>
-      <MenuButton isOpen={menuOpen} toggleMenu={toggleMenu} />
-    </div>
-  </div>
-);
+const HeaderContent = ({ t, t1, localLink }) => {
+  const pathname = usePathname();
 
-const HeaderMobile = ({ t, t1, menuOpen, toggleMenu }) => (
+  const links = [
+    { name: t1("circuits"), href: localLink("/nos-circuits") },
+    { name: t1("boat"), href: "#bateau" },
+    { name: t1("team"), href: "#equipe" },
+    { name: t1("commitments"), href: "#engagements" },
+    { name: t1("private"), href: "#privatisation" },
+    { name: t1("gallery"), href: "#galerie" },
+  ];
+
+  return (
+    <div className="flex items-center justify-center px-4 py-3 bg-white">
+      <div className="flex items-center justify-center">
+        <Link href="/" className="cursor-pointer">
+          <Image src="/images/logo.svg" alt={t("header.logo_alt")} width={128} height={55} />
+        </Link>
+        <nav className="flex font-medium pt-5 gap-10 px-16 font-content text-15px text-blue-3">
+          {links.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              className={`${
+                pathname === link.href ? "text-[#A2A2A2]" : ""
+              } text-15px`}
+            >
+              {link.name}
+            </Link>
+          ))}
+        </nav>
+        <button className="bg-blue-3 text-white mt-5 px-14 py-2 font-semibold text-14px">
+          {t1("book")}
+        </button>
+      </div>
+    </div>
+  );
+};
+
+const HeaderMobile = ({ t, menuOpen, toggleMenu }) => (
   <div className="flex items-center justify-between px-4 py-3 lg:px-8">
     <Link href="/" className="cursor-pointer">
       <Image src="/images/logo.svg" alt={t("header.logo_alt")} width={120} height={40} />

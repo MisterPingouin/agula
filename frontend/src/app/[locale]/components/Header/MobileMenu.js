@@ -3,6 +3,7 @@
 import React from "react";
 import NavLinks from "../NavLinks";
 import Image from "next/image";
+import Link from "next/link";
 import { useI18n, useScopedI18n  } from "./../../../locales/I18nContext";
 
 const MobileMenu = ({ onClose }) => {
@@ -18,19 +19,15 @@ const MobileMenu = ({ onClose }) => {
   return (
     <div className="fixed inset-0 bg-white z-40 flex flex-col p-3 h-screen">
       {/* Logo en haut */}
-      <Image
-        src="/images/logo.svg"
-        alt="L'Agula Marina Croisières"
-        width={120}
-        height={40}
-        className="self-start"
-      />
+      <Link href="/" className="cursor-pointer">
+      <Image src="/images/logo.svg" alt="logo lagula marina" width={120} height={40} />
+    </Link>
 
       {/* Bouton de fermeture */}
       <button onClick={onClose} />
 
       {/* Liens de navigation */}
-      <NavLinks />
+      <NavLinks onClose={onClose} />
 
       {/* Boutons d'action */}
       <div className="mt-2 flex flex-col space-y-2 p-3">
