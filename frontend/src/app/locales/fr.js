@@ -86,6 +86,18 @@ const fr = {
     reserveButton: "RÉSERVER",
     learnMoreButton: "EN SAVOIR PLUS",
   },
+    footer: {
+      findUs: "Retrouvez-nous",
+      contact: "CONTACT",
+      circuits: "CIRCUITS",
+      nosCircuits: "Nos circuits",
+      reserver: "Réserver",
+      privatisation: "Privatisation",
+      tarifs: "Tarifs",
+      mentionsLegales: "Mentions légales",
+      cgv: " CGV",
+      realisation: " Réalisation",
+    },
 };
 
 export default fr;

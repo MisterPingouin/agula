@@ -87,6 +87,18 @@ const en = {
     reserveButton: "BOOK",
     learnMoreButton: "LEARN MORE",
   },
+  footer: {
+    findUs: "Find us",
+    contact: "CONTACT",
+    circuits: "CIRCUITS",
+    nosCircuits: "Our circuits",
+    reserver: "Book now",
+    privatisation: "Private tours",
+    tarifs: "Rates",
+    mentionsLegales: "Legal notice",
+    cgv: "T&C",
+    realisation: " Development",
+  },
 };
 
 export default en;

@@ -3,7 +3,7 @@ import { Roboto, Ms_Madi, Source_Sans_3 } from 'next/font/google';
 export const roboto = Roboto({
   variable: '--font-roboto',
   subsets: ['latin'],
-  weight: ['300', '400', '700'],
+  weight: ['300', '400', '500', '700'],
 });
 
 export const msMadi = Ms_Madi({
