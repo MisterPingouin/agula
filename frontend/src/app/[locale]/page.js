@@ -5,9 +5,15 @@ import SliderDesktop from "./components/SliderDesktop";
 import { useScopedI18n } from "./../locales/I18nContext";
 import Image from "next/image";
 import Card from "./components/Cards/Card"; 
+import Link from "next/link";
+import useLocalLink from "./hooks/useLocalLink";
+import { usePathname } from "next/navigation";
+
 
 export default function HomePage() {
   const t = useScopedI18n("page");
+    const pathname = usePathname();
+    const localLink = useLocalLink();
 
   return (
     <main>
@@ -63,9 +69,11 @@ export default function HomePage() {
       </p>
 
       <div className="flex items-center justify-center mt-5">
+      <Link href={localLink("/nos-circuits")} className="cursor-pointer">
         <button className="px-14 py-2 text-white text-20px bg-blue-3 font-content font-semibold">
           {t("circuits_button")}
         </button>
+        </Link>
       </div>
       <SliderDesktop />
       <section className="flex flex-col mt-8 px-4 gap-4 max-w-md mx-auto md:hidden">
