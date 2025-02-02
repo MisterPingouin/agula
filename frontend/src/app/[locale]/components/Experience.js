@@ -63,7 +63,7 @@ export default function Experience() {
 </div>
 </div>
 {/* Desktop Experience */}
-<div className="flex justify-center items-center gap-16 my-10">
+<div className="hidden md:flex justify-center items-center gap-16 my-10">
 <div className="flex flex-col justify-center items-center text-15px font-content leading-tight">
     <Image
           src="/images/sunset.svg"
@@ -117,10 +117,10 @@ export default function Experience() {
           alt="Greenarrowright"
           width={50}
           height={40}
-            className="w-auto h-auto"
+          className="w-auto h-auto"
         />
         </div>
-        <div className="w-11/12 h-[0.5px] bg-[#707070] mb-6"></div>
+        <div className="w-11/12 md:w-10/12 h-[0.5px] bg-[#707070] mb-6"></div>
 </section>
 );
 }

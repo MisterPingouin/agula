@@ -9,6 +9,7 @@ import Link from "next/link";
 import useLocalLink from "./hooks/useLocalLink";
 import { usePathname } from "next/navigation";
 import Experience from "./components/Experience";
+import Heart from "./components/Heart";
 
 
 export default function HomePage() {
@@ -89,6 +90,7 @@ export default function HomePage() {
           />
       </section>
       <Experience />
+      <Heart />
     </main>
   );
 }
