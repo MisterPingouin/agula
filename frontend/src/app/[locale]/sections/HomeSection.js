@@ -153,7 +153,7 @@ const HomeSection = () => {
           alt="Arrow Down"
           width={30}
           height={30}
-          className="animate-bounce"
+          className="animate-bounce w-auto h-auto"
         />
       </div>
     </section>

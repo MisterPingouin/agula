@@ -66,7 +66,7 @@ export default function SliderDesktop() {
 
       <div className="flex items-center justify-between w-[1200px] mx-auto mt-4">
         <button onClick={handlePrev} className="p-2">
-          <Image src="/images/arrowleft.svg" alt="left" width={24} height={24} />
+          <Image src="/images/arrowleft.svg" className="w-auto h-auto" alt="left" width={24} height={24} />
         </button>
 
         <div className="flex items-center gap-2 w-full">
@@ -75,7 +75,7 @@ export default function SliderDesktop() {
           </div>
 
           <button onClick={handleNext}>
-            <Image src="/images/arrowright.svg" alt="right" width={24} height={24} />
+            <Image src="/images/arrowright.svg" alt="right" className="w-auto h-auto" width={24} height={24} />
           </button>
 
           {/* Barre de progression */}
