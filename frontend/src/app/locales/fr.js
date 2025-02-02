@@ -99,6 +99,10 @@ const fr = {
       cgv: " CGV",
       realisation: " Réalisation",
     },
+    circuits : {
+      title: "Nos circuits",
+      content: "Jean-Baptiste CAPODIMACCI a grandi avec la mer. Il connaît les passages secrets que seul un enfant du pays peut découvrir. Avec lui, plongez au cœur des paysages spectaculaires de sa région natale : la réserve naturelle de Scandola, le village de Girolata, les calanques de Piana… En journée ou au coucher du soleil, choisissez le circuit qui vous ressemble."
+    }
 };
 
 export default fr;

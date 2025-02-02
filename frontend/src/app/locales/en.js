@@ -100,6 +100,10 @@ const en = {
     cgv: "T&C",
     realisation: " Development",
   },
+  circuits : {
+    title: "Our tours",
+    content: "Jean-Baptiste CAPODIMACCI grew up with the sea. He knows the secret passages that only a local child can discover. With him, immerse yourself in the heart of the spectacular landscapes of his native region: the Scandola nature reserve, the village of Girolata, the coves of Piana... During the day or at sunset, choose the circuit that suits you."
+  }
 };
 
 export default en;
