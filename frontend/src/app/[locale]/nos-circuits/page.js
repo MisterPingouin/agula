@@ -5,10 +5,9 @@ import Card from "./../components/Cards/Card";
 
 export default function CircuitsPage() {
   const t = useScopedI18n("circuits");
-  const t1 = useScopedI18n("cards");
 
   return (
-    <section className="text-black">
+    <main className="text-black">
       <div className="h-[86px]"></div>
 
       {/* Titre et description */}
@@ -41,6 +40,6 @@ export default function CircuitsPage() {
           <Card tourKey="scandolaGirolataSunset" imageSrc="/images/scandola-girolata-sunset.jpg" />
         </div>
       </div>
-    </section>
+    </main>
   );
 }

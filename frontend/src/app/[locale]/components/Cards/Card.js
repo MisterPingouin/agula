@@ -1,10 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useScopedI18n } from "../../../locales/I18nContext";
+import useLocalLink from "./../../hooks/useLocalLink"; 
 
 export default function Card({ tourKey, imageSrc }) {
   const t = useScopedI18n("cards");
+      const localLink = useLocalLink();
+  
 
   return (
     <article className="w-full px-4">
@@ -46,9 +50,12 @@ export default function Card({ tourKey, imageSrc }) {
         <button className="bg-green-2 text-white px-4 py-2 font-semibold text-14px">
           {t("reserveButton")}
         </button>
-        <button className="border border-green-2 text-green-2 px-4 py-2 font-semibold text-14px">
-          {t("learnMoreButton")}
-        </button>
+        <Link
+  href={localLink(`/nos-circuits/${tourKey}`)}
+  className="border border-green-2 text-green-2 px-4 py-2 font-semibold text-14px"
+>
+  {t("learnMoreButton")}
+</Link>
       </div>
     </article>
   );
