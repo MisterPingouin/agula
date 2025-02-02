@@ -31,6 +31,7 @@ export default {
       },
       fontSize: {
         '9px'  : '0.563rem',
+        '10px' : '0.625rem',
         '12px' : '0.63rem',
         '13px' : '0.813rem',
         '14px' : '0.8rem',
@@ -52,6 +53,7 @@ export default {
         '22px' : '22px',
         '23px' : '23px',
         '28px' : '28px',
+        '29px' : '29px',
         '31px' : '31px',
         '50px' : '50px',
       },

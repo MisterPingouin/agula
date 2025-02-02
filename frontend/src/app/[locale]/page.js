@@ -8,6 +8,7 @@ import Card from "./components/Cards/Card";
 import Link from "next/link";
 import useLocalLink from "./hooks/useLocalLink";
 import { usePathname } from "next/navigation";
+import Experience from "./components/Experience";
 
 
 export default function HomePage() {
@@ -87,6 +88,7 @@ export default function HomePage() {
             imageSrc="/images/scandola-girolata.jpg"
           />
       </section>
+      <Experience />
     </main>
   );
 }

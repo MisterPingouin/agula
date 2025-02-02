@@ -41,9 +41,6 @@ export default function SliderDesktop() {
 
   const cardsShown = Math.min((currentSlide + 1) * cardsPerSlide, totalCards);
 
-  // Calcul du décalage pour la barre noire
-  const progressPosition = currentSlide === 0 ? "0%" : "100%";
-
   return (
     <div className="hidden md:block w-full mx-auto pt-8">
       <div className="relative w-[1200px] mx-auto overflow-hidden">

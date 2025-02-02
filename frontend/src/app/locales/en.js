@@ -103,6 +103,19 @@ const en = {
   circuits : {
     title: "Our tours",
     content: "Jean-Baptiste CAPODIMACCI grew up with the sea. He knows the secret passages that only a local child can discover. With him, immerse yourself in the heart of the spectacular landscapes of his native region: the Scandola nature reserve, the village of Girolata, the coves of Piana... During the day or at sunset, choose the circuit that suits you."
+  },
+  experience : {
+    title : "Live a unique, intimate and friendly experience",
+    title2 : "aboard the Sacha",
+    sun1 : "Find our outings",
+    sun2 : "at sunset",
+    fish1 : "Swimming stops for",
+    fish2 : "observe biodiversity",
+    drink1 : "Sunset and",
+    drink2 : "aperitif on board",
+    dive1 : "Masks and snorkels",
+    dive2 : "aboard the Sacha",
+    more: "LEARN MORE",
   }
 };
 

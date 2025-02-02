@@ -102,6 +102,19 @@ const fr = {
     circuits : {
       title: "Nos circuits",
       content: "Jean-Baptiste CAPODIMACCI a grandi avec la mer. Il connaît les passages secrets que seul un enfant du pays peut découvrir. Avec lui, plongez au cœur des paysages spectaculaires de sa région natale : la réserve naturelle de Scandola, le village de Girolata, les calanques de Piana… En journée ou au coucher du soleil, choisissez le circuit qui vous ressemble."
+    },
+    experience : {
+      title : "Vivez une expérience unique, intime et conviviale",
+      title2: "à bord du Sacha",
+      sun1 : "Retrouvez nos sorties",
+      sun2 : "au coucher du soleil",
+      fish1 : "Arrêts baignade pour",
+      fish2 : "observer la biodiversité",
+      drink1 : "Coucher de soleil et",
+      drink2 : "apéritif à bord",
+      dive1 : "Masques et tubas",
+      dive2 : "à bord du Sacha",
+      more: "EN SAVOIR PLUS",
     }
 };
 
