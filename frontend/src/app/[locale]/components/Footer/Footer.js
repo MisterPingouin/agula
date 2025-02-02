@@ -4,9 +4,13 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useScopedI18n } from "./../../../locales/I18nContext";
+import useLocalLink from "./../../hooks/useLocalLink"; 
+
 
 const Footer = () => {
   const t = useScopedI18n("footer");
+    const localLink = useLocalLink();
+  
 
   return (
     <footer className="bg-blue-3 text-white w-full h-auto">
@@ -14,7 +18,7 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-start md:hidden">
         {/* Logo */}
         <div className="mt-8">
-          <Link href="/" className="cursor-pointer">
+          <Link href={localLink("/")} className="cursor-pointer">
             <Image
               src="/images/logowhite.svg"
               alt="logo lagula marina"
@@ -92,7 +96,7 @@ const Footer = () => {
           {t("circuits")}
         </h2>
         <div className="flex flex-col gap-1 justify-center items-center font-title font-medium text-13px mb-7">
-          <Link href="#" className="hover:text-green-3">
+          <Link href={localLink("/nos-circuits")} className="hover:text-green-3">
             {t("nosCircuits")}
           </Link>
           <Link href="#" className="hover:text-green-3">
@@ -133,7 +137,7 @@ const Footer = () => {
         <div className="grid grid-cols-4 gap-8">
           {/* Colonne 1 : Logo + réseaux */}
           <div>
-            <Link href="/" className="cursor-pointer">
+            <Link href={localLink("/")} className="cursor-pointer">
               <Image
                 src="/images/logowhite.svg"
                 alt="logo lagula marina"
@@ -204,7 +208,7 @@ const Footer = () => {
               {t("circuits")}
             </h2>
             <div className="flex flex-col gap-1.5 font-title font-medium text-13px mt-4">
-              <Link href="#" className="hover:text-green-3">
+              <Link href={localLink("/nos-circuits")} className="hover:text-green-3">
                 {t("nosCircuits")}
               </Link>
               <Link href="#" className="hover:text-green-3">

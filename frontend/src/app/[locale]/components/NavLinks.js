@@ -2,11 +2,15 @@
 
 import React from "react";
 import { useScopedI18n } from "./../../locales/I18nContext";
+import useLocalLink from "./../hooks/useLocalLink"; 
+
 
 const NavLinks = () => {
   const t = useScopedI18n("navigation");
+    const localLink = useLocalLink();
+  
   const links = [
-    { name: t('circuits'), href: "#circuits" },
+    { name: t('circuits'), href: localLink("/nos-circuits") },
     { name: t('boat'), href: "#bateau" },
     { name: t('team'), href: "#equipe" },
     { name: t('commitments'), href: "#engagements" },

@@ -4,9 +4,13 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useI18n, useScopedI18n } from "./../../locales/I18nContext";
+import useLocalLink from "./../hooks/useLocalLink"; 
+
 
 const HomeSection = () => {
   const { locale, setLocale } = useI18n();
+    const localLink = useLocalLink();
+  
 
   const t = useScopedI18n("home");
   const t1 = useScopedI18n("navigation");
@@ -72,7 +76,7 @@ const HomeSection = () => {
         </p>
       </div>
       <div className="flex relative z-50 items-center -translate-y-1">
-        <Link href="/" className="cursor-pointer">
+        <Link href={localLink("/")} className="cursor-pointer">
           <Image
             src="/images/logowhite.svg"
             alt={t("header.logo_alt")}
@@ -81,11 +85,11 @@ const HomeSection = () => {
           />
         </Link>
         <nav className="flex font-medium pt-6 gap-10 px-16 font-content text-15px text-white">
-        <a
-              href="#"
-            >
-              {t1('circuits')}
-            </a>
+        <Link
+          href={localLink("/nos-circuits")}
+        >
+          {t1("circuits")}
+        </Link>    
             <a
               href="#"
             >

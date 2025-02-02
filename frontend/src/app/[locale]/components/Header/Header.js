@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useI18n, useScopedI18n } from "../../../locales/I18nContext";
 import { usePathname } from "next/navigation";
+import useLocalLink from "./../../hooks/useLocalLink"; 
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,6 +17,7 @@ const Header = () => {
   const { t } = useI18n();
   const t1 = useScopedI18n("navigation");
   const pathname = usePathname();
+  const localLink = useLocalLink();
 
   useEffect(() => {
     const isHomePath = pathname === "/" || pathname === "/en" || pathname === "/fr";
@@ -58,6 +60,7 @@ const Header = () => {
             t1={t1}
             menuOpen={menuOpen}
             toggleMenu={toggleMenu}
+            localLink={localLink}
           />
         </motion.div>
       ) : (
@@ -68,6 +71,7 @@ const Header = () => {
             t1={t1}
             menuOpen={menuOpen}
             toggleMenu={toggleMenu}
+            localLink={localLink}
           />
         </div>
       )}
@@ -81,15 +85,18 @@ const Header = () => {
   );
 };
 
-const HeaderContent = ({ t, t1, menuOpen, toggleMenu }) => (
+const HeaderContent = ({ t, t1, menuOpen, toggleMenu, localLink }) => (
   <div className="flex items-center justify-center px-4 py-3 bg-white">
     <div className="flex items-center justify-center">
       <Link href="/" className="cursor-pointer">
         <Image src="/images/logo.svg" alt={t("header.logo_alt")} width={128} height={55} />
       </Link>
       <nav className="flex font-medium pt-5 gap-10 px-16 font-content text-15px text-blue-3">
-        <a href="#">{t1("circuits")}</a>
-        <a href="#">{t1("boat")}</a>
+      <Link
+          href={localLink("/nos-circuits")}
+        >
+          {t1("circuits")}
+        </Link>        <a href="#">{t1("boat")}</a>
         <a href="#">{t1("team")}</a>
         <a href="#">{t1("commitments")}</a>
         <a href="#">{t1("private")}</a>
