@@ -93,6 +93,7 @@ const en = {
     circuits: "CIRCUITS",
     nosCircuits: "Our circuits",
     reserver: "Book now",
+    informations: "INFORMATIONS",
     privatisation: "Private tours",
     tarifs: "Rates",
     mentionsLegales: "Legal notice",

@@ -94,6 +94,7 @@ const fr = {
       reserver: "Réserver",
       privatisation: "Privatisation",
       tarifs: "Tarifs",
+      informations: "INFORMATIONS",
       mentionsLegales: "Mentions légales",
       cgv: " CGV",
       realisation: " Réalisation",
