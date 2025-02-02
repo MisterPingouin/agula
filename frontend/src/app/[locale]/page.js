@@ -68,7 +68,7 @@ export default function HomePage() {
         </button>
       </div>
       <SliderDesktop />
-      <section className="flex flex-col mt-8 px-4 gap-4 max-w-md mx-auto">
+      <section className="flex flex-col mt-8 px-4 gap-4 max-w-md mx-auto md:hidden">
         <Card tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
         <Card
             tourKey="calanquesPiana"
