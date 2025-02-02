@@ -71,7 +71,7 @@ const fr = {
       duration: "Durée : 3h45",
     },
     calanquesPianaSunset: {
-      title: "Les Calanques de Piana coucher soleil",
+      title: "Les Calanques de Piana sunset",
       description: "Capu Rossu - Calanques de Piana (baignade 10 min)",
       price: "Adultes : 45€ - Enfants : 35€",
       duration: "Durée : 1h45",

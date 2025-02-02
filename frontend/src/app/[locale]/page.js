@@ -1,6 +1,7 @@
 "use client";
 
 import HomeSection from "./sections/HomeSection";
+import SliderDesktop from "./components/SliderDesktop";
 import { useScopedI18n } from "./../locales/I18nContext";
 import Image from "next/image";
 import Card from "./components/Cards/Card"; 
@@ -66,6 +67,7 @@ export default function HomePage() {
           {t("circuits_button")}
         </button>
       </div>
+      <SliderDesktop />
       <section className="flex flex-col mt-8 px-4 gap-4 max-w-md mx-auto">
         <Card tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
         <Card

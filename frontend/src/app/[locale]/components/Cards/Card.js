@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useScopedI18n } from "../../../locales/I18nContext"; ""
+import { useScopedI18n } from "../../../locales/I18nContext";
 
 export default function Card({ tourKey, imageSrc }) {
   const t = useScopedI18n("cards");
@@ -24,7 +24,7 @@ export default function Card({ tourKey, imageSrc }) {
       </h3>
 
       {/* Description (icône ancre) */}
-      <p className="text-14px mb-2 font-content leading-tight flex items-center">
+      <p className="text-14px mb-2 font-content leading-tight flex items-center ">
         <img src="/images/ancre.svg" alt="" className="w-3 h-4 mr-2" />
         {t(`${tourKey}.description`)}
       </p>
