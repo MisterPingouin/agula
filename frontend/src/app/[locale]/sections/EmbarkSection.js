@@ -83,7 +83,7 @@ export default function EmbarkSection() {
       <div className="relative flex flex-col items-center justify-center space-y-8">
         {/* Titre */}
         <h1 className="absolute top-[-30px] text-green font-subtitle
-            text-100px z-50">
+            text-100px z-40">
           {t('title2')}
         </h1>
 
@@ -98,7 +98,7 @@ export default function EmbarkSection() {
               height={552}
               className="z-10 mt-8"
             />
-        <div className="absolute top-[56%] left-[70%] text-white font-bold font-title text-47px leading-none z-50 w-[300px]">
+        <div className="absolute top-[56%] left-[70%] text-white font-bold font-title text-47px leading-none z-40 w-[300px]">
               <p>{t('subtitle4')}</p>
               <p>{t('subtitle5')}</p>
               <p>{t('subtitle6')}</p>
@@ -114,7 +114,7 @@ export default function EmbarkSection() {
               height={533}
               className="z-0 mt-16"
             />
-            <div className="absolute bottom-[60px] right-[110px] text-white  text-content text-15px space-y-4 z-50">
+            <div className="absolute bottom-[60px] right-[110px] text-white  text-content text-15px space-y-4 z-40">
               <p className="w-[380px] leading-23px">{t('content')}</p>
               <Link href={localLink("#")} className="cursor-pointer">
                 <button className="px-14 py-2 text-white text-20px mt-8 bg-blue-3 font-content font-semibold">
