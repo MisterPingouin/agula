@@ -8,6 +8,7 @@ import Heart from "./components/Heart";
 import ChooseSection from "./sections/ChooseSection";
 import EmbarkSection from "./sections/EmbarkSection";
 import MeetSection from "./sections/MeetSection";
+import PrivatSection from "./sections/PrivatSection";
 
 
 export default function HomePage() {
@@ -27,6 +28,7 @@ export default function HomePage() {
       </section>
       <EmbarkSection />
       <MeetSection />
+      <PrivatSection />
       <Experience />
       <Heart />
     </main>
