@@ -1,10 +1,10 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useI18n, useScopedI18n } from "./../../locales/I18nContext";
 import useLocalLink from "./../hooks/useLocalLink"; 
+import React, { useState, useEffect } from 'react';
 
 
 const HomeSection = () => {
@@ -20,11 +20,25 @@ const HomeSection = () => {
     localStorage.setItem("locale", lang);
   };
 
+  const [imageVersion, setImageVersion] = useState(Date.now());
+
+  useEffect(() => {
+    const refreshImage = () => {
+      setImageVersion(Date.now());
+    };
+
+    // Écoute de l'événement "imageUpdated"
+    window.addEventListener('imageUpdated', refreshImage);
+
+    return () => {
+      window.removeEventListener('imageUpdated', refreshImage);
+    };
+  }, []);
   return (
     <section className="relative flex items-center justify-center h-screen w-full">
       <Image
-        src="/images/1500x950-lagula.webp"
-        alt={t("image_alt")}
+        src={`/images/1500x950-lagula.webp?version=${imageVersion}`}
+                alt={t("image_alt")}
         fill
         className="object-cover object-center"
         priority
