@@ -5,7 +5,7 @@ import Card from "./../components/Cards/Card";
 
 
 
-export default function Heart() {
+export default function HeartDesktop() {
     const t = useScopedI18n("heart");
     
     return (

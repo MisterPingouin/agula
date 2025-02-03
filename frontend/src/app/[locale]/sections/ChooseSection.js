@@ -32,19 +32,19 @@ export default function ChooseSection() {
       <div className="relative w-full mx-auto h-[280px]">
   <div className="absolute top-0 left-0 z-10">
     <Image
-      src="/images/montagne.jpg"
+      src="/images/montagne.webp"
       alt="Montagne"
-      width={180}
-      height={220}
+      width={189}
+      height={235}
       className="object-cover"
     />
   </div>
   <div className="absolute top-6 right-0 z-0">
     <Image
-      src="/images/sea.jpg"
+      src="/images/sea.webp"
       alt="Mer"
-      width={320}
-      height={226}
+      width={321}
+      height={227}
       className="object-cover"
     />
   </div>
@@ -92,7 +92,7 @@ export default function ChooseSection() {
           {/* Image montagne */}
           <div style={{ width: '443px', height: '552px' }} className="relative z-10">
             <Image
-              src="/images/montagnedesktop.jpg"
+              src="/images/montagnedesktop.webp"
               alt="Montagne"
               width={443}
               height={552}
@@ -108,7 +108,7 @@ export default function ChooseSection() {
           {/* Image mer */}
           <div style={{ width: '835px', height: '533px', marginTop: '20px' }} className="relative">
             <Image
-              src="/images/seadesktop.jpg"
+              src="/images/seadesktop.webp"
               alt="Mer"
               width={835}
               height={533}

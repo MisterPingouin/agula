@@ -130,16 +130,16 @@ const HeaderMobile = ({ t, menuOpen, toggleMenu }) => (
     <div className="flex space-x-12">
       <div className="flex space-x-1 pt-2">
       <Link href="tel:+33643040014">
-      <Image src="/images/phone.svg" alt="Phone" width={24} height={24} />
+      <Image src="/images/phoneheader.svg" alt="Phone" width={26} height={26} />
         </Link>
         <Link href="thttps://www.tripadvisor.fr/Attraction_Review-g663644-d25436276-Reviews-L_Agula_Marina_Croisieres-Cargese_Corse_du_Sud_Corsica.html">
-        <Image src="/images/phone.svg" alt="Tripadvisor" width={24} height={24} />
+        <Image src="/images/tripheader.svg" alt="Tripadvisor" width={26} height={26} />
         </Link>
         <Link href="https://www.facebook.com/lagulamarinacroisieres/">
-        <Image src="/images/phone.svg" alt="Instagram" width={24} height={24} />
+        <Image src="/images/instaheader.svg" alt="Instagram" width={26} height={26} />
         </Link>
         <Link href="https://www.instagram.com/lagulamarina_croisieres/">
-        <Image src="/images/phone.svg" alt="Facebook" width={24} height={24} />
+        <Image src="/images/fbheader.svg" alt="Facebook" width={26} height={26} />
         </Link>
       </div>
       <MenuButton isOpen={menuOpen} toggleMenu={toggleMenu} />

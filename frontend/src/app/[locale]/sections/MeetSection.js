@@ -34,8 +34,8 @@ export default function MeetSection() {
     <Image
       src="/images/shirt.jpg"
       alt="T-shirt lagula"
-      width={180}
-      height={220}
+      width={189}
+      height={235}
       className="object-cover"
     />
   </div>
@@ -43,8 +43,8 @@ export default function MeetSection() {
     <Image
       src="/images/sand.jpg"
       alt="Sable"
-      width={320}
-      height={226}
+      width={321}
+      height={227}
       className="object-cover"
     />
   </div>

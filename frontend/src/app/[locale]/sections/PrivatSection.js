@@ -34,8 +34,8 @@ export default function PrivatSection() {
     <Image
       src="/images/Privat1.jpg"
       alt="Privat1"
-      width={180}
-      height={220}
+      width={189}
+      height={235}
       className="object-cover"
     />
   </div>
@@ -43,8 +43,8 @@ export default function PrivatSection() {
     <Image
       src="/images/privat2.jpg"
       alt="Mer"
-      width={320}
-      height={226}
+      width={321}
+      height={227}
       className="object-cover"
     />
   </div>
