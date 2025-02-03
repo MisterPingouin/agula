@@ -39,38 +39,41 @@ const HomeSection = () => {
           <button onClick={() => changeLanguage("en")} className={`text-15px font-title ${locale === "en" ? "font-bold" : ""}`}>
             EN
           </button>
-        <a href="#">
+          <Link href="https://www.tripadvisor.fr/Attraction_Review-g663644-d25436276-Reviews-L_Agula_Marina_Croisieres-Cargese_Corse_du_Sud_Corsica.html">
           <Image
-            src="/images/whitephone.svg"
-            alt="Phone"
-            width={14}
-            height={14}
+            src="/images/triphomesection.svg"
+            alt="Trip-Advisor"
+            width={26}
+            height={26}
+            className="ml-3 mr-1"
           />
-        </a>
-        <a href="#">
+        </Link>
+        <Link href="https://www.facebook.com/lagulamarinacroisieres/">
           <Image
-            src="/images/whitephone.svg"
-            alt="Phone"
-            width={14}
-            height={14}
+            src="/images/fbhomesection.svg"
+            alt="Facebook"
+            width={10}
+            height={10}
+            className="mr-1"
           />
-        </a>
-        <a href="#">
+        </Link>
+        <Link href="https://www.instagram.com/lagulamarina_croisieres/">
           <Image
-            src="/images/whitephone.svg"
-            alt="Phone"
-            width={14}
-            height={14}
+            src="/images/instahomesection.svg"
+            alt="Instagram"
+            width={18}
+            height={18}
+            className="mr-1"
           />
-        </a>
-        <a href="#">
-          <Image
-            src="/images/whitephone.svg"
+        </Link>
+        <Link href="tel:+33643040014">
+        <Image
+            src="/images/telhomesection.svg"
             alt="Phone"
-            width={14}
-            height={14}
+            width={18}
+            height={18}
           />
-        </a>
+        </Link>
         <p className="font-content text-15px font-medium">
           +33 (0)6 43 04 00 14
         </p>
@@ -121,10 +124,9 @@ const HomeSection = () => {
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white md:-top-56 leading-none">
         <h1 className="text-35px font-bold font-title">{t("title")}</h1>
-        <p className="text-26px mx-4 font-light font-title leading-28px">
+        <p className="text-32px mx-4 font-light font-title leading-22px">
           {t("description")}
         </p>
-        <p className="text-26px mx-4 font-subtitle">{t("agency")}</p>
       </div>
       <button className="absolute bottom-0 inset-x-0 w-full mt-8 py-2 px-6 bg-blue-3 text-white font-content text-20px font-semibold md:hidden">
         {t("book_button")}

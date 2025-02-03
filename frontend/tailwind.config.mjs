@@ -42,6 +42,7 @@ export default {
         '25px' : '1.5625rem',
         '27px' : '1.688rem',
         '30px' : '1.875rem',
+        '32px' : '2rem',
         '35px' : '2.188rem',
         '45px' : '2.813rem',
         '47px' : '2.938rem',

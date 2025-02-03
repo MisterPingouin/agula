@@ -148,24 +148,24 @@ const Footer = () => {
               {t("findUs")}
             </p>
             <div className="flex space-x-0.5 mt-1">
-              <Link href="#" className="hover:text-green-3">
-                <Image
+            <Link href="thttps://www.tripadvisor.fr/Attraction_Review-g663644-d25436276-Reviews-L_Agula_Marina_Croisieres-Cargese_Corse_du_Sud_Corsica.html" className="hover:text-green-3">
+            <Image
                   src="/images/tripfooter.svg"
                   alt="Tripadvisor"
                   width={26}
                   height={26}
                 />
               </Link>
-              <Link href="#" className="hover:text-green-3">
-                <Image
+              <Link href="https://www.facebook.com/lagulamarinacroisieres/" className="hover:text-green-3">
+              <Image
                   src="/images/fbfooter.svg"
                   alt="Facebook"
                   width={26}
                   height={26}
                 />
               </Link>
-              <Link href="#" className="hover:text-green-3">
-                <Image
+              <Link href="https://www.instagram.com/lagulamarina_croisieres/" className="hover:text-green-3">
+              <Image
                   src="/images/instafooter.svg"
                   alt="Instagram"
                   width={26}
