@@ -10,6 +10,7 @@ import EmbarkSection from "./sections/EmbarkSection";
 import MeetSection from "./sections/MeetSection";
 import PrivatSection from "./sections/PrivatSection";
 import HeartDesktop from "./components/HeartDesktop";
+import FAQ from "./components/FAQ";
 
 
 export default function HomePage() {
@@ -33,6 +34,7 @@ export default function HomePage() {
       <Experience />
       <Heart />
       <HeartDesktop />
+      <FAQ />
     </main>
   );
 }

@@ -15,7 +15,7 @@ export default function HeartDesktop() {
             <p className="font-content text-15px text-center leading-23px max-w-[1000px] z-10">{t("content3")}</p>
             <p className="font-content text-15px text-center leading-23px mb-6 z-10">{t("content4")}</p>
             
-            <div className="flex justify-between items-center w-[1020px] mt-10 z-10">
+            <div className="flex justify-between items-center w-[1060px] mt-10 z-10">
                 <button className="bg-blue-3 text-white px-16 py-3 font-semibold text-20px hidden lg:block">
                     {t("book")}
                 </button>
@@ -51,7 +51,7 @@ export default function HeartDesktop() {
                 />
 
                 {/* Images */}
-                <div className="flex gap-4 z-10 w-[1020px]">
+                <div className="flex gap-4 z-10 w-[1060px]">
                     <div className="relative w-[393px] h-[502px]">
                         <Image
                             src="/images/heart1.webp"
