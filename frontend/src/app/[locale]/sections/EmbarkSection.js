@@ -13,7 +13,7 @@ export default function ChooseSection() {
         <section className="md:hidden">
         <div className="relative w-full h-[120px] mt-2">
         <Image
-          src="/images/Tracebleu.svg"
+          src="/images/tracegreen.svg"
           alt="Vague décorative"
           fill
           className="object-contain"
@@ -22,18 +22,18 @@ export default function ChooseSection() {
         <h2
           className="
             absolute inset-0 flex items-center justify-center
-            z-10 text-blue font-subtitle
+            z-10 text-green font-subtitle
             text-50px mt-4
           "
         >
-          {t("title")}
+          {t("title2")}
         </h2>
       </div>
       <div className="relative w-full mx-auto h-[280px]">
   <div className="absolute top-0 left-0 z-10">
     <Image
-      src="/images/montagne.jpg"
-      alt="Montagne"
+      src="/images/boat1desktop.jpg"
+      alt="boat1"
       width={180}
       height={220}
       className="object-cover"
@@ -41,7 +41,7 @@ export default function ChooseSection() {
   </div>
   <div className="absolute top-6 right-0 z-0">
     <Image
-      src="/images/sea.jpg"
+      src="/images/boat2.jpg"
       alt="Mer"
       width={320}
       height={226}
@@ -50,20 +50,20 @@ export default function ChooseSection() {
   </div>
   <div className="absolute inset-0 flex items-center justify-center z-20">
     <p className="text-white font-bold font-title text-27px leading-none">
-      {t("subtitle1")}<br/>
-      {t("subtitle2")}<br/>
-      {t("subtitle3")}
+      {t("subtitle4")}<br/>
+      {t("subtitle5")}<br/>
+      {t("subtitle6")}
     </p>
   </div>
 </div>
       <p className="px-5 text-15px leading-23px font-content pt-2 pb-2">
-        {t("content")}
+        {t("content2")}
       </p>
       </section>
             <div className="md:hidden flex items-center justify-center mt-5">
-              <Link href={localLink("/nos-circuits")} className="cursor-pointer">
+              <Link href={localLink("#")} className="cursor-pointer">
                 <button className="px-14 py-2 text-white text-20px bg-blue-3 font-content font-semibold">
-                  {t("circuits_button")}
+                  {t("boat_button")}
                 </button>
               </Link>
             </div>
@@ -71,7 +71,7 @@ export default function ChooseSection() {
       {/* SVG de fond */}
       <div className="absolute inset-0 bottom-[42%] -z-10">
         <Image
-          src="/images/tracebleudesktop.svg"
+          src="/images/tracegreendesktop.svg"
           alt="Tracé bleu en fond"
           fill
           className="w-full h-full"
@@ -82,33 +82,33 @@ export default function ChooseSection() {
       {/* Contenu centré */}
       <div className="relative flex flex-col items-center justify-center space-y-8">
         {/* Titre */}
-        <h1 className="absolute top-[-30px] text-blue font-subtitle
+        <h1 className="absolute top-[-30px] text-green font-subtitle
             text-100px z-50">
-          {t('title')}
+          {t('title2')}
         </h1>
 
         {/* Bloc d'images */}
         <div className="flex items-start space-x-[-100px]">
-          {/* Image montagne */}
+          {/* Image boat1 */}
           <div style={{ width: '443px', height: '552px' }} className="relative z-10">
             <Image
-              src="/images/montagnedesktop.jpg"
-              alt="Montagne"
+              src="/images/boat1desktop.jpg"
+              alt="boat1"
               width={443}
               height={552}
               className="z-10 mt-8"
             />
         <div className="absolute top-[56%] left-[70%] text-white font-bold font-title text-47px leading-none z-50 w-[300px]">
-              <p>{t('subtitle1')}</p>
-              <p>{t('subtitle2')}</p>
-              <p>{t('subtitle3')}</p>
+              <p>{t('subtitle4')}</p>
+              <p>{t('subtitle5')}</p>
+              <p>{t('subtitle6')}</p>
             </div>
           </div>
 
           {/* Image mer */}
           <div style={{ width: '835px', height: '533px', marginTop: '20px' }} className="relative">
             <Image
-              src="/images/seadesktop.jpg"
+              src="/images/boat2desktop.jpg"
               alt="Mer"
               width={835}
               height={533}
@@ -116,9 +116,9 @@ export default function ChooseSection() {
             />
             <div className="absolute bottom-[60px] right-[110px] text-white  text-content text-15px space-y-4 z-50">
               <p className="w-[380px] leading-23px">{t('content')}</p>
-              <Link href={localLink("/nos-circuits")} className="cursor-pointer">
+              <Link href={localLink("#")} className="cursor-pointer">
                 <button className="px-14 py-2 text-white text-20px mt-8 bg-blue-3 font-content font-semibold">
-                  {t("circuits_button")}
+                  {t("boat_button")}
                 </button>
               </Link>
             </div>

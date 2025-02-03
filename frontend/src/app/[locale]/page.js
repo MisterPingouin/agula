@@ -3,10 +3,11 @@
 import HomeSection from "./sections/HomeSection";
 import SliderDesktop from "./components/SliderDesktop";
 import Card from "./components/Cards/Card";
-import useLocalLink from "./hooks/useLocalLink";
 import Experience from "./components/Experience";
 import Heart from "./components/Heart";
 import ChooseSection from "./sections/ChooseSection";
+import EmbarkSection from "./sections/EmbarkSection";
+
 
 export default function HomePage() {
 
@@ -23,6 +24,7 @@ export default function HomePage() {
           imageSrc="/images/scandola-girolata.jpg"
         />
       </section>
+      <EmbarkSection />
       <Experience />
       <Heart />
     </main>
