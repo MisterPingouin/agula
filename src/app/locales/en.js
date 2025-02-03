@@ -177,6 +177,11 @@ const en = {
     content2 : "The coves of Piana, Capu Rossu, Girolata and the Scandola reserve… it’s a complete circuit, as its name suggests.",
     content3 : "Swimming in crystal clear water, foray into humid caves, visit to an isolated village, discovery of the secrets of the history of the Genoese towers, awareness of biodiversity and amazement at the imposing steep cliffs, listed as world heritage sites. Unesco… ",
     content4 : "All this in an intimate and friendly setting. You will not soon forget your excursion.",
+    book: "BOOK",
+    adult: "Adults",
+    child: "Childs",
+    space: "Seats",
+    time: "Duration",
   },
   boat:{
     title: "The Sacha",

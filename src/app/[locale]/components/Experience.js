@@ -120,7 +120,7 @@ export default function Experience() {
           className="w-auto h-auto"
         />
         </div>
-        <div className="w-11/12 md:w-10/12 h-[0.5px] bg-[#707070] mb-6"></div>
+        <div className="w-11/12 md:w-10/12 h-[0.5px] md:h-[0.75px] md:my-4 bg-[#707070] mb-6"></div>
 </section>
 );
 }

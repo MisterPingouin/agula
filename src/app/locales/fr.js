@@ -175,6 +175,11 @@ const fr = {
       content2 : "Les calanques de Piana, le Capu Rossu, Girolata et la réserve de Scandola… c’est un circuit complet, comme son nom l’indique.",
       content3 : "Baignade dans l’eau cristalline, incursion dans des grottes humides, visite d’un village isolé, découvertes des secrets de l’Histoire des tours génoises, sensibilisation à la biodiversité et ébahissement face aux imposantes falaises abruptes, inscrites au patrimoine mondial de l’Unesco… ",
       content4 : "Tout cela dans un cadre intimiste et convivial. Vous n’êtes pas prêt d’oublier votre excursion.",
+      book: "RÉSERVER",
+      adult: "Adultes",
+      child: "Enfants",
+      space: "Places",
+      time: "Durée",
     },
     boat:{
       title: "Le Sacha",
