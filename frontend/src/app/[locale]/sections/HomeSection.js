@@ -46,6 +46,7 @@ const HomeSection = () => {
             width={26}
             height={26}
             className="ml-3 mr-1"
+            style={{ height: '16px', width: 'auto' }}
           />
         </Link>
         <Link href="https://www.facebook.com/lagulamarinacroisieres/">
@@ -55,6 +56,7 @@ const HomeSection = () => {
             width={10}
             height={10}
             className="mr-1"
+            style={{ height: '16px', width: 'auto' }}
           />
         </Link>
         <Link href="https://www.instagram.com/lagulamarina_croisieres/">
@@ -70,8 +72,8 @@ const HomeSection = () => {
         <Image
             src="/images/telhomesection.svg"
             alt="Phone"
-            width={18}
-            height={18}
+            width={17}
+            height={17}
           />
         </Link>
         <p className="font-content text-15px font-medium">
@@ -124,7 +126,7 @@ const HomeSection = () => {
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white md:-top-56 leading-none">
         <h1 className="text-35px font-bold font-title">{t("title")}</h1>
-        <p className="text-32px mx-4 font-light font-title leading-22px">
+        <p className="text-32px mx-4 font-light font-title leading-23px">
           {t("description")}
         </p>
       </div>
@@ -137,15 +139,15 @@ const HomeSection = () => {
       <div className="hidden absolute bottom-[10%]  left-1/2 transform -translate-x-1/2 w-11/12 text-white py-8  md:flex justify-between">
       <div className="max-w-[20%]">
           <h3 className="text-20px font-title font-bold"><span className="font-medium pr-1">01</span>{t("embark_title")}</h3>
-          <p className="text-14px font-content font-medium mt-2">{t("embark_description")}</p>
+          <p className="text-14px font-content font-semibold mt-2">{t("embark_description")}</p>
         </div>
         <div className="max-w-[20%]">
           <h3 className="text-20px font-title font-bold"><span className="font-medium pr-1">02</span>{t("enjoy_title")}</h3>
-          <p className="text-14px font-content font-medium mt-2">{t("enjoy_description")}</p>
+          <p className="text-14px font-content font-semibold mt-2">{t("enjoy_description")}</p>
         </div>
         <div className="max-w-[20%]">
           <h3 className="text-20px font-title font-bold"><span className="font-medium pr-1">03</span>{t("live_title")}</h3>
-          <p className="text-14px font-content font-medium mt-2">{t("live_description")}</p>
+          <p className="text-14px font-content font-semibold mt-2">{t("live_description")}</p>
         </div>
 </div>
 <div className="hidden md:flex absolute bottom-[10%] w-11/12 h-0.5 opacity-50 bg-white"></div>

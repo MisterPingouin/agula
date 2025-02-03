@@ -32,7 +32,7 @@ export default function EmbarkSection() {
       <div className="relative w-full mx-auto h-[280px]">
   <div className="absolute top-0 left-0 z-10">
     <Image
-      src="/images/boat1desktop.jpg"
+      src="/images/boat1desktop.webp"
       alt="boat1"
       width={189}
       height={235}
@@ -41,7 +41,7 @@ export default function EmbarkSection() {
   </div>
   <div className="absolute top-6 right-0 z-0">
     <Image
-      src="/images/boat2.jpg"
+      src="/images/boat2.webp"
       alt="Mer"
       width={321}
       height={227}
@@ -92,7 +92,7 @@ export default function EmbarkSection() {
           {/* Image boat1 */}
           <div style={{ width: '443px', height: '552px' }} className="relative z-10">
             <Image
-              src="/images/boat1desktop.jpg"
+              src="/images/boat1desktop.webp"
               alt="boat1"
               width={443}
               height={552}
@@ -108,7 +108,7 @@ export default function EmbarkSection() {
           {/* Image mer */}
           <div style={{ width: '835px', height: '533px', marginTop: '20px' }} className="relative">
             <Image
-              src="/images/boat2desktop.jpg"
+              src="/images/boat2desktop.webp"
               alt="Mer"
               width={835}
               height={533}

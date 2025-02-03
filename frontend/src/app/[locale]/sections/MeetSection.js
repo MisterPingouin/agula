@@ -32,7 +32,7 @@ export default function MeetSection() {
       <div className="relative w-full mx-auto h-[280px]">
   <div className="absolute top-0 left-0 z-10">
     <Image
-      src="/images/shirt.jpg"
+      src="/images/shirt.webp"
       alt="T-shirt lagula"
       width={189}
       height={235}
@@ -41,7 +41,7 @@ export default function MeetSection() {
   </div>
   <div className="absolute top-6 right-0 z-0">
     <Image
-      src="/images/sand.jpg"
+      src="/images/sand.webp"
       alt="Sable"
       width={321}
       height={227}
@@ -92,7 +92,7 @@ export default function MeetSection() {
           {/* Image shirt */}
           <div style={{ width: '443px', height: '552px' }} className="relative z-10">
             <Image
-              src="/images/shirtdesktop.jpg"
+              src="/images/shirtdesktop.webp"
               alt="T-shirt lagula"
               width={443}
               height={552}
@@ -108,7 +108,7 @@ export default function MeetSection() {
           {/* Image Sable */}
           <div style={{ width: '835px', height: '533px', marginTop: '20px' }} className="relative">
             <Image
-              src="/images/sanddesktop.jpg"
+              src="/images/sanddesktop.webp"
               alt="Sable"
               width={835}
               height={533}
