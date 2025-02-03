@@ -27,34 +27,33 @@ const Footer = () => {
             />
           </Link>
         </div>
-
         {/* Retrouvez-nous */}
         <p className="mt-6 mb-3 font-medium font-title text-15px">
           {t("findUs")}
         </p>
-        <div className="flex space-x-4">
-          <Link href="#" className="hover:text-green-3">
+        <div className="flex space-x-1">
+        <Link href="thttps://www.tripadvisor.fr/Attraction_Review-g663644-d25436276-Reviews-L_Agula_Marina_Croisieres-Cargese_Corse_du_Sud_Corsica.html">
             <Image
-              src="/images/whitephone.svg"
+              src="/images/tripfooter.svg"
               alt="Tripadvisor"
-              width={14}
-              height={14}
+              width={26}
+              height={26}
             />
           </Link>
-          <Link href="#" className="hover:text-green-3">
-            <Image
-              src="/images/whitephone.svg"
+          <Link href="https://www.facebook.com/lagulamarinacroisieres/">
+          <Image
+              src="/images/fbfooter.svg"
               alt="Facebook"
-              width={14}
-              height={14}
+              width={26}
+              height={26}
             />
           </Link>
-          <Link href="#" className="hover:text-green-3">
-            <Image
-              src="/images/whitephone.svg"
+          <Link href="https://www.instagram.com/lagulamarina_croisieres/">
+          <Image
+              src="/images/instafooter.svg"
               alt="Instagram"
-              width={14}
-              height={14}
+              width={26}
+              height={26}
             />
           </Link>
         </div>
@@ -148,39 +147,39 @@ const Footer = () => {
             <p className="font-medium font-title text-13px">
               {t("findUs")}
             </p>
-            <div className="flex space-x-4 mt-2">
+            <div className="flex space-x-0.5 mt-1">
               <Link href="#" className="hover:text-green-3">
                 <Image
-                  src="/images/whitephone.svg"
+                  src="/images/tripfooter.svg"
                   alt="Tripadvisor"
-                  width={14}
-                  height={14}
+                  width={26}
+                  height={26}
                 />
               </Link>
               <Link href="#" className="hover:text-green-3">
                 <Image
-                  src="/images/whitephone.svg"
+                  src="/images/fbfooter.svg"
                   alt="Facebook"
-                  width={14}
-                  height={14}
+                  width={26}
+                  height={26}
                 />
               </Link>
               <Link href="#" className="hover:text-green-3">
                 <Image
-                  src="/images/whitephone.svg"
+                  src="/images/instafooter.svg"
                   alt="Instagram"
-                  width={14}
-                  height={14}
+                  width={26}
+                  height={26}
                 />
               </Link>
             </div>
-            <p className="mt-1 font-light font-title text-13px">
+            <p className="font-light font-title text-13px">
               @lagulamarina_croisieres 2025
             </p>
           </div>
 
           {/* Colonne 2 : Contact */}
-          <div>
+          <div className="mt-1">
             <h2 className="font-medium text-18px font-title mb-2 uppercase border-b border-white w-fit pb-1">
               {t("contact")}
             </h2>
@@ -203,7 +202,7 @@ const Footer = () => {
           </div>
 
           {/* Colonne 3 : Circuits */}
-          <div>
+          <div className="mt-1">
             <h2 className="font-medium text-18px font-title mb-2 uppercase border-b border-white w-fit pb-1">
               {t("circuits")}
             </h2>
@@ -224,7 +223,7 @@ const Footer = () => {
           </div>
 
           {/* Colonne 4 : Informations */}
-          <div>
+          <div className="mt-1">
             <h2 className="font-medium text-18px font-title mb-2 uppercase border-b border-white w-fit pb-1">
               {t("informations")}
             </h2>

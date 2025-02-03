@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/locales/client.js", "middleware.js", "src/app/locales/fr.js", "src/app/locales/en.js", "src/app/locales/server.js"  ],
+, "src/app/locales/client.js", "src/middleware.js", "src/app/locales/fr.js", "src/app/locales/en.js", "src/app/locales/server.js"  ],
   "exclude": [
     "node_modules"
   ]
