@@ -141,6 +141,17 @@ const fr = {
       content2 : "Les calanques de Piana, le Capu Rossu, Girolata et la réserve de Scandola… c’est un circuit complet, comme son nom l’indique.",
       content3 : "Baignade dans l’eau cristalline, incursion dans des grottes humides, visite d’un village isolé, découvertes des secrets de l’Histoire des tours génoises, sensibilisation à la biodiversité et ébahissement face aux imposantes falaises abruptes, inscrites au patrimoine mondial de l’Unesco… ",
       content4 : "Tout cela dans un cadre intimiste et convivial. Vous n’êtes pas prêt d’oublier votre excursion.",
+    },
+    boat:{
+      title: "Le Sacha",
+      subtitle: "Semi rigide de 12 personnes maximum, équipé de moteur dernière génération très silencieux, pour un moment de partage et de convivialité favorisée par le nombre limité de passagers.",
+      subtitle2: "Semi-rigide intimiste",
+      content: "Votre promenade aura lieu à bord du « Sacha ». Ce semi-rigide de 9 mètres, capable d’accueillir jusqu’à 12 personnes, offre une atmosphère intimiste et conviviale. Il est idéal pour naviguer au cœur des plus beaux sites de nos côtes. Manié avec précaution par son capitaine expérimenté, il a l’habitude de se faufiler dans les grottes, côtoyer les failles et pénétrer dans les petites criques.",
+      content2: "fabriqué en 2023, notre bateau, un semi-rigide de 9m limité à 12 passagers est idéal pour naviguer au cœur des plus beaux sites de nos côtes.",
+      subtitle3: "Moderne et silencieux",
+      content3: "Fabriqué en 2023, le « Sacha » est équipé de moteurs dernière génération particulièrement silencieux. L’expérience de navigation est paisible et confortable et l’environnement naturel, préservé au maximum des nuisances sonores.",
+      content4: "pour toutes nos balades, des coupes-vents, des masques et des tubas sont mis à votre disposition sur le bateau.",
+      confort: "Pour votre confort, prévoyez bien les protections solaires (crèmes, t-shirts, chapeaux, casquettes, lunettes…) et de quoi vous hydrater."
     }
 };
 

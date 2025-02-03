@@ -7,9 +7,7 @@ export default function CircuitsPage() {
   const t = useScopedI18n("circuits");
 
   return (
-    <main className="text-black">
-      <div className="h-[86px]"></div>
-
+    <main className="text-black mt-[86px]">
       {/* Titre et description */}
       <div className="flex flex-col justify-center gap-2 mt-6 items-center px-8">
         <h1 className="font-subtitle text-50px md:text-80px text-green-2">{t("title")}</h1>

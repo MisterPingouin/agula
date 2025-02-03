@@ -88,7 +88,7 @@ const HeaderContent = ({ t, t1, localLink }) => {
 
   const links = [
     { name: t1("circuits"), href: localLink("/nos-circuits") },
-    { name: t1("boat"), href: "#bateau" },
+    { name: t1("boat"), href: localLink("/bateau") },
     { name: t1("team"), href: "#equipe" },
     { name: t1("commitments"), href: "#engagements" },
     { name: t1("private"), href: "#privatisation" },
@@ -125,7 +125,7 @@ const HeaderContent = ({ t, t1, localLink }) => {
 const HeaderMobile = ({ t, menuOpen, toggleMenu }) => (
   <div className="flex items-center justify-between px-4 py-3">
     <Link href="/" className="cursor-pointer">
-      <Image src="/images/logo.svg" alt={t("header.logo_alt")} width={120} height={40} />
+      <Image src="/images/logo.svg" alt={t("header.logo_alt")} width={129} height={55} className="w-auto h-auto" />
     </Link>
     <div className="flex space-x-12">
       <div className="flex space-x-1 pt-2">

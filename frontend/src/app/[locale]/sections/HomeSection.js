@@ -95,11 +95,11 @@ const HomeSection = () => {
         >
           {t1("circuits")}
         </Link>    
-            <a
-              href="#"
-            >
+        <Link
+          href={localLink("/bateau")}
+        >
               {t1('boat')}
-            </a>
+              </Link> 
             <a
               href="#"
             >

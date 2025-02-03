@@ -142,6 +142,17 @@ const en = {
     content2 : "The coves of Piana, Capu Rossu, Girolata and the Scandola reserve… it’s a complete circuit, as its name suggests.",
     content3 : "Swimming in crystal clear water, foray into humid caves, visit to an isolated village, discovery of the secrets of the history of the Genoese towers, awareness of biodiversity and amazement at the imposing steep cliffs, listed as world heritage sites. Unesco… ",
     content4 : "All this in an intimate and friendly setting. You will not soon forget your excursion.",
+  },
+  boat:{
+    title: "The Sacha",
+    subtitle: "Semi-rigid for 12 people maximum, equipped with the latest generation very quiet engine, for a moment of sharing and conviviality favored by the limited number of passengers.",
+    subtitle2: "Intimate semi-rigid",
+    content: "Your walk will take place aboard the “Sacha”. This 9 meter semi-rigid, capable of accommodating up to 12 people, offers an intimate and friendly atmosphere. It is ideal for sailing through the heart of the most beautiful sites on our coasts. Handled with care by its experienced captain, it is used to sneaking into caves, skirting faults and penetrating small coves.",
+    content2: "manufactured in 2023, our boat, a 9m semi-rigid limited to 12 passengers, is ideal for sailing to the heart of the most beautiful sites on our coasts.",
+    subtitle3: "Modern and quiet",
+    content3: "Manufactured in 2023, the “Sacha” is equipped with particularly quiet latest generation engines. The navigation experience is peaceful and comfortable and the natural environment is preserved as much as possible from noise pollution.",
+    content4: "For all our trips, windbreakers, masks and snorkels are available to you on the boat.",
+    confort: "For your comfort, bring sun protection (creams, t-shirts, hats, caps, glasses, etc.) and something to hydrate yourself."
   }
 };
 
