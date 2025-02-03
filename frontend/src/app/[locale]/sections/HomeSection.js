@@ -135,15 +135,15 @@ const HomeSection = () => {
       <div className="hidden absolute bottom-[10%]  left-1/2 transform -translate-x-1/2 w-11/12 text-white py-8  md:flex justify-between">
       <div className="max-w-[20%]">
           <h3 className="text-20px font-title font-bold"><span className="font-medium pr-1">01</span>{t("embark_title")}</h3>
-          <p className="text-14px font-content mt-2">{t("embark_description")}</p>
+          <p className="text-14px font-content font-medium mt-2">{t("embark_description")}</p>
         </div>
         <div className="max-w-[20%]">
           <h3 className="text-20px font-title font-bold"><span className="font-medium pr-1">02</span>{t("enjoy_title")}</h3>
-          <p className="text-14px font-content mt-2">{t("enjoy_description")}</p>
+          <p className="text-14px font-content font-medium mt-2">{t("enjoy_description")}</p>
         </div>
         <div className="max-w-[20%]">
           <h3 className="text-20px font-title font-bold"><span className="font-medium pr-1">03</span>{t("live_title")}</h3>
-          <p className="text-14px font-content mt-2">{t("live_description")}</p>
+          <p className="text-14px font-content font-medium mt-2">{t("live_description")}</p>
         </div>
 </div>
 <div className="hidden md:flex absolute bottom-[10%] w-11/12 h-0.5 opacity-50 bg-white"></div>

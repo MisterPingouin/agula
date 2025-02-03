@@ -2,92 +2,26 @@
 
 import HomeSection from "./sections/HomeSection";
 import SliderDesktop from "./components/SliderDesktop";
-import { useScopedI18n } from "./../locales/I18nContext";
-import Image from "next/image";
-import Card from "./components/Cards/Card"; 
-import Link from "next/link";
+import Card from "./components/Cards/Card";
 import useLocalLink from "./hooks/useLocalLink";
-import { usePathname } from "next/navigation";
 import Experience from "./components/Experience";
 import Heart from "./components/Heart";
-
+import ChooseSection from "./sections/ChooseSection";
 
 export default function HomePage() {
-  const t = useScopedI18n("page");
-    const pathname = usePathname();
-    const localLink = useLocalLink();
 
   return (
     <main>
       <HomeSection />
-
-      <section className="relative w-full h-[120px] mt-2">
-        <Image
-          src="/images/Tracebleu.svg"
-          alt="Vague décorative"
-          fill
-          className="object-contain"
-          priority
-        />
-        <h2
-          className="
-            absolute inset-0 flex items-center justify-center
-            z-10 text-blue font-subtitle
-            text-50px mt-4
-          "
-        >
-          {t("title")}
-        </h2>
-      </section>
-      <section className="relative w-full mx-auto h-[280px]">
-  <div className="absolute top-0 left-0 z-10">
-    <Image
-      src="/images/montagne.jpg"
-      alt="Montagne"
-      width={180}
-      height={220}
-      className="object-cover"
-    />
-  </div>
-  <div className="absolute top-6 right-0 z-0">
-    <Image
-      src="/images/sea.jpg"
-      alt="Mer"
-      width={320}
-      height={226}
-      className="object-cover"
-    />
-  </div>
-  <div className="absolute inset-0 flex items-center justify-center z-20">
-    <p className="text-white font-bold font-title text-27px leading-none">
-      {t("subtitle1")}<br/>
-      {t("subtitle2")}<br/>
-      {t("subtitle3")}
-    </p>
-  </div>
-</section>
-      <p className="px-9 text-15px leading-23px font-content pt-4">
-        {t("content")}
-      </p>
-
-      <div className="flex items-center justify-center mt-5">
-      <Link href={localLink("/nos-circuits")} className="cursor-pointer">
-        <button className="px-14 py-2 text-white text-20px bg-blue-3 font-content font-semibold">
-          {t("circuits_button")}
-        </button>
-        </Link>
-      </div>
+      <ChooseSection />
       <SliderDesktop />
       <section className="flex flex-col mt-8 px-4 gap-4 max-w-md mx-auto md:hidden">
         <Card tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
+        <Card tourKey="calanquesPiana" imageSrc="/images/calanques-piana.jpg" />
         <Card
-            tourKey="calanquesPiana"
-            imageSrc="/images/calanques-piana.jpg"
-          />
-                    <Card
-            tourKey="scandolaGirolata"
-            imageSrc="/images/scandola-girolata.jpg"
-          />
+          tourKey="scandolaGirolata"
+          imageSrc="/images/scandola-girolata.jpg"
+        />
       </section>
       <Experience />
       <Heart />
