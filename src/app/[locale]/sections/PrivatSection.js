@@ -32,7 +32,7 @@ export default function PrivatSection() {
       <div className="relative w-full mx-auto h-[280px]">
   <div className="absolute top-0 left-0 z-10">
     <Image
-      src="/images/Privat1.webp"
+      src="/images/privat1.webp"
       alt="Privat1"
       width={189}
       height={235}
@@ -92,7 +92,7 @@ export default function PrivatSection() {
           {/* Image Privat1 */}
           <div style={{ width: '443px', height: '552px' }} className="relative z-10">
             <Image
-              src="/images/Privat1desktop.webp"
+              src="/images/privat1desktop.webp"
               alt="Privat1"
               width={443}
               height={552}
