@@ -61,7 +61,7 @@ export default function PrivatSection() {
       </p>
       </section>
             <div className="md:hidden flex items-center justify-center mt-5">
-              <Link href={localLink("#")} className="cursor-pointer">
+              <Link href={localLink("/privatisation")} className="cursor-pointer">
                 <button className="px-14 py-2 text-white text-20px bg-blue-3 font-content font-semibold">
                   {t("privatization_button")}
                 </button>
@@ -116,7 +116,7 @@ export default function PrivatSection() {
             />
             <div className="absolute bottom-[60px] right-[110px] text-white  text-content text-15px space-y-4 z-40">
               <p className="w-[380px] leading-23px">{t('content4')}</p>
-              <Link href={localLink("#")} className="cursor-pointer">
+              <Link href={localLink("/privatisation")} className="cursor-pointer">
                 <button className="px-14 py-2 text-white text-20px mt-8 bg-blue-3 font-content font-semibold">
                   {t("privatization_button")}
                 </button>

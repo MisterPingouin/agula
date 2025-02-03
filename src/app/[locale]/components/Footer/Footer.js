@@ -101,7 +101,7 @@ const Footer = () => {
           <Link href="#" className="hover:text-green-3">
             {t("reserver")}
           </Link>
-          <Link href="#" className="hover:text-green-3">
+          <Link href={localLink("/privatisation")} className="hover:text-green-3">
             {t("privatisation")}
           </Link>
           <Link href="#" className="hover:text-green-3">

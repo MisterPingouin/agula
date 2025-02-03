@@ -109,7 +109,7 @@ const HomeSection = () => {
             >
 {t1('commitments')}            </a>
 <a
-              href="#"
+              href={localLink("/privatisation")}
             >
 {t1('private')}            </a>
 <a

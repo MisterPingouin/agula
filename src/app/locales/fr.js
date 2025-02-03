@@ -82,7 +82,7 @@ const fr = {
     },
 
     grandTourSunset: {
-      title: "Le Grand Tour coucher soleil",
+      title: "Le Grand Tour sunset",
       description:
         "Capu Rossu - Calanques de Piana (baignade 10 min) - Golfe de Porto - Girolata (arrêt 30 min) - Scandola",
       price: "Adultes : 80€ - Enfants : 70€",
@@ -95,7 +95,7 @@ const fr = {
       duration: "Durée : 1h45",
     },
     scandolaGirolataSunset: {
-      title: "Scandola Girolata coucher soleil",
+      title: "Scandola Girolata sunset",
       description: "Scandola - Girolata (arrêt 30 min)",
       price: "Adultes : 65€ - Enfants : 55€",
       duration: "Durée : 2h45",
@@ -103,6 +103,40 @@ const fr = {
 
     reserveButton: "RÉSERVER",
     learnMoreButton: "EN SAVOIR PLUS",
+  },
+  cardsprivat: {
+    grandTour: {
+      title: "Le Grand Tour",
+      description:
+        "Capu Rossu - Calanques de Piana (baignade 10 min) - Golfe de Porto - Girolata (arrêt 30 min) - Scandola",
+      price: "Tarif sur devis",
+    },
+    calanquesPiana: {
+      title: "Les Calanques de Piana",
+      description: "Capu Rossu - Calanques de Piana (baignade 10 min)",
+      price: "Tarif sur devis",
+    },
+    scandolaGirolata: {
+      title: "Scandola Girolata",
+      description: "Scandola - Girolata (arrêt 30 min)",
+      price: "Tarif sur devis",
+    },
+    grandTourSunset: {
+      title: "Le Grand Tour sunset",
+      description:
+        "Capu Rossu - Calanques de Piana (baignade 10 min) - Golfe de Porto - Girolata (arrêt 30 min) - Scandola",
+        price: "Tarif sur devis",
+      },
+    calanquesPianaSunset: {
+      title: "Les Calanques de Piana sunset",
+      description: "Capu Rossu - Calanques de Piana (baignade 10 min)",
+      price: "Tarif sur devis",
+    },
+    scandolaGirolataSunset: {
+      title: "Scandola Girolata sunset",
+      description: "Scandola - Girolata (arrêt 30 min)",
+      price: "Tarif sur devis",
+    },
   },
     footer: {
       findUs: "Retrouvez-nous",
@@ -152,7 +186,18 @@ const fr = {
       content3: "Fabriqué en 2023, le « Sacha » est équipé de moteurs dernière génération particulièrement silencieux. L’expérience de navigation est paisible et confortable et l’environnement naturel, préservé au maximum des nuisances sonores.",
       content4: "pour toutes nos balades, des coupes-vents, des masques et des tubas sont mis à votre disposition sur le bateau.",
       confort: "Pour votre confort, prévoyez bien les protections solaires (crèmes, t-shirts, chapeaux, casquettes, lunettes…) et de quoi vous hydrater."
-    }
+    },
+    privat : {
+      title: "Privatisation du bateau avec skipper",
+      subtitle: "Pour l’un de nos circuits ou en formule personnalisée : devis sur simple demande.",
+      subtitle2: "Programmer une",
+      subtitle2_5: "excursion privée",
+      content1: "Soirée romantique en vue ? Demande en mariage ? Enterrement de vie de jeune fille (EVJF) ou de garçon (EVG) ? Séminaire ou team building ? Anniversaire ? Toutes les occasions sont bonnes pour programmer une excursion privée à la journée ou demi-journée : intimité garantie, arrêts baignade à la demande, choix du parcours…",
+      content2: "Si vous souhaitez passer un moment privilégié en amoureux, en famille, entre amis ou collègues, contactez-nous simplement. Nous établirons un devis en fonction de vos envies : durée, circuit, repas, visites et activités supplémentaires…",
+      content3: "Notre équipe est à l’écoute de vos aspirations et saura vous donner des conseils pour faire de votre itinéraire à la carte une expérience idéale.",
+      content4 : "la privatisation du bateau avec skipper se limite à 12 passagers.",
+      subtitle3: "Nos circuits en privatif",
+    },
 };
 
 export default fr;

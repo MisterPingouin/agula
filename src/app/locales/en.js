@@ -105,6 +105,41 @@ const en = {
     reserveButton: "BOOK",
     learnMoreButton: "LEARN MORE",
   },
+  cardsprivat: {
+    grandTour: {
+      title: "The Grand Tour",
+      description:
+        "Capu Rossu - Calanques de Piana (10 min swim) - Porto Gulf - Girolata (30 min stop) - Scandola",
+      price: "Price on quote",
+        },
+    calanquesPiana: {
+      title: "The Calanques of Piana",
+      description: "Capu Rossu - Calanques de Piana (10 min swim)",
+      price: "Price on quote",
+    },
+    scandolaGirolata: {
+      title: "Scandola Girolata",
+      description: "Scandola - Girolata (30 min stop)",
+      price: "Price on quote",
+    },
+
+    grandTourSunset: {
+      title: "The Grand Tour sunset",
+      description:
+        "Capu Rossu - Calanques de Piana (10 min swim) - Porto Gulf - Girolata (30 min stop) - Scandola",
+        price: "Price on quote",
+      },
+    calanquesPianaSunset: {
+      title: "The Calanques of Piana sunset",
+      description: "Capu Rossu - Calanques de Piana (10 min swim)",
+      price: "Price on quote",
+    },
+    scandolaGirolataSunset: {
+      title: "Scandola Girolata sunset",
+      description: "Scandola - Girolata (30 min stop)",
+      price: "Price on quote",
+    },
+  },
   footer: {
     findUs: "Find us",
     contact: "CONTACT",
@@ -153,6 +188,16 @@ const en = {
     content3: "Manufactured in 2023, the “Sacha” is equipped with particularly quiet latest generation engines. The navigation experience is peaceful and comfortable and the natural environment is preserved as much as possible from noise pollution.",
     content4: "For all our trips, windbreakers, masks and snorkels are available to you on the boat.",
     confort: "For your comfort, bring sun protection (creams, t-shirts, hats, caps, glasses, etc.) and something to hydrate yourself."
+  },
+  privat : {
+    title: "Privatization of the boat with skipper",
+    subtitle: "For one of our circuits or in a personalized formula: quote on request..",
+    subtitle2: "Schedule a private excursion",
+    content1: "Romantic evening in sight? Marriage proposal? Bachelor party (hen party) or bachelor party (stag do)? Seminar or team building? Birthday ? Any opportunity is good to plan a private day or half-day excursion: guaranteed privacy, swimming stops on request, choice of route...",
+    content2: "If you want to spend a special moment with your partner, family, friends or colleagues, simply contact us. We will establish a quote based on your wishes: duration, circuit, meals, visits and additional activities…",
+    content3: "Our team listens to your aspirations and will be able to give you advice to make your tailor-made itinerary an ideal experience.",
+    content4 : "privatization of the boat with skipper is limited to 12 passengers.",
+    subtitle3: "Nos circuits en privatif",
   }
 };
 

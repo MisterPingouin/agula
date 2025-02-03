@@ -61,7 +61,7 @@ export default function EmbarkSection() {
       </p>
       </section>
             <div className="md:hidden flex items-center justify-center mt-5">
-              <Link href={localLink("#")} className="cursor-pointer">
+              <Link href={localLink("/bateau")} className="cursor-pointer">
                 <button className="px-14 py-2 text-white text-20px bg-blue-3 font-content font-semibold">
                   {t("boat_button")}
                 </button>
