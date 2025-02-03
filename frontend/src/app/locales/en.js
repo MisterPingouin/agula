@@ -48,7 +48,7 @@ const en = {
     subtitle8: "family and",
     subtitle9: "commited",
     content3: "Jean-Baptiste the skipper, Gérald the captain and Claire the receptionist, form a small, attentive and experienced team. Their in-depth knowledge of the place and their sense of service make it possible to offer everyone a moment that is as magical as it is friendly. Don’t hesitate to ask them any questions you have.",
-    team_button: "OUT TEAM",
+    team_button: "OUR TEAM",
     title4: "Privatize",
     subtitle10: "With family",
     subtitle11: "For two",

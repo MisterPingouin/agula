@@ -7,6 +7,7 @@ import Experience from "./components/Experience";
 import Heart from "./components/Heart";
 import ChooseSection from "./sections/ChooseSection";
 import EmbarkSection from "./sections/EmbarkSection";
+import MeetSection from "./sections/MeetSection";
 
 
 export default function HomePage() {
@@ -25,6 +26,7 @@ export default function HomePage() {
         />
       </section>
       <EmbarkSection />
+      <MeetSection />
       <Experience />
       <Heart />
     </main>
