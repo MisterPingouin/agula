@@ -189,7 +189,8 @@ const fr = {
     },
     privat : {
       title: "Privatisation du bateau avec skipper",
-      subtitle: "Pour l’un de nos circuits ou en formule personnalisée : devis sur simple demande.",
+      subtitle: "Pour l’un de nos circuits ou en formule personnalisée :",
+      subtitle1: "devis sur simple demande.",
       subtitle2: "Programmer une",
       subtitle2_5: "excursion privée",
       content1: "Soirée romantique en vue ? Demande en mariage ? Enterrement de vie de jeune fille (EVJF) ou de garçon (EVG) ? Séminaire ou team building ? Anniversaire ? Toutes les occasions sont bonnes pour programmer une excursion privée à la journée ou demi-journée : intimité garantie, arrêts baignade à la demande, choix du parcours…",

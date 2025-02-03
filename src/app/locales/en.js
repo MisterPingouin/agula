@@ -191,8 +191,10 @@ const en = {
   },
   privat : {
     title: "Privatization of the boat with skipper",
-    subtitle: "For one of our circuits or in a personalized formula: quote on request..",
-    subtitle2: "Schedule a private excursion",
+    subtitle: "For one of our circuits or in a personalized formula: quote on request.",
+    subtitle1: "quote on request.",
+    subtitle2: "Schedule a",
+    subtitle2_5: "private excursion",
     content1: "Romantic evening in sight? Marriage proposal? Bachelor party (hen party) or bachelor party (stag do)? Seminar or team building? Birthday ? Any opportunity is good to plan a private day or half-day excursion: guaranteed privacy, swimming stops on request, choice of route...",
     content2: "If you want to spend a special moment with your partner, family, friends or colleagues, simply contact us. We will establish a quote based on your wishes: duration, circuit, meals, visits and additional activities…",
     content3: "Our team listens to your aspirations and will be able to give you advice to make your tailor-made itinerary an ideal experience.",
