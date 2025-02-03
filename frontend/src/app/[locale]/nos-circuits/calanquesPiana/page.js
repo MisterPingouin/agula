@@ -2,7 +2,7 @@
 
 import { useScopedI18n } from "./../../../locales/I18nContext";
 
-export default function CircuitsPage() {
+export default function CalanquesPage() {
   const t = useScopedI18n("grandTour");
 
   return (

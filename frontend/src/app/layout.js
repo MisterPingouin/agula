@@ -1,8 +1,8 @@
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import { roboto, msMadi, sourceSans3 } from "./fonts";
+import Header from "./[locale]/components/Header/Header";
+import Footer from "./[locale]/components/Footer/Footer";
+import { roboto, msMadi, sourceSans3 } from "./[locale]/fonts";
 import "./globals.css";
-import { I18nProvider } from "../locales/I18nContext";
+import { I18nProvider } from "./locales/I18nContext";
 
 export const metadata = {
   title: "L'Agula Marina - Croisières",
