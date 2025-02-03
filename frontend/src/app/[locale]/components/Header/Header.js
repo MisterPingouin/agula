@@ -123,24 +123,24 @@ const HeaderContent = ({ t, t1, localLink }) => {
 };
 
 const HeaderMobile = ({ t, menuOpen, toggleMenu }) => (
-  <div className="flex items-center justify-between px-4 py-3 lg:px-8">
+  <div className="flex items-center justify-between px-4 py-3">
     <Link href="/" className="cursor-pointer">
       <Image src="/images/logo.svg" alt={t("header.logo_alt")} width={120} height={40} />
     </Link>
     <div className="flex space-x-12">
-      <div className="pt-2 flex space-x-1">
-        <a href="#">
-          <Image src="/images/phone.svg" alt="Phone" width={24} height={24} />
-        </a>
-        <a href="#">
-          <Image src="/images/phone.svg" alt="Tripadvisor" width={24} height={24} />
-        </a>
-        <a href="#">
-          <Image src="/images/phone.svg" alt="Instagram" width={24} height={24} />
-        </a>
-        <a href="#">
-          <Image src="/images/phone.svg" alt="Facebook" width={24} height={24} />
-        </a>
+      <div className="flex space-x-1 pt-2">
+      <Link href="tel:+33643040014">
+      <Image src="/images/phone.svg" alt="Phone" width={24} height={24} />
+        </Link>
+        <Link href="thttps://www.tripadvisor.fr/Attraction_Review-g663644-d25436276-Reviews-L_Agula_Marina_Croisieres-Cargese_Corse_du_Sud_Corsica.html">
+        <Image src="/images/phone.svg" alt="Tripadvisor" width={24} height={24} />
+        </Link>
+        <Link href="https://www.facebook.com/lagulamarinacroisieres/">
+        <Image src="/images/phone.svg" alt="Instagram" width={24} height={24} />
+        </Link>
+        <Link href="https://www.instagram.com/lagulamarina_croisieres/">
+        <Image src="/images/phone.svg" alt="Facebook" width={24} height={24} />
+        </Link>
       </div>
       <MenuButton isOpen={menuOpen} toggleMenu={toggleMenu} />
     </div>
