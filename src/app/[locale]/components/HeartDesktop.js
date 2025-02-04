@@ -8,7 +8,7 @@ export default function HeartDesktop() {
 
     return (
         <section className="hidden md:flex flex-col justify-center items-center leading-tight mb-6 relative">
-            <h5 className="font-subtitle text-100px text-green-2 z-10">{t("title")}</h5>
+            <h1 className="font-subtitle text-100px text-green-2 z-10">{t("title")}</h1>
             <p className="font-title font-bold text-35px z-10">{t("subtitle")}</p>
             <p className="mt-4 font-content text-15px text-center leading-23px z-10">{t("content1")}</p>
             <p className="font-content text-15px text-center leading-23px z-10">{t("content2")}</p>
