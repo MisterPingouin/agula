@@ -47,7 +47,7 @@ export default function LoginPage() {
         onChange={(e) => setPassword(e.target.value)}
         className="p-2 border rounded"
       />
-      <button type="submit" className="bg-blue-500 text-white py-2 rounded">Se connecter</button>
+      <button type="submit" className="bg-blue-3 font-bold text-white py-2 rounded">Se connecter</button>
       {error && <p className="text-red-500">{error}</p>}
     </form>
   );
