@@ -231,6 +231,10 @@ const fr = {
       content9: "La sublime réserve naturelle de Scandola. Classée au patrimoine mondial de l’Unesco, elle ne se visite qu’en bateau. C’est le moment d’explorer ses failles, admirer sa biodiversité, comprendre son besoin de préservation. Jean-Baptiste vous dévoile tout.",
       book: "RÉSERVER",
       subtitle8: "Nos circuits",
+    },
+    engage: {
+      title: "Nos engagements",
+      content: "Notre compagnie est membre de l’Association des Bateliers de Scandola. Signataire de la charte de bonne conduite et d’engagement à protéger la Réserve de Scandola établie par l’Association en concertation avec le Parc Naturel Régional de Corse, elle s’applique à en respecter chaque article.",
     }
 };
 

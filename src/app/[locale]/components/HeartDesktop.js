@@ -58,8 +58,8 @@ export default function HeartDesktop() {
                             alt="Calanques"
                             width={393}
                             height={502}
-                            className="object-cover"
-                        />
+                            style={{ height: '502px', width: 'auto' }}
+                            />
                     </div>
                     <div className="relative w-[667px] h-[328px]">
                         <Image

@@ -233,6 +233,10 @@ const en = {
     content9: "The sublime Scandola nature reserve. Listed as a UNESCO world heritage site, it can only be visited by boat. Now is the time to explore its faults, admire its biodiversity, understand its need for preservation. Jean-Baptiste reveals everything to you.",
     book: "BOOK",
     subtitle8: "Our tours",
+  },
+  engage: {
+    title: "Our commitments",
+    content: "Our company is a member of the Scandola Boatmen’s Association. Signatory of the charter of good conduct and commitment to protect the Scandola Reserve established by the Association in consultation with the Corsica Regional Natural Park, it strives to respect each article.",
   }
 };
 
