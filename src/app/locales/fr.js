@@ -204,6 +204,34 @@ const fr = {
       content4 : "la privatisation du bateau avec skipper se limite à 12 passagers.",
       subtitle3: "Nos circuits en privatif",
     },
+    faq: {
+      question1: "Faut-il réserver à l'avance ?",
+      answer1: "Oui, en raison de la capacité du navire (12 passagers) et de la forte demande en période estivale, nous vous conseillons de réserver dès que possible afin de garantir vos places à bord.",
+      more: "EN SAVOIR PLUS",
+    },
+    grandTour: {
+      title: "Le Grand Tour",
+      subtitle1 : "Rendez-vous sur le port de Cargèse pour monter à bord du Sacha.",
+      subtitle2:  "Au programme : découverte du Capu Rossu et des calanques de Piana !",
+      price: "Adultes : 80€ - Enfants : 70€",
+      time: "Durée : 3h45",
+      content: "Départ port de Cargèse > Capu Rossu > Calanques de Piana (baignade 10 min) > Golfe de Porto > Girolata (arrêt 30 min) > Scandola > Retour port Cargèse",
+      subtitle3: "Direction les",
+      subtitle4: "Calanques de Piana",
+      content2: "Votre skipper, Jean-Baptiste, vous dirige d’abord vers le Capu Rossu et les calanques de Piana.",
+      content3: "Ces « étonnants rochers de granit rose, hauts de quatre cents mètres, étranges, torturés, courbés, rongés par le temps » tels que décrits par Guy de Maupassant, font partie des merveilles incontournables en Corse. Les calanques de Piana sont inscrites au patrimoine mondial de l’Unesco.",
+      content4: "À cette étape, le bateau se faufile dans des grottes saisissantes et fait un arrêt dans une jolie petite crique où l’eau évoque une piscine naturelle. Vous avez la possibilité d’y plonger, selon les conditions météorologiques",
+      content5: "arrêt baignade 10 minutes",
+      subtitle5: "Girolata",
+      content6: "Le village de pêcheurs de Girolata. Uniquement accessible à pied ou en bateau, ce hameau se situe aux portes de la réserve de Scandola. Pour que vous puissiez découvrir par vous-même ce petit trésor isolé, un arrêt de 30 minutes est prévu (durée variable selon la période).",
+      content7: "arrêt de 30 minutes",
+      content8: "Entre ces étapes, vous parcourez le golfe de Porto avec un aperçu du Monte Sininu et des tours génoises comme celle d’Omigna dont l’histoire n’aura plus de secret pour vous.",
+      subtitle6: "La réserve naturelle",
+      subtitle7: "de Scandola",
+      content9: "La sublime réserve naturelle de Scandola. Classée au patrimoine mondial de l’Unesco, elle ne se visite qu’en bateau. C’est le moment d’explorer ses failles, admirer sa biodiversité, comprendre son besoin de préservation. Jean-Baptiste vous dévoile tout.",
+      book: "RÉSERVER",
+      subtitle8: "Nos circuits",
+    }
 };
 
 export default fr;

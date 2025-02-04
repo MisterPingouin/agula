@@ -79,9 +79,9 @@ export default function Experience() {
         <Image
           src="/images/drink.svg"
           alt="Drinks"
-          width={56}
+          width={55}
           height={56}
-          className="w-auto h-auto"
+          style={{ height: 'auto', width: '56px' }}
                   />
         <p className="mt-4 text-center">{t("drink1")}</p>
         <p className="text-center">{t("drink2")}</p>

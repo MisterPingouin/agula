@@ -44,8 +44,8 @@ export default function BateauPage() {
             src="/images/ancre2.svg"
             alt="Bateau Sacha"
             width={50}
-            height={56}
-            className="w-auto h-auto"
+            height={57}
+            style={{ height: '50px', width: 'auto' }}
           />
         </div>
         <p className="font-subtitle text-25px leading-29px py-6 text-center md:hidden">
@@ -74,7 +74,8 @@ export default function BateauPage() {
                 src="/images/ancre2.svg"
                 alt="Bateau Sacha"
                 width={50}
-                height={56}
+                height={57}
+                style={{ height: '50px', width: 'auto' }}
               />
               <p className="font-subtitle text-25px leading-29px w-4/6">
                 {t("content2")}

@@ -52,7 +52,7 @@ export default function PrivatisationPage() {
           alt="Bateau Sacha"
           width={393}
           height={502}
-          className="object-cover h-auto"
+          style={{ height: '502px', width: 'auto' }}
           priority
         />  
         <div className="hidden md:flex flex-col max-w-[563px]">
