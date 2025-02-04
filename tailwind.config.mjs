@@ -21,6 +21,7 @@ export default {
           DEFAULT: "#009DA5",
           2: "#029EA8",
           3: "#94DBDE",
+          4: "#7FC6CB",
         },
         bordergray : "#707070",
       },

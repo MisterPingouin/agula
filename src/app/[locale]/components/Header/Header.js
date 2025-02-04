@@ -63,7 +63,7 @@ const HeaderContent = ({ t, t1, localLink }) => {
   const links = [
     { name: t1("circuits"), href: localLink("/nos-circuits") },
     { name: t1("boat"), href: localLink("/bateau") },
-    { name: t1("team"), href: "#equipe" },
+    { name: t1("team"), href: localLink("/equipe") },
     { name: t1("commitments"), href: "#engagements" },
     { name: t1("private"), href: localLink("/privatisation") },
     { name: t1("gallery"), href: "#galerie" },

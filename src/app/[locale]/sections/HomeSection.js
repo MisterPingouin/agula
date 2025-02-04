@@ -99,18 +99,18 @@ const HomeSection = () => {
         >
               {t1('boat')}
               </Link> 
-            <a
-              href="#"
-            >
-{t1('team')}            </a>
-<a
-              href="#"
-            >
-{t1('commitments')}            </a>
-<a
-              href={localLink("/privatisation")}
-            >
-{t1('private')}            </a>
+
+        <Link
+          href={localLink("/equipe")}
+        >
+              {t1('team')}
+              </Link> 
+{t1('commitments')}            
+<Link
+          href={localLink("/privatisation")}
+        >
+              {t1('private')}
+              </Link> 
 <a
               href="#"
             >

@@ -227,6 +227,18 @@ const fr = {
       answer10: "N/A",
       more: "EN SAVOIR PLUS"
     },
+    equipe: {
+      title: "L'équipe",
+      subtitle: "Notre équipe est à dimension familiale, expérimentée et du pays. Nous avons à cœur de transmettre notre savoir et notre expérience dans un cadre chaleureux et accessible.  Pour vous satisfaire de la première prise de contact jusqu’à la fin  de votre traversée, nous œuvrons à trois.",
+      subtitle1: "Jean-Baptiste",
+      content: "Fils et petit-fils de pêcheurs cargésiens, Jean-Baptiste a monté la compagnie l’Agula Marina croisières. Sa volonté est de partager sa passion pour la beauté sauvage de sa région natale. Depuis tout petit, il explore la mer. Il en connaît chaque crique, chaque grotte, chaque sillon. Son plus grand plaisir est de faire découvrir tous les secrets cachés des paysages spectaculaires qui font de cette étendue un patrimoine classé : histoires, biodiversité, flore… À bord de son bateau, le Sacha, il vous transporte dans une nouvelle dimension.",
+      content2: "Jean-Baptiste a également suivi la tradition familiale en faisant de la pêche son métier. Lorsqu’il est pris par cette activité, il transmet le gouvernail à Gérald.",
+      subtitle2: "Gérald",
+      content3: "Marin aguerri. Très fin pilote, c’est lui qui vous emmène le plus souvent faire la traversée. Avec lui, vous vous faufilez partout ! Il vous guide avec décontraction et humour en vous dévoilant toutes les informations sur l’environnement qu’il aime tant. C’est un capitaine de choix !",
+      subtitle3: "Claire",
+      content4: "C’est notre chargée d’accueil. Native de Cargèse, elle aime donner toutes les explications sur les lieux à visiter. Avec le sens du service, aimable et toujours souriante, elle peut vous aider à choisir votre circuit. N’hésitez pas à lui poser vos questions, elle sait comment vous aiguiller.",
+      content5: "Et si vous avez la chance, lors de votre promenade, vous pouvez croiser un membre un peu plus éloigné de notre équipage… Il s’agit de Thierry, le papa de Jean-Baptiste, à son retour de pêche. Vous pouvez admirer ses prises du jour : dentis, chapons, dorades, langoustes, araignées… et bien sûr immortaliser le moment avec quelques photos.",
+    },
     grandTour: {
       title: "Le Grand Tour",
       subtitle1 : "Rendez-vous sur le port de Cargèse pour monter à bord du Sacha.",

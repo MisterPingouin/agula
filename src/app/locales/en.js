@@ -229,6 +229,18 @@ const en = {
     answer10: "N/A",
     more: "LEARN MORE"
   },
+  equipe: {
+    title: "The Team",
+    subtitle: "Our team is family-oriented, experienced, and deeply rooted in the local area. We are dedicated to sharing our knowledge and experience in a warm and welcoming atmosphere. To ensure your satisfaction from the first point of contact to the end of your journey, our team works together as three.",
+    subtitle1: "Jean-Baptiste",
+    content: "The son and grandson of fishermen from Cargèse, Jean-Baptiste founded the company Agula Marina Cruises. His goal is to share his passion for the untamed beauty of his native region. From a young age, he has explored the sea, knowing every cove, every cave, and every ridge. His greatest pleasure is unveiling the hidden secrets of the spectacular landscapes that have earned this area its protected heritage status: stories, biodiversity, flora... Aboard his boat, the Sacha, he transports you into a whole new dimension.",
+    content2: "Jean-Baptiste has also followed his family tradition by making fishing his profession. When he is engaged in this activity, he entrusts the helm to Gérald.",
+    subtitle2: "Gérald",
+    content3: "An experienced seafarer. A highly skilled pilot, he is often the one guiding you through your excursion. With him, you'll maneuver effortlessly through every spot! He guides you with a relaxed and humorous demeanor, revealing all the fascinating details about the environment he loves. He’s a top-notch captain!",
+    subtitle3: "Claire",
+    content4: "She is our hospitality manager. A native of Cargèse, she enjoys providing all the necessary information about the places to visit. With a strong sense of service, friendly, and always smiling, she can help you choose the best circuit for you. Don't hesitate to ask her any questions—she knows how to guide you.",
+    content5: "And if you're lucky, during your excursion, you might encounter a more distant member of our crew... Thierry, Jean-Baptiste's father, returning from a fishing trip. You can admire his catch of the day: dentex, scorpionfish, sea bream, lobsters, spider crabs... and of course, capture the moment with a few photos.",
+  },  
   grandTour: {
     title: "The Grand Tour",
     subtitle1 : "Go to the port of Cargèse to board the Sacha.",
