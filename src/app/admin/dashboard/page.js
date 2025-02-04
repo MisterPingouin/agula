@@ -21,6 +21,28 @@ export default function AdminDashboard() {
     }
   }, [status, router]);
 
+  // Charger le contenu actuel en fonction de la langue sélectionnée
+  useEffect(() => {
+    const fetchContent = async () => {
+      try {
+        const response = await fetch(`/api/admin/get-content?locale=${locale}`);
+        if (response.ok) {
+          const data = await response.json();
+          setSubtitle2(data.equipe.subtitle2 || '');
+          setContent3(data.equipe.content3 || '');
+          setSubtitle3(data.equipe.subtitle3 || '');
+          setContent4(data.equipe.content4 || '');
+        } else {
+          console.error('Erreur lors de la récupération du contenu');
+        }
+      } catch (error) {
+        console.error('Erreur de connexion', error);
+      }
+    };
+
+    fetchContent();
+  }, [locale]);
+
   if (status === 'loading') return <p>Chargement...</p>;
 
   const handleSubmit = async (e) => {
