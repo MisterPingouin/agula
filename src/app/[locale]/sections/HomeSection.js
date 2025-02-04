@@ -4,12 +4,35 @@ import Image from "next/image";
 import Link from "next/link";
 import { useI18n, useScopedI18n } from "./../../locales/I18nContext";
 import useLocalLink from "./../hooks/useLocalLink"; 
-import React from 'react';
+import React, { useEffect, useState } from "react";
 
 const HomeSection = () => {
   const { locale, setLocale } = useI18n();
     const localLink = useLocalLink();
+    const [homeImage, setHomeImage] = useState("/images/1500x950-lagula.webp");
   
+    useEffect(() => {
+      // Récupérer dynamiquement le chemin de l'image depuis l'API
+      const fetchHomeImage = async () => {
+        try {
+          const response = await fetch("/api/get-image-paths");
+          if (response.ok) {
+            const data = await response.json();
+            if (data.homeImage) {
+              setHomeImage(data.homeImage);
+            } else {
+              console.error("Chemin de l'image de la page d'accueil manquant dans la réponse");
+            }
+          } else {
+            console.error("Erreur lors de la récupération de l'image, status :", response.status);
+          }
+        } catch (error) {
+          console.error("Erreur de connexion :", error);
+        }
+      };
+  
+      fetchHomeImage();
+    }, []);
 
   const t = useScopedI18n("home");
   const t1 = useScopedI18n("navigation");
@@ -21,9 +44,9 @@ const HomeSection = () => {
 
   return (
     <section className="relative flex items-center justify-center h-screen w-full">
-      <Image
-        src={`/images/1500x950-lagula.webp`}
-                alt={t("image_alt")}
+     <Image
+        src={homeImage}  
+        alt={t("image_alt")}
         fill
         className="object-cover object-center"
         priority

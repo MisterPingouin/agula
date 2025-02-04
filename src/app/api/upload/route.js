@@ -9,23 +9,33 @@ export async function POST(req) {
   try {
     const formData = await req.formData();
     const file = formData.get('image');
+    const imageType = formData.get('imageType');
 
-    if (!file) {
-      return NextResponse.json({ message: 'Aucun fichier envoyé' }, { status: 400 });
+    if (!file || !imageType) {
+      return NextResponse.json({ message: 'Fichier ou type d\'image manquant.' }, { status: 400 });
     }
 
-    const fileName = file.name; // Par exemple "prout.jpg"
+    const fileName = file.name;
     const filePath = path.join(UPLOAD_DIR, fileName);
 
     const buffer = Buffer.from(await file.arrayBuffer());
     fs.writeFileSync(filePath, buffer);
 
-    // Mettre à jour le chemin dans le fichier JSON
-    const imageInfo = { homeImage: `/images/${fileName}` };
+    // Mise à jour des données selon le type d'image
+    const imageInfo = JSON.parse(fs.readFileSync(DATA_FILE, 'utf-8'));
+    if (imageType === 'gerald') {
+      imageInfo.geraldImage = `/images/${fileName}`;
+    } else if (imageType === 'claire') {
+      imageInfo.claireImage = `/images/${fileName}`;
+    } else if (imageType === 'homepage') {
+      imageInfo.homeImage = `/images/${fileName}`;
+    }
+
     fs.writeFileSync(DATA_FILE, JSON.stringify(imageInfo, null, 2));
 
     return NextResponse.json({ message: 'Image mise à jour avec succès' });
   } catch (error) {
+    console.error(error);
     return NextResponse.json({ message: 'Erreur lors de l\'upload' }, { status: 500 });
   }
 }
