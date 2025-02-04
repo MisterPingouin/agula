@@ -9,7 +9,7 @@ export default function PrivatisationPage() {
   const t = useScopedI18n("privat");
 
   return (
-    <main className="text-black mt-[86px] md:[99px] mx-auto">
+    <main className="text-black mt-[80px] md:[99px] mx-auto">
         <div className="flex flex-col justify-center items-center px-4">
         <h1 className="font-subtitle mt-4 text-50px md:text-80px text-green-2 leading-none text-center">
           {t("title")}</h1>

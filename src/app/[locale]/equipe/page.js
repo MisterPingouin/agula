@@ -28,7 +28,7 @@ export default function EquipePage() {
   }, []);
 
   return (
-    <main className="flex flex-col justify-center items-center text-black mt-[86px] md:mt-[99px] md:hidden">
+    <main className="flex flex-col justify-center items-center text-black mt-[80px] md:mt-[99px] md:hidden">
       <div className="flex flex-col justify-center gap-2 items-center px-10">
         <h1 className="font-subtitle text-50px md:text-80px text-orange">{t("title")}</h1>
         <p className="font-content font-bold text-13px md:text-15px leading-23px text-center max-w-[900px]">

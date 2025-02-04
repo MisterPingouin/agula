@@ -56,6 +56,7 @@ export default {
         '17px' : '17px',
         '22px' : '22px',
         '23px' : '23px',
+        '25px' : '25px',
         '28px' : '28px',
         '29px' : '29px',
         '31px' : '31px',

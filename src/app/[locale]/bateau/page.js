@@ -7,7 +7,7 @@ export default function BateauPage() {
   const t = useScopedI18n("boat");
 
   return (
-    <main className="flex flex-col justify-center items-center text-black mt-[86px] md:mt-[99px] py-6 px-6 md:px-0">
+    <main className="flex flex-col justify-center items-center text-black mt-[80px] md:mt-[99px] px-6 md:px-0">
         <Image
           src="/images/boat4.webp"
           alt="Bateau Sacha"

@@ -12,7 +12,7 @@ import PrivatSection from "./sections/PrivatSection";
 import HeartDesktop from "./components/HeartDesktop";
 import FAQ from "./components/FAQ";
 import EngageSection from "./sections/EngageSection";
-import Video from "./components/VIdeo";
+import Video from "./components/Video";
 
 
 export default function HomePage() {
