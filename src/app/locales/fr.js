@@ -235,6 +235,10 @@ const fr = {
     engage: {
       title: "Nos engagements",
       content: "Notre compagnie est membre de l’Association des Bateliers de Scandola. Signataire de la charte de bonne conduite et d’engagement à protéger la Réserve de Scandola établie par l’Association en concertation avec le Parc Naturel Régional de Corse, elle s’applique à en respecter chaque article.",
+    },
+    video: {
+      title: "En images",
+      content: "Envie d’avoir un aperçu de ce que vous découvrirez au cours de votre balade ? Cliquez sur play pour une embarcation virtuelle… sans oublier qu’en vrai, c’est mieux !",
     }
 };
 

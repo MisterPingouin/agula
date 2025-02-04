@@ -12,6 +12,7 @@ import PrivatSection from "./sections/PrivatSection";
 import HeartDesktop from "./components/HeartDesktop";
 import FAQ from "./components/FAQ";
 import EngageSection from "./sections/EngageSection";
+import Video from "./components/VIdeo";
 
 
 export default function HomePage() {
@@ -30,6 +31,7 @@ export default function HomePage() {
         />
       </section>
       <EmbarkSection />
+      <Video />
       <MeetSection />
       <EngageSection />
       <PrivatSection />
