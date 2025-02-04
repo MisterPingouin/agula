@@ -38,7 +38,7 @@ export default function ImageUploader({ title, imageType }) {
     <div className="mt-4">
       <h3 className="font-bold">{title}</h3>
       <input type="file" accept="image/*" onChange={(e) => setFile(e.target.files[0])} className="mt-2" />
-      <button onClick={handleUpload} className="bg-green-500 text-white py-2 rounded mt-2">
+      <button onClick={handleUpload} className="bg-green-500 text-white py-2 px-2 rounded mt-2">
         Mettre à jour l'image
       </button>
       {message && <p className="mt-2 text-red-500">{message}</p>}

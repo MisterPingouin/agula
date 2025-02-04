@@ -69,11 +69,11 @@ export default function AdminDashboard() {
   };
 
   return (
-    <div className="p-4 mt-[99px]">
+    <div className="p-20 mt-[99px]">
       <h1 className="text-xl font-bold">Bienvenue, {session?.user?.name}</h1>
       <button
         onClick={() => signOut({ callbackUrl: '/admin/login' })}
-        className="bg-red-500 text-white py-2 rounded mt-4"
+        className="bg-red-500 text-white py-2 px-2 rounded mt-4"
       >
         Déconnexion
       </button>
@@ -82,12 +82,12 @@ export default function AdminDashboard() {
       <h2 className="text-xl font-bold mt-8">Changer les images</h2>
       <div className="space-y-6">
         <ImageUploader title="Image de la page d'accueil" imageType="homepage" />
-        <ImageUploader title="Image de Gérald (Team 1)" imageType="gerald" />
-        <ImageUploader title="Image de Claire (Team 2)" imageType="claire" />
+        <ImageUploader title="Image du membre de l'équipe 1" imageType="gerald" />
+        <ImageUploader title="Image du membre de l'équipe 2" imageType="claire" />
       </div>
 
       {/* Formulaire de modification des contenus */}
-      <div className="p-4 mt-10">
+      <div className="mt-10">
         <h1 className="text-xl font-bold">Modifier le contenu de l'équipe</h1>
 
         {/* Sélecteur de langue */}
@@ -105,7 +105,7 @@ export default function AdminDashboard() {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <label className="block">
-            <span>Subtitle 2 (Gérald)</span>
+            <span>Nom membre équipe 1</span>
             <input
               type="text"
               value={subtitle2}
@@ -115,7 +115,7 @@ export default function AdminDashboard() {
           </label>
 
           <label className="block">
-            <span>Content 3 (Gérald)</span>
+            <span>Description membre équipe 1</span>
             <textarea
               value={content3}
               onChange={(e) => setContent3(e.target.value)}
@@ -124,7 +124,7 @@ export default function AdminDashboard() {
           </label>
 
           <label className="block">
-            <span>Subtitle 3 (Claire)</span>
+            <span>Nom membre équipe 2</span>
             <input
               type="text"
               value={subtitle3}
@@ -134,7 +134,7 @@ export default function AdminDashboard() {
           </label>
 
           <label className="block">
-            <span>Content 4 (Claire)</span>
+            <span>Description membre équipe 2</span>
             <textarea
               value={content4}
               onChange={(e) => setContent4(e.target.value)}
@@ -142,7 +142,7 @@ export default function AdminDashboard() {
             />
           </label>
 
-          <button type="submit" className="bg-blue-500 text-white py-2 rounded">
+          <button type="submit" className="bg-blue-500 text-white py-2 px-2 rounded">
             Mettre à jour
           </button>
         </form>
