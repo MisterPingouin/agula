@@ -1,12 +1,16 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import { useScopedI18n } from "./../../locales/I18nContext";
+import Image from 'next/image';
 
 const FAQ = () => {
+const t = useScopedI18n("faq");
+
   const faqs = [
     {
-      question: "Faut-il réserver à l’avance ?",
-      answer: "Oui, en raison de la capacité du navire (12 passagers) et de la forte demande en période estivale, nous vous conseillons de réserver dès que possible afin de garantir vos places à bord."
+      question: t("question1"),
+      answer: t("answer1"),
     },
     {
       question: "Est-il possible d’annuler ?",
@@ -64,7 +68,17 @@ const FAQ = () => {
           </div>
         ))}
       </div>
-    </div>
+<div className="flex justify-center items-center gap-6 mb-6 mt-6">
+<p className="font-title font-bold text-green-2 text-10px md:text-12px">{t("more")}</p>
+<Image
+          src="/images/greenarrowright.svg"
+          alt="Greenarrowright"
+          width={50}
+          height={40}
+          className="w-auto h-auto"
+        />
+        </div>
+            </div>
   );
 };
 

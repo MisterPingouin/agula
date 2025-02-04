@@ -205,6 +205,11 @@ const en = {
     content3: "Our team listens to your aspirations and will be able to give you advice to make your tailor-made itinerary an ideal experience.",
     content4 : "privatization of the boat with skipper is limited to 12 passengers.",
     subtitle3: "Nos circuits en privatif",
+  },
+  faq: {
+    question1: "Do I need to book in advance?",
+    answer1: "Yes, due to the capacity of the ship (12 passengers) and the high demand during the summer period, we advise you to book as soon as possible in order to guarantee your places on board.",
+    more: "LEARN MORE",
   }
 };
 
