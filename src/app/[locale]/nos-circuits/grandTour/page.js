@@ -4,7 +4,7 @@ import { useScopedI18n } from "./../../../locales/I18nContext";
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./../../components/Cards/Card";
-import Video from "../../components/Video";
+import Video from "./../../components/Video";
 
 export default function GrandTourPage() {
   const t = useScopedI18n("grandTour");
