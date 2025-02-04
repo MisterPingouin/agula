@@ -1,10 +1,9 @@
+"use client";
+
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { useScopedI18n } from "./../../locales/I18nContext";
-import Image from 'next/image';
-import Link from 'next/link';
-import useLocalLink from "./../hooks/useLocalLink";
 
 
 const TextWithLineBreaks = ({ text }) => {
@@ -19,23 +18,20 @@ const TextWithLineBreaks = ({ text }) => {
   );
 };
 
-const FAQ = () => {
+const FaqPage = () => {
   const t = useScopedI18n("faq");
-  const localLink = useLocalLink();
 
   const faqs = [
-    {
-      question: t("question1"),
-      answer: t("answer1"),
-    },
-    {
-      question: t("question2"),
-      answer: t("answer2"),
-    },
-    {
-      question: t("question3"),
-      answer: t("answer3"),
-    },
+    { question: t("question1"), answer: t("answer1") },
+    { question: t("question2"), answer: t("answer2") },
+    { question: t("question3"), answer: t("answer3") },
+    { question: t("question4"), answer: t("answer4") },
+    { question: t("question5"), answer: t("answer5") },
+    { question: t("question6"), answer: t("answer6") },
+    { question: t("question7"), answer: t("answer7") },
+    { question: t("question8"), answer: t("answer8") },
+    { question: t("question9"), answer: t("answer9") },
+    { question: t("question10"), answer: t("answer10") }
   ];
 
   const [activeIndex, setActiveIndex] = useState(null);
@@ -45,7 +41,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="w-full px-10 md:w-3/5 md:px-0 mx-auto p-4">
+    <div className="w-full px-10 md:w-3/5 md:px-0 mx-auto p-4 mt-[86px] md:mt[99px] mb-8">
       <h2 className="text-25px md:text-35px text-green fond-title font-bold text-center mb-8">FAQ</h2>
       <div className="space-y-6">
         {faqs.map((faq, index) => (
@@ -77,20 +73,8 @@ const FAQ = () => {
           </div>
         ))}
       </div>
-      <Link href={localLink("/faq")} className="cursor-pointer">
-      <div className="flex  justify-center items-center gap-6 mb-6 mt-6">
-        <p className="font-title font-bold text-green-2 text-10px md:text-17px">{t("more")}</p>
-        <Image
-          src="/images/greenarrowright.svg"
-          alt="Greenarrowright"
-          width={50}
-          height={40}
-          className="w-auto h-auto"
-        />
-      </div>
-      </Link> 
     </div>
   );
 };
 
-export default FAQ;
+export default FaqPage;

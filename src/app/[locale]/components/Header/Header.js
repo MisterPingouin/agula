@@ -43,7 +43,7 @@ const Header = () => {
         initial={{ y: "-100%" }}
         animate={{ y: visible ? "0%" : "-100%" }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="hidden lg:block"
+        className="hidden lg:block shadow-md"
       >
         <HeaderContent t={t} t1={t1} menuOpen={menuOpen} toggleMenu={toggleMenu} localLink={localLink} />
       </motion.div>
