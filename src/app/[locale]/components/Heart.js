@@ -9,7 +9,7 @@ export default function Heart() {
     const t = useScopedI18n("heart");
     
     return (
-        <section className="flex flex-col justify-center items-center leading-tight px-6 mb-6 md:hidden">
+        <section className="flex flex-col justify-center items-center leading-tight px-6 mb-6 lg:hidden">
             <h1 className="font-subtitle text-50px text-green-2">{t("title")}</h1>
             <p className="font-title font-bold text-25px">{t("subtitle")}</p>
             <p className="mt-4 font-content text-15px text-center leading-23px">{t("content1")}</p>

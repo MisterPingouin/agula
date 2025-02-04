@@ -22,7 +22,7 @@ export default function HomePage() {
       <HomeSection />
       <ChooseSection />
       <SliderDesktop />
-      <section className="flex flex-col mt-8 px-4 gap-4 max-w-md mx-auto md:hidden">
+      <section className="flex flex-col mt-8 px-4 gap-4 max-w-md mx-auto lg:hidden">
         <Card tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
         <Card tourKey="calanquesPiana" imageSrc="/images/calanques-piana.jpg" />
         <Card

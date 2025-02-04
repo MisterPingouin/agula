@@ -10,13 +10,21 @@ export default function GrandTourPage() {
   const t = useScopedI18n("grandTour");
 
   return (
-    <main className="flex flex-col justify-center items-center text-black mt-[80px] md:mt-[99px]">
+    <main className="flex flex-col justify-center items-center text-black mt-[80px]">
       <Image
         src="/images/grandtour1.webp"
         alt="Grand Tour"
         width={428}
         height={440}
-        className="w-full object-cover"
+        className="w-full object-cover md:hidden"
+        priority
+      />
+            <Image
+        src="/images/grandtour1desktop.webp"
+        alt="Grand Tour Desktop"
+        width={428}
+        height={440}
+        className="w-full object-cover hidden md:block"
         priority
       />
       {/* Titre et description */}
@@ -24,7 +32,7 @@ export default function GrandTourPage() {
         <h1 className="font-subtitle text-50px md:text-80px text-green-2 leading-none">
           {t("title")}
         </h1>
-        <p className="font-content font-bold text-15px leading-tight text-center mt-2">
+        <p className="font-content font-bold text-15px leading-tight md:leading-none text-center mt-2">
           {t("subtitle1")}
         </p>
         <p className="font-content text-15px leading-tight font-bold text-center ">
@@ -44,25 +52,71 @@ export default function GrandTourPage() {
           alt="map"
           width={356}
           height={531}
-          className="object-cover w-full h-auto"
+          className="object-cover w-full h-auto md:hidden"
           priority
         />
-        <p className="font-content text-15px leading-25px text-center px-8 my-4">
+                <Image
+          src="/images/illustrationdesktop.jpg"
+          alt="map"
+          width={440}
+          height={531}
+          className="hidden md:block mt-6 object-cover h-auto"
+          priority
+        />
+        <p className="font-content text-15px leading-25px text-center md:w-[880px] px-8 my-4">
           {t("content")}
         </p>
         <Link href="#" className="cursor-pointer">
-          <button className="px-14 py-2 text-white text-20px mt-2 bg-blue-3 font-content font-semibold">
+          <button className="px-14 md:px-16 md:my-4 py-2 text-white text-20px mt-2 bg-blue-3 font-content font-semibold">
             {t("book")}
           </button>
         </Link>
+        {/* Mobile */}
         <Image
           src="/images/grandtour2.jpg"
           alt="Grand Tour 2"
           width={352}
           height={426}
-          className="h-auto w-full mt-6"
+          className="h-auto w-full mt-6 md:hidden"
           priority
         />
+        <p className="font-title self-start font-bold text-25px leading-none mt-8 md:hidden">
+          {t("subtitle3")}
+        </p>
+        <p className="font-title self-start font-bold leading-tight text-25px md:hidden">
+          {t("subtitle4")}
+        </p>
+        <p className="font-content text-15px leading-23px self-start mt-6 md:hidden">
+          {t("content2")}
+        </p>
+        <p className="font-content text-15px leading-23px self-start md:hidden">
+          {t("content3")}
+        </p>
+        <p className="font-content text-15px leading-23px self-start md:hidden">
+          {t("content4")}
+        </p>
+        <Image
+          src="/images/dive.svg"
+          alt="dive"
+          width={51}
+          height={62}
+          className="object-cover h-auto mt-10 md:hidden"
+          priority
+        />
+        <p className="font-subtitle text-25px text-cente mt-2 md:hidden">
+          {t("content5")}
+        </p>
+        {/* Desktop */}
+        <div className="hidden md:flex">
+        <Image
+          src="/images/grandtour2desktop.jpg"
+          alt="Grand Tour 2"
+          width={393}
+          height={502}
+          className="h-auto"
+          priority
+        />
+        <div className="flex flex-col">
         <p className="font-title self-start font-bold text-25px leading-none mt-8">
           {t("subtitle3")}
         </p>
@@ -78,6 +132,7 @@ export default function GrandTourPage() {
         <p className="font-content text-15px leading-23px self-start">
           {t("content4")}
         </p>
+        <div className="flex items-center">
         <Image
           src="/images/dive.svg"
           alt="dive"
@@ -89,6 +144,9 @@ export default function GrandTourPage() {
         <p className="font-subtitle text-25px text-cente mt-2">
           {t("content5")}
         </p>
+        </div>
+        </div>
+        </div>
         <Image
           src="/images/grandtour3.jpg"
           alt="Grand Tour 3"

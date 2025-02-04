@@ -42,7 +42,7 @@ export default function SliderDesktop() {
   const cardsShown = Math.min((currentSlide + 1) * cardsPerSlide, totalCards);
 
   return (
-    <div className="hidden md:block w-full mx-auto pt-8">
+    <div className="hidden lg:block w-full mx-auto pt-8">
       <div className="relative w-[1200px] mx-auto overflow-hidden">
         <motion.div
           className="flex"
