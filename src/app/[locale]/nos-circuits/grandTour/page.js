@@ -4,7 +4,7 @@ import { useScopedI18n } from "./../../../locales/I18nContext";
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./../../components/Cards/Card";
-import Video from "./../../components/Video";
+import VideoLagula from "../../components/VideoLagula";
 
 export default function GrandTourPage() {
   const t = useScopedI18n("grandTour");
@@ -207,7 +207,7 @@ export default function GrandTourPage() {
           />
         </div>
       </div>
-      <Video />
+      <VideoLagula />
     </main>
   );
 }

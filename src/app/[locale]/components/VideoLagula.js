@@ -1,6 +1,6 @@
 import { useScopedI18n } from "../../locales/I18nContext";
 
-const Video = () => {
+const VideoLagula = () => {
 const t = useScopedI18n("video");
 
 
@@ -12,4 +12,4 @@ const t = useScopedI18n("video");
   );
 };
 
-export default Video;
+export default VideoLagula;
