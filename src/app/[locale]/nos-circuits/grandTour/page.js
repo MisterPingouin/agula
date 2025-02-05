@@ -6,9 +6,13 @@ import Link from "next/link";
 import Card from "./../../components/Cards/Card";
 import VideoLagula from "../../components/VideoLagula";
 import GrandTour from "../../components/Reservation/GrandTour";
+import useLocalLink from "./../../hooks/useLocalLink"; 
+
 
 export default function GrandTourPage() {
   const t = useScopedI18n("grandTour");
+      const localLink = useLocalLink();
+  
 
   return (
     <main className="flex flex-col justify-center items-center text-black mt-[80px]">
@@ -67,7 +71,7 @@ export default function GrandTourPage() {
         <p className="font-content text-15px leading-25px text-center md:w-[880px] px-8 my-4">
           {t("content")}
         </p>
-        <Link href="#" className="cursor-pointer">
+        <Link href={localLink("/reservation")} className="cursor-pointer">
           <button className="px-14 md:px-16 md:my-4 py-2 text-white text-20px mt-2 bg-blue-3 font-content font-semibold">
             {t("book")}
           </button>
