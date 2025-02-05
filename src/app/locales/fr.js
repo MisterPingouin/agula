@@ -241,7 +241,7 @@ const fr = {
     },
     grandTour: {
       title: "Le Grand Tour",
-      subtitle1 : "Rendez-vous sur le port de Cargèse pour monter à bord du Sacha.",
+      subtitle1: "Rendez-vous sur le port de Cargèse pour monter à bord du Sacha.",
       subtitle2:  "Au programme : découverte du Capu Rossu et des calanques de Piana !",
       price: "Adultes : 80€ - Enfants : 70€",
       time: "Durée : 3h45",
@@ -261,6 +261,19 @@ const fr = {
       content9: "La sublime réserve naturelle de Scandola. Classée au patrimoine mondial de l’Unesco, elle ne se visite qu’en bateau. C’est le moment d’explorer ses failles, admirer sa biodiversité, comprendre son besoin de préservation. Jean-Baptiste vous dévoile tout.",
       book: "RÉSERVER",
       subtitle8: "Nos circuits",
+    },
+    calanque: {
+      title: "Les Calanques de Piana",
+      subtitle1: "Rendez-vous sur le port de Cargèse pour monter à bord du Sacha.",
+      subtitle2: "Au programme : découverte du Capu Rossu et des calanques de Piana !",
+      price: "Adultes : 80€ - Enfants : 70€",
+      time: "Durée : 1h45",
+      content: "Départ port de Cargèse > Capu Rossu - Calanques de Piana (baignade 10 min) - Golfe de Porto - Girolata (arrêt 30 min) – Scandola > Retour port Cargèse",
+      
+
+      book: "RÉSERVER",
+      subtitle8: "Nos circuits",
+
     },
     sunset: {
       title1: "Un moment unique",
