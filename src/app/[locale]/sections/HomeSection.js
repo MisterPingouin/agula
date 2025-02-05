@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useI18n, useScopedI18n } from "./../../locales/I18nContext";
 import useLocalLink from "./../hooks/useLocalLink"; 
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion"; 
 
 const HomeSection = () => {
   const { locale, setLocale } = useI18n();
@@ -148,7 +149,7 @@ const HomeSection = () => {
       </div>
       </div>
       </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white md:-top-56 leading-none">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white md:-top-32 leading-none">
         <h1 className="text-35px font-bold font-title">{t("title")}</h1>
         <p className="text-32px mx-4 font-light font-title leading-40px">
           {t("description")}
@@ -159,24 +160,35 @@ const HomeSection = () => {
         {t("book_button")}
       </button>
       </Link>
-      <div className="hidden absolute bottom-[32%] left-1/2 transform -translate-x-1/2 w-11/12 bg-white py-8 px-6 md:px-12 md:flex justify-between items-center">
-      <p>rechercher</p>
+      <div className="hidden absolute bottom-[10%] left-1/2 transform -translate-x-1/2 w-11/12 text-white py-8 md:flex justify-between">
+        {[
+          { number: "01", title: t("embark_title"), description: t("embark_description") },
+          { number: "02", title: t("enjoy_title"), description: t("enjoy_description") },
+          { number: "03", title: t("live_title"), description: t("live_description") },
+        ].map((item, index) => (
+          <motion.div
+            key={index}
+            className="max-w-[20%]"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}  // Animation séquentielle
+          >
+            <h3 className="text-20px font-title font-bold">
+              <span className="font-medium pr-1">{item.number}</span>
+              {item.title}
+            </h3>
+            <p className="text-14px font-content font-semibold mt-2">{item.description}</p>
+          </motion.div>
+        ))}
       </div>
-      <div className="hidden absolute bottom-[10%]  left-1/2 transform -translate-x-1/2 w-11/12 text-white py-8  md:flex justify-between">
-      <div className="max-w-[20%]">
-          <h3 className="text-20px font-title font-bold"><span className="font-medium pr-1">01</span>{t("embark_title")}</h3>
-          <p className="text-14px font-content font-semibold mt-2">{t("embark_description")}</p>
-        </div>
-        <div className="max-w-[20%]">
-          <h3 className="text-20px font-title font-bold"><span className="font-medium pr-1">02</span>{t("enjoy_title")}</h3>
-          <p className="text-14px font-content font-semibold mt-2">{t("enjoy_description")}</p>
-        </div>
-        <div className="max-w-[20%]">
-          <h3 className="text-20px font-title font-bold"><span className="font-medium pr-1">03</span>{t("live_title")}</h3>
-          <p className="text-14px font-content font-semibold mt-2">{t("live_description")}</p>
-        </div>
-</div>
-<div className="hidden md:flex absolute bottom-[10%] w-11/12 h-0.5 opacity-50 bg-white"></div>
+
+      {/* Barre blanche animée */}
+      <motion.div
+        className="hidden md:flex absolute bottom-[10%] w-11/12 h-0.5 opacity-50 bg-white"
+        initial={{ scaleX: 0 }}
+        animate={{ scaleX: 1 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+      ></motion.div>
       <div className="hidden md:flex absolute bottom-0 w-full justify-center items-center py-4">
         <Image
           src="/images/arrowdown.svg"
