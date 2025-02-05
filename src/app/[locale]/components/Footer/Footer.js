@@ -98,7 +98,7 @@ const Footer = () => {
           <Link href={localLink("/nos-circuits")} className="hover:text-green-3">
             {t("nosCircuits")}
           </Link>
-          <Link href="#" className="hover:text-green-3">
+          <Link href={localLink("/reservation")} className="hover:text-green-3">
             {t("reserver")}
           </Link>
           <Link href={localLink("/privatisation")} className="hover:text-green-3">
@@ -119,7 +119,7 @@ const Footer = () => {
             {t("cgv")}
           </Link>{" "}
           |{" "}
-          <Link href="#" className="hover:text-green-3">
+          <Link href="https://www.resamare.com/" className="hover:text-green-3">
             Resamare
           </Link>{" "}
           |{" "}
@@ -194,7 +194,7 @@ const Footer = () => {
               <p>20130 Cargèse</p>
               <Link
                 href="mailto:lagulamarinacroisieres@gmail.com"
-                className="hover:text-green-3"
+                className="hover:text-green-3 md:text-12px lg:text-13px"
               >
                 lagulamarinacroisieres@gmail.com
               </Link>
@@ -210,10 +210,10 @@ const Footer = () => {
               <Link href={localLink("/nos-circuits")} className="hover:text-green-3">
                 {t("nosCircuits")}
               </Link>
-              <Link href="#" className="hover:text-green-3">
+              <Link href={localLink("/reservation")} className="hover:text-green-3">
                 {t("reserver")}
               </Link>
-              <Link href="#" className="hover:text-green-3">
+              <Link href={localLink("/privatisation")} className="hover:text-green-3">
                 {t("privatisation")}
               </Link>
               <Link href="#" className="hover:text-green-3">
@@ -234,7 +234,7 @@ const Footer = () => {
               <Link href="#" className="hover:text-green-3">
                 {t("cgv")}
               </Link>
-              <Link href="#" className="hover:text-green-3">
+              <Link href="https://www.resamare.com/" className="hover:text-green-3">
                 Resamare
               </Link>
               <Link href="#" className="hover:text-green-3">
