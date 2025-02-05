@@ -52,7 +52,7 @@ const HomeSection = () => {
         className="object-cover object-center"
         priority
       />
-      <div className="hidden md:flex relative z-50 justify-center self-start">
+      <div className="hidden lg:flex relative z-50 justify-center self-start">
       <div className="flex flex-col">
       <div className="flex items-center self-end gap-2 pt-4 text-white translate-y-2">
       <button onClick={() => changeLanguage("fr")} className={`text-15px font-title ${locale === "fr" ? "font-bold" : ""}`}>

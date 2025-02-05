@@ -16,7 +16,9 @@ export default function Heart() {
             <p className="font-content text-15px text-center leading-23px">{t("content2")}</p>
             <p className="font-content text-15px text-center leading-23px">{t("content3")}</p>
             <p className="font-content text-15px text-center leading-23px mb-6">{t("content4")}</p>
+            <div className="md:flex items-center justify-center">
             <Card tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
+            </div>
         </section>
 );
 }
