@@ -269,11 +269,14 @@ const fr = {
       price: "Adultes : 80€ - Enfants : 70€",
       time: "Durée : 1h45",
       content: "Départ port de Cargèse > Capu Rossu - Calanques de Piana (baignade 10 min) - Golfe de Porto - Girolata (arrêt 30 min) – Scandola > Retour port Cargèse",
-      
-
+      subtitle3: "Se faufiler dans ses grottes",
+      content2: "Le bateau se faufile dans ses grottes saisissantes et fait un arrêt dans une jolie petite crique, uniquement accessible par la mer. Son eau évoque une piscine naturelle où avez la possibilité de vous baigner, selon les conditions météorologiques (arrêt baignade 10 minutes). Un plongeon dans l’eau cristalline au milieu de falaises hérissées, cela ne s’oublie pas !",
+      content3: "arrêt baignade 10 minutes",
+      subtitle4: "Observer les tours génoises",
+      content4: "Durant cette promenade, vous avez l’occasion d’observer les tours génoises comme celle d’Omigna dont l’histoire ne vous échappera pas.",
+      content5: "Votre retour sur terre, à Cargèse, se fait en douceur, au rythme des chants corses.",
       book: "RÉSERVER",
       subtitle8: "Nos circuits",
-
     },
     sunset: {
       title1: "Un moment unique",
