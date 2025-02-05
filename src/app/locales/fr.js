@@ -262,6 +262,12 @@ const fr = {
       book: "RÉSERVER",
       subtitle8: "Nos circuits",
     },
+    sunset: {
+      title1: "Un moment unique",
+      title2: "s’offre à vous",
+      content: "Avant de rentrer, un moment unique s’offre à vous : les derniers feux du crépuscule enveloppent les roches abruptes qui vous entourent pour leur donner une teinte plus rougeoyante que jamais. Sur le Sacha, ce moment unique se déguste toujours avec un bon verre de vin Corse. C’est Jean-Baptiste qui invite ! Le soleil se fait peu à peu avaler par la mer, elle qui vous berce avec ses paisibles clapotis.",
+      content2: "instant magique de contemplation et de détente… "
+    },
     engage: {
       title: "Nos engagements",
       content: "Notre compagnie est membre de l’Association des Bateliers de Scandola. Signataire de la charte de bonne conduite et d’engagement à protéger la Réserve de Scandola établie par l’Association en concertation avec le Parc Naturel Régional de Corse, elle s’applique à en respecter chaque article.",

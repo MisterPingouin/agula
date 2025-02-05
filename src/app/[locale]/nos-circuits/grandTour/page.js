@@ -108,7 +108,7 @@ export default function GrandTourPage() {
           className="object-cover h-auto mt-10 md:hidden"
           priority
         />
-        <p className="font-subtitle text-25px text-cente mt-2 md:hidden">
+        <p className="font-subtitle text-25px text-center mt-2 md:hidden">
           {t("content5")}
         </p>
         {/* Desktop */}
