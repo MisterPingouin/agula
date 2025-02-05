@@ -86,9 +86,11 @@ const HeaderContent = ({ t, t1, localLink }) => {
             </Link>
           ))}
         </nav>
+        <Link href={localLink("/reservation")}>
         <button className="bg-blue-3 text-white mt-5 px-14 py-2 font-semibold text-14px">
           {t1("book")}
         </button>
+        </Link>
       </div>
     </div>
   );

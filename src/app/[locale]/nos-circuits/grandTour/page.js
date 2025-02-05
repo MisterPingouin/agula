@@ -45,7 +45,7 @@ export default function GrandTourPage() {
         <img src="/images/time.svg" alt="" className="w-3 h-3 mr-2" />
         <p>{t("time")}</p>
       </div>
-      <div className="w-10/12 md:w-10/12 h-[0.5px] md:h-[0.75px] md:my-4 bg-[#707070] mb-6"></div>
+      <div className="w-10/12 h-[0.5px] md:h-[0.75px] md:my-4 bg-[#707070] mb-6"></div>
       <div className="flex flex-col justify-center items-center px-8">
         <Image
           src="/images/illustration.jpg"
@@ -107,7 +107,8 @@ export default function GrandTourPage() {
           {t("content5")}
         </p>
         {/* Desktop */}
-        <div className="hidden md:flex">
+        <div className="hidden md:block w-10/12 h-[0.5px] md:h-[0.75px] md:my-4 bg-[#707070] mb-6"></div>
+        <div className="hidden md:flex items-center gap-40 w-10/12">
         <Image
           src="/images/grandtour2desktop.jpg"
           alt="Grand Tour 2"
@@ -116,20 +117,20 @@ export default function GrandTourPage() {
           className="h-auto"
           priority
         />
-        <div className="flex flex-col">
-        <p className="font-title self-start font-bold text-25px leading-none mt-8">
+        <div className="flex flex-col w-[560px]">
+        <p className="font-title font-bold text-35px leading-none mt-8">
           {t("subtitle3")}
         </p>
-        <p className="font-title self-start font-bold leading-tight text-25px">
+        <p className="font-title font-bold leading-tight text-35px">
           {t("subtitle4")}
         </p>
-        <p className="font-content text-15px leading-23px self-start mt-6">
+        <p className="font-content text-15px leading-23px mt-6">
           {t("content2")}
         </p>
-        <p className="font-content text-15px leading-23px self-start">
+        <p className="font-content text-15px leading-23px">
           {t("content3")}
         </p>
-        <p className="font-content text-15px leading-23px self-start">
+        <p className="font-content text-15px leading-23px">
           {t("content4")}
         </p>
         <div className="flex items-center">
@@ -138,10 +139,10 @@ export default function GrandTourPage() {
           alt="dive"
           width={51}
           height={62}
-          className="object-cover h-auto mt-10"
+          className="object-cover h-auto"
           priority
         />
-        <p className="font-subtitle text-25px text-cente mt-2">
+        <p className="font-subtitle text-25px">
           {t("content5")}
         </p>
         </div>

@@ -43,7 +43,7 @@ const HomeSection = () => {
   };
 
   return (
-    <section className="relative flex items-center justify-center h-screen w-full">
+    <section className="flex items-center justify-center h-screen w-full">
      <Image
         src={homeImage}  
         alt={t("image_alt")}
@@ -51,9 +51,9 @@ const HomeSection = () => {
         className="object-cover object-center"
         priority
       />
-      <div className="hidden lg:flex justify-center self-start">
+      <div className="hidden md:flex relative z-50 justify-center self-start">
       <div className="flex flex-col">
-      <div className="relative z-40 flex items-center self-end gap-2 pt-4 text-white translate-y-2 ">
+      <div className="flex items-center self-end gap-2 pt-4 text-white translate-y-2">
       <button onClick={() => changeLanguage("fr")} className={`text-15px font-title ${locale === "fr" ? "font-bold" : ""}`}>
             FR
           </button>
@@ -102,7 +102,7 @@ const HomeSection = () => {
           +33 (0)6 43 04 00 14
         </p>
       </div>
-      <div className="flex relative z-40 items-center -translate-y-1">
+      <div className="flex items-center -translate-y-1">
         <Link href={localLink("/")} className="cursor-pointer">
           <Image
             src="/images/logowhite.svg"
@@ -140,9 +140,11 @@ const HomeSection = () => {
 {t1('gallery')}            </a>
 
         </nav>
+        <Link href={localLink("/reservation")}>
         <button className="border border-white text-white mt-6 px-14 py-2 font-semibold text-14px">
           {t("book_button")}
         </button>
+        </Link>
       </div>
       </div>
       </div>
@@ -152,9 +154,11 @@ const HomeSection = () => {
           {t("description")}
         </p>
       </div>
+      <Link href={localLink("/reservation")}>
       <button className="absolute bottom-0 inset-x-0 w-full mt-8 py-2 px-6 bg-blue-3 text-white font-content text-20px font-semibold md:hidden">
         {t("book_button")}
       </button>
+      </Link>
       <div className="hidden absolute bottom-[32%] left-1/2 transform -translate-x-1/2 w-11/12 bg-white py-8 px-6 md:px-12 md:flex justify-between items-center">
       <p>rechercher</p>
       </div>
