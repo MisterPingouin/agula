@@ -171,7 +171,7 @@ const HomeSection = () => {
             className="max-w-[20%]"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}  // Animation séquentielle
+            transition={{ duration: 0.6, delay: index * 0.2 }} 
           >
             <h3 className="text-20px font-title font-bold">
               <span className="font-medium pr-1">{item.number}</span>

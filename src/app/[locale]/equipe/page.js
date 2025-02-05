@@ -28,7 +28,7 @@ export default function EquipePage() {
   }, []);
 
   return (
-    <main className="flex flex-col justify-center items-center text-black mt-[80px] md:mt-[99px]">
+    <main className="flex flex-col justify-center items-center text-black mt-[80px]">
       <div className="flex flex-col justify-center  gap-2 items-center px-10">
         <h1 className="font-subtitle text-50px md:text-80px text-orange">{t("title")}</h1>
         <p className="font-content font-bold text-13px md:text-25px md:leading-36px text-center max-w-[900px] md:max-w-full md:w-[1100px]">
@@ -101,7 +101,7 @@ export default function EquipePage() {
           alt="Gerald"
           width={234}
           height={299}
-          className="object-cover h-auto"
+          style={{ height: '299px', width: 'auto' }}
           priority
         />
         <div className="flex flex-col">
@@ -115,7 +115,7 @@ export default function EquipePage() {
           alt="Claire"
           width={234}
           height={299}
-          className="object-cover h-auto"
+          style={{ height: '299px', width: 'auto' }}
           priority
         />
                 <div className="flex flex-col">
