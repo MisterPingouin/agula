@@ -1,22 +1,324 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useScopedI18n } from "./../../../locales/I18nContext";
+import Image from "next/image";
+import Link from "next/link";
+import Card from "./../../components/Cards/Card";
+import VideoLagula from "../../components/VideoLagula";
+import Scandola from "../../components/Reservation/Scandola";
+import useLocalLink from "./../../hooks/useLocalLink";
 
-export default function ScandolaPage() {
-  const t = useScopedI18n("grandTour");
+export default function ScandolaPage({ params }) {
+  const t = useScopedI18n("scandola");
+  const [locale, setLocale] = useState("fr");
+
+  useEffect(() => {
+    async function fetchParams() {
+      const resolvedParams = await params;
+      setLocale(resolvedParams.locale || "fr");
+    }
+    fetchParams();
+  }, [params]);
+
+  const localLink = useLocalLink();
 
   return (
-    <main className="text-black">
-      <div className="h-[86px]"></div>
+    <main className="flex flex-col justify-center items-center text-black mt-[80px]">
+      {/* Header Image */}
+      {/* Mobile */}
+      <Image
+        src="/images/scandola.webp"
+        alt="scandola"
+        width={428}
+        height={440}
+        className="w-full object-cover md:hidden"
+        priority
+      />
+      {/* Tablet */}
+      <Image
+        src="/images/scandoladesktop.webp"
+        alt="scandola tablette"
+        width={428}
+        height={440}
+        className="w-full object-cover hidden md:block lg:hidden"
+        priority
+      />
+      {/* Desktop */}
+      <Image
+        src="/images/scandoladesktop.webp"
+        alt="Scandola Desktop"
+        width={428}
+        height={440}
+        className="w-full object-cover hidden lg:block"
+        priority
+      />
 
       {/* Titre et description */}
       <div className="flex flex-col justify-center gap-2 mt-6 items-center px-8">
-        <h1 className="font-subtitle text-50px md:text-80px text-green-2">TEST CAlANQUES</h1>
-        <p className="font-content text-13px md:text-15px leading-23px text-center max-w-[900px]">
-          {t("content")}
+        <h1 className="font-subtitle text-50px md:text-70px lg:text-80px text-green-2 leading-none text-center">
+          {t("title")}
+        </h1>
+        <p className="font-content font-bold text-15px leading-tight md:leading-tight lg:leading-none text-center mt-2">
+          {t("subtitle1")}
+        </p>
+        <p className="font-content text-15px leading-tight font-bold text-center">
+          {t("subtitle2")}
         </p>
       </div>
 
+      {/* Prix et durée */}
+      <div className="font-content text-14px font-light flex px-10 items-center my-5">
+        <img src="/images/euro.svg" alt="" className="w-3 h-3 mr-2" />
+        <p className="pr-20">{t("price")}</p>
+        <img src="/images/time.svg" alt="" className="w-3 h-3 mr-2" />
+        <p>{t("time")}</p>
+      </div>
+
+      {/* Séparateur */}
+      <div className="w-10/12 h-[0.5px] md:h-[0.6px] lg:h-[0.75px] md:my-3 lg:my-4 bg-[#707070] mb-6"></div>
+
+      <div className="flex flex-col justify-center items-center px-8">
+        {/* Illustration de la carte */}
+        {/* Mobile */}
+        <Image
+          src="/images/illustration.jpg"
+          alt="map"
+          width={356}
+          height={531}
+          className="object-cover w-full h-auto md:hidden"
+          priority
+        />
+        {/* Tablet */}
+        <Image
+          src="/images/illustrationdesktop.jpg"
+          alt="map Tablet"
+          width={440}
+          height={531}
+          className="hidden md:block lg:hidden mt-6 object-cover h-auto"
+          priority
+        />
+        {/* Desktop */}
+        <Image
+          src="/images/illustrationdesktop.jpg"
+          alt="map Desktop"
+          width={440}
+          height={531}
+          className="hidden lg:block mt-6 object-cover h-auto"
+          priority
+        />
+
+        <p className="font-content text-15px leading-25px text-center w-full md:w-[700px] lg:w-[880px] px-8 my-4">
+          {t("content")}
+        </p>
+
+        <Link href={localLink("/reservation")} className="cursor-pointer">
+          <button className="px-14 md:px-15 lg:px-16 py-2 text-white text-20px mt-2 md:my-3 lg:my-4 bg-blue-3 font-content font-semibold">
+            {t("book")}
+          </button>
+        </Link>
+
+        {/* Section Calanque */}
+        {/* Mobile */}
+        <Image
+          src="/images/scandola1.jpg"
+          alt="Calanque"
+          width={352}
+          height={426}
+          className="h-auto w-full mt-6 md:hidden"
+          priority
+        />
+        <p className="font-title self-start font-bold text-25px leading-none mt-8 md:hidden">
+          {t("subtitle3")}
+        </p>
+
+        <p className="font-content text-15px leading-23px self-start mt-6 md:hidden">
+          {t("content2")}
+        </p>
+        <Image
+          src="/images/dive.svg"
+          alt="dive"
+          width={51}
+          height={62}
+          className="object-cover h-auto mt-10 md:hidden"
+          priority
+        />
+        <p className="font-subtitle text-25px text-center mt-2 md:hidden">
+          {t("content3")}
+        </p>
+
+        {/* Tablet Version Calanque */}
+        <div className="hidden lg:hidden md:block w-10/12 h-[0.5px] md:h-[0.6px] md:my-3 bg-[#707070] mb-6"></div>
+        <div className="hidden lg:hidden md:flex flex-col justify-center gap-20 items-center w-10/12 mt-6">
+          <Image
+            src="/images/scandola1.jpg"
+            alt="Calanque Tablet"
+            width={393}
+            height={502}
+            className="h-auto"
+            priority
+          />
+          <div className="flex flex-col w-full items-center">
+            <p className="font-title font-bold text-30px leading-none mt-8 text-center">
+              {t("subtitle3")}
+            </p>
+            <p className="font-content text-15px leading-23px mt-6 text-center">
+              {t("content2")}
+            </p>
+            <div className="flex items-center gap-2 mt-4">
+              <Image
+                src="/images/dive.svg"
+                alt="dive"
+                width={51}
+                height={62}
+                className="object-cover h-auto"
+                priority
+              />
+              <p className="font-subtitle text-25px">{t("content3")}</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Version Calanque */}
+        <div className="hidden lg:flex justify-center gap-40 items-center w-10/12 mt-6">
+          <Image
+            src="/images/scandola1.jpg"
+            alt="Calanque Desktop"
+            width={393}
+            height={502}
+            className="h-auto"
+            priority
+          />
+          <div className="flex flex-col w-[560px]">
+            <p className="font-title font-bold text-35px leading-none mt-8">
+              {t("subtitle3")}
+            </p>
+            <p className="font-content text-15px leading-23px mt-6">
+              {t("content2")}
+            </p>
+            <div className="flex items-center gap-2 mt-4">
+              <Image
+                src="/images/dive.svg"
+                alt="dive"
+                width={51}
+                height={62}
+                className="object-cover h-auto"
+                priority
+              />
+              <p className="font-subtitle text-25px">{t("content3")}</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Section Calanque */}
+        {/* Mobile */}
+        <Image
+          src="/images/scandola2.jpg"
+          alt="Calanque"
+          width={352}
+          height={426}
+          className="h-auto w-full mt-6 md:hidden"
+          priority
+        />
+        <p className="font-title self-start font-bold text-25px leading-none mt-8 md:hidden">
+          {t("subtitle4")}
+        </p>
+        <p className="font-content text-15px leading-23px self-start mt-6 md:hidden">
+          {t("content4")}
+        </p>
+        <Image
+          src="/images/ancre2.svg"
+          alt="ancre 2"
+          width={51}
+          height={62}
+          className="object-cover h-auto mt-10 md:hidden"
+          priority
+        />
+        <p className="font-subtitle text-25px text-center mt-2 md:hidden">
+          {t("content4_1")}
+        </p>
+
+        {/* Tablet Version Calanque */}
+        <div className="hidden lg:hidden md:flex flex-col justify-center items-center gap-20 w-10/12 mt-6">
+          <div className="flex flex-col w-full items-center">
+            <p className="font-title  font-bold text-30px leading-none mt-8 text-center">
+              {t("subtitle4")}
+            </p>
+            <p className="font-content text-15px leading-23px self-start mt-6 text-center">
+              {t("content4")}
+            </p>
+            <div className="flex items-center gap-2 mt-4">
+              <Image
+                src="/images/ancre2.svg"
+                alt="ancre2"
+                width={51}
+                height={62}
+                className="object-cover h-auto"
+                priority
+              />
+              <p className="font-subtitle text-25px">{t("content4_1")}</p>
+            </div>
+          </div>
+          <Image
+            src="/images/scandola2.jpg"
+            alt="Calanque Tablet"
+            width={393}
+            height={502}
+            className="h-auto"
+            priority
+          />
+        </div>
+
+        {/* Desktop Version Calanque */}
+        <div className="hidden lg:flex justify-center items-center gap-40 w-10/12 mt-6">
+          <div className="flex flex-col w-[485px]">
+            <p className="font-title self-start font-bold text-35px leading-none mt-8">
+              {t("subtitle4")}
+            </p>
+            <p className="font-content text-15px leading-23px self-start mt-6">
+              {t("content4")}
+            </p>
+            <div className="flex items-center gap-2 mt-4">
+              <Image
+                src="/images/ancre2.svg"
+                alt="ancre2"
+                width={51}
+                height={62}
+                className="object-cover h-auto"
+                priority
+              />
+              <p className="font-subtitle text-25px ml-2">{t("content4_1")}</p>
+            </div>
+          </div>
+          <Image
+            src="/images/scandola2.jpg"
+            alt="scandola2 Desktop"
+            width={393}
+            height={502}
+            className="h-auto self-end"
+            priority
+          />
+        </div>
+
+        {/* Section Both - Content8 */}
+        <p className="font-title text-center text-25px md:text-30px lg:text-35px leading-29px md:leading-40px lg:leading-50px w-full md:w-[600px] lg:w-[1100px] my-6 md:my-8 lg:my-10">
+          {t("content5")}
+        </p>
+
+        <div className="w-full">
+          <Scandola locale={locale} />
+        </div>
+
+        <h4 className="text-green font-bold font-title text-25px mt-10 md:text-30px lg:text-35px md:self-start lg:self-start md:mt-12 lg:mt-12">
+          {t("subtitle8")}
+        </h4>
+        <div className="flex flex-col gap-4 my-6 md:flex-row">
+          <Card tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
+          <Card tourKey="calanquesPiana" imageSrc="/images/calanques-piana.jpg" />
+          <Card tourKey="scandolaGirolata" imageSrc="/images/scandola-girolata.jpg" />
+        </div>
+      </div>
+      <VideoLagula />
     </main>
   );
 }
