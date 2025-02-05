@@ -1,18 +1,26 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useScopedI18n } from "./../../../locales/I18nContext";
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./../../components/Cards/Card";
 import VideoLagula from "../../components/VideoLagula";
 import GrandTour from "../../components/Reservation/GrandTour";
-import useLocalLink from "./../../hooks/useLocalLink"; 
+import useLocalLink from "./../../hooks/useLocalLink";
 
-
-export default function GrandTourPage() {
+export default function GrandTourPage({ params }) {
   const t = useScopedI18n("grandTour");
-      const localLink = useLocalLink();
-  
+  const localLink = useLocalLink();
+  const [locale, setLocale] = useState("fr");
+  useEffect(() => {
+    async function fetchParams() {
+      const resolvedParams = await params;
+      setLocale(resolvedParams.locale || "fr");
+    }
+
+    fetchParams();
+  }, [params]);
 
   return (
     <main className="flex flex-col justify-center items-center text-black mt-[80px]">
@@ -179,44 +187,42 @@ export default function GrandTourPage() {
         </p>
         {/* Desktop */}
         <div className="hidden md:flex justify-center items-center gap-40 w-10/12 mt-6">
-  <div className="flex flex-col w-[485px]">
-    <p className="font-title self-start font-bold text-35px leading-none mt-8">
-      {t("subtitle5")}
-    </p>
-    <p className="font-content text-15px leading-23px self-start mt-6">
-      {t("content6")}
-    </p>
-    <div className="flex items-center gap-2 mt-4">
-      <Image
-        src="/images/ancre2.svg"
-        alt="ancre"
-        width={50}
-        height={62}
-        className="object-cover h-auto"
-        priority
-      />
-      <p className="font-subtitle text-25px mt-2">
-        {t("content7")}
-      </p>
-    </div>
-  </div>
+          <div className="flex flex-col w-[485px]">
+            <p className="font-title self-start font-bold text-35px leading-none mt-8">
+              {t("subtitle5")}
+            </p>
+            <p className="font-content text-15px leading-23px self-start mt-6">
+              {t("content6")}
+            </p>
+            <div className="flex items-center gap-2 mt-4">
+              <Image
+                src="/images/ancre2.svg"
+                alt="ancre"
+                width={50}
+                height={62}
+                className="object-cover h-auto"
+                priority
+              />
+              <p className="font-subtitle text-25px mt-2">{t("content7")}</p>
+            </div>
+          </div>
 
-  {/* Image alignée */}
-  <Image
-    src="/images/grandtour3desktop.jpg"
-    alt="Grand Tour 3"
-    width={393}
-    height={502}
-    className="h-auto self-end"
-    priority
-  />
-</div>
+          {/* Image alignée */}
+          <Image
+            src="/images/grandtour3desktop.jpg"
+            alt="Grand Tour 3"
+            width={393}
+            height={502}
+            className="h-auto self-end"
+            priority
+          />
+        </div>
 
-  {/* Both */}
+        {/* Both */}
         <p className="font-title text-center text-25px md:text-35px leading-29px md:leading-50px md:w-[1100px] my-6 md:my-10">
           {t("content8")}
         </p>
-          {/* Mobile */}
+        {/* Mobile */}
         <Image
           src="/images/grandtour4.jpg"
           alt="Grand Tour 4"
@@ -236,29 +242,29 @@ export default function GrandTourPage() {
         </p>
         {/* Desktop */}
         <div className="hidden md:flex justify-between gap-40 items-center w-10/12 my-6">
-        <Image
-          src="/images/grandtour4desktop.jpg"
-          alt="Grand Tour 4"
-          width={393}
-          height={502}
-          className="h-auto  mt-2"
-          priority
-        />
-         <div className="flex flex-col w-[700px]">
-        <p className="font-title  font-bold text-35px leading-none mt-8">
-          {t("subtitle6")}
-        </p>
-        <p className="font-title  font-bold text-35px leading-tight">
-          {t("subtitle7")}
-        </p>
-        <p className="font-content text-15px leading-23px mt-6">
-          {t("content9")}
-        </p>
-        </div>
+          <Image
+            src="/images/grandtour4desktop.jpg"
+            alt="Grand Tour 4"
+            width={393}
+            height={502}
+            className="h-auto  mt-2"
+            priority
+          />
+          <div className="flex flex-col w-[700px]">
+            <p className="font-title  font-bold text-35px leading-none mt-8">
+              {t("subtitle6")}
+            </p>
+            <p className="font-title  font-bold text-35px leading-tight">
+              {t("subtitle7")}
+            </p>
+            <p className="font-content text-15px leading-23px mt-6">
+              {t("content9")}
+            </p>
+          </div>
         </div>
         {/* Both */}
         <div className="w-full">
-          <GrandTour />
+          <GrandTour locale={locale} />
         </div>
         <h4 className="text-green font-bold font-title text-25px mt-10 md:self-start md:text-35px md:mt-12">
           {t("subtitle8")}

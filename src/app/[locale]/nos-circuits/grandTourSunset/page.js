@@ -1,17 +1,27 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useScopedI18n } from "./../../../locales/I18nContext";
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./../../components/Cards/Card";
 import VideoLagula from "../../components/VideoLagula";
-import GrandTour from "../../components/Reservation/GrandTour";
+import GrandTourSunset from "../../components/Reservation/GrandTourSunset";
 import useLocalLink from "./../../hooks/useLocalLink"; 
 
+export default function GrandTourSunsetPage({ params }) {
 
-export default function GrandTourSunsetPage() {
   const t = useScopedI18n("grandTour");
   const t1 = useScopedI18n("sunset");
+        const [locale, setLocale] = useState("fr");  
+        useEffect(() => {
+          async function fetchParams() {
+            const resolvedParams = await params;
+            setLocale(resolvedParams.locale || "fr");
+          }
+      
+          fetchParams();
+        }, [params]);
 
 
       const localLink = useLocalLink();
@@ -291,7 +301,7 @@ export default function GrandTourSunsetPage() {
         </p>
         {/* Both */}
         <div className="w-full">
-          <GrandTour />
+          <GrandTourSunset locale={locale} />
         </div>
         <h4 className="text-green font-bold font-title text-25px mt-10 md:self-start md:text-35px md:mt-12">
           {t("subtitle8")}
