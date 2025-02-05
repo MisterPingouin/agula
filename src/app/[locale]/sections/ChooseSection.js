@@ -9,7 +9,7 @@ export default function ChooseSection() {
       const localLink = useLocalLink();
       
       return (
-        <div>
+        <div className="md:px-10 lg:px-0">
         <section className="md:hidden">
         <div className="relative w-full h-[120px] mt-2">
         <Image
@@ -114,8 +114,16 @@ export default function ChooseSection() {
               height={533}
               className="z-0 mt-16"
             />
-            <div className="absolute bottom-[60px] right-[110px] text-white  text-content text-15px space-y-4 z-40">
+            <div className="absolute md:hidden lg:block bottom-[60px] right-[110px] text-white  text-content text-15px space-y-4 z-40">
               <p className="w-[380px] leading-23px">{t('content')}</p>
+              <Link href={localLink("/nos-circuits")} className="cursor-pointer">
+                <button className="px-14 py-2 text-white text-20px mt-8 bg-blue-3 font-content font-semibold">
+                  {t("circuits_button")}
+                </button>
+              </Link>
+            </div>
+            {/* Tablette */}
+            <div className="absolute lg:hidden bottom-[60px] right-[280px] text-white  text-content text-15px space-y-4 z-40">
               <Link href={localLink("/nos-circuits")} className="cursor-pointer">
                 <button className="px-14 py-2 text-white text-20px mt-8 bg-blue-3 font-content font-semibold">
                   {t("circuits_button")}
