@@ -206,8 +206,6 @@ export default function GrandTourPage({ params }) {
               <p className="font-subtitle text-25px mt-2">{t("content7")}</p>
             </div>
           </div>
-
-          {/* Image alignée */}
           <Image
             src="/images/grandtour3desktop.jpg"
             alt="Grand Tour 3"
