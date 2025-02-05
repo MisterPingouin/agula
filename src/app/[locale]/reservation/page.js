@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
 
-const ReservationPageClient = dynamic(() => import("./../components/ReservationPageClient"));
+const ReservationPageClient = dynamic(() => import("./../components/Reservation/ReservationPageClient"));
 
-export default function ReservationPage({ params }) {
-  const { locale } = params; // Récupération directe des paramètres
+export default async function ReservationPage({ params }) {
+  const { locale } = await params; 
 
   return (
     <div className="w-full mt-[80px]">

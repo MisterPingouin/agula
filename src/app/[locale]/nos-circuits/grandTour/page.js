@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Card from "./../../components/Cards/Card";
 import VideoLagula from "../../components/VideoLagula";
+import GrandTour from "../../components/Reservation/GrandTour";
 
 export default function GrandTourPage() {
   const t = useScopedI18n("grandTour");
@@ -19,7 +20,7 @@ export default function GrandTourPage() {
         className="w-full object-cover md:hidden"
         priority
       />
-            <Image
+      <Image
         src="/images/grandtour1desktop.webp"
         alt="Grand Tour Desktop"
         width={428}
@@ -55,7 +56,7 @@ export default function GrandTourPage() {
           className="object-cover w-full h-auto md:hidden"
           priority
         />
-                <Image
+        <Image
           src="/images/illustrationdesktop.jpg"
           alt="map"
           width={440}
@@ -108,58 +109,57 @@ export default function GrandTourPage() {
         </p>
         {/* Desktop */}
         <div className="hidden md:block w-10/12 h-[0.5px] md:h-[0.75px] md:my-4 bg-[#707070] mb-6"></div>
-        <div className="hidden md:flex items-center gap-40 w-10/12">
-        <Image
-          src="/images/grandtour2desktop.jpg"
-          alt="Grand Tour 2"
-          width={393}
-          height={502}
-          className="h-auto"
-          priority
-        />
-        <div className="flex flex-col w-[560px]">
-        <p className="font-title font-bold text-35px leading-none mt-8">
-          {t("subtitle3")}
-        </p>
-        <p className="font-title font-bold leading-tight text-35px">
-          {t("subtitle4")}
-        </p>
-        <p className="font-content text-15px leading-23px mt-6">
-          {t("content2")}
-        </p>
-        <p className="font-content text-15px leading-23px">
-          {t("content3")}
-        </p>
-        <p className="font-content text-15px leading-23px">
-          {t("content4")}
-        </p>
-        <div className="flex items-center">
-        <Image
-          src="/images/dive.svg"
-          alt="dive"
-          width={51}
-          height={62}
-          className="object-cover h-auto"
-          priority
-        />
-        <p className="font-subtitle text-25px">
-          {t("content5")}
-        </p>
+        <div className="hidden md:flex justify-center gap-40 items-center w-10/12 mt-6">
+          <Image
+            src="/images/grandtour2desktop.jpg"
+            alt="Grand Tour 2"
+            width={393}
+            height={502}
+            className="h-auto"
+            priority
+          />
+          <div className="flex flex-col w-[560px]">
+            <p className="font-title font-bold text-35px leading-none mt-8">
+              {t("subtitle3")}
+            </p>
+            <p className="font-title font-bold leading-tight text-35px">
+              {t("subtitle4")}
+            </p>
+            <p className="font-content text-15px leading-23px mt-6">
+              {t("content2")}
+            </p>
+            <p className="font-content text-15px leading-23px">
+              {t("content3")}
+            </p>
+            <p className="font-content text-15px leading-23px">
+              {t("content4")}
+            </p>
+            <div className="flex items-center gap-2 mt-4">
+              <Image
+                src="/images/dive.svg"
+                alt="dive"
+                width={51}
+                height={62}
+                className="object-cover h-auto"
+                priority
+              />
+              <p className="font-subtitle text-25px">{t("content5")}</p>
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
+        {/* Mobile */}
         <Image
           src="/images/grandtour3.jpg"
           alt="Grand Tour 3"
           width={352}
           height={426}
-          className="h-auto w-full mt-6"
+          className="h-auto w-full mt-6 md:hidden"
           priority
         />
-        <p className="font-title self-start font-bold text-25px leading-none mt-8">
+        <p className="font-title self-start font-bold text-25px leading-none mt-8 md:hidden">
           {t("subtitle5")}
         </p>
-        <p className="font-content text-15px leading-23px self-start mt-6">
+        <p className="font-content text-15px leading-23px self-start mt-6 md:hidden">
           {t("content6")}
         </p>
         <Image
@@ -167,36 +167,99 @@ export default function GrandTourPage() {
           alt="ancre"
           width={50}
           height={62}
-          className="object-cover h-auto mt-10"
+          className="object-cover h-auto mt-10 md:hidden"
           priority
         />
-        <p className="font-subtitle text-25px text-center mt-2">
+        <p className="font-subtitle text-25px text-center mt-2 md:hidden">
           {t("content7")}
         </p>
-        <p className="font-title text-center text-25px leading-29px my-6">
+        {/* Desktop */}
+        <div className="hidden md:flex justify-center items-center gap-40 w-10/12 mt-6">
+  <div className="flex flex-col w-[485px]">
+    <p className="font-title self-start font-bold text-35px leading-none mt-8">
+      {t("subtitle5")}
+    </p>
+    <p className="font-content text-15px leading-23px self-start mt-6">
+      {t("content6")}
+    </p>
+    <div className="flex items-center gap-2 mt-4">
+      <Image
+        src="/images/ancre2.svg"
+        alt="ancre"
+        width={50}
+        height={62}
+        className="object-cover h-auto"
+        priority
+      />
+      <p className="font-subtitle text-25px mt-2">
+        {t("content7")}
+      </p>
+    </div>
+  </div>
+
+  {/* Image alignée */}
+  <Image
+    src="/images/grandtour3desktop.jpg"
+    alt="Grand Tour 3"
+    width={393}
+    height={502}
+    className="h-auto self-end"
+    priority
+  />
+</div>
+
+  {/* Both */}
+        <p className="font-title text-center text-25px md:text-35px leading-29px md:leading-50px md:w-[1100px] my-6 md:my-10">
           {t("content8")}
         </p>
+          {/* Mobile */}
         <Image
           src="/images/grandtour4.jpg"
           alt="Grand Tour 4"
           width={352}
           height={427}
-          className="h-auto w-full mt-2"
+          className="h-auto w-full mt-2 md:hidden"
           priority
         />
-        <p className="font-title self-start font-bold text-25px leading-none mt-8">
+        <p className="font-title self-start font-bold text-25px leading-none mt-8 md:hidden">
           {t("subtitle6")}
         </p>
-        <p className="font-title self-start font-bold text-25px leading-tight">
+        <p className="font-title self-start font-bold text-25px leading-tight md:hidden">
           {t("subtitle7")}
         </p>
-        <p className="font-content text-15px leading-23px self-start mt-6">
+        <p className="font-content text-15px leading-23px self-start mt-6 md:hidden">
           {t("content9")}
         </p>
-        <h4 className="text-green font-bold font-title text-25px mt-10">
+        {/* Desktop */}
+        <div className="hidden md:flex justify-between gap-40 items-center w-10/12 my-6">
+        <Image
+          src="/images/grandtour4desktop.jpg"
+          alt="Grand Tour 4"
+          width={393}
+          height={502}
+          className="h-auto  mt-2"
+          priority
+        />
+         <div className="flex flex-col w-[700px]">
+        <p className="font-title  font-bold text-35px leading-none mt-8">
+          {t("subtitle6")}
+        </p>
+        <p className="font-title  font-bold text-35px leading-tight">
+          {t("subtitle7")}
+        </p>
+        <p className="font-content text-15px leading-23px mt-6">
+          {t("content9")}
+        </p>
+        </div>
+        </div>
+        {/* Both */}
+        <div className="w-full">
+          <GrandTour />
+        </div>
+        <h4 className="text-green font-bold font-title text-25px mt-10 md:self-start md:text-35px md:mt-12">
           {t("subtitle8")}
         </h4>
-        <div className="flex flex-col gap-4 my-6 md:hidden">
+        <div className="flex flex-col gap-4 my-6 md:flex-row">
           <Card tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
           <Card
             tourKey="calanquesPiana"

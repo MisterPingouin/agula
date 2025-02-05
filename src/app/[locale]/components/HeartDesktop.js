@@ -2,9 +2,14 @@
 
 import { useScopedI18n } from "./../../locales/I18nContext";
 import Image from "next/image";
+import Link from "next/link";
+import useLocalLink from "./../hooks/useLocalLink"; 
+
 
 export default function HeartDesktop() {
     const t = useScopedI18n("heart");
+          const localLink = useLocalLink();
+    
 
     return (
         <section className="hidden lg:flex flex-col justify-center items-center leading-tight mb-6 relative">
@@ -16,9 +21,9 @@ export default function HeartDesktop() {
             <p className="font-content text-15px text-center leading-23px mb-6 z-10">{t("content4")}</p>
             
             <div className="flex justify-between items-center w-[1060px] mt-10 z-10">
-                <button className="bg-blue-3 text-white px-16 py-3 font-semibold text-20px hidden lg:block">
+            <Link href={localLink(`/reservation`)} className="bg-blue-3 text-white px-16 py-3 font-semibold text-20px hidden lg:block">
                     {t("book")}
-                </button>
+                </Link>
                 <div className="grid grid-cols-4 gap-10">
                     <div>
                         <span className="text-22px font-semibold font-content">80€</span>

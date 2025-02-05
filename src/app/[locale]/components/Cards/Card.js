@@ -47,9 +47,9 @@ export default function Card({ tourKey, imageSrc }) {
 
       {/* Boutons d'action */}
       <div className="flex space-x-2">
-        <button className="bg-green-2 text-white px-4 py-2 font-semibold text-14px">
+        <Link href={localLink(`/reservation`)} className="bg-green-2 text-white px-4 py-2 font-semibold text-14px">
           {t("reserveButton")}
-        </button>
+        </Link>
         <Link
   href={localLink(`/nos-circuits/${tourKey}`)}
   className="border border-green-2 text-green-2 px-4 py-2 font-semibold text-14px"
