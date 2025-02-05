@@ -22,8 +22,8 @@ export default async function RootLayout({ children, params }) {
     <html lang={finalLocale}>
       <head>
         <meta charSet="utf-8" />
-        <link rel="icon" href="/images/favicon.ico" />
-      </head>
+        <link rel="icon" href="/favicon.ico" />
+        </head>
       <body className={`${roboto.variable} ${msMadi.variable} ${sourceSans3.variable} antialiased`}>
         <I18nProvider locale={finalLocale}>
           <Header />
