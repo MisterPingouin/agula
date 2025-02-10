@@ -298,6 +298,7 @@ const en = {
     subtitle8: "Our tours",
   },    
   sunset: {
+    grandtour: "The Grand Tour Sunset",
     title1: "A unique moment",
     title2: "awaits you",
     content: "Before heading back, a unique moment awaits you: the last lights of dusk wrap around the steep rocks surrounding you, giving them a more glowing hue than ever. On the Sacha, this unique moment is always enjoyed with a good glass of Corsican wine. Jean-Baptiste is inviting! The sun is gradually swallowed by the sea, which gently lulls you with its peaceful ripples.",

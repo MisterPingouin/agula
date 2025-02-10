@@ -17,7 +17,7 @@ const NavLinks = ({ onClose }) => {
     { name: t("team"), href: localLink("/equipe") },
     { name: t("commitments"), href: "#engagements" },
     { name: t("private"), href: localLink("/privatisation") },
-    { name: t("gallery"), href: "#galerie" },
+    { name: t("gallery"), href: localLink("/gallerie") },
   ];
 
   // Fonction pour fermer le menu lors d'un clic sur un lien

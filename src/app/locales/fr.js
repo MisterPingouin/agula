@@ -296,6 +296,7 @@ const fr = {
       subtitle8: "Nos circuits",
     },
     sunset: {
+      grandtour: "Le Grand Tour Sunset",
       title1: "Un moment unique",
       title2: "s’offre à vous",
       content: "Avant de rentrer, un moment unique s’offre à vous : les derniers feux du crépuscule enveloppent les roches abruptes qui vous entourent pour leur donner une teinte plus rougeoyante que jamais. Sur le Sacha, ce moment unique se déguste toujours avec un bon verre de vin Corse. C’est Jean-Baptiste qui invite ! Le soleil se fait peu à peu avaler par la mer, elle qui vous berce avec ses paisibles clapotis.",

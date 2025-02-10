@@ -135,10 +135,11 @@ const HomeSection = () => {
         >
               {t1('private')}
               </Link> 
-<a
-              href="#"
-            >
-{t1('gallery')}            </a>
+              <Link
+          href={localLink("/gallerie")}
+        >
+              {t1('gallery')}
+              </Link> 
 
         </nav>
         <Link href={localLink("/reservation")}>
