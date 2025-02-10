@@ -15,7 +15,7 @@ const NavLinks = ({ onClose }) => {
     { name: t("circuits"), href: localLink("/nos-circuits") },
     { name: t("boat"), href: localLink("/bateau") },
     { name: t("team"), href: localLink("/equipe") },
-    { name: t("commitments"), href: "#engagements" },
+    { name: t("commitments"), href: localLink("/engagement") },
     { name: t("private"), href: localLink("/privatisation") },
     { name: t("gallery"), href: localLink("/gallerie") },
   ];

@@ -36,6 +36,7 @@ export default {
         '12px' : '0.63rem',
         '13px' : '0.813rem',
         '14px' : '0.8rem',
+        '15px' : '0.938rem',
         '17px' : '1.063rem',
         '21px' : '1.313rem',
         '20px' : '1.3rem',

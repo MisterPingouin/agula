@@ -10,7 +10,7 @@ export default function PrivatisationPage() {
   return (
     <main className="text-black mt-[80px] md:[99px] mx-auto">
       {/* Header */}
-      <div className="flex flex-col justify-center items-center px-4">
+      <div className="flex flex-col justify-center items-center px-4 py-4">
         {/* Mobile */}
         <h1 className="font-subtitle mt-4 text-50px text-green-2 leading-none text-center md:hidden">
           {t("title")}

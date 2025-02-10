@@ -129,8 +129,11 @@ const HomeSection = () => {
         >
               {t1('team')}
               </Link> 
-{t1('commitments')}            
-<Link
+              <Link
+          href={localLink("/engagement")}
+        >
+              {t1('commitments')}
+              </Link> <Link
           href={localLink("/privatisation")}
         >
               {t1('private')}

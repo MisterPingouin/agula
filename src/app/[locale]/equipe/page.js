@@ -41,7 +41,7 @@ export default function EquipePage() {
           {t("title")}
         </h1>
         {/* Sous-titre */}
-        <p className="block md:hidden font-content font-bold text-13px text-center max-w-[900px]">
+        <p className="block md:hidden font-content text-15px font-bold leading-23px text-center max-w-[900px]">
           {t("subtitle")}
         </p>
         <p className="hidden md:block lg:hidden font-content font-bold text-20px text-center max-w-[900px]">

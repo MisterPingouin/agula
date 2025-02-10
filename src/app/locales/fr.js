@@ -499,6 +499,119 @@ const fr = {
       privacy_title: "INFORMATIQUE ET LIBERTÉ",
       privacy_content: "Tout utilisateur ayant déposé des infos directement ou indirectement nominatives dispose d’un droit d’accès et de rectification conformément à la loi n°78-17 du 06/01/78 (Informatique et Liberté) auprès de l’administrateur du site."
     },
+    engagement: {
+      title: "Nos engagements",
+      intro: [
+        "Conscients de l’importance de préserver une nature fragile, nous nous engageons pleinement dans une démarche de développement durable.",
+        "Membre de l’association des bateliers de Scandola, notre équipe respecte la charte des activités de promenade en mer, présenté ci-dessous. En tant que signataires de la charte Natura 2000 des bonnes pratiques pour le secteur Calvi-Cargèse, nous nous engageons à en suivre les principes listés ci-dessous. Nous œuvrons à la préservation de l’environnement tout en soutenant l’activité économique locale.",
+      ],
+      title2: "La protection de la réserve de Scandola est pour nous une priorité. Passionnés par la nature sauvage, nous sensibilisons également nos clients à l’importance des actions écologiques pour la biodiversité.",
+      associationTitle: "ASSOCIATION DES BATELIERS DE SCANDOLA",
+      charteTitle: "Charte des activités de promenade en mer",
+      charteSubtitle: "L’engagement des structures professionnelles de la promenade en mer, vers une production de qualité adaptée aux attentes de la clientèle et au maintien de l’équilibre de la réserve de Scandola.",
+      articles: [
+        {
+          title: "Article 1",
+          content: [
+            "Je m’engage à véhiculer une image positive de la promenade en mer en me conduisant en professionnel responsable, à créer et favoriser une ambiance conviviale pour mes passagers."
+          ],
+        },
+        {
+          title: "Article 2",
+          content: [
+            "Je m’engage à ce que le personnel de ma structure soit titulaire des brevets et titres nécessaires à la mise en œuvre de mes activités, à développer par la formation, les compétences indispensables à une prestation de qualité basée sur le respect, la préservation et la connaissance de la réserve naturelle de Scandola."
+          ],
+        },
+        {
+          title: "Article 3",
+          content: [
+            "Je m’engage à ne jamais porter volontairement atteinte à l’intégrité du site visité et à éduquer mes marins à cette pratique, à respecter une vitesse adaptée et à proscrire les accélérations excessives et inutiles près des rochers."
+          ],
+        },
+        {
+          title: "Article 4",
+          content: [
+            "Je m’engage à limiter les nuisances olfactives et sonores, en particulier à ne pas klaxonner, crier ou émettre des bruits inutiles dans les failles, en ne laissant aucun détritus sur l’eau et si possible les ramasser."
+          ],
+        },
+        {
+          title: "Article 5",
+          content: [
+            "Je m’engage à une discrétion totale près des nids de balbuzard dès lors qu’ils sont occupés afin de garantir la tranquillité du couple présent et en période de reproduction (Mars à juin) à respecter une distance nécessaire."
+          ],
+        },
+        {
+          title: "Article 6",
+          content: [
+            "Je m’engage à adopter une attitude écoresponsable dans ma conception de l’activité, à privilégier dans ma communication les produits à développement durable, l’histoire le patrimoine et la culture corse, les produits du terroir et l’artisanat."
+          ],
+        },
+        {
+          title: "Article 7",
+          content: [
+            "Je m’engage à intégrer dans mes objectifs et plans d’investissements une réflexion sur les équipements moins polluants et respectueux de l’environnement."
+          ],
+        },
+        {
+          title: "Article 8",
+          content: [
+            "Je m’engage à respecter la réglementation maritime, à être en complète régularité fiscale et sociale, à mettre en œuvre mes activités dans les conditions optimum de sécurité, à respecter les limitations de vitesse (5 nœuds dans la bande des 300m)."
+          ],
+        },
+        {
+          title: "Article 9",
+          content: [
+            "Je m’engage à travailler dès que cela est possible en partenariat avec les acteurs locaux (privés et/ou institutionnels), à faire preuve de respect et « fair- play », à communiquer toutes informations relatives aux conditions de bonne pratique de mon activité."
+          ],
+        },
+      ],
+      naturaTitle: "NATURA 2000 CALVI-CARGESE",
+      naturaSubtitle: "Charte des bonnes pratiques",
+      naturaListIntro: "Liste des engagements :",
+      naturaSections: [
+        {
+          sectionTitle: "Portée générale",
+          points: [
+            "1. Ne pas porter intentionnellement atteinte aux habitats/espèces d’intérêt communautaire des sites Natura 2000 et, d’une manière générale, au patrimoine naturel du secteur « Calvi - Carghjese ».",
+            "2. Promouvoir la charte Natura 2000 auprès des usagers, clients et/ou adhérents que je représente et les informer des engagements auxquels j’ai souscrit.",
+            "3. Participer aux enquêtes relatives à la fréquentation du secteur « Calvi - Carghjese », sous réserve que les données transmises restent anonymes et fassent l’objet d’une analyse globale."
+          ],
+        },
+        {
+          sectionTitle: "Fonds marins côtiers",
+          points: [
+            "1. Ancrer uniquement sur des fonds sableux afin de ne pas porter atteinte aux habitats marins sensibles (herbiers de posidonie, herbiers de cymodocée, récifs coralligènes, roche infralittorale à algues photophiles).",
+            "2. Ne pas perturber les mammifères marins, dont le grand dauphin, en respectant le Code de Bonne Conduite pour l’observation des cétacés en Méditerranée (sanctuaire Pelagos).",
+            "3. M’informer de la liste des espèces exotiques envahissantes marines à signaler en Corse et veiller à ne pas les introduire, les disséminer ou les rejeter intentionnellement."
+          ],
+        },
+        {
+          sectionTitle: "Falaises littorales et côtes rocheuse",
+          points: [
+            "1. Du 1er avril au 31 juillet, respecter les zones de quiétude définies autour des nids de balbuzard pêcheur afin de ne pas perturber la reproduction de l’espèce (interdiction de navigation en mer et de circulation à terre dans un périmètre d’environ 250 mètres autour de chaque nid). M’informer des mises à jour annuelles des zones de quiétude, les sites de nidification fréquentés par le balbuzard pêcheur pouvant évoluer d’une année à l’autre.",
+            "2. Proscrire toute manifestation sonore excessive à moins de 250 mètres des autres nids de balbuzard pêcheur observés sur le secteur « Calvi - Carghjese », afin de garantir la tranquillité de l’espèce. Pour les propriétaires de navires à motorisation hybride, utiliser uniquement la propulsion électrique à l’approche des nids de balbuzard pêcheur et de la côte en général.",
+            "3. Respecter les règles de navigation en mer et notamment la limitation de la vitesse des embarcations à 5 nœuds dans la bande des 300 mètres, afin de préserver la tranquillité des espèces présentes sur l’ensemble de la façade littorale.",
+            "4. Ne pas accoster et/ou débarquer sur les encorbellements à Lithophyllum byssoides et au sein des grottes médiolittorales recensés le long de la façade « Calvi - Carghjese », afin de ne pas porter atteinte à ces milieux littoraux sensibles.",
+            "5. Du 1er avril au 31 juillet, ne pas survoler en dessous de 700 mètres (2 300 pieds) les zones de quiétude définies autour des nids de balbuzard pêcheur, que ce soit à partir d’aéronefs pilotés ou commandés à distance (ULM, parapente, drone, etc.). Au sein de la Réserve Naturelle de Scandula, respecter l’interdiction de survol en dessous de 1 000 mètres (3 300 pieds) prévue par la réglementation spécifique de la réserve naturelle et la réglementation aéronautique civile. M’informer des mises à jour annuelles des zones de quiétude."
+          ],
+        },
+        {
+          sectionTitle: "Milieux terrestres",
+          points: [
+            "1. Autoriser l’accès des services compétents aux parcelles engagées dans la charte afin de faciliter la réalisation des opérations d’inventaire et d’évaluation de l’état de conservation des habitats et/ou espèces d’intérêt communautaire.",
+            "2. Respecter les balisages existants au niveau des sites littoraux fréquentés ainsi que les aménagements des sites naturels fragiles.",
+            "3. Entre le 1er mars et le 30 juin, ne pas effectuer de travaux de débroussaillement, d’élagage ou de coupe de végétaux (à l’exception des obligations légales de débroussaillement prévues par le code forestier et des travaux liés aux cultures maraichères et fruitières) afin de ne pas perturber la reproduction des oiseaux terrestres.",
+            "4. Ne pas introduire ou disséminer intentionnellement d’espèces exotiques envahissantes végétales ou animales"
+          ],
+        },
+      ],
+      infosTitle: "Pour plus d’informations",
+      infosContent: "rendez-vous sur la page de l’Office de l’environnement de la Corse consacrée à la Charte Natura 2000 Calvi-Cargèse :",
+      infosContent2 : "https://www.oec.corsica/CI-ARTICLE-NATURA-2000-DE-BONNES-PRATIQUES-DU-SECTEUR-CALVI-CARGESE_a3359.html",
+      infosContent3: "Ou : téléchargez le livret de présentation de la Charte :",
+      infosContent4 :         "https://www.oec.corsica/attachment/207978/",
+    },
+    
 };
 
 export default fr;
