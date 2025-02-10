@@ -111,7 +111,7 @@ const Footer = () => {
 
         {/* Mentions légales et autres */}
         <p className="mt-auto mb-4 text-13px font-title font-light text-center px-4">
-          <Link href="#" className="hover:text-green-3">
+          <Link href={localLink("/mentions")} className="hover:text-green-3">
             {t("mentionsLegales")}
           </Link>{" "}
           |{" "}
@@ -228,7 +228,7 @@ const Footer = () => {
               {t("informations")}
             </h2>
             <div className="flex flex-col gap-1.5 font-title font-medium text-13px mt-4">
-              <Link href="#" className="hover:text-green-3">
+              <Link href={localLink("/mentions")} className="hover:text-green-3">
                 {t("mentionsLegales")}
               </Link>
               <Link href={localLink("/cgv")} className="hover:text-green-3">

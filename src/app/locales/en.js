@@ -490,8 +490,24 @@ const en = {
         ]
       }
     ]
-  }
-  
+  },
+  mentions_legales: {
+    title: "Legal Notice",
+    intro: "By accessing this site, you are informed that the use of the Internet requires compliance with a set of laws, particularly regarding copyright and the Data Protection Act.",
+    editor_title: "WEBSITE EDITOR",
+    editor_content: "By accessing this site, you are informed that the use of the Internet requires compliance with a set of laws, particularly regarding copyright and the Data Protection Act.",
+    realisation_title: "WEBSITE DEVELOPMENT",
+    realisation_content: "By accessing this site, you are informed that the use of the Internet requires compliance with a set of laws, particularly regarding copyright and the Data Protection Act.",
+    hosting_title: "HOSTING",
+    hosting_content: "By accessing this site, you are informed that the use of the Internet requires compliance with a set of laws, particularly regarding copyright and the Data Protection Act.",
+    copyright_title: "COPYRIGHT",
+    copyright_content: "In accordance with the French Intellectual Property Code, any reproduction for purposes other than private use, as well as the sale, distribution, publication, adaptation, or communication, whether in whole or in part, of the data is strictly subject to prior written authorization from the rights holders, namely:",
+    design: "Graphic Design: Syrovatsky",
+    web: "Web Development: Anthony Pham",
+    privacy_title: "DATA PROTECTION AND PRIVACY",
+    privacy_content: "Any user who has provided directly or indirectly identifiable personal information has the right to access and rectify this information in accordance with Law No. 78-17 of 06/01/78 (Data Protection and Privacy) by contacting the site administrator."
+  },  
+ 
 };
 
 export default en;

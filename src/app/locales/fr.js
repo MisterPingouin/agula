@@ -482,7 +482,23 @@ const fr = {
           ]
         }
       ]
-    }
+    },
+    mentions_legales: {
+      title: "Mentions légales",
+      intro: "En accédant à ce site, vous êtes informés que l'utilisation d'Internet nécessite le respect d’un ensemble de législations relatives notamment aux droits d'auteur et à la loi Informatique et Liberté.",
+      editor_title: "ÉDITEUR DU SITE WEB",
+      editor_content: "En accédant à ce site, vous êtes informés que l'utilisation d'Internet nécessite le respect d’un ensemble de législations relatives notamment aux droits d'auteur et à la loi Informatique et Liberté.",
+      realisation_title: "RÉALISATION DU SITE WEB",
+      realisation_content: "En accédant à ce site, vous êtes informés que l'utilisation d'Internet nécessite le respect d’un ensemble de législations relatives notamment aux droits d'auteur et à la loi Informatique et Liberté.",
+      hosting_title: "HÉBERGEMENT",
+      hosting_content: "En accédant à ce site, vous êtes informés que l'utilisation d'Internet nécessite le respect d’un ensemble de législations relatives notamment aux droits d'auteur et à la loi Informatique et Liberté.",
+      copyright_title: "COPYRIGHT",
+      copyright_content: "En application du Code Français de la Propriété Intellectuelle, la reproduction pour un usage autre que privé, la vente, la diffusion, la publication, l’adaptation ou la communication, partielles ou intégrales, des données sont strictement soumises à l’autorisation écrite et préalable des détenteurs des droit, soit :",
+      design: "Graphisme / Design : Syrovatsky",
+      web: "Developement Web : Anthony Pham",
+      privacy_title: "INFORMATIQUE ET LIBERTÉ",
+      privacy_content: "Tout utilisateur ayant déposé des infos directement ou indirectement nominatives dispose d’un droit d’accès et de rectification conformément à la loi n°78-17 du 06/01/78 (Informatique et Liberté) auprès de l’administrateur du site."
+    },
 };
 
 export default fr;
