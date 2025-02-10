@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
+import { useScopedI18n } from "./../../locales/I18nContext";
 
 // -- Exemple de données --
 const allGalleryItems = [
@@ -29,6 +30,8 @@ function chunkArray(array, chunkSize) {
 }
 
 export default function GalleriePage() {
+  const t = useScopedI18n("gallery");
+
   const [selectedItem, setSelectedItem] = useState(null);
 
   const openLightbox = (item) => {
@@ -163,8 +166,15 @@ export default function GalleriePage() {
 
   return (
     <main className="flex flex-col items-center mt-[80px]">
-      <h1 className="mb-6 font-subtitle text-50px text-orange">Galerie</h1>
-
+        <h1 className="block md:hidden font-subtitle text-50px text-green-2">
+          {t("title")}
+        </h1>
+        <h1 className="hidden md:block lg:hidden font-subtitle text-80px text-green-2">
+          {t("title")}
+        </h1>
+        <h1 className="hidden lg:block font-subtitle text-80px text-green-2">
+          {t("title")}
+        </h1>
       {/* Layout mobile */}
       <div className="block md:hidden">{renderMobileLayout()}</div>
 
@@ -209,7 +219,7 @@ export default function GalleriePage() {
           <video
             src={selectedItem.src}
             controls
-            autoPlay
+            // autoPlay
             className="max-w-[90vw] max-h-[90vh]"
           />
         )}

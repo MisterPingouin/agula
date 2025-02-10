@@ -309,6 +309,9 @@ const fr = {
     video: {
       title: "En images",
       content: "Envie d’avoir un aperçu de ce que vous découvrirez au cours de votre balade ? Cliquez sur play pour une embarcation virtuelle… sans oublier qu’en vrai, c’est mieux !",
+    },
+    gallery: {
+      title: "En images",
     }
 };
 

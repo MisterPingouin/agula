@@ -312,6 +312,9 @@ const en = {
     title: "In pictures",
     content: "Want to get a glimpse of what you will discover during your walk? Click play for a virtual boat... without forgetting that in real life, it's better!",
   },
+  gallery: {
+    title: "Gallery",
+  }
 };
 
 export default en;
