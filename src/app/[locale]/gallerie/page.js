@@ -5,7 +5,6 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useScopedI18n } from "./../../locales/I18nContext";
 
-// -- Exemple de données --
 const allGalleryItems = [
   { id: 1, type: "image", src: "/images/test1.jpg", alt: "Paysage 1", width: 372, height: 446 },
   { id: 2, type: "image", src: "/images/test2.jpg", alt: "Paysage 2", width: 372, height: 446  },
@@ -17,7 +16,6 @@ const allGalleryItems = [
   { id: 8, type: "image", src: "/images/test1.jpg", alt: "Paysage 7", width: 372, height: 446 },
   { id: 9, type: "video", src: "/videos/test.mov", alt: "Vidéo 2" },
   { id: 10, type: "image", src: "/images/test1.jpg", alt: "Paysage 8", width: 372, height: 446 },
-  { id: 11, type: "image", src: "/images/test1.jpg", alt: "Paysage 9", width: 372, height: 446 },
 ];
 
 // Découpe d’un tableau en blocs
@@ -134,7 +132,7 @@ export default function GalleriePage() {
     return desktopChunks.map((chunk, chunkIndex) => (
       <div
         key={`desktop-chunk-${chunkIndex}`}
-        className="w-[1076px] flex flex-col mx-auto mb-4"
+        className="flex flex-col mx-auto mb-4 md:w-[800px] lg:w-[1076px] "
       >
         {/* Ligne 1 : items[0], [1], [2], chacun 352×426, avec 2 gaps de 10px => total 3×352 + 2×10 = 1076 */}
         <div className="flex gap-[10px] mb-4">

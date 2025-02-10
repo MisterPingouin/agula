@@ -148,7 +148,7 @@ const en = {
     reserver: "Book now",
     informations: "INFORMATIONS",
     privatisation: "Private tours",
-    tarifs: "Rates",
+    tarifs: "Gallery",
     mentionsLegales: "Legal notice",
     cgv: "T&C",
     realisation: " Development",
@@ -314,7 +314,184 @@ const en = {
   },
   gallery: {
     title: "Gallery",
+  },
+  cgv: {
+    title: "General Terms and Conditions of Sale",
+    title2: "The General Terms and Conditions of Sale of L’Agula Marina Croisières",
+    articles: [
+      {
+        title: "Article 1: Reservations",
+        content: [
+          "Passengers must book their excursion in advance.",
+          "Any specific health condition must be declared at the time of booking as stated in Article 6-2.",
+          "Pregnant women and individuals with a disability, physical issue, or health condition are required to notify this at the time of booking.",
+          "It is recommended to book as early as possible, given the limited number of seats available on board and the high demand, especially during peak season.",
+          "The company accepts bookings online via its website www.lagulamarinacroisieres.fr, by phone, or directly at the sales office.",
+          "Any reservation without immediate payment cannot be validated.",
+          "Minors are only allowed on board if accompanied and under the supervision of their parents."
+        ]
+      },
+      {
+        title: "Article 2: Excursion Schedules, Routes, and Rates",
+        content: [
+          "The company offers passengers several tours throughout the day at different rates.",
+          "The schedules and routes are defined by SAS L’Agula Marina Croisières. The website, brochures, posters, and advertisements published by SAS L’Agula Marina Croisières providing information about the tours do not constitute a contractual document. The information is provided for reference only and may be subject to change.",
+          "Schedules and routes may be modified during the season based on weather conditions, perceived temperatures, sunrise and sunset times, or the operating hours of establishments hosting passengers during the excursions (ports, restaurants, etc.).",
+          "Like schedules and routes, rates may change at any time depending on circumstances such as economic factors (fuel surcharges, tax changes) or tax adjustments (VAT, port and usage fees).",
+          "Rates do not vary based on passenger demand.",
+          "All rates are inclusive of tax (VAT).",
+          "Passengers will be informed of schedules, routes, and rates at the time of booking through the website or after contacting the company for further information.",
+          "However, the announced departure and arrival times may be adjusted in case of any difficulty encountered by the ship's captain.",
+          "Additionally, weather conditions may compel the captain to alter the planned excursion route.",
+          "If necessary, the excursion fare will be adjusted.",
+          "Passengers will be notified of any changes to schedules, rates, or routes.",
+          "Under no circumstances can such changes justify compensation for passengers.",
+          "The carrier reserves the right, at the captain's discretion, to make additional stops or alter the planned route for reasons related to navigation. The captain is also authorized to tow, assist ships in distress, reroute, perform rescues, and conduct transfers. Neither the captain nor the company can be held liable for reroutes, service interruptions, or delays."
+        ]
+      },
+      {
+        title: "Article 3: Cancellation",
+        content: [
+          "3.1 - Cancellation by the Company",
+          "The company reserves the right to cancel an excursion without notice or compensation if the minimum passenger quota (8 full-paying passengers) is not met, in cases of force majeure, adverse weather, technical malfunctions, or for safety or legitimate reasons.",
+          "The ship's captain has the sole authority to determine whether weather conditions allow for the excursion to proceed in optimal conditions.",
+          "If the departure is delayed or prevented by exceptional circumstances, the company disclaims responsibility for any resulting direct or indirect expenses or damages incurred by passengers.",
+          "L’Agula Marina Croisières will inform passengers of any issues impacting the excursion as soon as they become aware of them.",
+          "The company will endeavor to offer alternatives, such as rescheduling the excursion based on availability, without passengers being entitled to compensation or refunds.",
+          "If no alternative is offered or accepted, passengers can request a full refund of their tickets.",
+          "Refunds are processed through the same payment method used by the passenger at the time of booking.",
+          "3.2 - Cancellation by the Passenger",
+          "Passengers may cancel their reservation at any time.",
+          "However, they will only be eligible for a refund if the cancellation is made at least 24 hours before the scheduled departure.",
+          "Otherwise, passengers must pay the full fare, and the company will not provide any refund or compensation.",
+          "3.3 - Group Cancellation",
+          "A group may cancel its reservation at any time.",
+          "However, a refund will only be provided if the cancellation is made at least 96 hours before the scheduled departure.",
+          "Otherwise, the group will be required to pay the full fare, and no refund or compensation will be provided."
+        ]
+      },
+      {
+        title: "Article 4: Payment Terms",
+        content: [
+          "Tickets must be paid for at the time of booking.",
+          "The company accepts payment via e-transaction, credit card, ANCV vacation vouchers, cash, or check.",
+          "Passengers can pay online through the company's website or at the main ticket office in the port of Cargèse during operating hours.",
+          "Payment can also be made at boarding with credit cards, ANCV vacation vouchers, or cash.",
+          "A valid email address is required at the time of booking to receive the electronic ticket. Maintaining a valid email address is the responsibility of the customer.",
+          "Tickets are issued only upon full payment.",
+          "No change is given on vacation vouchers."
+        ]
+      },
+      {
+        title: "Article 5: Validity and Non-transferability of Tickets",
+        content: [
+          "Tickets are valid for the current season.",
+          "They are non-transferable."
+        ]
+      },
+      {
+        title: "Article 5: Validity and Non-transferability of Tickets",
+        content: [
+          "Tickets are valid for the current season.",
+          "They are non-transferable."
+        ]
+      },
+      {
+        title: "Article 6: Boarding and Disembarkation",
+        content: [
+          "6.1 - Boarding Conditions",
+          "Passengers must arrive at the boarding area 15 minutes before departure if they do not have a ticket, and 10 minutes before if they have an electronic ticket.",
+          "No delays are accepted by the company.",
+          "In case of delay, even with a valid ticket, passengers have no recourse if they miss the boarding.",
+          "Boarding and disembarkation are supervised by the captain, who directs passengers on how to board and disembark.",
+          "Only passengers with a reservation and a valid ticket are authorized to board.",
+          "Passengers must keep their tickets in good condition throughout the trip.",
+          "The company reserves the right to deny boarding to passengers without a reservation or valid ticket.",
+          "The captain has the authority to refuse boarding to anyone with a physical or mental condition that prevents them from safely participating in the excursion, or to anyone under the influence of drugs, alcohol, or hallucinogens.",
+          "In such cases, passengers are responsible for any damage they may cause to themselves, the vessel, equipment, other passengers, or third-party property.",
+          
+          "6.2 - Passenger Health Conditions",
+          "Any specific health condition must be declared at the time of booking.",
+          "Passengers with disabilities, known health issues, or physical conditions incompatible with the excursion (pregnant women, passengers with back problems, individuals with limited mobility, etc.) must inform the company at the time of booking, as stated in Article 1.",
+          "If a health condition is not declared, the captain may deny boarding without any right to a refund or compensation.",
+          "If a passenger who declared their health condition is deemed unfit for the excursion by the captain due to weather conditions, the passenger may be denied boarding and will receive a full refund.",
+          
+          "6.3 - Accessibility",
+          "This type of boat is not suitable for passengers with reduced mobility or severe physical disabilities. If not declared at the time of booking, the captain may refuse boarding under these circumstances without any right to a refund or compensation.",
+          "Bicycles, strollers, and bulky equipment are not allowed on board."
+        ]
+      },
+      {
+        title: "Article 7: Safety Instructions and Liability",
+        content: [
+          "The captain is the sole authority on board and informs passengers of the safety instructions to follow.",
+          "Passengers must remain seated during navigation and may only move around the vessel with the captain’s permission.",
+          "Smoking, including electronic cigarettes, is prohibited on board.",
+          "Minors are allowed on board only if accompanied by their parents, who are fully responsible for them.",
+          "Animals are not allowed on board.",
+          "Passengers must comply with the rules established by L’Agula Marina Croisières and follow the captain’s orders.",
+          "The company is not liable for accidents caused by passengers failing to comply with safety instructions.",
+          "Passengers must keep their personal belongings with them at all times.",
+          "The company is not responsible for lost, stolen, or damaged items on board, and no compensation will be provided."
+        ]
+      },
+      {
+        title: "Article 8: Swimming Stops",
+        content: [
+          "The company offers swimming stops during excursions.",
+          "Swimming is done under the responsibility of the passengers.",
+          "The captain may cancel a swimming stop depending on weather conditions.",
+          "Passengers must comply with the rules and follow the captain’s orders during swimming stops."
+        ]
+      },
+      {
+        title: "Article 9: Stopovers",
+        content: [
+          "The vessel may offer stopovers during excursions.",
+          "The company is not responsible for passengers or their belongings during stopovers.",
+          "The company is not liable for any issues passengers may encounter at businesses or establishments during a stopover.",
+          "The captain will provide passengers with a return time for reboarding.",
+          "Passengers must be at the vessel 5 minutes before the scheduled departure time.",
+          "No refund or compensation will be given to passengers who miss the boarding due to lateness."
+        ]
+      },
+      {
+        title: "Article 10: Vessel Regulations",
+        content: [
+          "The vessels of L’Agula Marina Croisières comply with European regulations for passenger transport.",
+          "The navigation permit is renewed annually after inspection to ensure compliance with safety standards (stability, buoyancy, fire prevention, rescue equipment, etc.).",
+          "The captain holds a captain’s and mechanic’s license.",
+          "These licenses include first aid certification and a radio operator’s certificate (CRO).",
+          "All crew members undergo an annual medical examination.",
+          "A special insurance policy covers all passengers."
+        ]
+      },{
+        title: "Article 11: Groups, Agreements, and Privatization",
+        content: [
+          "11.1 - Conditions",
+          "A booking for a private service or a group will only be confirmed after the client accepts the quote and pays a deposit.",
+          "The remaining balance must be paid no later than before boarding.",
+          "In the event of cancellation by the client, the deposit remains due to the company and the client will not be entitled to any refund or compensation.",
+          "If the company cancels the service under the conditions described in Article 3.1, the full amount will be refunded to the client.",
+          
+          "11.2 - Groups and Agreements",
+          "Payment will be made according to the terms defined in Article 11.1.",
+          "Refunds are subject to the company's cancellation terms as defined in Article 3.1, as well as the client's cancellation terms defined in Article 3.3.",
+          "Under agreements established between L’Agula Marina Croisières and partners, their members or clients may benefit from discounts offered by L’Agula Marina Croisières.",
+          "At boarding, passengers must provide proof of stay or membership with one of our partner organizations. Otherwise, the full ticket price will be charged without recourse to L’Agula Marina Croisières.",
+          "The establishment of an agreement does not allow third parties or signatory organizations to override the general terms and conditions of sale of L’Agula Marina Croisières."
+        ]
+      },
+      {
+        title: "Article 12: Complaints",
+        content: [
+          "Any complaint against L’Agula Marina Croisières must be made within 15 days of the excursion date by registered letter with acknowledgment of receipt to the headquarters of SAS L’Agula Marina Croisières, Route de Piana 20 130 CARGESE.",
+          "SIRET: 921 377 115 00016"
+        ]
+      }
+    ]
   }
+  
 };
 
 export default en;

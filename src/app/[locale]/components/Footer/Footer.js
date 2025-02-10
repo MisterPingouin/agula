@@ -104,7 +104,7 @@ const Footer = () => {
           <Link href={localLink("/privatisation")} className="hover:text-green-3">
             {t("privatisation")}
           </Link>
-          <Link href="#" className="hover:text-green-3">
+          <Link href={localLink("/gallerie")} className="hover:text-green-3">
             {t("tarifs")}
           </Link>
         </div>
@@ -115,7 +115,7 @@ const Footer = () => {
             {t("mentionsLegales")}
           </Link>{" "}
           |{" "}
-          <Link href="#" className="hover:text-green-3">
+          <Link href={localLink("/privatisation")} className="hover:text-green-3">
             {t("cgv")}
           </Link>{" "}
           |{" "}
@@ -216,7 +216,7 @@ const Footer = () => {
               <Link href={localLink("/privatisation")} className="hover:text-green-3">
                 {t("privatisation")}
               </Link>
-              <Link href="#" className="hover:text-green-3">
+              <Link href={localLink("/gallerie")} className="hover:text-green-3">
                 {t("tarifs")}
               </Link>
             </div>
@@ -231,7 +231,7 @@ const Footer = () => {
               <Link href="#" className="hover:text-green-3">
                 {t("mentionsLegales")}
               </Link>
-              <Link href="#" className="hover:text-green-3">
+              <Link href={localLink("/cgv")} className="hover:text-green-3">
                 {t("cgv")}
               </Link>
               <Link href="https://www.resamare.com/" className="hover:text-green-3">
