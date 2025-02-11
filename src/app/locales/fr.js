@@ -224,7 +224,7 @@ const fr = {
       question9: "Est-il possible d’avoir le mal de mer ?",
       answer9: "Le mal de mer est généralement moins ressenti sur les petits bateaux que sur les gros, grâce à un centre de gravité plus bas.\n\nLa conception de notre bateau garantit une grande stabilité et il est rare que des passagers se sentent mal. Cependant, si cela venait à se produire, prévenez le capitaine qui fera de son mieux pour vous aider à soulager ce malaise.\n\nUne trousse à pharmacie avec les médicaments nécessaires (Mercalm ou Nausicalm) est à votre disposition. N’hésitez pas à nous en faire la demande, à notre stand sur le port de Cargèse, au moins 20 minutes avant le départ afin d’assurer une efficacité optimale.",
       question10: "Les animaux sont-ils acceptés ?",
-      answer10: "N/A",
+      answer10: "Oui. Si votre chien ne dépasse pas la taille maximale d’un border collie, il est autorisé à bord du Sacha. Il y aura un espace réservé pour lui, mais vous en gardez l’entière responsabilité.",
       more: "EN SAVOIR PLUS"
     },
     equipe: {
