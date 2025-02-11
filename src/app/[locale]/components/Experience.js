@@ -73,7 +73,7 @@ export default function Experience() {
     </motion.div>
   ))}
 </div>
-            
+          
             {/* Learn More */}
             <Link href={localLink("/bateau")} className="cursor-pointer">
                 <div className="flex justify-center items-center gap-6 mb-6 lg:mt-6">

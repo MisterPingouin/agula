@@ -179,8 +179,8 @@ export default function GalleriePage() {
       {/* Layout desktop */}
       <div className="hidden lg:block">{renderDesktopLayout()}</div>
 
-      {/* Lightbox */}
-      <AnimatePresence>
+{/* Lightbox */}
+<AnimatePresence>
   {selectedItem && (
     <motion.div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80"
@@ -190,42 +190,36 @@ export default function GalleriePage() {
       onClick={closeLightbox}
     >
       <motion.div
-        className="relative flex flex-col items-center"
+        className="relative flex items-center justify-center"
         initial={{ scale: 0.8 }}
         animate={{ scale: 1 }}
         exit={{ scale: 0.8 }}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Bouton fermeture */}
-        <button
-          onClick={closeLightbox}
-          className="absolute top-0 right-0 m-2 text-white text-3xl font-bold z-10"
-        >
-          &times;
-        </button>
-
-        {/* Affichage de l'image ou de la vidéo */}
-        {selectedItem.type === "image" ? (
-          <Image
-            src={selectedItem.src}
-            alt={selectedItem.alt}
-            width={selectedItem.width}
-            height={selectedItem.height}
-            className="max-w-[90vw] max-h-[90vh] object-contain"
-          />
-        ) : (
-          <video
-            src={selectedItem.src}
-            controls
-            autoPlay
-            className="max-w-[90vw] max-h-[90vh]"
-          />
-        )}
+        {/* Conteneur qui s'adapte exactement à la taille de l'image */}
+        <div className="relative">
+          {/* Image qui garde ses proportions et s’adapte sans dépasser */}
+          <div className="relative max-w-[90vw] max-h-[90vh]">
+            <Image
+              src={selectedItem.src}
+              alt={selectedItem.alt}
+              width={selectedItem.width}
+              height={selectedItem.height}
+              className="w-auto h-auto max-w-full max-h-full object-contain"
+            />
+            {/* Bouton de fermeture attaché à l'image */}
+            <button
+              onClick={closeLightbox}
+              className="absolute top-2 right-2 p-2 text-white text-2xl font-bold z-10"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
       </motion.div>
     </motion.div>
   )}
 </AnimatePresence>
-
 
     </main>
   );
