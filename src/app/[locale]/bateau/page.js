@@ -93,7 +93,7 @@ export default function BateauPage() {
             alt="Bateau Sacha Tablet"
             width={352}
             height={426}
-            style={{ height: "426px", width: "auto" }}
+            style={{ height: "auto", width: "1000px" }}
             priority
           />
           <div className="flex flex-col">
@@ -205,7 +205,7 @@ export default function BateauPage() {
             alt="Bateau Tablet"
             width={356}
             height={427}
-            style={{ height: "427px", width: "auto" }}
+            style={{ height: "auto", width: "500px" }}
           />
         </div>
 

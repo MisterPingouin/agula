@@ -5,6 +5,8 @@ import NavLinks from "../NavLinks";
 import Image from "next/image";
 import Link from "next/link";
 import { useI18n, useScopedI18n } from "./../../../locales/I18nContext";
+import useLocalLink from "../../hooks/useLocalLink";
+
 
 const MobileMenu = ({ onClose }) => {
   const { locale, setLocale } = useI18n();
@@ -15,6 +17,8 @@ const MobileMenu = ({ onClose }) => {
   };
 
   const t = useScopedI18n("header");
+    const localLink = useLocalLink();
+  
 
   return (
     <div className="fixed inset-0 bg-white z-40 flex flex-col p-3 h-screen">
@@ -36,9 +40,11 @@ const MobileMenu = ({ onClose }) => {
 
       {/* Boutons d'action */}
       <div className="mt-2 flex flex-col space-y-2 p-3">
-        <button className="w-full py-2 text-white bg-blue-3 font-content font-semibold">
+      <Link href={localLink("/reservation")}>
+        <button onClick={onClose} className="w-full py-2 text-white bg-blue-3 font-content font-semibold">
           {t("book")}
         </button>
+        </Link>
         <button className="w-full py-2 text-white bg-blue-4 font-content font-semibold">
           {t("offer")}
         </button>

@@ -10,7 +10,7 @@ export default function CGVPage() {
         <h1 className="block md:hidden text-center font-subtitle text-30px text-green-2 pb-2">
           {t("title")}
         </h1>
-        <h1 className="hidden md:block lg:hidden font-subtitle text-80px text-green-2">
+        <h1 className="hidden md:block text-center lg:hidden font-subtitle text-80px text-green-2">
           {t("title")}
         </h1>
         <h1 className="hidden lg:block font-subtitle text-80px text-green-2">
