@@ -23,7 +23,7 @@ const MobileMenu = ({ onClose }) => {
   return (
     <div className="fixed inset-0 bg-white z-40 flex flex-col p-3 h-screen">
       {/* Logo en haut */}
-      <Link href="/" className="cursor-pointer">
+      <Link onClick={onClose} href="/" className="cursor-pointer">
         <Image
           src="/images/logo.svg"
           alt="logo lagula marina"
