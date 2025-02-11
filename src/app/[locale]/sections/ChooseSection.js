@@ -9,7 +9,7 @@ export default function ChooseSection() {
       const localLink = useLocalLink();
       
       return (
-        <div className="md:hidden lg:block">
+        <div id="next-section"  className="md:hidden lg:block">
         <section className="md:hidden">
         <div className="relative w-full h-[120px] mt-2">
         <Image

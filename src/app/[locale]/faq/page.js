@@ -65,7 +65,7 @@ const FaqPage = () => {
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.5 }}
-                className="mt-1 text-15px leading-23px text-gray-700"
+                className="mt-2 text-15px leading-23px text-gray-700"
               >
                 <TextWithLineBreaks text={faq.answer} />
               </motion.div>

@@ -193,15 +193,21 @@ const HomeSection = () => {
         animate={{ scaleX: 1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
       ></motion.div>
-      <div className="hidden lg:flex absolute bottom-0 w-full justify-center items-center py-4">
-        <Image
-          src="/images/arrowdown.svg"
-          alt="Arrow Down"
-          width={30}
-          height={30}
-          className="animate-bounce w-auto h-auto"
-        />
-      </div>
+<div className="hidden lg:flex absolute bottom-0 w-full justify-center items-center py-4">
+  <Image
+    src="/images/arrowdown.svg"
+    alt="Arrow Down"
+    width={30}
+    height={30}
+    className="animate-bounce w-auto h-auto cursor-pointer"
+    onClick={() => {
+      const nextSection = document.getElementById("next-section");
+      if (nextSection) {
+        nextSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }}
+  />
+</div>
     </section>
   );
 };
