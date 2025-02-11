@@ -164,10 +164,10 @@ export default function GalleriePage() {
 
   return (
     <main className="flex flex-col items-center mt-[80px]">
-        <h1 className="block md:hidden font-subtitle text-50px text-green-2">
+        <h1 className="block md:hidden font-subtitle text-50px text-green-2 mb-2">
           {t("title")}
         </h1>
-        <h1 className="hidden md:block lg:hidden font-subtitle text-80px text-green-2">
+        <h1 className="hidden md:block lg:hidden font-subtitle text-80px text-green-2 mb-2">
           {t("title")}
         </h1>
         <h1 className="hidden lg:block font-subtitle text-80px text-green-2 mb-4">

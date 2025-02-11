@@ -15,7 +15,7 @@ export default function PrivatisationPage() {
         <h1 className="font-subtitle mt-4 text-50px text-green-2 leading-none text-center md:hidden">
           {t("title")}
         </h1>
-        <p className="font-title font-bold pt-4 text-15px text-center md:hidden">
+        <p className="font-title font-bold pt-4 leading-tight text-15px text-center md:hidden">
           {t("subtitle")}
         </p>
         <p className="font-title font-bold pb-4 text-15px text-center md:hidden">

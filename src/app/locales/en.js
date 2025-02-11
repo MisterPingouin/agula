@@ -196,7 +196,7 @@ const en = {
   },
   privat : {
     title: "Privatization of the boat with skipper",
-    subtitle: "For one of our circuits or in a personalized formula: quote on request.",
+    subtitle: "For one of our circuits or in a personalized formula :",
     subtitle1: "quote on request.",
     subtitle2: "Schedule a",
     subtitle2_5: "private excursion",
