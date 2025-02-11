@@ -20,7 +20,7 @@ export default function EngagementPage() {
       </h1>
 
       {/* Texte d'intro */}
-      <section className="font-content text-15px font-bold leading-23px lg:text-20px text-center max-w-[1100px] lg:leading-6 text-black space-y-8 lg:mt-4">
+      <section className="font-content text-15px font-bold lg:text-25px text-center max-w-[1100px] leading-tight  text-black space-y-8 lg:mt-4">
         {t("intro").map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}

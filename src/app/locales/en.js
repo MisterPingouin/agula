@@ -507,6 +507,118 @@ const en = {
     privacy_title: "DATA PROTECTION AND PRIVACY",
     privacy_content: "Any user who has provided directly or indirectly identifiable personal information has the right to access and rectify this information in accordance with Law No. 78-17 of 06/01/78 (Data Protection and Privacy) by contacting the site administrator."
   },  
+  engagement: {
+    title: "Our Commitments",
+    intro: [
+      "Aware of the importance of preserving a fragile environment, we are fully committed to a sustainable development approach.",
+      "As a member of the Scandola Boatmen Association, our team adheres to the code of conduct for sea excursion activities, presented below. As signatories of the Natura 2000 charter of best practices for the Calvi-Cargèse sector, we are committed to following its principles listed below. We strive to preserve the environment while supporting the local economy."
+    ],
+    title2: "Protecting the Scandola reserve is a priority for us. Passionate about unspoiled nature, we also raise awareness among our clients about the importance of ecological actions for biodiversity.",
+    associationTitle: "SCANDOLA BOATMEN ASSOCIATION",
+    charteTitle: "Sea Excursion Activity Charter",
+    charteSubtitle: "The commitment of professional sea excursion providers to high-quality services that meet customer expectations while maintaining the balance of the Scandola reserve.",
+    articles: [
+      {
+        title: "Article 1",
+        content: [
+          "I commit to promoting a positive image of sea excursions by behaving responsibly, creating and fostering a friendly atmosphere for my passengers."
+        ],
+      },
+      {
+        title: "Article 2",
+        content: [
+          "I commit to ensuring that my personnel hold the necessary certifications and qualifications to carry out our activities and to developing essential skills through training to provide quality services based on respect, preservation, and knowledge of the Scandola nature reserve."
+        ],
+      },
+      {
+        title: "Article 3",
+        content: [
+          "I commit to never intentionally harming the integrity of the visited site and to training my crew in this practice. I will respect appropriate speeds and avoid excessive and unnecessary accelerations near rocks."
+        ],
+      },
+      {
+        title: "Article 4",
+        content: [
+          "I commit to limiting noise and odor pollution, especially by avoiding honking, shouting, or making unnecessary noises in narrow areas. I will leave no waste in the water and, if possible, collect any I encounter."
+        ],
+      },
+      {
+        title: "Article 5",
+        content: [
+          "I commit to maintaining complete discretion near osprey nests when they are occupied to ensure the pair's tranquility. During the breeding season (March to June), I will respect a necessary distance."
+        ],
+      },
+      {
+        title: "Article 6",
+        content: [
+          "I commit to adopting an eco-responsible approach in my activities by prioritizing sustainable products, Corsican heritage, local products, and craftsmanship in my communication."
+        ],
+      },
+      {
+        title: "Article 7",
+        content: [
+          "I commit to integrating environmentally friendly and less polluting equipment into my business objectives and investment plans."
+        ],
+      },
+      {
+        title: "Article 8",
+        content: [
+          "I commit to respecting maritime regulations, maintaining full fiscal and social compliance, operating my activities under optimal safety conditions, and adhering to speed limits (5 knots within the 300m coastal zone)."
+        ],
+      },
+      {
+        title: "Article 9",
+        content: [
+          "I commit to collaborating with local stakeholders (private and/or institutional) whenever possible, demonstrating respect and fair play, and sharing information related to good practices for my activities."
+        ],
+      },
+    ],
+    naturaTitle: "NATURA 2000 CALVI-CARGESE",
+    naturaSubtitle: "Best Practices Charter",
+    naturaListIntro: "List of commitments:",
+    naturaSections: [
+      {
+        sectionTitle: "General Scope",
+        points: [
+          "1. Avoid intentionally damaging the habitats/species of community interest within Natura 2000 sites and, more generally, the natural heritage of the 'Calvi - Cargèse' sector.",
+          "2. Promote the Natura 2000 charter to users, clients, and/or members I represent and inform them of the commitments I have made.",
+          "3. Participate in surveys related to the sector's 'Calvi - Cargèse' activities, provided that the data remains anonymous and is subject to comprehensive analysis."
+        ],
+      },
+      {
+        sectionTitle: "Coastal Marine Environment",
+        points: [
+          "1. Anchor only on sandy bottoms to avoid damaging sensitive marine habitats (Posidonia seagrass, Cymodocea seagrass, coralligenous reefs, infralittoral rocky algae habitats).",
+          "2. Avoid disturbing marine mammals, including the bottlenose dolphin, by adhering to the Code of Good Conduct for observing cetaceans in the Mediterranean (Pelagos Sanctuary).",
+          "3. Stay informed about invasive marine species to be reported in Corsica and ensure they are not introduced, spread, or intentionally released."
+        ],
+      },
+      {
+        sectionTitle: "Coastal Cliffs and Rocky Shores",
+        points: [
+          "1. From April 1 to July 31, respect the quiet zones around osprey nests to avoid disturbing the species' reproduction. Navigation and land access are prohibited within approximately 250 meters around each nest.",
+          "2. Avoid excessive noise within 250 meters of osprey nests observed in the 'Calvi - Cargèse' sector to maintain the species' tranquility. For hybrid-powered boats, use electric propulsion when approaching osprey nests and the coastline.",
+          "3. Respect navigation rules, including maintaining a speed limit of 5 knots within the 300-meter coastal zone, to preserve the tranquility of local species.",
+          "4. Avoid landing or docking on Lithophyllum byssoides overhangs or within mid-littoral caves along the 'Calvi - Cargèse' coastline to protect these sensitive habitats.",
+          "5. From April 1 to July 31, do not fly below 700 meters (2,300 feet) near osprey nesting areas, whether using piloted or remotely controlled aircraft (ULM, paragliders, drones, etc.). Within the Scandola Nature Reserve, adhere to the ban on flying below 1,000 meters (3,300 feet) as per specific reserve and civil aviation regulations."
+        ],
+      },
+      {
+        sectionTitle: "Terrestrial Environments",
+        points: [
+          "1. Allow access to competent authorities for inventory and conservation assessments of habitats and/or species of community interest within charter-engaged plots.",
+          "2. Respect existing markers and facilities at frequented coastal sites and fragile natural sites.",
+          "3. Between March 1 and June 30, avoid clearing, pruning, or cutting vegetation (except for legal clearing obligations and activities related to horticultural and fruit cultivation) to prevent disturbing terrestrial bird reproduction.",
+          "4. Avoid intentionally introducing or spreading invasive plant or animal species."
+        ],
+      },
+    ],
+    infosTitle: "For More Information",
+    infosContent: "Visit the page of the Corsican Environment Office dedicated to the Natura 2000 Calvi-Cargèse Charter:",
+    infosContent2: "https://www.oec.corsica/CI-ARTICLE-NATURA-2000-DE-BONNES-PRATIQUES-DU-SECTEUR-CALVI-CARGESE_a3359.html",
+    infosContent3: "Or: download the presentation booklet for the Charter:",
+    infosContent4: "https://www.oec.corsica/attachment/207978/",
+  },  
  
 };
 

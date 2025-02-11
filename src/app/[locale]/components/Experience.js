@@ -2,10 +2,14 @@
 
 import Image from "next/image";
 import { useScopedI18n } from "./../../locales/I18nContext";
+import useLocalLink from "./../hooks/useLocalLink";
+import Link from "next/link";
 
 
 export default function Experience() {
     const t = useScopedI18n("experience");
+      const localLink = useLocalLink();
+    
     
     return (
 <section className="flex flex-col justify-center items-center mt-6 px-8">
@@ -110,16 +114,18 @@ export default function Experience() {
 </div>
 </div>
 {/* Learn More */}
-<div className="flex justify-center items-center gap-6 mb-6">
-<p className="font-title font-bold text-green-2 text-10px md:text-12px">{t("more")}</p>
-<Image
+<Link href={localLink("/bateau")} className="cursor-pointer">
+      <div className="flex  justify-center items-center gap-6 mb-6 mt-6">
+        <p className="font-title font-bold text-green-2 text-10px md:text-17px">{t("more")}</p>
+        <Image
           src="/images/greenarrowright.svg"
           alt="Greenarrowright"
           width={50}
           height={40}
           className="w-auto h-auto"
         />
-        </div>
+      </div>
+      </Link> 
         <div className="w-11/12 md:w-10/12 h-[0.5px] md:h-[0.75px] md:my-4 bg-[#707070] mb-6"></div>
 </section>
 );
