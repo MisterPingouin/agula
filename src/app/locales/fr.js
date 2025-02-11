@@ -148,8 +148,8 @@ const fr = {
       tarifs: "Galerie",
       informations: "INFORMATIONS",
       mentionsLegales: "Mentions légales",
-      cgv: " CGV",
-      realisation: " Réalisation",
+      cgv: "CGV",
+      realisation: "FAQ",
     },
     circuits : {
       title: "Nos circuits",

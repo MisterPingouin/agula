@@ -123,7 +123,7 @@ const Footer = () => {
             Resamare
           </Link>{" "}
           |{" "}
-          <Link href="#" className="hover:text-green-3">
+          <Link href={localLink("/faq")} className="hover:text-green-3">
             {t("realisation")}
           </Link>
           <br />
@@ -237,7 +237,7 @@ const Footer = () => {
               <Link href="https://www.resamare.com/" className="hover:text-green-3">
                 Resamare
               </Link>
-              <Link href="#" className="hover:text-green-3">
+              <Link href={localLink("/faq")} className="hover:text-green-3">
                 {t("realisation")}
               </Link>
             </div>

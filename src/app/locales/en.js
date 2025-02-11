@@ -151,7 +151,7 @@ const en = {
     tarifs: "Gallery",
     mentionsLegales: "Legal notice",
     cgv: "T&C",
-    realisation: " Development",
+    realisation: "FAQ",
   },
   circuits : {
     title: "Our tours",
