@@ -46,13 +46,13 @@ const FAQ = () => {
 
   return (
     <div className="w-full px-10 md:w-3/5 md:px-0 mx-auto p-4">
-      <h2 className="text-25px md:text-35px text-green fond-title font-bold text-center mb-8">FAQ</h2>
+      <h2 className="text-25px md:text-35px text-green fond-title font-bold text-center mb-4 lg:mb-8">FAQ</h2>
       <div className="space-y-6">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b border-gray-300 pb-2">
             <button
               onClick={() => toggleFAQ(index)}
-              className="flex justify-between items-center w-full text-left text-lg font-title text-20px md:text-25px"
+              className="flex justify-between items-center w-full text-left font-title text-16px md:text-20px"
             >
               {faq.question}
               <motion.div

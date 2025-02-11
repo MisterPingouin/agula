@@ -27,7 +27,7 @@ export default function EngagementPage() {
       </section>
 
         {/* Version mobile */}
-        <p className="font-title text-25px leading-29px text-center px-3 py-6 md:hidden">
+        <p className="font-title text-25px leading-29px text-center px-3 py-6 mt-2 md:hidden">
           {t("title2")}
         </p>
         {/* Version tablette */}
@@ -120,7 +120,7 @@ export default function EngagementPage() {
 
       {/* Pour plus d'informations */}
       <section className="max-w-[900px] font-content text-13px lg:text-18px leading-6 text-black mt-10 space-y-4 text-center">
-        <h3 className="font-bold lg:text-25px font-title">
+        <h3 className="font-bold text-15px lg:text-25px font-title">
           {t("infosTitle")}
         </h3>
       </section>

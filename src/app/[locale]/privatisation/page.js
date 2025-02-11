@@ -81,7 +81,7 @@ export default function PrivatisationPage() {
         <p className="font-subtitle text-25px text-center leading-29px mb-10 md:hidden">
           {t("content4")}
         </p>
-        <h4 className="text-green font-bold font-title text-25px mt-10 md:hidden">
+        <h4 className="text-green font-bold font-title text-25px mt-6 md:hidden">
           {t("subtitle3")}
         </h4>
       </div>
@@ -177,7 +177,7 @@ export default function PrivatisationPage() {
       </h4>
 
       {/* Contenu des cartes */}
-      <div className="my-8 px-4">
+      <div className="my-4 px-4">
         {/* Mobile : layout en flex */}
         <div className="flex flex-col gap-4 max-w-md mx-auto md:hidden">
           <CardPrivat tourKey="grandTour" imageSrc="/images/grandtour.jpg" />

@@ -48,7 +48,7 @@ const FaqPage = () => {
           <div key={index} className="border-b border-gray-300 pb-2">
             <button
               onClick={() => toggleFAQ(index)}
-              className="flex justify-between items-center w-full text-left text-lg font-title text-20px md:text-25px"
+              className="flex justify-between items-center w-full text-left font-title text-16px md:text-20px"
             >
               {faq.question}
               <motion.div
