@@ -1,5 +1,6 @@
 import { useScopedI18n } from "../../locales/I18nContext";
 import { useRef, useState } from "react";
+import { Play } from "lucide-react";
 
 const VideoLagula = () => {
   const t = useScopedI18n("video");
@@ -15,7 +16,7 @@ const VideoLagula = () => {
 
   return (
     <section className="flex flex-col items-center justify-center lg:gap-10 py-6 px-4 md:px-8">
-      {/* Ton titre + texte */}
+      {/* Titre + texte */}
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start md:w-[780px] lg:w-[1240px] md:mx-auto md:gap-12 px-6 md:px-2 pt-6">
         <p className="font-bold font-title text-25px md:text-35px text-green text-nowrap">
           {t("title")}
@@ -29,8 +30,9 @@ const VideoLagula = () => {
       <div className="relative max-w-[1240px] w-full mt-4">
         <video
           ref={videoRef}
-          className="w-full h-auto shadow-lg"
+          className="w-full h-auto"
           controls
+          controlsList="nodownload nofullscreen noremoteplayback"
         >
           <source src="/videos/videolagula.mp4" type="video/mp4" />
           {t("noVideoSupport")}
@@ -39,9 +41,10 @@ const VideoLagula = () => {
         {/* Overlay avec bouton Play (affiché tant que la vidéo n'a pas démarré) */}
         {!isPlaying && (
           <div
-            className="hidden md:flex absolute inset-0  items-center justify-center cursor-pointer"
+            className="absolute inset-0 flex items-center justify-center  cursor-pointer"
             onClick={handlePlay}
           >
+            <Play className="w-16 h-16 text-white" />
           </div>
         )}
       </div>
