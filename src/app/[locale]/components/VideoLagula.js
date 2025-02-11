@@ -33,8 +33,7 @@ const VideoLagula = () => {
   className="w-full h-auto"
   controls
   controlsList="nodownload nofullscreen noremoteplayback"
-  preload="metadata"
-  playsInline
+  poster="/images/thumbnail.jpg" 
 >
   <source src="/videos/videolagula.mp4" type="video/mp4" />
   {t("noVideoSupport")}
