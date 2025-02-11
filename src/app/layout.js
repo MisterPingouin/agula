@@ -1,5 +1,6 @@
 import Header from "./[locale]/components/Header/Header";
 import Footer from "./[locale]/components/Footer/Footer";
+import Signature from "./[locale]/components/Signature";
 import { roboto, msMadi, sourceSans3 } from "./[locale]/fonts";
 import "./globals.css";
 import { I18nProvider } from "./locales/I18nContext";
@@ -28,6 +29,7 @@ export default async function RootLayout({ children, params }) {
           <Header />
           {children}
           <Footer />
+          <Signature />
         </I18nProvider>
       </body>
     </html>
