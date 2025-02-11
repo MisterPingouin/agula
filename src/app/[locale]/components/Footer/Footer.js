@@ -115,7 +115,7 @@ const Footer = () => {
             {t("mentionsLegales")}
           </Link>{" "}
           |{" "}
-          <Link href={localLink("/privatisation")} className="hover:text-green-3">
+          <Link href={localLink("/cgv")} className="hover:text-green-3">
             {t("cgv")}
           </Link>{" "}
           |{" "}
