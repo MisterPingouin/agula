@@ -76,16 +76,20 @@ const HeaderContent = ({ t, t1, localLink }) => {
           <Image src="/images/logo.svg" alt={t("header.logo_alt")} width={128} height={55} />
         </Link>
         <nav className="flex font-medium pt-5 gap-10 px-16 font-content text-15px text-blue-3">
-          {links.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className={pathname === link.href ? "text-[#A2A2A2]" : "text-15px"}
-            >
-              {link.name}
-            </Link>
-          ))}
-        </nav>
+  {links.map((link) => (
+    <Link
+      key={link.name}
+      href={link.href}
+      className="relative group"
+    >
+      {link.name}
+      <span className={`absolute left-0 bottom-0 w-full h-[1.5px] bg-blue-3 transition-transform duration-300 ease-in-out 
+        ${pathname === link.href ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}>
+      </span>
+    </Link>
+  ))}
+</nav>
+
         <Link href={localLink("/reservation")}>
         <button className="bg-blue-3 text-white mt-5 px-14 py-2 font-semibold text-14px">
           {t1("book")}

@@ -113,38 +113,20 @@ const HomeSection = () => {
           />
         </Link>
         <nav className="flex font-medium pt-6 gap-10 px-16 font-content text-15px text-white">
-        <Link
-          href={localLink("/nos-circuits")}
-        >
-          {t1("circuits")}
-        </Link>    
-        <Link
-          href={localLink("/bateau")}
-        >
-              {t1('boat')}
-              </Link> 
-
-        <Link
-          href={localLink("/equipe")}
-        >
-              {t1('team')}
-              </Link> 
-              <Link
-          href={localLink("/engagement")}
-        >
-              {t1('commitments')}
-              </Link> <Link
-          href={localLink("/privatisation")}
-        >
-              {t1('private')}
-              </Link> 
-              <Link
-          href={localLink("/gallerie")}
-        >
-              {t1('gallery')}
-              </Link> 
-
-        </nav>
+  {[
+    { href: "/nos-circuits", label: t1("circuits") },
+    { href: "/bateau", label: t1("boat") },
+    { href: "/equipe", label: t1("team") },
+    { href: "/engagement", label: t1("commitments") },
+    { href: "/privatisation", label: t1("private") },
+    { href: "/gallerie", label: t1("gallery") }
+  ].map((item, index) => (
+    <Link key={index} href={localLink(item.href)} className="relative group">
+      {item.label}
+      <span className="absolute left-0 bottom-0 w-full h-[1px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
+    </Link>
+  ))}
+</nav>
         <Link href={localLink("/reservation")}>
         <button className="border border-white text-white mt-6 px-14 py-2 font-semibold text-14px">
           {t("book_button")}
