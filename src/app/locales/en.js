@@ -226,7 +226,7 @@ const en = {
     question9: "Is seasickness possible?",
     answer9: "Seasickness is generally less felt on small boats than on large ones, thanks to a lower center of gravity.\n\nThe design of our boat ensures great stability, and it is rare for passengers to feel unwell. However, if it does happen, notify the captain, who will do his best to help relieve the discomfort.\n\nA first aid kit with the necessary medication (Mercalm or Nausicalm) is available. Don't hesitate to request it at our stand on Cargèse port at least 20 minutes before departure to ensure optimal effectiveness.",
     question10: "Are pets allowed?",
-    answer10: "N/A",
+    answer10: "Yes. If your dog does not exceed the maximum size of a border collie, he is allowed on board the Sacha. There will be a space reserved for him, but you retain full responsibility.",
     more: "LEARN MORE"
   },
   equipe: {

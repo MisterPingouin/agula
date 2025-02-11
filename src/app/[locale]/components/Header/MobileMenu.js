@@ -60,7 +60,7 @@ const MobileMenu = ({ onClose }) => {
         </button>
       </div>
       {/* Section des réseaux sociaux */}
-      <div className="flex flex-col px-4 mt-auto">
+      <div className="flex flex-col px-3 mt-auto">
         <div className="flex flex-col space-y-1">
           <p className="mt-4 text-20px font-title font-bold text-green-3">
             {t("follow_us")}

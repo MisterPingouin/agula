@@ -115,7 +115,7 @@ export default function Experience() {
 </div>
 {/* Learn More */}
 <Link href={localLink("/bateau")} className="cursor-pointer">
-      <div className="flex  justify-center items-center gap-6 mb-6 mt-6">
+      <div className="flex  justify-center items-center gap-6 mb-6 lg:mt-6">
         <p className="font-title font-bold text-green-2 text-10px md:text-17px">{t("more")}</p>
         <Image
           src="/images/greenarrowright.svg"
