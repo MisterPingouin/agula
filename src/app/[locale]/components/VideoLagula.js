@@ -34,6 +34,7 @@ const VideoLagula = () => {
   controls
   controlsList="nodownload nofullscreen noremoteplayback"
   preload="metadata"
+  playsInline
 >
   <source src="/videos/videolagula.mp4" type="video/mp4" />
   {t("noVideoSupport")}
@@ -41,7 +42,7 @@ const VideoLagula = () => {
         {/* Overlay avec bouton Play (affiché tant que la vidéo n'a pas démarré) */}
         {!isPlaying && (
           <div
-            className="absolute inset-0 flex items-center justify-center  cursor-pointer"
+            className="hidden md:flex absolute inset-0 items-center justify-center  cursor-pointer"
             onClick={handlePlay}
           >
             <Play className="w-16 h-16 text-white" />
