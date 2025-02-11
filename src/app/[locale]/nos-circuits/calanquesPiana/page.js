@@ -102,7 +102,7 @@ export default function CalanquePage({ params }) {
         {/* Desktop */}
         <motion.div
         className="hidden lg:block mt-6 object-cover h-auto"
-        whileHover={{ scale: 1.1 }}
+        whileHover={{ scale: 1.3 }}
         transition={{ duration: 0.3 }}
       >
         <Image
