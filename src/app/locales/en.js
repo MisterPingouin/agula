@@ -298,6 +298,8 @@ const en = {
     subtitle8: "Our tours",
   },    
   sunset: {
+    calanque: "The Calanques of Piana Sunset",
+    scandola: "Scandola Girolata Sunset",
     grandtour: "The Grand Tour Sunset",
     title1: "A unique moment",
     title2: "awaits you",

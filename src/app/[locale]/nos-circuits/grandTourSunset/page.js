@@ -57,7 +57,7 @@ export default function GrandTourSunsetPage({ params }) {
 
       {/* Titre et description */}
       <div className="flex flex-col justify-center gap-2 mt-6 items-center px-8">
-        <h1 className="font-subtitle text-50px md:text-70px lg:text-80px text-green-2 leading-none">
+        <h1 className="font-subtitle text-center text-50px md:text-70px lg:text-80px text-green-2 leading-none">
           {t1("grandtour")}
         </h1>
         <p className="font-content font-bold text-15px leading-tight md:leading-tight lg:leading-none text-center mt-2">

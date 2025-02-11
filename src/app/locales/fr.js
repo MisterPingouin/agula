@@ -296,6 +296,8 @@ const fr = {
       subtitle8: "Nos circuits",
     },
     sunset: {
+      calanque: "Les Calanques de Piana Sunset",
+      scandola: "Scandola Girolata Sunset",
       grandtour: "Le Grand Tour Sunset",
       title1: "Un moment unique",
       title2: "s’offre à vous",
