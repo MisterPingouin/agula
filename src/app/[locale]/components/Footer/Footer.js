@@ -147,7 +147,7 @@ const Footer = () => {
             <p className="font-medium font-title text-13px">
               {t("findUs")}
             </p>
-            <div className="flex space-x-0.5 mt-1">
+            <div className="flex space-x-2 mt-1">
             <Link href="thttps://www.tripadvisor.fr/Attraction_Review-g663644-d25436276-Reviews-L_Agula_Marina_Croisieres-Cargese_Corse_du_Sud_Corsica.html" className="hover:text-green-3">
             <Image
                   src="/images/tripfooter.svg"
