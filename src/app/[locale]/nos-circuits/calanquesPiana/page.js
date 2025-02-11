@@ -8,6 +8,7 @@ import Card from "./../../components/Cards/Card";
 import VideoLagula from "../../components/VideoLagula";
 import Calanque from "../../components/Reservation/Calanque";
 import useLocalLink from "./../../hooks/useLocalLink";
+import { motion } from "framer-motion";
 
 export default function CalanquePage({ params }) {
   const t = useScopedI18n("calanque");
@@ -99,14 +100,20 @@ export default function CalanquePage({ params }) {
           priority
         />
         {/* Desktop */}
+        <motion.div
+        className="hidden lg:block mt-6 object-cover h-auto"
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.3 }}
+      >
         <Image
           src="/images/illustrationdesktop.jpg"
           alt="map Desktop"
           width={440}
           height={531}
-          className="hidden lg:block mt-6 object-cover h-auto"
+          className="w-full"
           priority
         />
+      </motion.div>
 
         <p className="font-content text-15px leading-25px text-center w-full md:w-[700px] lg:w-[880px] px-8 my-4">
           {t("content")}
