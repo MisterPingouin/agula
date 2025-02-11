@@ -54,8 +54,8 @@ const HomeSection = () => {
       />
       <div className="hidden lg:flex relative z-50 justify-center self-start">
       <div className="flex flex-col">
-      <div className="flex items-center self-end gap-2 pt-4 text-white translate-y-2">
-      <button onClick={() => changeLanguage("fr")} className={`text-15px font-title ${locale === "fr" ? "font-bold" : ""}`}>
+      <div className="flex items-center self-end gap-2 pt-4 text-white ">
+      <button onClick={() => changeLanguage("fr")} className={`text-15px  font-title ${locale === "fr" ? "font-bold" : ""}`}>
             FR
           </button>
           <span>/</span>
@@ -103,7 +103,7 @@ const HomeSection = () => {
           +33 (0)6 43 04 00 14
         </p>
       </div>
-      <div className="flex items-center -translate-y-1">
+      <div className="flex items-center -translate-y-3">
         <Link href={localLink("/")} className="cursor-pointer">
           <Image
             src="/images/logowhite.svg"

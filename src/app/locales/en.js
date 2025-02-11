@@ -160,8 +160,8 @@ const en = {
   experience : {
     title : "Live a unique, intimate and friendly experience",
     title2 : "aboard the Sacha",
-    sun1 : "Find our outings",
-    sun2 : "at sunset",
+    sunset1 : "Find our outings",
+    sunset2 : "at sunset",
     fish1 : "Swimming stops for",
     fish2 : "observe biodiversity",
     drink1 : "Sunset and",

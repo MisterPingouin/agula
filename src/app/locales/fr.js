@@ -158,8 +158,8 @@ const fr = {
     experience : {
       title : "Vivez une expérience unique, intime et conviviale",
       title2: "à bord du Sacha",
-      sun1 : "Retrouvez nos sorties",
-      sun2 : "au coucher du soleil",
+      sunset1 : "Retrouvez nos sorties",
+      sunset2 : "au coucher du soleil",
       fish1 : "Arrêts baignade pour",
       fish2 : "observer la biodiversité",
       drink1 : "Coucher de soleil et",
