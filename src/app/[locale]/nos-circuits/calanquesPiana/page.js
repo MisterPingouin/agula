@@ -140,6 +140,7 @@ export default function CalanquePage({ params }) {
           alt="dive"
           width={51}
           height={62}
+          style={{ height: "auto", width: "51px" }}
           className="object-cover h-auto mt-10 md:hidden"
           priority
         />

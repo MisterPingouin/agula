@@ -64,6 +64,7 @@ export default function EngagementPage() {
                 alt="Flèche verte"
                 width={34}
                 height={31}
+                style={{ height: "auto", width: "34px" }}
               />
               </div>
 

@@ -59,6 +59,7 @@ export default function EquipePage() {
           width={352}
           height={426}
           className="object-cover h-auto md:hidden"
+          style={{ height: "auto", width: "352px" }}
           priority
         />
         <h2 className="block md:hidden font-title text-25px font-bold self-start">
@@ -75,6 +76,7 @@ export default function EquipePage() {
             width={352}
             height={426}
             className="object-cover h-auto"
+            style={{ height: "auto", width: "352px" }}
             priority
           />
           <div className="flex flex-col max-w-[495px]">
@@ -93,6 +95,7 @@ export default function EquipePage() {
             alt="Jean Baptiste Desktop"
             width={352}
             height={426}
+            style={{ height: "auto", width: "352px" }}
             className="object-cover h-auto"
             priority
           />
@@ -113,6 +116,7 @@ export default function EquipePage() {
           width={35}
           height={31}
           className="object-cover h-auto my-4"
+          style={{ height: "auto", width: "35px" }}
           priority
         />
         {/* Paragraphe content2 */}

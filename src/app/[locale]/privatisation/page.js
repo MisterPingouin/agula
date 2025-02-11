@@ -51,6 +51,7 @@ export default function PrivatisationPage() {
           alt="Bateau Sacha"
           width={352}
           height={426}
+          style={{ height: "auto", width: "426px" }}
           className="object-cover h-auto md:hidden"
           priority
         />
@@ -92,7 +93,7 @@ export default function PrivatisationPage() {
           alt="Bateau Sacha Tablet"
           width={393}
           height={502}
-          style={{ height: "502px", width: "auto" }}
+          style={{ height: "auto", width: "393px" }}
           priority
         />
         <div className="flex flex-col max-w-[563px]">
@@ -137,7 +138,7 @@ export default function PrivatisationPage() {
           alt="Bateau Sacha Desktop"
           width={393}
           height={502}
-          style={{ height: "502px", width: "auto" }}
+          style={{ height: "auto", width: "393px" }}
           priority
         />
         <div className="flex flex-col max-w-[563px]">
