@@ -132,7 +132,7 @@ export default function GalleriePage() {
     return desktopChunks.map((chunk, chunkIndex) => (
       <div
         key={`desktop-chunk-${chunkIndex}`}
-        className="flex flex-col mx-auto mb-4 md:w-[800px] lg:w-[1076px] "
+        className="flex flex-col mx-auto mb-4 md:w-[780px] lg:w-[1076px] "
       >
         {/* Ligne 1 : items[0], [1], [2], chacun 352×426, avec 2 gaps de 10px => total 3×352 + 2×10 = 1076 */}
         <div className="flex gap-[10px] mb-4">
@@ -174,10 +174,10 @@ export default function GalleriePage() {
           {t("title")}
         </h1>
       {/* Layout mobile */}
-      <div className="block md:hidden">{renderMobileLayout()}</div>
+      <div className="block lg:hidden">{renderMobileLayout()}</div>
 
       {/* Layout desktop */}
-      <div className="hidden md:block">{renderDesktopLayout()}</div>
+      <div className="hidden lg:block">{renderDesktopLayout()}</div>
 
       {/* Lightbox */}
       <AnimatePresence>

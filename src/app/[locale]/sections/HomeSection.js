@@ -160,11 +160,11 @@ const HomeSection = () => {
         </p>
       </div>
       <Link href={localLink("/reservation")}>
-      <button className="absolute bottom-0 inset-x-0 w-full mt-8 py-2 px-6 bg-blue-3 text-white font-content text-20px font-semibold md:hidden">
+      <button className="absolute bottom-0 inset-x-0 w-full mt-8 py-2 px-6 bg-blue-3 text-white font-content text-20px font-semibold lg:hidden">
         {t("book_button")}
       </button>
       </Link>
-      <div className="hidden absolute bottom-[10%] left-1/2 transform -translate-x-1/2 w-11/12 text-white py-8 md:flex justify-between">
+      <div className="hidden absolute bottom-[10%] left-1/2 transform -translate-x-1/2 w-11/12 text-white py-8 lg:flex justify-between">
         {[
           { number: "01", title: t("embark_title"), description: t("embark_description") },
           { number: "02", title: t("enjoy_title"), description: t("enjoy_description") },
@@ -188,12 +188,12 @@ const HomeSection = () => {
 
       {/* Barre blanche animée */}
       <motion.div
-        className="hidden md:flex absolute bottom-[10%] w-11/12 h-0.5 opacity-50 bg-white"
+        className="hidden lg:flex absolute bottom-[10%] w-11/12 h-0.5 opacity-50 bg-white"
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
       ></motion.div>
-      <div className="hidden md:flex absolute bottom-0 w-full justify-center items-center py-4">
+      <div className="hidden lg:flex absolute bottom-0 w-full justify-center items-center py-4">
         <Image
           src="/images/arrowdown.svg"
           alt="Arrow Down"
