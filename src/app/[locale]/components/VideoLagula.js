@@ -30,7 +30,6 @@ const VideoLagula = () => {
         <video
           ref={videoRef}
           className="w-full h-auto shadow-lg"
-          preload="metadata"
           controls
         >
           <source src="/videos/videolagula.mp4" type="video/mp4" />
@@ -40,7 +39,7 @@ const VideoLagula = () => {
         {/* Overlay avec bouton Play (affiché tant que la vidéo n'a pas démarré) */}
         {!isPlaying && (
           <div
-            className="absolute inset-0 flex items-center justify-center cursor-pointer"
+            className="hidden md:flex absolute inset-0  items-center justify-center cursor-pointer"
             onClick={handlePlay}
           >
             <div className="w-16 h-16 md:w-20 md:h-20 bg-white/40 rounded-full flex items-center justify-center hover:bg-white/80 transition">
