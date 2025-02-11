@@ -28,16 +28,16 @@ const VideoLagula = () => {
 
       {/* Vidéo + bouton Play superposé */}
       <div className="relative max-w-[1240px] w-full mt-4">
-        <video
-          ref={videoRef}
-          className="w-full h-auto"
-          controls
-          controlsList="nodownload nofullscreen noremoteplayback"
-        >
-          <source src="/videos/videolagula.mp4" type="video/mp4" />
-          {t("noVideoSupport")}
-        </video>
-
+      <video
+  ref={videoRef}
+  className="w-full h-auto"
+  controls
+  controlsList="nodownload nofullscreen noremoteplayback"
+  preload="metadata"
+>
+  <source src="/videos/videolagula.mp4" type="video/mp4" />
+  {t("noVideoSupport")}
+</video>
         {/* Overlay avec bouton Play (affiché tant que la vidéo n'a pas démarré) */}
         {!isPlaying && (
           <div
