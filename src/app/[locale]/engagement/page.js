@@ -46,7 +46,7 @@ export default function EngagementPage() {
         </h2>
         <div className="w-full flex justify-center my-2">
           <Image
-            src="/images/batelier.jpg"
+            src="/images/batelier.png"
             alt="Logo Bateliers de Scandola"
             width={224}
             height={168}

@@ -1,4 +1,29 @@
-User-agent: *
-Allow: /
-Disallow: /private/
+# Indique aux robots des moteurs de recherche où trouver le sitemap
+Sitemap: https://www.ton-site.com/sitemap.xml
 
+# Bloquer l'accès aux fichiers sensibles et aux pages inutiles pour l'indexation
+User-agent: *
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /server/
+Disallow: /private/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /*?*
+
+# Autoriser tous les autres contenus
+Allow: /
+
+# Bloquer des bots spécifiques (ex: scrapers malveillants)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SEMrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
