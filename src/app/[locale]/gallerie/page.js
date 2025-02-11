@@ -170,7 +170,7 @@ export default function GalleriePage() {
         <h1 className="hidden md:block lg:hidden font-subtitle text-80px text-green-2">
           {t("title")}
         </h1>
-        <h1 className="hidden lg:block font-subtitle text-80px text-green-2">
+        <h1 className="hidden lg:block font-subtitle text-80px text-green-2 mb-4">
           {t("title")}
         </h1>
       {/* Layout mobile */}

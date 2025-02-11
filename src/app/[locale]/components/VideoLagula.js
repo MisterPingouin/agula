@@ -42,11 +42,6 @@ const VideoLagula = () => {
             className="hidden md:flex absolute inset-0  items-center justify-center cursor-pointer"
             onClick={handlePlay}
           >
-            <div className="w-16 h-16 md:w-20 md:h-20 bg-white/40 rounded-full flex items-center justify-center hover:bg-white/80 transition">
-          <div className="absolute inset-0 flex items-center justify-center text-white text-4xl">
-            ▶
-            </div>
-            </div>
           </div>
         )}
       </div>
