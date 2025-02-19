@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Card from "./../../components/Cards/Card";
 import VideoLagula from "../../components/VideoLagula";
-import Calanque from "../../components/Reservation/Calanque";
+import Calanque from "../../components/Reservation/CalanqueSunset";
 import useLocalLink from "./../../hooks/useLocalLink";
 
 export default function CalanquePage({ params }) {

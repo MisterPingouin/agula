@@ -72,7 +72,7 @@ const MobileMenu = ({ onClose }) => {
             {t("follow_us")}
           </p>
           <div className="flex space-x-1">
-            <Link href="thttps://www.tripadvisor.fr/Attraction_Review-g663644-d25436276-Reviews-L_Agula_Marina_Croisieres-Cargese_Corse_du_Sud_Corsica.html">
+            <Link href="https://www.tripadvisor.fr/Attraction_Review-g663644-d25436276-Reviews-L_Agula_Marina_Croisieres-Cargese_Corse_du_Sud_Corsica.html">
               <Image
                 src="/images/tripgreen.svg"
                 alt="Trip-advisor"

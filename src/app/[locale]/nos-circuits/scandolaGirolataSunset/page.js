@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Card from "./../../components/Cards/Card";
 import VideoLagula from "../../components/VideoLagula";
-import Scandola from "../../components/Reservation/Scandola";
+import Scandola from "../../components/Reservation/ScandolaSunset";
 import useLocalLink from "./../../hooks/useLocalLink";
 
 export default function ScandolaPage({ params }) {
