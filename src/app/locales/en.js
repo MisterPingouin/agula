@@ -609,7 +609,7 @@ const en = {
     "infosContent": "Visit the page of the Corsican Environment Office dedicated to the Natura 2000 Calvi-Cargèse Charter:",
     "infosContent2": "https://www.oec.corsica/CI-ARTICLE-NATURA-2000-DE-BONNES-PRATIQUES-DU-SECTEUR-CALVI-CARGESE_a3359.html",
     "infosContent3": "Or: download the presentation booklet for the Charter:",
-    "infosContent4": "https://www.oec.corsica/attachment/207978/"
+    "infosContent4": "https://www.oec.corsica/"
   },
   "popup": {
     "title": "Why book on our Official Website?",

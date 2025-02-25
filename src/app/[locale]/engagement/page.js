@@ -127,20 +127,6 @@ export default function EngagementPage() {
       <div className="max-w-[900px] text-15px font-content mt-2 text-center">
       <p>{t("infosContent")}</p>
 </div>
-<div className="mt-8">
-      <Image
-                src="/images/arrowgreen.svg"
-                alt="Flèche verte"
-                width={34}
-                height={31}
-              />
-              </div>
-              <div className="max-w-[900px] text-15px text-green-2 font-content mt-4 text-center">
-      <p>{t("infosContent2")}</p>
-</div>
-<div className="max-w-[900px] text-15px font-content mt-10 text-center">
-      <p>{t("infosContent3")}</p>
-</div>
 <div className="mt-4">
       <Image
                 src="/images/arrowgreen.svg"
@@ -150,7 +136,7 @@ export default function EngagementPage() {
               />
               </div>
               <div className="max-w-[900px] text-15px text-green-2 font-content mt-4 text-center">
-  <a href="https://www.oec.corsica/attachment/207978/
+  <a href="https://www.oec.corsica/
 
 ">{t("infosContent4")}</a>
 </div>

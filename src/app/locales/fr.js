@@ -683,11 +683,11 @@ const fr = {
     ],
     infosTitle: "Pour plus d’informations",
     infosContent:
-      "rendez-vous sur la page de l’Office de l’environnement de la Corse consacrée à la Charte Natura 2000 Calvi-Cargèse :",
+      "Rendez-vous sur la page de l’Office de l’environnement de la Corse consacrée à la Charte Natura 2000 Calvi-Cargèse :",
     infosContent2:
       "https://www.oec.corsica/CI-ARTICLE-NATURA-2000-DE-BONNES-PRATIQUES-DU-SECTEUR-CALVI-CARGESE_a3359.html",
     infosContent3: "Ou : téléchargez le livret de présentation de la Charte :",
-    infosContent4: "https://www.oec.corsica/attachment/207978/",
+    infosContent4: "https://www.oec.corsica/",
   },
   popup: {
     title: "Pourquoi réserver sur notre Site Officiel?",

@@ -11,8 +11,8 @@ export const authOptions = {
       },
       async authorize(credentials) {
         // Remplace ces valeurs par celles de ton compte admin
-        const adminUsername = 'admin';
-        const adminPassword = 'password123';
+        const adminUsername = 'Ozil2a';
+        const adminPassword = 'Carbunara2@';
 
         if (
           credentials.username === adminUsername &&
