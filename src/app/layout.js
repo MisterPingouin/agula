@@ -7,7 +7,8 @@ import { I18nProvider } from "./locales/I18nContext";
 
 export const metadata = {
   title: "L'Agula Marina - Croisières",
-  description: "Explorez les plus beaux sites avec L'Agula Marina Croisières."
+  description: "Explorez les plus beaux sites avec L'Agula Marina Croisières.",
+  keywords: "Sortie en mer, balade en mer,bateau,Calaques de Piana,Réserve Naturelle de Scandola,pivratisation,sunset,promenades en mer, coucher de soleil,bateau avec skipper",
 };
 
 export const viewport = {
