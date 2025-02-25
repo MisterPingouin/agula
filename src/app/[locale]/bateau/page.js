@@ -57,10 +57,10 @@ export default function BateauPage() {
           {t("subtitle")}
         </h2>
 
-        {/* Première section – Contenu lié à boat5.jpg */}
+        {/* Première section – Contenu lié à boat1.webp */}
         {/* Version mobile */}
         <Image
-          src="/images/boat5.jpg"
+          src="/images/boat1.webp"
           alt="Bateau Sacha"
           width={352}
           height={426}
@@ -89,7 +89,7 @@ export default function BateauPage() {
         {/* Version tablette */}
         <div className="hidden md:flex lg:hidden justify-center items-center gap-6 mt-6">
           <Image
-            src="/images/boat5.jpg"
+            src="/images/boat1.webp"
             alt="Bateau Sacha Tablet"
             width={352}
             height={426}
@@ -121,7 +121,7 @@ export default function BateauPage() {
         {/* Version desktop */}
         <div className="hidden lg:flex justify-center items-center gap-8 mt-8">
           <Image
-            src="/images/boat5.jpg"
+            src="/images/boat1.webp"
             alt="Bateau Sacha Desktop"
             width={352}
             height={426}

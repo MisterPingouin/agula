@@ -123,7 +123,7 @@ export default function ScandolaPage({ params }) {
         {/* Section Calanque */}
         {/* Mobile */}
         <Image
-          src="/images/scandola1.jpg"
+          src="/images/scandola1.webp"
           alt="Calanque"
           width={352}
           height={426}
@@ -153,7 +153,7 @@ export default function ScandolaPage({ params }) {
         <div className="hidden lg:hidden md:block w-10/12 h-[0.5px] md:h-[0.6px] md:my-3 bg-[#707070] mb-6"></div>
         <div className="hidden lg:hidden md:flex flex-col justify-center gap-20 items-center w-10/12 mt-6">
           <Image
-            src="/images/scandola1.jpg"
+            src="/images/scandola1.webp"
             alt="Calanque Tablet"
             width={393}
             height={502}
@@ -184,7 +184,7 @@ export default function ScandolaPage({ params }) {
         {/* Desktop Version Calanque */}
         <div className="hidden lg:flex justify-center items-center gap-40 w-10/12 mt-6">
         <Image
-            src="/images/scandola1.jpg"
+            src="/images/scandola1.webp"
             alt="Calanque Desktop"
             width={393}
             height={502}
@@ -304,7 +304,7 @@ export default function ScandolaPage({ params }) {
           {/* Section Sunset */}
                 {/* Mobile Sunset */}
                 <Image
-                  src="/images/sunset.jpg"
+                  src="/images/sunset.webp"
                   alt="Sunset"
                   width={352}
                   height={426}
@@ -358,7 +358,7 @@ export default function ScandolaPage({ params }) {
                     </div>
                   </div>
                   <Image
-                    src="/images/sunset.jpg"
+                    src="/images/sunset.webp"
                     alt="Sunset Tablet"
                     width={393}
                     height={502}
@@ -370,7 +370,7 @@ export default function ScandolaPage({ params }) {
                 {/* Desktop Version Sunset */}
                 <div className="hidden lg:flex justify-center items-center gap-40 w-10/12 mt-6">
                 <Image
-                    src="/images/sunset.jpg"
+                    src="/images/sunset.webp"
                     alt="Sunset Desktop"
                     width={393}
                     height={502}

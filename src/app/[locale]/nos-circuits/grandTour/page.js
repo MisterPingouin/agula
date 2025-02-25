@@ -121,7 +121,7 @@ export default function GrandTourPage({ params }) {
         {/* Section Grand Tour 2 */}
         {/* Mobile */}
         <Image
-          src="/images/grandtour2.jpg"
+          src="/images/grandtour2.webp"
           alt="Grand Tour 2"
           width={352}
           height={426}
@@ -239,7 +239,7 @@ export default function GrandTourPage({ params }) {
         {/* Section Grand Tour 3 */}
         {/* Mobile */}
         <Image
-          src="/images/grandtour3.jpg"
+          src="/images/grandtour3.webp"
           alt="Grand Tour 3"
           width={352}
           height={426}
@@ -286,7 +286,7 @@ export default function GrandTourPage({ params }) {
             </div>
           </div>
           <Image
-            src="/images/grandtour3desktop.jpg"
+            src="/images/grandtour3desktop.webp"
             alt="Grand Tour 3 Tablet"
             width={393}
             height={502}
@@ -317,7 +317,7 @@ export default function GrandTourPage({ params }) {
             </div>
           </div>
           <Image
-            src="/images/grandtour3desktop.jpg"
+            src="/images/grandtour3desktop.webp"
             alt="Grand Tour 3 Desktop"
             width={393}
             height={502}

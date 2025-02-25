@@ -112,7 +112,7 @@ export default function CalanquePage({ params }) {
           {t("content")}
         </p>
 
-        <Link href={localLink("/reservation")} className="cursor-pointer">
+        <Link href={localLink("/reservation")} className="cursor-pointer" alt="reserver">
           <button className="px-14 md:px-15 lg:px-16 py-2 text-white text-20px mt-2 md:my-3 lg:my-4 bg-blue-3 font-content font-semibold">
             {t("book")}
           </button>
@@ -121,7 +121,7 @@ export default function CalanquePage({ params }) {
         {/* Section Calanque */}
         {/* Mobile */}
         <Image
-          src="/images/calanque1.jpg"
+          src="/images/calanque1.webp"
           alt="Calanque"
           width={352}
           height={426}
@@ -152,7 +152,7 @@ export default function CalanquePage({ params }) {
         <div className="hidden lg:hidden md:block w-10/12 h-[0.5px] md:h-[0.6px] md:my-3 bg-[#707070] mb-6"></div>
         <div className="hidden lg:hidden md:flex flex-col justify-center gap-20 items-center w-10/12 mt-6">
           <Image
-            src="/images/calanque1.jpg"
+            src="/images/calanque1.webp"
             alt="Calanque Tablet"
             width={393}
             height={502}
@@ -183,7 +183,7 @@ export default function CalanquePage({ params }) {
         {/* Desktop Version Calanque */}
         <div className="hidden lg:flex justify-center gap-40 items-center w-10/12 mt-6">
           <Image
-            src="/images/calanque1.jpg"
+            src="/images/calanque1.webp"
             alt="Calanque Desktop"
             width={393}
             height={502}

@@ -98,7 +98,7 @@ const Footer = () => {
           <Link href={localLink("/nos-circuits")} className="hover:text-green-3">
             {t("nosCircuits")}
           </Link>
-          <Link href={localLink("/reservation")} className="hover:text-green-3">
+          <Link href={localLink("/reservation")} className="hover:text-green-3" alt="reserver">
             {t("reserver")}
           </Link>
           <Link href={localLink("/privatisation")} className="hover:text-green-3">
@@ -210,7 +210,7 @@ const Footer = () => {
               <Link href={localLink("/nos-circuits")} className="hover:text-green-3">
                 {t("nosCircuits")}
               </Link>
-              <Link href={localLink("/reservation")} className="hover:text-green-3">
+              <Link href={localLink("/reservation")} className="hover:text-green-3" alt="reserver">
                 {t("reserver")}
               </Link>
               <Link href={localLink("/privatisation")} className="hover:text-green-3">

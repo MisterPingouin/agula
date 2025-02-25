@@ -21,7 +21,7 @@ export default function HeartDesktop() {
             <p className="font-content text-15px text-center leading-23px mb-6 z-10">{t("content4")}</p>
             
             <div className="flex justify-between items-center w-[1060px] mt-10 z-10">
-            <Link href={localLink(`/reservation`)} className="bg-blue-3 text-white px-16 py-3 font-semibold text-20px hidden lg:block">
+            <Link href={localLink(`/reservation`)} className="bg-blue-3 text-white px-16 py-3 font-semibold text-20px hidden lg:block" alt="reserver">
                     {t("book")}
                 </Link>
                 <div className="grid grid-cols-4 gap-10">
