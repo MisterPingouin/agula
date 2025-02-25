@@ -18,26 +18,35 @@ const HomeSection = () => {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    const fetchPopupStatus = async () => {
+    // Fonction asynchrone pour récupérer la config
+    const fetchPopupConfig = async () => {
       try {
-        // Vous pouvez adapter la locale selon votre logique
+        // Adaptez la locale en fonction de vos besoins
         const response = await fetch("/api/admin/get-content?locale=fr");
-        if (response.ok) {
-          const localeData = await response.json();
 
-          // Ici on vérifie si la pop-up est activée
-          if (localeData.popup?.enabled) {
+        if (!response.ok) {
+          console.error("Impossible de récupérer la configuration de la pop-up");
+          return;
+        }
+
+        const data = await response.json();
+        const isPopupEnabled = data.popup?.enabled;
+
+        // Vérifier si la pop-up est activée
+        if (isPopupEnabled) {
+          // Vérifier si l'utilisateur a déjà fermé la pop-up
+          const popupClosed = localStorage.getItem("popupClosed");
+          // S'il n'y a pas la clé "popupClosed", c'est qu'elle n'a jamais été fermée
+          if (!popupClosed) {
             setShowPopup(true);
           }
-        } else {
-          console.error("Erreur lors de la récupération du contenu");
         }
       } catch (error) {
-        console.error("Erreur de connexion :", error);
+        console.error("Erreur lors de la récupération de la pop-up :", error);
       }
     };
 
-    fetchPopupStatus();
+    fetchPopupConfig();
   }, []);
 
   const handleClosePopup = () => {
