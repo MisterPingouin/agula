@@ -128,7 +128,7 @@ export default function MeetSection() {
     </section>
     {/* Paragraphe final */}
     <div className="flex flex-col items-center justify-center mx-auto">
-          <p className="block md:hidden font-title text-center text-25px leading-29px px-10 mb-6">
+          <p className="block md:hidden font-title text-center text-25px leading-29px px-10 mb-6 mt-6">
             {t("content5")}
           </p>
           <p className="hidden md:block lg:hidden font-title text-center text-30px leading-40px w-[500px] px-10 mb-4">
@@ -137,7 +137,7 @@ export default function MeetSection() {
           <p className="hidden lg:block font-title text-center text-35px leading-[43px] w-[1100px] px-10 mb-4">
             {t("content5")}
           </p>
-          <p className="block md:hidden font-content text-center text-15px leading-[23px] px-10 mb-8">
+          <p className="block md:hidden font-content text-center text-15px leading-[23px] px-10 mb-6">
             {t("content6")}
           </p>
           <p className="hidden md:block lg:hidden font-content text-center text-15px leading-[23px] w-[500px] px-10 mb-12">
@@ -146,7 +146,7 @@ export default function MeetSection() {
           <p className="hidden lg:block font-content text-center text-15px leading-[23px] w-[1100px] px-10 mb-12">
             {t("content6")}
           </p>
-          <div className="flex justify-center items-center md:gap-2 lg:gap-4 mb-12">
+          <div className="flex justify-center items-center md:gap-2 lg:gap-4 lg:mb-12">
           <Image
             src="/images/chance1.jpg"
             alt="fish"

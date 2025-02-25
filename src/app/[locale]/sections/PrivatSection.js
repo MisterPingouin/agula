@@ -9,7 +9,7 @@ export default function PrivatSection() {
       const localLink = useLocalLink();
       
       return (
-        <div className="md:hidden lg=block">
+        <div className="md:hidden lg:block">
         <section className="md:hidden">
         <div className="relative w-full h-[120px] mt-2">
         <Image
