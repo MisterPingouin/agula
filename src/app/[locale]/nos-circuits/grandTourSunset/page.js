@@ -83,7 +83,7 @@ export default function GrandTourSunsetPage({ params }) {
         {/* Illustration de la carte */}
         {/* Mobile */}
         <Image
-          src="/images/illustration.jpg"
+          src="/images/circuitsgrandtour.jpg"
           alt="map"
           width={356}
           height={531}
@@ -92,7 +92,7 @@ export default function GrandTourSunsetPage({ params }) {
         />
         {/* Tablet */}
         <Image
-          src="/images/illustrationdesktop.jpg"
+          src="/images/circuitsgrandtour.jpg"
           alt="map Tablet"
           width={440}
           height={531}
@@ -101,9 +101,9 @@ export default function GrandTourSunsetPage({ params }) {
         />
         {/* Desktop */}
         <Image
-          src="/images/illustrationdesktop.jpg"
+          src="/images/circuitsgrandtour.jpg"
           alt="map Desktop"
-          width={440}
+          width={844}
           height={531}
           className="hidden lg:block mt-6 object-cover h-auto"
           priority

@@ -8,7 +8,6 @@ import Card from "./../../components/Cards/Card";
 import VideoLagula from "../../components/VideoLagula";
 import Calanque from "../../components/Reservation/Calanque";
 import useLocalLink from "./../../hooks/useLocalLink";
-import { motion } from "framer-motion";
 
 export default function CalanquePage({ params }) {
   const t = useScopedI18n("calanque");
@@ -83,7 +82,7 @@ export default function CalanquePage({ params }) {
         {/* Illustration de la carte */}
         {/* Mobile */}
         <Image
-          src="/images/illustration.jpg"
+          src="/images/circuitcalanque.jpg"
           alt="map"
           width={356}
           height={531}
@@ -92,7 +91,7 @@ export default function CalanquePage({ params }) {
         />
         {/* Tablet */}
         <Image
-          src="/images/illustrationdesktop.jpg"
+          src="/images/circuitcalanque.jpg"
           alt="map Tablet"
           width={440}
           height={531}
@@ -100,20 +99,14 @@ export default function CalanquePage({ params }) {
           priority
         />
         {/* Desktop */}
-        <motion.div
-        className="hidden lg:block mt-6 object-cover h-auto"
-        whileHover={{ scale: 1.3 }}
-        transition={{ duration: 0.3 }}
-      >
         <Image
-          src="/images/illustrationdesktop.jpg"
+          src="/images/circuitcalanque.jpg"
           alt="map Desktop"
-          width={440}
+          width={844}
           height={531}
-          className="w-full"
+          className="hidden lg:block mt-6 object-cover h-auto"
           priority
         />
-      </motion.div>
 
         <p className="font-content text-15px leading-25px text-center w-full md:w-[700px] lg:w-[880px] px-8 my-4">
           {t("content")}

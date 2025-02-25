@@ -82,32 +82,32 @@ export default function CalanquePage({ params }) {
       <div className="flex flex-col justify-center items-center px-8">
         {/* Illustration de la carte */}
         {/* Mobile */}
-        <Image
-          src="/images/illustration.jpg"
-          alt="map"
-          width={356}
-          height={531}
-          className="object-cover w-full h-auto md:hidden"
-          priority
-        />
-        {/* Tablet */}
-        <Image
-          src="/images/illustrationdesktop.jpg"
-          alt="map Tablet"
-          width={440}
-          height={531}
-          className="hidden md:block lg:hidden mt-6 object-cover h-auto"
-          priority
-        />
-        {/* Desktop */}
-        <Image
-          src="/images/illustrationdesktop.jpg"
-          alt="map Desktop"
-          width={440}
-          height={531}
-          className="hidden lg:block mt-6 object-cover h-auto"
-          priority
-        />
+               <Image
+                 src="/images/circuitcalanque.jpg"
+                 alt="map"
+                 width={356}
+                 height={531}
+                 className="object-cover w-full h-auto md:hidden"
+                 priority
+               />
+               {/* Tablet */}
+               <Image
+                 src="/images/circuitcalanque.jpg"
+                 alt="map Tablet"
+                 width={440}
+                 height={531}
+                 className="hidden md:block lg:hidden mt-6 object-cover h-auto"
+                 priority
+               />
+               {/* Desktop */}
+               <Image
+                 src="/images/circuitcalanque.jpg"
+                 alt="map Desktop"
+                 width={844}
+                 height={531}
+                 className="hidden lg:block mt-6 object-cover h-auto"
+                 priority
+               />
 
         <p className="font-content text-15px leading-25px text-center w-full md:w-[700px] lg:w-[880px] px-8 my-4">
           {t("content")}

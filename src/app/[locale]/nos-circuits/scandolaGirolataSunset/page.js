@@ -83,6 +83,32 @@ export default function ScandolaPage({ params }) {
       <div className="flex flex-col justify-center items-center px-8">
         {/* Illustration de la carte */}
         {/* Mobile */}
+               <Image
+                 src="/images/circuitscandola.jpg"
+                 alt="map"
+                 width={356}
+                 height={531}
+                 className="object-cover w-full h-auto md:hidden"
+                 priority
+               />
+               {/* Tablet */}
+               <Image
+                 src="/images/circuitscandola.jpg"
+                 alt="map Tablet"
+                 width={440}
+                 height={531}
+                 className="hidden md:block lg:hidden mt-6 object-cover h-auto"
+                 priority
+               />
+               {/* Desktop */}
+               <Image
+                 src="/images/circuitscandola.jpg"
+                 alt="map Desktop"
+                 width={844}
+                 height={531}
+                 className="hidden lg:block mt-6 object-cover h-auto"
+                 priority
+               /> {/* Mobile */}
         <Image
           src="/images/illustration.jpg"
           alt="map"

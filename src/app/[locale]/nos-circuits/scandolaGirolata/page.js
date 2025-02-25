@@ -82,7 +82,7 @@ export default function ScandolaPage({ params }) {
         {/* Illustration de la carte */}
         {/* Mobile */}
         <Image
-          src="/images/illustration.jpg"
+          src="/images/circuitscandola.jpg"
           alt="map"
           width={356}
           height={531}
@@ -91,7 +91,7 @@ export default function ScandolaPage({ params }) {
         />
         {/* Tablet */}
         <Image
-          src="/images/illustrationdesktop.jpg"
+          src="/images/circuitscandola.jpg"
           alt="map Tablet"
           width={440}
           height={531}
@@ -100,9 +100,9 @@ export default function ScandolaPage({ params }) {
         />
         {/* Desktop */}
         <Image
-          src="/images/illustrationdesktop.jpg"
+          src="/images/circuitscandola.jpg"
           alt="map Desktop"
-          width={440}
+          width={844}
           height={531}
           className="hidden lg:block mt-6 object-cover h-auto"
           priority

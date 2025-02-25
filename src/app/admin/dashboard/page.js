@@ -134,7 +134,7 @@ export default function AdminDashboard() {
 
       {/* Formulaire de modification des contenus */}
       <div className="mt-10">
-        <h1 className="text-xl font-bold">Modifier le contenu de l'équipe</h1>
+        <h1 className="text-xl font-bold mb-2">Modifier le contenu de l'équipe</h1>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Champs de l'équipe */}
