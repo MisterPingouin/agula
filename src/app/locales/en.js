@@ -69,13 +69,13 @@ const en = {
     "calanquesPiana": {
       "title": "The Calanques of Piana",
       "description": "Capu Rossu - Calanques de Piana (10 min swim)",
-      "price": "Adults: €45 - Children: €35",
+      "price": "Adults: €48 - Children: €43",
       "duration": "Duration: 1h45"
     },
     "scandolaGirolata": {
       "title": "Scandola Girolata",
       "description": "Scandola - Girolata (30 min stop)",
-      "price": "Adults: €65 - Children: €55",
+      "price": "Adults: €68 - Children: €63",
       "duration": "Duration: 2h45"
     },
     "grandTourSunset": {
@@ -87,13 +87,13 @@ const en = {
     "calanquesPianaSunset": {
       "title": "The Calanques of Piana sunset",
       "description": "Capu Rossu - Calanques de Piana (10 min swim)",
-      "price": "Adults: €45 - Children: €35",
+      "price": "Adults: €48 - Children: €43",
       "duration": "Duration: 1h45"
     },
     "scandolaGirolataSunset": {
       "title": "Scandola Girolata sunset",
       "description": "Scandola - Girolata (30 min stop)",
-      "price": "Adults: €65 - Children: €55",
+      "price": "Adults: €68 - Children: €63",
       "duration": "Duration: 2h45"
     },
     "reserveButton": "BOOK",

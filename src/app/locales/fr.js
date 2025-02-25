@@ -78,13 +78,13 @@ const fr = {
     calanquesPiana: {
       title: "Les Calanques de Piana",
       description: "Capu Rossu - Calanques de Piana (baignade 10 min)",
-      price: "Adultes : 45€ - Enfants : 35€",
+      price: "Adultes : 48€ - Enfants : 43€",
       duration: "Durée : 1h45",
     },
     scandolaGirolata: {
       title: "Scandola Girolata",
       description: "Scandola - Girolata (arrêt 30 min)",
-      price: "Adultes : 65€ - Enfants : 55€",
+      price: "Adultes : 68€ - Enfants : 63€",
       duration: "Durée : 2h45",
     },
     grandTourSunset: {
@@ -97,13 +97,13 @@ const fr = {
     calanquesPianaSunset: {
       title: "Les Calanques de Piana sunset",
       description: "Capu Rossu - Calanques de Piana (baignade 10 min)",
-      price: "Adultes : 45€ - Enfants : 35€",
+      price: "Adultes : 48€ - Enfants : 43€",
       duration: "Durée : 1h45",
     },
     scandolaGirolataSunset: {
       title: "Scandola Girolata sunset",
       description: "Scandola - Girolata (arrêt 30 min)",
-      price: "Adultes : 65€ - Enfants : 55€",
+      price: "Adultes : 68€ - Enfants : 63€",
       duration: "Durée : 2h45",
     },
     reserveButton: "RÉSERVER",
