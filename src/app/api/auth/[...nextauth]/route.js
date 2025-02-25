@@ -10,18 +10,17 @@ export const authOptions = {
         password: { label: 'Mot de passe', type: 'password' },
       },
       async authorize(credentials) {
-        // Remplace ces valeurs par celles de ton compte admin
-        const adminUsername = 'Ozil2a';
-        const adminPassword = 'Carbunara2@';
+        const adminUsername = process.env.NEXTAUTH_ADMIN_USERNAME;
+        const adminPassword = process.env.NEXTAUTH_ADMIN_PASSWORD;
 
         if (
           credentials.username === adminUsername &&
           credentials.password === adminPassword
         ) {
-          return { id: 1, name: 'Admin' }; // Renvoie un objet utilisateur si les identifiants sont corrects
+          return { id: 1, name: 'Admin' };
         }
 
-        return null; // Retourne null si l'authentification échoue
+        return null;
       },
     }),
   ],
