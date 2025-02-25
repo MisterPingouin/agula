@@ -13,6 +13,8 @@ import HeartDesktop from "./components/HeartDesktop";
 import FAQ from "./components/FAQ";
 import EngageSection from "./sections/EngageSection";
 import VideoLagula from "./components/VideoLagula";
+import Link from "next/link";
+import Image from "next/image";
 
 
 export default function HomePage() {
@@ -39,6 +41,15 @@ export default function HomePage() {
       <Heart />
       <HeartDesktop />
       <FAQ />
+      <Link href="https://www.google.com/maps/place/H%C3%B4tel+Les+Lentisques/@42.1458937,8.5933991,17z/data=!4m9!3m8!1s0x12da7bde74858be7:0x44350905f557adfe!5m2!4m1!1i2!8m2!3d42.1458937!4d8.595974!16s%2Fg%2F1vz85y1v?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D">
+              <Image
+          src="/images/map.webp"
+          alt="Map"
+          width={1280}
+          height={368}
+          className="hidden lg:block h-auto w-full mt-4"
+        />
+        </Link>
     </main>
   );
 }

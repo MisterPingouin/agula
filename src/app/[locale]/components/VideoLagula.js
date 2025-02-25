@@ -38,7 +38,7 @@ const VideoLagula = () => {
   <source src="/videos/videolagula.mp4" type="video/mp4" />
   {t("noVideoSupport")}
 </video>
-        {/* Overlay avec bouton Play (affiché tant que la vidéo n'a pas démarré) */}
+        {/* Overlay avec bouton Play (affiché tant que la vidéo n'a pas démarré)
         {!isPlaying && (
           <div
             className="hidden md:flex absolute inset-0 items-center justify-center  cursor-pointer"
@@ -46,7 +46,7 @@ const VideoLagula = () => {
           >
             <Play className="w-16 h-16 text-white" />
           </div>
-        )}
+        )} */}
       </div>
     </section>
   );

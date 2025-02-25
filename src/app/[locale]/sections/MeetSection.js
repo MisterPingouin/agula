@@ -126,6 +126,7 @@ export default function MeetSection() {
         </div>
       </div>
     </section>
+    
 </div>
     );
 }

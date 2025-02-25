@@ -273,7 +273,8 @@ const fr = {
     content4:
       "C’est notre chargée d’accueil. Native de Cargèse, elle aime donner toutes les explications sur les lieux à visiter. Avec le sens du service, aimable et toujours souriante, elle peut vous aider à choisir votre circuit. N’hésitez pas à lui poser vos questions, elle sait comment vous aiguiller.",
     content5:
-      "Et si vous avez la chance, lors de votre promenade, vous pouvez croiser un membre un peu plus éloigné de notre équipage… Il s’agit de Thierry, le papa de Jean-Baptiste, à son retour de pêche. Vous pouvez admirer ses prises du jour : dentis, chapons, dorades, langoustes, araignées… et bien sûr immortaliser le moment avec quelques photos.",
+      "Et si vous avez la chance, lors de votre promenade, vous pouvez croiser un membre un peu plus éloigné de notre équipage…",
+      content6:"Il s’agit de Thierry, le papa de Jean-Baptiste, à son retour de pêche. Vous pouvez admirer ses prises du jour : dentis, chapons, dorades, langoustes, araignées… et bien sûr immortaliser le moment avec quelques photos.",
   },
   grandTour: {
     title: "Le Grand Tour",
