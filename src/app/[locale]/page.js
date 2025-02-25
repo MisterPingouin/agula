@@ -41,9 +41,16 @@ export default function HomePage() {
       <Heart />
       <HeartDesktop />
       <FAQ />
-      <Link href="https://www.google.com/maps/place/H%C3%B4tel+Les+Lentisques/@42.1458937,8.5933991,17z/data=!4m9!3m8!1s0x12da7bde74858be7:0x44350905f557adfe!5m2!4m1!1i2!8m2!3d42.1458937!4d8.595974!16s%2Fg%2F1vz85y1v?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D">
-              <Image
+      <Link href="https://www.google.com/maps/place/L'Agula+Marina+Croisi%C3%A8res+Promenade+en+mer+Carg%C3%A8se/@42.1317841,8.5939425,17z/data=!3m1!4b1!4m6!3m5!1s0x12da7bbb055319c5:0x5e3bb5ec35aeb829!8m2!3d42.1317841!4d8.5965174!16s%2Fg%2F11twhtgl6d?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D">
+      <Image
           src="/images/map.webp"
+          alt="Map"
+          width={429}
+          height={371}
+          className="block lg:hidden h-auto w-full mt-4"
+        />
+              <Image
+          src="/images/mapdesktop.webp"
           alt="Map"
           width={1280}
           height={368}
