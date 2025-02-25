@@ -22,9 +22,16 @@ const allGalleryItems = [
   { id: 14, type: "image", src: "/images/gallery12.webp", alt: "Paysage 12", width:1448, height: 852 },
   { id: 15, type: "image", src: "/images/gallery11.webp", alt: "Paysage 11", width: 754, height: 852 },
   { id: 16, type: "video", src: "/videos/video9.mp4", alt: "Vidéo 9"},
-
-
-
+  { id: 17, type: "image", src: "/images/gallery13.webp", alt: "Paysage 13", width: 754, height: 852 },
+  { id: 18, type: "video", src: "/videos/video4.mp4", alt: "Vidéo 4"},
+  { id: 19, type: "image", src: "/images/gallery14.webp", alt: "Paysage 11", width: 754, height: 852 },
+  { id: 20, type: "image", src: "/images/gallery15.webp", alt: "Paysage 12", width:1448, height: 852 },
+  { id: 21, type: "video", src: "/videos/video2.mp4", alt: "Vidéo 2"},
+  { id: 22, type: "image", src: "/images/gallery16.webp", alt: "Paysage 16", width: 754, height: 852 },
+  { id: 23, type: "video", src: "/videos/video.mp4", alt: "Vidéo"},
+  { id: 24, type: "video", src: "/videos/video6.mp4", alt: "Vidéo 6"},
+  { id: 25, type: "video", src: "/videos/video10.mp4", alt: "Vidéo 10"},
+  { id: 26, type: "video", src: "/videos/video8.mp4", alt: "Vidéo 8"},
 ];
 
 // Découpe d’un tableau en blocs
@@ -96,140 +103,205 @@ export default function GalleriePage() {
    * Largeur globale : 352px => lignes centrées avec mx-auto
    */
   const renderMobileLayout = () => {
-    return mobileChunks.map((chunk, chunkIndex) => (
-      <div
-        key={`mobile-chunk-${chunkIndex}`}
-        className="w-[352px] flex flex-col mx-auto mb-4" // conteneur du bloc
-      >
-        {/* Ligne 1 : items[0] et [1], 171×223 chacun + gap (10px) = 352 total */}
-        <div className="flex gap-[10px] mb-4">
-          {chunk[0] && <GalleryItem item={chunk[0]} width={171} height={223} />}
-          {chunk[1] && <GalleryItem item={chunk[1]} width={171} height={223} />}
+    return mobileChunks.map((chunk, chunkIndex) => {
+      // Si on est sur le dernier chunk et qu’il contient 6 items,
+      // on force l’affichage particulier pour que les 3 derniers (24, 25, 26) soient sur la même ligne.
+      if (chunkIndex === mobileChunks.length - 1 && chunk.length === 6) {
+        return (
+          <div
+            key={`mobile-chunk-${chunkIndex}`}
+            className="w-[352px] flex flex-col mx-auto mb-4"
+          >
+            {/* Ligne 1 : items[0] et [1] */}
+            <div className="flex gap-[10px] mb-4">
+              {chunk[0] && <GalleryItem item={chunk[0]} width={171} height={223} />}
+              {chunk[1] && <GalleryItem item={chunk[1]} width={171} height={223} />}
+            </div>
+            {/* Ligne 2 : item[2] */}
+            {chunk[2] && (
+              <div className="mb-4">
+                <GalleryItem item={chunk[2]} width={352} height={426} />
+              </div>
+            )}
+            {/* Ligne 3 : items[3], [4], [5], sur la même ligne */}
+            <div className="flex gap-[10px]">
+              {chunk[3] && <GalleryItem item={chunk[3]} width={110} height={223} />}
+              {chunk[4] && <GalleryItem item={chunk[4]} width={110} height={223} />}
+              {chunk[5] && <GalleryItem item={chunk[5]} width={110} height={223} />}
+            </div>
+          </div>
+        );
+      }
+
+      // Sinon, on conserve le pattern classique
+      return (
+        <div
+          key={`mobile-chunk-${chunkIndex}`}
+          className="w-[352px] flex flex-col mx-auto mb-4"
+        >
+          {/* Ligne 1 : items[0] et [1], 171×223 chacun + gap (10px) = 352 total */}
+          <div className="flex gap-[10px] mb-4">
+            {chunk[0] && <GalleryItem item={chunk[0]} width={171} height={223} />}
+            {chunk[1] && <GalleryItem item={chunk[1]} width={171} height={223} />}
+          </div>
+          {/* Ligne 2 : item[2], 352×426 */}
+          {chunk[2] && (
+            <div className="mb-4">
+              <GalleryItem item={chunk[2]} width={352} height={426} />
+            </div>
+          )}
+          {/* Ligne 3 : item[3], 352×236 */}
+          {chunk[3] && (
+            <div className="mb-4">
+              <GalleryItem item={chunk[3]} width={352} height={236} />
+            </div>
+          )}
+          {/* Ligne 4 : item[4], 352×426 */}
+          {chunk[4] && (
+            <div className="mb-4">
+              <GalleryItem item={chunk[4]} width={352} height={426} />
+            </div>
+          )}
+          {/* Ligne 5 : items[5] et [6], 171×223 chacun + gap(10px)=352 */}
+          <div className="flex gap-[10px]">
+            {chunk[5] && <GalleryItem item={chunk[5]} width={171} height={223} />}
+            {chunk[6] && <GalleryItem item={chunk[6]} width={171} height={223} />}
+          </div>
         </div>
-        {/* Ligne 2 : item[2] seul, 352×426 */}
-        {chunk[2] && (
-          <div className="mb-4">
-            <GalleryItem item={chunk[2]} width={352} height={426} />
-          </div>
-        )}
-        {/* Ligne 3 : item[3] seul, 352×236 */}
-        {chunk[3] && (
-          <div className="mb-4">
-            <GalleryItem item={chunk[3]} width={352} height={236} />
-          </div>
-        )}
-        {/* Ligne 4 : item[4] seul, 352×426 */}
-        {chunk[4] && (
-          <div className="mb-4">
-            <GalleryItem item={chunk[4]} width={352} height={426} />
-          </div>
-        )}
-        {/* Ligne 5 : items[5] et [6], 171×223 chacun + gap(10px)=352*/}
-        <div className="flex gap-[10px]">
-          {chunk[5] && <GalleryItem item={chunk[5]} width={171} height={223} />}
-          {chunk[6] && <GalleryItem item={chunk[6]} width={171} height={223} />}
-        </div>
-      </div>
-    ));
+      );
+    });
   };
 
   /**
    * Rendu desktop : pattern sur 10 items
-   * Largeur globale : 1076px => (3×352 + 2×10) = 1076 ou (724 + 352) + 0 = 1076
+   * Largeur globale : 1076px => (3×352 + 2×10) = 1076 ou (724 + 352)
    */
   const renderDesktopLayout = () => {
-    return desktopChunks.map((chunk, chunkIndex) => (
-      <div
-        key={`desktop-chunk-${chunkIndex}`}
-        className="flex flex-col mx-auto mb-4 md:w-[780px] lg:w-[1076px] "
-      >
-        {/* Ligne 1 : items[0], [1], [2], chacun 352×426, avec 2 gaps de 10px => total 3×352 + 2×10 = 1076 */}
-        <div className="flex gap-[10px] mb-4">
-          {chunk[0] && <GalleryItem item={chunk[0]} width={352} height={426} />}
-          {chunk[1] && <GalleryItem item={chunk[1]} width={352} height={426} />}
-          {chunk[2] && <GalleryItem item={chunk[2]} width={352} height={426} />}
+    return desktopChunks.map((chunk, chunkIndex) => {
+      // Si c’est le dernier chunk et qu’il contient 6 items,
+      // on affiche 2 lignes de 3 items pour que 24, 25, 26 soient sur la même ligne.
+      if (chunkIndex === desktopChunks.length - 1 && chunk.length === 6) {
+        return (
+          <div
+            key={`desktop-chunk-${chunkIndex}`}
+            className="flex flex-col mx-auto mb-4 md:w-[780px] lg:w-[1076px]"
+          >
+            {/* Ligne 1 : 3 items => 3x352 + 2x10 = 1076 */}
+            <div className="flex gap-[10px] mb-4">
+              {chunk[0] && <GalleryItem item={chunk[0]} width={352} height={426} />}
+              {chunk[1] && <GalleryItem item={chunk[1]} width={352} height={426} />}
+              {chunk[2] && <GalleryItem item={chunk[2]} width={352} height={426} />}
+            </div>
+            {/* Ligne 2 : 3 items => 3x352 + 2x10 = 1076 */}
+            <div className="flex gap-[10px]">
+              {chunk[3] && <GalleryItem item={chunk[3]} width={352} height={426} />}
+              {chunk[4] && <GalleryItem item={chunk[4]} width={352} height={426} />}
+              {chunk[5] && <GalleryItem item={chunk[5]} width={352} height={426} />}
+            </div>
+          </div>
+        );
+      }
+
+      // Sinon pattern habituel sur 10 items
+      return (
+        <div
+          key={`desktop-chunk-${chunkIndex}`}
+          className="flex flex-col mx-auto mb-4 md:w-[780px] lg:w-[1076px]"
+        >
+          {/* Ligne 1 : items[0], [1], [2], chacun 352×426 */}
+          <div className="flex gap-[10px] mb-4">
+            {chunk[0] && <GalleryItem item={chunk[0]} width={352} height={426} />}
+            {chunk[1] && <GalleryItem item={chunk[1]} width={352} height={426} />}
+            {chunk[2] && <GalleryItem item={chunk[2]} width={352} height={426} />}
+          </div>
+          {/* Ligne 2 : item[3] en 724×426 + gap + item[4] en 352×426 = 1076 total */}
+          <div className="flex gap-2 mb-4">
+            {chunk[3] && <GalleryItem item={chunk[3]} width={724} height={426} />}
+            {chunk[4] && <GalleryItem item={chunk[4]} width={352} height={426} />}
+          </div>
+          {/* Ligne 3 : items[5], [6], [7], 3×352 + 2×10 = 1076 */}
+          <div className="flex gap-[10px] mb-4">
+            {chunk[5] && <GalleryItem item={chunk[5]} width={352} height={426} />}
+            {chunk[6] && <GalleryItem item={chunk[6]} width={352} height={426} />}
+            {chunk[7] && <GalleryItem item={chunk[7]} width={352} height={426} />}
+          </div>
+          {/* Ligne 4 : item[8] en 352×426 + item[9] en 724×426 = 1076 */}
+          <div className="flex gap-2">
+            {chunk[8] && <GalleryItem item={chunk[8]} width={352} height={426} />}
+            {chunk[9] && <GalleryItem item={chunk[9]} width={724} height={426} />}
+          </div>
         </div>
-        {/* Ligne 2 : item[3] 724×426 + gap + item[4] 352×426 = 724 + 10 + 352 =1086 ?? 
-            => on supprime la gap ou on la met à 0, ou on le place sans gap 
-        */}
-        <div className="flex gap-2 mb-4">
-          {chunk[3] && <GalleryItem item={chunk[3]} width={724} height={426} />}
-          {chunk[4] && <GalleryItem item={chunk[4]} width={352} height={426} />}
-        </div>
-        {/* Ligne 3 : items[5], [6], [7], chacun 352×426, 2 gaps => 1076 total */}
-        <div className="flex gap-[10px] mb-4">
-          {chunk[5] && <GalleryItem item={chunk[5]} width={352} height={426} />}
-          {chunk[6] && <GalleryItem item={chunk[6]} width={352} height={426} />}
-          {chunk[7] && <GalleryItem item={chunk[7]} width={352} height={426} />}
-        </div>
-        {/* Ligne 4 : item[8] 352×426 + item[9] 724×426 = 1076 */}
-        <div className="flex gap-2">
-          {chunk[8] && <GalleryItem item={chunk[8]} width={352} height={426} />}
-          {chunk[9] && <GalleryItem item={chunk[9]} width={724} height={426} />}
-        </div>
-      </div>
-    ));
+      );
+    });
   };
 
   return (
     <main className="flex flex-col items-center mt-[80px]">
-        <h1 className="block md:hidden font-subtitle text-50px text-green-2 mb-2">
-          {t("title")}
-        </h1>
-        <h1 className="hidden md:block lg:hidden font-subtitle text-80px text-green-2 mb-2">
-          {t("title")}
-        </h1>
-        <h1 className="hidden lg:block font-subtitle text-80px text-green-2 mb-4">
-          {t("title")}
-        </h1>
+      <h1 className="block md:hidden font-subtitle text-50px text-green-2 mb-2">
+        {t("title")}
+      </h1>
+      <h1 className="hidden md:block lg:hidden font-subtitle text-80px text-green-2 mb-2">
+        {t("title")}
+      </h1>
+      <h1 className="hidden lg:block font-subtitle text-80px text-green-2 mb-4">
+        {t("title")}
+      </h1>
+
       {/* Layout mobile */}
       <div className="block lg:hidden">{renderMobileLayout()}</div>
 
       {/* Layout desktop */}
       <div className="hidden lg:block">{renderDesktopLayout()}</div>
 
-{/* Lightbox */}
-<AnimatePresence>
-  {selectedItem && (
-    <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      onClick={closeLightbox}
-    >
-      <motion.div
-        className="relative flex items-center justify-center"
-        initial={{ scale: 0.8 }}
-        animate={{ scale: 1 }}
-        exit={{ scale: 0.8 }}
-        onClick={(e) => e.stopPropagation()}
-      >
-        {/* Conteneur qui s'adapte exactement à la taille de l'image */}
-        <div className="relative">
-          {/* Image qui garde ses proportions et s’adapte sans dépasser */}
-          <div className="relative max-w-[90vw] max-h-[90vh]">
-            <Image
-              src={selectedItem.src}
-              alt={selectedItem.alt}
-              width={selectedItem.width}
-              height={selectedItem.height}
-              className="w-auto h-auto max-w-full max-h-full object-contain"
-            />
-            {/* Bouton de fermeture attaché à l'image */}
-            <button
-              onClick={closeLightbox}
-              className="absolute top-2 right-2 p-2 text-white text-2xl font-bold z-10"
+      {/* Lightbox */}
+      <AnimatePresence>
+        {selectedItem && (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={closeLightbox}
+          >
+            <motion.div
+              className="relative flex items-center justify-center"
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
+              onClick={(e) => e.stopPropagation()}
             >
-              &times;
-            </button>
-          </div>
-        </div>
-      </motion.div>
-    </motion.div>
-  )}
-</AnimatePresence>
-
+              {/* Conteneur qui s'adapte exactement à la taille de l'élément */}
+              <div className="relative">
+                <div className="relative max-w-[90vw] max-h-[90vh]">
+                  {selectedItem.type === "image" ? (
+                    <Image
+                      src={selectedItem.src}
+                      alt={selectedItem.alt}
+                      width={selectedItem.width}
+                      height={selectedItem.height}
+                      className="w-auto h-auto max-w-full max-h-full object-contain"
+                    />
+                  ) : (
+                    <video
+                      src={selectedItem.src}
+                      controls
+                      autoPlay
+                      className="w-auto h-auto max-w-full max-h-full"
+                    />
+                  )}
+                  {/* Bouton de fermeture attaché à l'élément */}
+                  <button
+                    onClick={closeLightbox}
+                    className="absolute top-2 right-2 p-2 text-white text-2xl font-bold z-10"
+                  >
+                    &times;
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </main>
   );
 }
