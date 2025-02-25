@@ -621,6 +621,14 @@ const en = {
     infosContent3: "Or: download the presentation booklet for the Charter:",
     infosContent4: "https://www.oec.corsica/attachment/207978/",
   },  
+  popup: {
+    title: "Why book on our Official Website?",
+    line1: "It's now or never to book",
+    line2: "Benefit from a special 10% discount on your sea trip.",
+    line3: "To take advantage of it, go to the “book” section",
+    validity: "Valid until 07/31/2024",
+    close_button: "Close"
+  }
  
 };
 
