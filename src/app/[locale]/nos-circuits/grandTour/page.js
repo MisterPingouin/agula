@@ -55,14 +55,14 @@ export default function GrandTourPage({ params }) {
       />
 
       {/* Titre et description */}
-      <div className="flex flex-col justify-center gap-2 mt-6 items-center px-8">
+      <div className="flex flex-col justify-center gap-2 mt-6 items-center px-8 lg:w-[984px]">
         <h1 className="font-subtitle text-50px md:text-70px lg:text-80px text-green-2 leading-none">
           {t("title")}
         </h1>
         <p className="font-content font-bold text-15px leading-tight md:leading-tight lg:leading-none text-center mt-2">
           {t("subtitle1")}
         </p>
-        <p className="font-content text-15px leading-tight font-bold text-center">
+        <p className="font-content text-15px leading-tight lg:leading-normal font-bold text-center">
           {t("subtitle2")}
         </p>
       </div>

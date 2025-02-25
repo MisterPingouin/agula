@@ -110,11 +110,11 @@ const HomeSection = () => {
                 &times;
               </button>
 
-              <h2 className="text-25px font-title mb-6 leading-tight md:text-20px">{tPopup("title")}</h2>
-              <p className="mb-2 font-content text-15px md:text-10px">{tPopup("line1")}</p>
-              <p className="mb-2 font-content text-15px md:text-10px">{tPopup("line2")}</p>
-              <p className="mb-4 font-content text-15px md:text-10px">{tPopup("line3")}</p>
-              <p className="font-content text-15px md:text-10px">{tPopup("validity")}</p>
+              <h2 className="text-20px font-title mb-6 leading-tight md:text-25px">{tPopup("title")}</h2>
+              <p className="mb-2 font-content text-13px md:text-15px">{tPopup("line1")}</p>
+              <p className="mb-2 font-content text-13px md:text-15px">{tPopup("line2")}</p>
+              <p className="mb-4 font-content text-13px md:text-15px">{tPopup("line3")}</p>
+              <p className="font-content text-13px md:text-15px">{tPopup("validity")}</p>
             </motion.div>
           </motion.div>
         )}

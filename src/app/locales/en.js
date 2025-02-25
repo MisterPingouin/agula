@@ -36,7 +36,7 @@ const en = {
     subtitle3: "and unforgettable",
     circuits_button: "OUR TOURS",
     content:
-      "Jean-Baptiste CAPODIMACCI grew up with the sea. He knows the secret passages that only a local child can discover. With him, immerse yourself in the heart of the spectacular landscapes of his native region: the Scandola nature reserve, the village of Girolata, the coves of Piana… During the day or at sunset, choose the circuit that suits you.",
+      "Jean-Baptiste CAPODIMACCI, grandson and son of a fisherman, grew up with the sea. He knows the secret passages that only a local child can discover. With him, immerse yourself in the heart of the spectacular landscapes of his native region: the Scandola nature reserve, the village of Girolata, the coves of Piana… During the day or at sunset, choose the circuit that suits you.",
     title2: "Embark",
     subtitle4: "Welcome",
     subtitle5: "on board",
@@ -53,7 +53,7 @@ const en = {
     subtitle10: "With family",
     subtitle11: "For two",
     subtitle12: "With friends",
-    content4: "Want to spend a special moment with your partner, family, friends or even colleagues? To make your own itinerary? To choose your swimming stops? Privatize our boat with skipper for a day or half a day. Create your à la carte formula by contacting our team. You will have the quote on simple request.",
+    content4: "Want to spend a special moment with your partner, family, friends or even colleagues? To make your own itinerary? To choose your swimming stops? Privatize our boat with skipper for a day or half a day. Create your à la carte formula by contacting our team. You will have the quote on simple request. For any privatization, a platter of local products (charcuterie, cheese and a bottle) is offered to accompany your outing.",
     privatization_button: "PRIVATIZATION",
   },
   menu: {
@@ -244,7 +244,7 @@ const en = {
   grandTour: {
     title: "The Grand Tour",
     subtitle1 : "Go to the port of Cargèse to board the Sacha.",
-    subtitle2:  "On the program: discovery of Capu Rossu and the Piana coves!",
+    subtitle2:  "On the program: Visit to the Genoese towers, discovery of Capu Rossu, the Calanques de Piana and its caves with a 10-minute swimming stop! Gulf of Porto, Capu Sininu, 30 min stop at Girolata Village, Scandola Reserve",
     price: "Adults: 80€ - Children: 70€",
     time: "Duration : 3h45",
     content: "Departure from Cargèse port > Capu Rossu > Calanques de Piana (swimming 10 min) > Gulf of Porto > Girolata (stop 30 min) > Scandola > Return to Cargèse port",
