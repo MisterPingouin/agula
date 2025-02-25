@@ -267,21 +267,21 @@ export default function EquipePage() {
       </p>
       <div className="flex justify-center items-center gap-2 mb-12">
       <Image
-        src="/images/chance1.jpg"
+        src="/images/chance1.webp"
         alt="fish"
         width={356}
         height={454}
         className="hidden md:block object-cover h-auto"
         priority
       />      <Image
-      src="/images/chance2.jpg"
+      src="/images/chance2.webp"
       alt="fish"
       width={356}
       height={454}
       className="hidden md:block object-cover h-auto"
       priority
     />      <Image
-    src="/images/chance3.jpg"
+    src="/images/chance3.webp"
     alt="fish"
     width={356}
     height={454}

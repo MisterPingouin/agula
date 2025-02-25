@@ -160,7 +160,7 @@ export default function GrandTourSunsetPage({ params }) {
         <div className="hidden lg:hidden md:block w-10/12 h-[0.5px] md:h-[0.6px] md:my-3 bg-[#707070] mb-6"></div>
         <div className="hidden lg:hidden md:flex flex-col justify-center gap-20 items-center w-10/12 mt-6">
           <Image
-            src="/images/grandtour2desktop.jpg"
+            src="/images/grandtour2desktop.webp"
             alt="Grand Tour 2 Tablet"
             width={393}
             height={502}
@@ -200,7 +200,7 @@ export default function GrandTourSunsetPage({ params }) {
         {/* Desktop Version Grand Tour 2 */}
         <div className="hidden lg:flex justify-center gap-40 items-center w-10/12 mt-6">
           <Image
-            src="/images/grandtour2desktop.jpg"
+            src="/images/grandtour2desktop.webp"
             alt="Grand Tour 2 Desktop"
             width={393}
             height={502}

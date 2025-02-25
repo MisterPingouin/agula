@@ -25,11 +25,11 @@ export default function HomePage() {
       <ChooseSection />
       <SliderDesktop />
       <section className="flex flex-col mt-8 px-4 gap-4 max-w-md mx-auto lg:hidden">
-        <Card tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
-        <Card tourKey="calanquesPiana" imageSrc="/images/calanques-piana.jpg" />
+        <Card tourKey="grandTour" imageSrc="/images/grandtour.webp" />
+        <Card tourKey="calanquesPiana" imageSrc="/images/calanques-piana.webp" />
         <Card
           tourKey="scandolaGirolata"
-          imageSrc="/images/scandola-girolata.jpg"
+          imageSrc="/images/scandola-girolata.webp"
         />
       </section>
       <EmbarkSection />

@@ -214,7 +214,7 @@ export default function CalanquePage({ params }) {
         {/* Section Calanque */}
         {/* Mobile */}
         <Image
-          src="/images/calanque2.jpg"
+          src="/images/calanque2.webp"
           alt="Calanque"
           width={352}
           height={426}
@@ -239,7 +239,7 @@ export default function CalanquePage({ params }) {
             </p>
           </div>
           <Image
-            src="/images/calanque2.jpg"
+            src="/images/calanque2.webp"
             alt="Calanque Tablet"
             width={393}
             height={502}
@@ -259,7 +259,7 @@ export default function CalanquePage({ params }) {
             </p>
           </div>
           <Image
-            src="/images/calanque2.jpg"
+            src="/images/calanque2.webp"
             alt="calanque2 Desktop"
             width={393}
             height={502}

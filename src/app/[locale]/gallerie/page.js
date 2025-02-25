@@ -6,16 +6,16 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useScopedI18n } from "./../../locales/I18nContext";
 
 const allGalleryItems = [
-  { id: 1, type: "image", src: "/images/gallery1.jpg", alt: "Paysage 1", width: 754, height: 852 },
-  { id: 2, type: "image", src: "/images/gallery2.jpg", alt: "Paysage 2", width: 754, height: 852  },
-  { id: 3, type: "image", src: "/images/gallery3.jpg", alt: "Paysage 3", width: 1448, height: 852  },
-  { id: 4, type: "image", src: "/images/gallery4.jpg", alt: "Paysage 4", width: 704, height: 472  },
-  { id: 5, type: "image", src: "/images/gallery5.jpg", alt: "Paysage 5", width: 754, height: 852 },
+  { id: 1, type: "image", src: "/images/gallery1.webp", alt: "Paysage 1", width: 754, height: 852 },
+  { id: 2, type: "image", src: "/images/gallery2.webp", alt: "Paysage 2", width: 754, height: 852  },
+  { id: 3, type: "image", src: "/images/gallery3.webp", alt: "Paysage 3", width: 1448, height: 852  },
+  { id: 4, type: "image", src: "/images/gallery4.webp", alt: "Paysage 4", width: 704, height: 472  },
+  { id: 5, type: "image", src: "/images/gallery5.webp", alt: "Paysage 5", width: 754, height: 852 },
   { id: 6, type: "video", src: "/videos/video1.mp4", alt: "Vidéo 1" },
-  { id: 7, type: "image", src: "/images/gallery6.jpg", alt: "Paysage 6", width: 372, height: 852 },
+  { id: 7, type: "image", src: "/images/gallery6.webp", alt: "Paysage 6", width: 372, height: 852 },
   { id: 8, type: "video", src: "/videos/video7.mp4", alt: "Vidéo 7"},
-  { id: 9, type: "image", src: "/images/gallery7.jpg", alt: "Paysage 7", width: 372, height: 446 },
-  { id: 10, type: "image", src: "/images/gallery1.jpg", alt: "Paysage 8", width: 372, height: 446 },
+  { id: 9, type: "image", src: "/images/gallery7.webp", alt: "Paysage 7", width: 372, height: 446 },
+  { id: 10, type: "image", src: "/images/gallery8.webp", alt: "Paysage 8", width: 372, height: 446 },
 ];
 
 // Découpe d’un tableau en blocs

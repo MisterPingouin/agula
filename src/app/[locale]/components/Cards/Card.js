@@ -52,7 +52,7 @@ export default function Card({ tourKey, imageSrc }) {
         </Link>
         <Link
   href={localLink(`/nos-circuits/${tourKey}`)}
-  className="border border-green-2 text-green-2 px-4 py-2 font-semibold text-14px"
+  className="border border-green-2 text-green-2 px-4 py-2 font-semibold text-14px" alt="circuits"
 >
   {t("learnMoreButton")}
 </Link>

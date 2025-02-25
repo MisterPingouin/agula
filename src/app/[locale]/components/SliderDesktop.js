@@ -7,12 +7,12 @@ import Card from "./Cards/Card";
 
 // 6 tours => 2 slides de 3
 const TOURS = [
-  { tourKey: "grandTour", imageSrc: "/images/grandtour.jpg" },
-  { tourKey: "calanquesPiana", imageSrc: "/images/calanques-piana.jpg" },
-  { tourKey: "scandolaGirolata", imageSrc: "/images/scandola-girolata.jpg" },
-  { tourKey: "grandTourSunset", imageSrc: "/images/grandtour-sunset.jpg" },
-  { tourKey: "calanquesPianaSunset", imageSrc: "/images/calanques-piana-sunset.jpg" },
-  { tourKey: "scandolaGirolataSunset", imageSrc: "/images/scandola-girolata-sunset.jpg" },
+  { tourKey: "grandTour", imageSrc: "/images/grandtour.webp" },
+  { tourKey: "calanquesPiana", imageSrc: "/images/calanques-piana.webp" },
+  { tourKey: "scandolaGirolata", imageSrc: "/images/scandola-girolata.webp" },
+  { tourKey: "grandTourSunset", imageSrc: "/images/grandtour-sunset.webp" },
+  { tourKey: "calanquesPianaSunset", imageSrc: "/images/calanques-piana-sunset.webp" },
+  { tourKey: "scandolaGirolataSunset", imageSrc: "/images/scandola-girolata-sunset.webp" },
 ];
 
 function chunkArray(array, size) {

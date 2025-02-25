@@ -20,22 +20,22 @@ export default function CircuitsPage() {
       <div className="my-8 px-4">
         {/* Mobile : flex layout */}
         <div className="flex flex-col gap-4 max-w-md mx-auto md:hidden">
-          <Card tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
-          <Card tourKey="calanquesPiana" imageSrc="/images/calanques-piana.jpg" />
-          <Card tourKey="scandolaGirolata" imageSrc="/images/scandola-girolata.jpg" />
-          <Card tourKey="grandTourSunset" imageSrc="/images/grandtour-sunset.jpg" />
-          <Card tourKey="calanquesPianaSunset" imageSrc="/images/calanques-piana-sunset.jpg" />
-          <Card tourKey="scandolaGirolataSunset" imageSrc="/images/scandola-girolata-sunset.jpg" />
+          <Card tourKey="grandTour" imageSrc="/images/grandtour.webp" />
+          <Card tourKey="calanquesPiana" imageSrc="/images/calanques-piana.webp" />
+          <Card tourKey="scandolaGirolata" imageSrc="/images/scandola-girolata.webp" />
+          <Card tourKey="grandTourSunset" imageSrc="/images/grandtour-sunset.webp" />
+          <Card tourKey="calanquesPianaSunset" imageSrc="/images/calanques-piana-sunset.webp" />
+          <Card tourKey="scandolaGirolataSunset" imageSrc="/images/scandola-girolata-sunset.webp" />
         </div>
 
         {/* Desktop : grid layout */}
         <div className="hidden md:grid grid-cols-3 gap-6 max-w-[1200px] mx-auto">
-          <Card tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
-          <Card tourKey="calanquesPiana" imageSrc="/images/calanques-piana.jpg" />
-          <Card tourKey="scandolaGirolata" imageSrc="/images/scandola-girolata.jpg" />
-          <Card tourKey="grandTourSunset" imageSrc="/images/grandtour-sunset.jpg" />
-          <Card tourKey="calanquesPianaSunset" imageSrc="/images/calanques-piana-sunset.jpg" />
-          <Card tourKey="scandolaGirolataSunset" imageSrc="/images/scandola-girolata-sunset.jpg" />
+          <Card tourKey="grandTour" imageSrc="/images/grandtour.webp" />
+          <Card tourKey="calanquesPiana" imageSrc="/images/calanques-piana.webp" />
+          <Card tourKey="scandolaGirolata" imageSrc="/images/scandola-girolata.webp" />
+          <Card tourKey="grandTourSunset" imageSrc="/images/grandtour-sunset.webp" />
+          <Card tourKey="calanquesPianaSunset" imageSrc="/images/calanques-piana-sunset.webp" />
+          <Card tourKey="scandolaGirolataSunset" imageSrc="/images/scandola-girolata-sunset.webp" />
         </div>
       </div>
     </main>

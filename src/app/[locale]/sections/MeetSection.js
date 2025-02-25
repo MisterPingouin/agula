@@ -148,21 +148,21 @@ export default function MeetSection() {
           </p>
           <div className="flex justify-center items-center md:gap-2 lg:gap-4 lg:mb-12">
           <Image
-            src="/images/chance1.jpg"
+            src="/images/chance1.webp"
             alt="fish"
             width={356}
             height={454}
             className="hidden md:block object-cover h-auto"
             priority
           />      <Image
-          src="/images/chance2.jpg"
+          src="/images/chance2.webp"
           alt="fish"
           width={356}
           height={454}
           className="hidden md:block object-cover h-auto"
           priority
         />      <Image
-        src="/images/chance3.jpg"
+        src="/images/chance3.webp"
         alt="fish"
         width={356}
         height={454}

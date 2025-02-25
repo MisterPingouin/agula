@@ -180,32 +180,32 @@ export default function PrivatisationPage() {
       <div className="my-4 px-4">
         {/* Mobile : layout en flex */}
         <div className="flex flex-col gap-4 max-w-md mx-auto md:hidden">
-          <CardPrivat tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
-          <CardPrivat tourKey="calanquesPiana" imageSrc="/images/calanques-piana.jpg" />
-          <CardPrivat tourKey="scandolaGirolata" imageSrc="/images/scandola-girolata.jpg" />
-          <CardPrivat tourKey="grandTourSunset" imageSrc="/images/grandtour-sunset.jpg" />
-          <CardPrivat tourKey="calanquesPianaSunset" imageSrc="/images/calanques-piana-sunset.jpg" />
-          <CardPrivat tourKey="scandolaGirolataSunset" imageSrc="/images/scandola-girolata-sunset.jpg" />
+          <CardPrivat tourKey="grandTour" imageSrc="/images/grandtour.webp" />
+          <CardPrivat tourKey="calanquesPiana" imageSrc="/images/calanques-piana.webp" />
+          <CardPrivat tourKey="scandolaGirolata" imageSrc="/images/scandola-girolata.webp" />
+          <CardPrivat tourKey="grandTourSunset" imageSrc="/images/grandtour-sunset.webp" />
+          <CardPrivat tourKey="calanquesPianaSunset" imageSrc="/images/calanques-piana-sunset.webp" />
+          <CardPrivat tourKey="scandolaGirolataSunset" imageSrc="/images/scandola-girolata-sunset.webp" />
         </div>
 
         {/* Tablette : layout en grid (2 colonnes) */}
         <div className="hidden md:grid lg:hidden grid-cols-2 gap-6 max-w-[1200px] mx-auto">
-          <CardPrivat tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
-          <CardPrivat tourKey="calanquesPiana" imageSrc="/images/calanques-piana.jpg" />
-          <CardPrivat tourKey="scandolaGirolata" imageSrc="/images/scandola-girolata.jpg" />
-          <CardPrivat tourKey="grandTourSunset" imageSrc="/images/grandtour-sunset.jpg" />
-          <CardPrivat tourKey="calanquesPianaSunset" imageSrc="/images/calanques-piana-sunset.jpg" />
-          <CardPrivat tourKey="scandolaGirolataSunset" imageSrc="/images/scandola-girolata-sunset.jpg" />
+          <CardPrivat tourKey="grandTour" imageSrc="/images/grandtour.webp" />
+          <CardPrivat tourKey="calanquesPiana" imageSrc="/images/calanques-piana.webp" />
+          <CardPrivat tourKey="scandolaGirolata" imageSrc="/images/scandola-girolata.webp" />
+          <CardPrivat tourKey="grandTourSunset" imageSrc="/images/grandtour-sunset.webp" />
+          <CardPrivat tourKey="calanquesPianaSunset" imageSrc="/images/calanques-piana-sunset.webp" />
+          <CardPrivat tourKey="scandolaGirolataSunset" imageSrc="/images/scandola-girolata-sunset.webp" />
         </div>
 
         {/* Desktop : layout en grid (3 colonnes) */}
         <div className="hidden lg:grid grid-cols-3 gap-6 max-w-[1200px] mx-auto">
-          <CardPrivat tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
-          <CardPrivat tourKey="calanquesPiana" imageSrc="/images/calanques-piana.jpg" />
-          <CardPrivat tourKey="scandolaGirolata" imageSrc="/images/scandola-girolata.jpg" />
-          <CardPrivat tourKey="grandTourSunset" imageSrc="/images/grandtour-sunset.jpg" />
-          <CardPrivat tourKey="calanquesPianaSunset" imageSrc="/images/calanques-piana-sunset.jpg" />
-          <CardPrivat tourKey="scandolaGirolataSunset" imageSrc="/images/scandola-girolata-sunset.jpg" />
+          <CardPrivat tourKey="grandTour" imageSrc="/images/grandtour.webp" />
+          <CardPrivat tourKey="calanquesPiana" imageSrc="/images/calanques-piana.webp" />
+          <CardPrivat tourKey="scandolaGirolata" imageSrc="/images/scandola-girolata.webp" />
+          <CardPrivat tourKey="grandTourSunset" imageSrc="/images/grandtour-sunset.webp" />
+          <CardPrivat tourKey="calanquesPianaSunset" imageSrc="/images/calanques-piana-sunset.webp" />
+          <CardPrivat tourKey="scandolaGirolataSunset" imageSrc="/images/scandola-girolata-sunset.webp" />
         </div>
       </div>
     </main>
