@@ -59,6 +59,9 @@ const fr = {
     content4:
       "Envie de passer un moment privilégié en amoureux, en famille, entre amis ou même entre collègues ? De faire votre propre itinéraire ? De choisir vos arrêts baignade ? Privatisez notre bateau avec skipper pour une journée ou une demi-journée. Réaliser votre formule à la carte en contactant notre équipe. Vous aurez le devis sur simple demande . Pour toute privatisation, un plateau de produits locaux (charcuterie, fromage et une bouteille) est offert pour accompagner votre sortie.",
     privatization_button: "PRIVATISATION",
+    content5:
+      "Et si vous avez la chance, lors de votre promenade, vous pouvez croiser un membre un peu plus éloigné de notre équipage…",
+      content6:"Il s’agit de Thierry, le papa de Jean-Baptiste, à son retour de pêche. Vous pouvez admirer ses prises du jour : dentis, chapons, dorades, langoustes, araignées… et bien sûr immortaliser le moment avec quelques photos.",
   },
   menu: {
     close: "Fermer",

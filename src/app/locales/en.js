@@ -55,6 +55,8 @@ const en = {
     subtitle12: "With friends",
     content4: "Want to spend a special moment with your partner, family, friends or even colleagues? To make your own itinerary? To choose your swimming stops? Privatize our boat with skipper for a day or half a day. Create your à la carte formula by contacting our team. You will have the quote on simple request. For any privatization, a platter of local products (charcuterie, cheese and a bottle) is offered to accompany your outing.",
     privatization_button: "PRIVATIZATION",
+    content5: "And if you are lucky enough, during your walk, you may come across a slightly more distant member of our crew…",
+    content6:"This is Thierry, Jean-Baptiste's dad, on his return from fishing. You can admire his catch of the day: dents, capons, sea bream, lobsters, spiders... and of course immortalize the moment with a few photos.",
   },
   menu: {
     close: "Close",
@@ -239,7 +241,8 @@ const en = {
     content3: "An experienced seafarer. A highly skilled pilot, he is often the one guiding you through your excursion. With him, you'll maneuver effortlessly through every spot! He guides you with a relaxed and humorous demeanor, revealing all the fascinating details about the environment he loves. He’s a top-notch captain!",
     subtitle3: "Claire",
     content4: "She is our hospitality manager. A native of Cargèse, she enjoys providing all the necessary information about the places to visit. With a strong sense of service, friendly, and always smiling, she can help you choose the best circuit for you. Don't hesitate to ask her any questions—she knows how to guide you.",
-    content5: "And if you're lucky, during your excursion, you might encounter a more distant member of our crew... Thierry, Jean-Baptiste's father, returning from a fishing trip. You can admire his catch of the day: dentex, scorpionfish, sea bream, lobsters, spider crabs... and of course, capture the moment with a few photos.",
+    content5: "And if you are lucky enough, during your walk, you may come across a slightly more distant member of our crew…",
+    content6:"This is Thierry, Jean-Baptiste's dad, on his return from fishing. You can admire his catch of the day: dents, capons, sea bream, lobsters, spiders... and of course immortalize the moment with a few photos.",
   },  
   grandTour: {
     title: "The Grand Tour",
