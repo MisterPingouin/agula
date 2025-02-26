@@ -40,7 +40,7 @@ export default function GrandTourSunsetPage({ params }) {
       <Image
         src="/images/grandtour1desktop.webp"
         alt="Grand Tour Tablet"
-        width={428}
+        width={1280}
         height={440}
         className="w-full object-cover hidden md:block lg:hidden"
         priority
@@ -49,7 +49,7 @@ export default function GrandTourSunsetPage({ params }) {
       <Image
         src="/images/grandtour1desktop.webp"
         alt="Grand Tour Desktop"
-        width={428}
+        width={1280}
         height={440}
         className="w-full object-cover hidden lg:block"
         priority
