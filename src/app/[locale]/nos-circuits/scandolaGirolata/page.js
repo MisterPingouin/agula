@@ -39,7 +39,7 @@ export default function ScandolaPage({ params }) {
       <Image
         src="/images/scandoladesktop.webp"
         alt="scandola tablette"
-        width={1280}
+        width={768}
         height={440}
         className="w-full object-cover hidden md:block lg:hidden"
         priority

@@ -39,7 +39,7 @@ export default function CalanquePage({ params }) {
       <Image
         src="/images/calanquedesktop.webp"
         alt="Calanque tablette"
-        width={1280}
+        width={768}
         height={440}
         className="w-full object-cover hidden md:block lg:hidden"
         priority
