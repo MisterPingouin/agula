@@ -568,7 +568,7 @@ const fr = {
     copyright_content:
       "En application du Code Français de la Propriété Intellectuelle, la reproduction pour un usage autre que privé, la vente, la diffusion, la publication, l’adaptation ou la communication, partielles ou intégrales, des données sont strictement soumises à l’autorisation écrite et préalable des détenteurs des droit, soit :",
     design: "Graphisme / Design : Syrovatsky",
-    web: "Developement Web : Anthony Pham",
+    web: "Développement Web : Anthony Pham",
     privacy_title: "INFORMATIQUE ET LIBERTÉ",
     privacy_content:
       "Tout utilisateur ayant déposé des infos directement ou indirectement nominatives dispose d’un droit d’accès et de rectification conformément à la loi n°78-17 du 06/01/78 (Informatique et Liberté) auprès de l’administrateur du site.",

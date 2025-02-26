@@ -310,7 +310,7 @@ export default function EquipePage() {
           alt="fish"
           width={356}
           height={454}
-          className="hidden md:block object-cover h-auto"
+          className="hidden lg:block object-cover h-auto"
           priority
         />
         <Image
@@ -318,7 +318,7 @@ export default function EquipePage() {
           alt="fish"
           width={356}
           height={454}
-          className="hidden md:block object-cover h-auto"
+          className="hidden lg:block object-cover h-auto"
           priority
         />
         <Image
