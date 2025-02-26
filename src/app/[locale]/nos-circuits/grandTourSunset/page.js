@@ -507,9 +507,9 @@ export default function GrandTourSunsetPage({ params }) {
           {t("subtitle8")}
         </h4>
         <div className="flex flex-col gap-4 my-6 md:flex-row">
-          <Card tourKey="grandTour" imageSrc="/images/grandtour.jpg" />
-          <Card tourKey="calanquesPiana" imageSrc="/images/calanques-piana.jpg" />
-          <Card tourKey="scandolaGirolata" imageSrc="/images/scandola-girolata.jpg" />
+          <Card tourKey="grandTour" imageSrc="/images/grandtour.webp" />
+          <Card tourKey="calanquesPiana" imageSrc="/images/calanques-piana.webp" />
+          <Card tourKey="scandolaGirolata" imageSrc="/images/scandola-girolata.webp" />
         </div>
       </div>
 
