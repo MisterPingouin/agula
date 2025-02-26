@@ -1,7 +1,7 @@
 "use client";
 
 import { useScopedI18n } from "../../locales/I18nContext";
-import Image from "next/image"; // Best practice Next.js pour les images
+import Image from "next/image"; 
 
 export default function EngagementPage() {
   const t = useScopedI18n("engagement");
