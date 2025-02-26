@@ -45,9 +45,11 @@ const MobileMenu = ({ onClose }) => {
           {t("book")}
         </button>
         </Link>
+        <Link href={localLink("/reservation")}>
         <button className="w-full py-2 text-white bg-blue-4 font-content font-semibold">
           {t("offer")}
         </button>
+        </Link>
       </div>
       {/* Bouton de changement de langue */}
       <div className="flex items-center p-3 mt-6 text-20px gap-2 font-title font-bold text-green-3 self-start">
