@@ -2,62 +2,62 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
-// Importation statique des données locales
-import frData from "./../../../locales/fr";
-import enData from "./../../../locales/en";
+// Empêche le cache et force le runtime Node
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
-// Objet de mapping des localisations
-const locales = {
-  fr: { data: frData, fileName: "fr.js", variableName: "fr" },
-  en: { data: enData, fileName: "en.js", variableName: "en" },
+// Configuration pour savoir quel fichier correspond à chaque locale
+const localesConfig = {
+  fr: { fileName: "fr.js", variableName: "fr" },
+  en: { fileName: "en.js", variableName: "en" },
 };
 
 export async function POST(req) {
   try {
+    // Récupère le body JSON
     const {
-      // Champs équipe
       subtitle2,
       content3,
       subtitle3,
       content4,
-      // Champs pop-up
       popupEnabled,
       popupTitle,
       popupLine1,
       popupLine2,
       popupLine3,
       popupValidity,
-      // Langue
       locale,
     } = await req.json();
 
-    if (!locale || !locales[locale]) {
+    // Vérifie que la locale demandée est valide
+    if (!locale || !localesConfig[locale]) {
       return NextResponse.json({ message: "Locale invalide" }, { status: 400 });
     }
 
+    // Détermine le chemin absolu du fichier .js à modifier
     const localeFilePath = path.join(
       process.cwd(),
       "src",
       "app",
       "locales",
-      locales[locale].fileName
+      localesConfig[locale].fileName
     );
 
     console.log("Chemin du fichier de localisation :", localeFilePath);
 
-    // Lire le contenu du fichier
+    // Lit le contenu brut du fichier
     let localeDataContent = fs.readFileSync(localeFilePath, "utf-8");
 
-    // Retirer l'export default avant exécution
+    // Supprime la ligne "export default fr/en;"
     localeDataContent = localeDataContent.replace(/export\s+default\s+\w+;/, "").trim();
 
-    // Exécuter le code pour récupérer les données
+    // Convertit le code JS en un objet
     let localeData;
     try {
       localeData = new Function(`
         "use strict";
         ${localeDataContent}
-        return ${locales[locale].variableName};
+        return ${localesConfig[locale].variableName};
       `)();
     } catch (error) {
       console.error("Erreur lors du chargement des données de localisation :", error);
@@ -67,36 +67,32 @@ export async function POST(req) {
       );
     }
 
-    // === Mise à jour des données existantes ===
-    // Mise à jour de l'équipe
+    // === Mise à jour du contenu (exemple : équipe) ===
     localeData.equipe.subtitle2 = subtitle2;
     localeData.equipe.content3 = content3;
     localeData.equipe.subtitle3 = subtitle3;
     localeData.equipe.content4 = content4;
 
     // === Mise à jour de la pop-up ===
-    // S’assurer que l’objet popup existe
     if (!localeData.popup) {
       localeData.popup = {};
     }
-
     localeData.popup.enabled = popupEnabled || false;
-    localeData.popup.title = popupTitle;
-    localeData.popup.line1 = popupLine1;
-    localeData.popup.line2 = popupLine2;
-    localeData.popup.line3 = popupLine3;
-    localeData.popup.validity = popupValidity;
+    localeData.popup.title = popupTitle || "";
+    localeData.popup.line1 = popupLine1 || "";
+    localeData.popup.line2 = popupLine2 || "";
+    localeData.popup.line3 = popupLine3 || "";
+    localeData.popup.validity = popupValidity || "";
 
-    // Générer le contenu mis à jour (en JSON formaté manuellement)
+    // Reconstruit le fichier en y remettant un export default
     const updatedContent = `
-const ${locales[locale].variableName} = ${JSON.stringify(localeData, null, 2)};
+const ${localesConfig[locale].variableName} = ${JSON.stringify(localeData, null, 2)};
 
-export default ${locales[locale].variableName};
+export default ${localesConfig[locale].variableName};
 `;
 
-    // Écrire les modifications dans le fichier
+    // Ecrit sur le disque
     fs.writeFileSync(localeFilePath, updatedContent, "utf-8");
-
     console.log("Fichier mis à jour avec succès");
 
     return NextResponse.json({ message: "Contenu mis à jour avec succès" });
