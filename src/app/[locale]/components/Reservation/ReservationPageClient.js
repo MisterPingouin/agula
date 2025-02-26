@@ -7,7 +7,7 @@ const ReservationPageClient = ({ locale }) => {
     const widgetConfig = {
       fr: {
         dataLangue: "fr",
-        apiUrl: "https://www.lagulamarinacroisieres.fr/resaApi",
+        apiUrl: "https://lagulamarinacroisieres.resactivite.com/resaApi",
         scriptUrl: "https://webservice.lagenza.fr/assets/widgets/recherche/index.js",
         couleurPrincipale: "#013049",
         couleurComplementaire: "#ffffff",
@@ -15,7 +15,7 @@ const ReservationPageClient = ({ locale }) => {
       },
       en: {
         dataLangue: "en",
-        apiUrl: "https://www.lagulamarinacroisieres.fr/resaApi",
+        apiUrl: "https://lagulamarinacroisieres.resactivite.com/resaApi",
         scriptUrl: "https://webservice.lagenza.fr/assets/widgets/recherche/index.js",
         couleurPrincipale: "#013049",
         couleurComplementaire: "#ffffff",

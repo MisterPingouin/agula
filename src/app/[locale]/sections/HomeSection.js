@@ -5,24 +5,34 @@ import Link from "next/link";
 import { useI18n, useScopedI18n } from "./../../locales/I18nContext";
 import useLocalLink from "./../hooks/useLocalLink";
 import React, { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion"; // <-- Import AnimatePresence
+import { motion, AnimatePresence } from "framer-motion";
 
 const HomeSection = () => {
+  // Contexte de langue (comme avant)
   const { locale, setLocale } = useI18n();
   const localLink = useLocalLink();
+
+  // Hooks pour gérer le texte de la page Home (header, titre, etc.)
+  // Comme d’habitude via useScopedI18n.
+  // => Laisse ceci pour tout le contenu « home » et « navigation ».
+  const t = useScopedI18n("home");
+  const t1 = useScopedI18n("navigation");
+
+  // État pour l'image d'accueil (inchangé)
   const [homeImage, setHomeImage] = useState("/images/1500x950-lagula.webp");
 
-  // == DÉBUT Ajout pop-up ==
-  const tPopup = useScopedI18n("popup"); // on vise l'objet "popup" défini dans fr.js / en.js
-
+  // === POPUP : on fetch dynamiquement /api/admin/get-content pour récupérer data.popup ===
   const [showPopup, setShowPopup] = useState(false);
+  const [popupData, setPopupData] = useState({});
 
   useEffect(() => {
-    // Fonction asynchrone pour récupérer la config
+    // On va chercher la config pop-up en temps réel
     const fetchPopupConfig = async () => {
       try {
-        // Adaptez la locale en fonction de vos besoins
-        const response = await fetch("/api/admin/get-content?locale=fr");
+        // On utilise la locale actuelle pour coller à la langue choisie
+        const response = await fetch(`/api/admin/get-content?locale=${locale}`, {
+          cache: "no-store", // on évite le cache pour lire les changements en direct
+        });
 
         if (!response.ok) {
           console.error("Impossible de récupérer la configuration de la pop-up");
@@ -30,16 +40,19 @@ const HomeSection = () => {
         }
 
         const data = await response.json();
-        const isPopupEnabled = data.popup?.enabled;
+        const popup = data.popup || {}; // l'objet popup dans fr.js/en.js
+        setPopupData(popup);
 
         // Vérifier si la pop-up est activée
-        if (isPopupEnabled) {
+        if (popup.enabled) {
           // Vérifier si l'utilisateur a déjà fermé la pop-up
           const popupClosed = localStorage.getItem("popupClosed");
-          // S'il n'y a pas la clé "popupClosed", c'est qu'elle n'a jamais été fermée
+          // Si pas de clé "popupClosed", on affiche la pop-up
           if (!popupClosed) {
             setShowPopup(true);
           }
+        } else {
+          setShowPopup(false);
         }
       } catch (error) {
         console.error("Erreur lors de la récupération de la pop-up :", error);
@@ -47,16 +60,16 @@ const HomeSection = () => {
     };
 
     fetchPopupConfig();
-  }, []);
+  }, [locale]);
 
+  // Méthode pour fermer la pop-up
   const handleClosePopup = () => {
     localStorage.setItem("popupClosed", "true");
     setShowPopup(false);
   };
-  // == FIN Ajout pop-up ==
 
+  // === Récupération de l'image d'accueil comme avant ===
   useEffect(() => {
-    // Récupérer dynamiquement le chemin de l'image depuis l'API
     const fetchHomeImage = async () => {
       try {
         const response = await fetch("/api/get-image-paths");
@@ -64,8 +77,6 @@ const HomeSection = () => {
           const data = await response.json();
           if (data.homeImage) {
             setHomeImage(data.homeImage);
-          } else {
-            console.error("Chemin de l'image de la page d'accueil manquant dans la réponse");
           }
         } else {
           console.error("Erreur lors de la récupération de l'image, status :", response.status);
@@ -74,13 +85,10 @@ const HomeSection = () => {
         console.error("Erreur de connexion :", error);
       }
     };
-
     fetchHomeImage();
   }, []);
 
-  const t = useScopedI18n("home");
-  const t1 = useScopedI18n("navigation");
-
+  // Fonction pour changer la langue (FR <-> EN)
   const changeLanguage = (lang) => {
     setLocale(lang);
     localStorage.setItem("locale", lang);
@@ -96,7 +104,7 @@ const HomeSection = () => {
         priority
       />
 
-      {/* == DÉBUT de l'affichage de la pop-up == */}
+      {/* == Pop-up dynamique == */}
       <AnimatePresence>
         {showPopup && (
           <motion.div
@@ -119,20 +127,23 @@ const HomeSection = () => {
                 &times;
               </button>
 
-              <h2 className="text-20px font-title mb-6 leading-tight md:text-25px">{tPopup("title")}</h2>
-              <p className="mb-2 font-content text-13px md:text-15px">{tPopup("line1")}</p>
-              <p className="mb-2 font-content text-13px md:text-15px">{tPopup("line2")}</p>
-              <p className="mb-4 font-content text-13px md:text-15px">{tPopup("line3")}</p>
-              <p className="font-content text-13px md:text-15px">{tPopup("validity")}</p>
+              {/* Contenu de la pop-up (pris via popupData) */}
+              <h2 className="text-20px font-title mb-6 leading-tight md:text-25px">{popupData.title}</h2>
+              <p className="mb-2 font-content text-13px md:text-15px">{popupData.line1}</p>
+              <p className="mb-2 font-content text-13px md:text-15px">{popupData.line2}</p>
+              <p className="mb-4 font-content text-13px md:text-15px">{popupData.line3}</p>
+              <p className="font-content text-13px md:text-15px">{popupData.validity}</p>
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
-      {/* == FIN de l'affichage de la pop-up == */}
+      {/* == Fin pop-up == */}
 
+      {/* Barre du haut (desktop), inchangée */}
       <div className="hidden lg:flex relative z-50 justify-center self-start">
         <div className="flex flex-col">
           <div className="flex items-center self-end gap-2 pt-4 text-white ">
+            {/* Boutons FR / EN fonctionnels */}
             <button
               onClick={() => changeLanguage("fr")}
               className={`text-15px font-title ${locale === "fr" ? "font-bold" : ""}`}
@@ -186,7 +197,7 @@ const HomeSection = () => {
             <p className="font-content text-15px font-medium">+33 (0)6 43 04 00 14</p>
           </div>
           <div className="flex items-center -translate-y-3">
-            <Link href={localLink("/")} className="cursor-pointer">
+            <Link href={localLink("/")}>
               <Image
                 src="/images/logowhite.svg"
                 alt={t("header.logo_alt")}

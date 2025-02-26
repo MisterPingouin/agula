@@ -7,7 +7,7 @@ const Calanque = ({ locale }) => {
     const widgetConfig = {
       fr: {
         dataLangue: "fr",
-        apiUrl: "https://www.lagulamarinacroisieres.fr/resaApi",
+        apiUrl: "https://lagulamarinacroisieres.resactivite.com/resaApi",
         scriptUrl: "https://webservice.lagenza.fr/assets/widgets/calendrier/index.js",
         couleurPrincipale: "#013049",
         couleurComplementaire: "#ffffff",
@@ -16,7 +16,7 @@ const Calanque = ({ locale }) => {
       },
       en: {
         dataLangue: "en",
-        apiUrl: "https://www.lagulamarinacroisieres.fr/resaApi",
+        apiUrl: "https://lagulamarinacroisieres.resactivite.com//resaApi",
         scriptUrl: "https://webservice.lagenza.fr/assets/widgets/calendrier/index.js",
         couleurPrincipale: "#013049",
         couleurComplementaire: "#ffffff",
