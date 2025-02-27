@@ -339,7 +339,7 @@ const en = {
     price: "Adults: €65 - Children: €55",
     time: "Duration: 2h45",
     content:
-      "Departure from Cargèse port > Capu Rossu - Calanques of Piana (10 min swim) - Porto Gulf - Girolata (30 min stop) – Scandola > Return to Cargèse port",
+      "Departure from Cargèse port > Visit of the Genoese towers -> Visit of the faults of the Scandola Reserve - Stopover in Girolata (30 min stop) > Return to Cargèse port",
     subtitle3: "How to recognize Scandola?",
     content2:
       "This jewel, classified as a UNESCO World Heritage Site, is a colossal massif of porphyry, a magmatic rock with purple and gold hues, shaped by the assaults of wind and sea swells, topped with dense vegetation and surrounded by translucent waters. Covering approximately 900 hectares of land and 1000 hectares of sea, this protected environment is home to thousands of animal species, such as the osprey, the golden eagle, and the 'mastiff bat,' the largest bat in Europe.",

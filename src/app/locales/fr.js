@@ -344,7 +344,7 @@ const fr = {
     price: "Adultes : 68€ - Enfants : 63€",
     time: "Durée : 2h45",
     content:
-      "Départ port de Cargèse >Capu Rossu - Calanques de Piana (baignade 10 min) - Golfe de Porto - Girolata (arrêt 30 min) – Scandola> Retour port Cargèse",
+      "Départ port de Cargèse > Visite des tours Génoises -> Visite des failles de la réserve de Scandola - Escale Girolata (arrêt 30 min) > Retour port Cargèse",
     subtitle3: "Comment reconnaître Scandola ?",
     content2:
       "Ce bijou classé au patrimoine mondial de l’Unesco est un massif colossal de porphyre, pierre magmatique dans les teintes pourpre et or, façonné par les assauts du vent et le ressac de la mer, surmonté d’une végétation dense et entouré d’une eau translucide. D’environ 900 hectares terrestres et 1000 hectares marins, cet environnement protégé abrite des milliers d’espèces animales comme le balbuzard, l’aigle royal ou encore le « molosse », la plus grande chauve-souris d’Europe.",
