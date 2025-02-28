@@ -1,29 +1,24 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useI18n } from "./../../locales/I18nContext";
 
 export default function EquipePage() {
-  // On récupère la locale via votre contexte i18n (géré ailleurs)
-  // Par ex: /fr/equipe => locale = "fr", /en/equipe => locale = "en"
   const { locale } = useI18n();
 
-  // État pour stocker les données de la section "équipe"
   const [equipeData, setEquipeData] = useState({});
-  // État pour les chemins d'images (Jean Baptiste, Gérald, Claire, etc.)
   const [imagePaths, setImagePaths] = useState({});
 
-  // 1. Fetch dynamique du contenu "équipe" depuis l’API admin/get-content
+  // Récupération du texte
   useEffect(() => {
     const fetchEquipeData = async () => {
       try {
         const response = await fetch(`/api/admin/get-content?locale=${locale}`, {
-          cache: "no-store", // Force la lecture en direct
+          cache: "no-store",
         });
         if (response.ok) {
           const allData = await response.json();
-          // On suppose que vos fichiers fr.js/en.js contiennent allData.equipe
           setEquipeData(allData.equipe || {});
         } else {
           console.error("Erreur lors de la récupération du contenu (équipe)");
@@ -36,24 +31,40 @@ export default function EquipePage() {
     fetchEquipeData();
   }, [locale]);
 
-  // 2. Fetch des chemins d’images
-  useEffect(() => {
-    const fetchImagePaths = async () => {
-      try {
-        const response = await fetch("/api/get-image-paths");
-        if (response.ok) {
-          const data = await response.json();
-          setImagePaths(data);
-        } else {
-          console.error("Erreur lors de la récupération des chemins d'images");
-        }
-      } catch (error) {
-        console.error("Erreur de connexion (images):", error);
+  // Déclare la fonction fetchImagePaths pour pouvoir la rappeler
+  const fetchImagePaths = useCallback(async () => {
+    try {
+      const response = await fetch("/api/get-image-paths", {
+        cache: "no-store",
+      });
+      if (response.ok) {
+        const data = await response.json();
+        setImagePaths(data);
+      } else {
+        console.error("Erreur lors de la récupération des chemins d'images");
       }
+    } catch (error) {
+      console.error("Erreur de connexion (images):", error);
+    }
+  }, []);
+
+  // Fetch initial des images
+  useEffect(() => {
+    fetchImagePaths();
+  }, [fetchImagePaths]);
+
+  // Écoute l’événement imageUpdated pour re-fetch automatiquement
+  useEffect(() => {
+    const handleImageUpdated = () => {
+      fetchImagePaths();
     };
 
-    fetchImagePaths();
-  }, []);
+    window.addEventListener("imageUpdated", handleImageUpdated);
+
+    return () => {
+      window.removeEventListener("imageUpdated", handleImageUpdated);
+    };
+  }, [fetchImagePaths]);
 
   // Si aucune donnée, on peut afficher un mini-chargement
   if (!equipeData.title) {
