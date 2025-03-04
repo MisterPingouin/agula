@@ -13,6 +13,9 @@ const fr = {
     private: "Privatisation",
     gallery: "Galerie",
     book: "RÉSERVER",
+    acceuil: "Acceuil",
+    contact: "Contact",
+
   },
   home: {
     title: "Naviguez",

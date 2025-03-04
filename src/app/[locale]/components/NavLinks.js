@@ -12,12 +12,14 @@ const NavLinks = ({ onClose }) => {
   const pathname = usePathname();
 
   const links = [
+    { name: t("acceuil"), href: localLink("/") },
     { name: t("circuits"), href: localLink("/nos-circuits") },
     { name: t("boat"), href: localLink("/bateau") },
     { name: t("team"), href: localLink("/equipe") },
     { name: t("commitments"), href: localLink("/engagement") },
     { name: t("private"), href: localLink("/privatisation") },
     { name: t("gallery"), href: localLink("/gallerie") },
+    { name: t("contact"), href: localLink("/#contact") },
   ];
 
   // Fonction pour fermer le menu lors d'un clic sur un lien

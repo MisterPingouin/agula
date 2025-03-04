@@ -13,6 +13,8 @@ const en = {
     private: "Private booking",
     gallery: "Gallery",
     book: "BOOK",
+    accueil: "Home",
+    contact: "Contact",
   },
   home: {
     title: "Sail",

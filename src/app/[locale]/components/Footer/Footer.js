@@ -13,7 +13,7 @@ const Footer = () => {
   
 
   return (
-    <footer className="bg-blue-3 text-white w-full h-auto">
+    <footer id="contact" className="bg-blue-3 text-white w-full h-auto">
       {/* -------------------- VERSION MOBILE (PAR DÉFAUT) -------------------- */}
       <div className="flex flex-col items-center justify-start md:hidden">
         {/* Logo */}
