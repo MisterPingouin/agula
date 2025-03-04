@@ -13,7 +13,7 @@ const fr = {
     private: "Privatisation",
     gallery: "Galerie",
     book: "RÉSERVER",
-    acceuil: "Acceuil",
+    acceuil: "Accueil",
     contact: "Contact",
   },
   home: {
