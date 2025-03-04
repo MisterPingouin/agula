@@ -135,17 +135,7 @@ export default function ScandolaPage({ params }) {
         <p className="font-content text-15px leading-23px self-start mt-6 md:hidden">
           {t("content2")}
         </p>
-        <Image
-          src="/images/dive.svg"
-          alt="dive"
-          width={51}
-          height={62}
-          className="object-cover h-auto mt-10 md:hidden"
-          priority
-        />
-        <p className="font-subtitle text-25px text-center mt-2 md:hidden">
-          {t("content3")}
-        </p>
+ 
 
         {/* Tablet Version Calanque */}
         <div className="hidden lg:hidden md:block w-10/12 h-[0.5px] md:h-[0.6px] md:my-3 bg-[#707070] mb-6"></div>
@@ -165,17 +155,6 @@ export default function ScandolaPage({ params }) {
             <p className="font-content text-15px leading-23px mt-6 text-center">
               {t("content2")}
             </p>
-            <div className="flex items-center gap-2 mt-4">
-              <Image
-                src="/images/dive.svg"
-                alt="dive"
-                width={51}
-                height={62}
-                className="object-cover h-auto"
-                priority
-              />
-              <p className="font-subtitle text-25px">{t("content3")}</p>
-            </div>
           </div>
         </div>
 
@@ -196,17 +175,6 @@ export default function ScandolaPage({ params }) {
             <p className="font-content text-15px leading-23px mt-6">
               {t("content2")}
             </p>
-            <div className="flex items-center gap-2 mt-4">
-              <Image
-                src="/images/dive.svg"
-                alt="dive"
-                width={51}
-                height={62}
-                className="object-cover h-auto"
-                priority
-              />
-              <p className="font-subtitle text-25px">{t("content3")}</p>
-            </div>
           </div>
         </div>
 
