@@ -18,8 +18,11 @@ export default function PrivatisationPage() {
         <p className="font-title font-bold pt-4 leading-tight text-15px text-center md:hidden">
           {t("subtitle")}
         </p>
-        <p className="font-title font-bold pb-4 text-15px text-center md:hidden">
+        <p className="font-title font-bold text-15px text-center md:hidden">
           {t("subtitle1")}
+        </p>
+        <p className="font-title font-bold py-2 pb-2 leading-tight text-15px text-center md:hidden">
+          {t("subtitle4")}
         </p>
 
         {/* Tablette */}
@@ -29,8 +32,11 @@ export default function PrivatisationPage() {
         <p className="font-title font-bold hidden md:block lg:hidden pt-4 text-20px leading-25px text-center">
           {t("subtitle")}
         </p>
-        <p className="font-title font-bold hidden md:block lg:hidden pb-4 text-20px leading-30px text-center">
+        <p className="font-title font-bold hidden md:block lg:hidden text-20px leading-30px text-center">
           {t("subtitle1")}
+        </p>
+        <p className="font-title font-bold hidden md:block lg:hidden pt-2 pb-4 text-20px leading-25px text-center">
+          {t("subtitle4")}
         </p>
 
         {/* Desktop */}
@@ -40,8 +46,11 @@ export default function PrivatisationPage() {
         <p className="font-title font-bold hidden lg:block pt-4 text-25px leading-36px text-center">
           {t("subtitle")}
         </p>
-        <p className="font-title font-bold hidden lg:block pb-4 text-25px leading-23px text-center">
+        <p className="font-title font-bold hidden lg:block text-25px leading-23px text-center">
           {t("subtitle1")}
+        </p>
+        <p className="font-title font-bold hidden lg:block pt-4  text-25px leading-tight text-center lg:max-w-[1000px]">
+          {t("subtitle4")}
         </p>
 
         {/* Première section – Contenu image et textes */}

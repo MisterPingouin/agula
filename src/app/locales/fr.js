@@ -57,7 +57,7 @@ const fr = {
     subtitle11: "À deux",
     subtitle12: "Entre amis",
     content4:
-      "Envie de passer un moment privilégié en amoureux, en famille, entre amis ou même entre collègues ? De faire votre propre itinéraire ? De choisir vos arrêts baignade ? Privatisez notre bateau avec skipper pour une journée ou une demi-journée. Réaliser votre formule à la carte en contactant notre équipe. Vous aurez le devis sur simple demande . Pour toute privatisation, un plateau de produits locaux (charcuterie, fromage et une bouteille) est offert pour accompagner votre sortie.",
+      "Envie de passer un moment privilégié en amoureux, en famille, entre amis ou même entre collègues ? De faire votre propre itinéraire ? De choisir vos arrêts baignade ? Privatisez notre bateau avec skipper pour une journée ou une demi-journée. Réaliser votre formule à la carte en contactant notre équipe. Vous aurez le devis sur simple demande . Pour toute privatisation, un plateau de produits locaux (charcuterie, fromage et une bouteille de vin Corse) est offert pour accompagner votre sortie.",
     privatization_button: "PRIVATISATION",
     content5:
       "Et si vous avez la chance, lors de votre promenade, vous pouvez croiser un membre un peu plus éloigné de notre équipage…",
@@ -223,6 +223,7 @@ const fr = {
     content4:
       "la privatisation du bateau avec skipper se limite à 12 passagers.",
     subtitle3: "Nos circuits en privatif",
+    subtitle4: "Pour toute privatisation, un plateau de produits locaux (charcuterie, fromage et une bouteille de vin Corse) est offert pour accompagner votre sortie."
   },
   faq: {
     question1: "Faut-il réserver à l'avance ?",
@@ -312,6 +313,8 @@ const fr = {
       "La sublime réserve naturelle de Scandola. Classée au patrimoine mondial de l’Unesco, elle ne se visite qu’en bateau. C’est le moment d’explorer ses failles, admirer sa biodiversité, comprendre son besoin de préservation. Jean-Baptiste vous dévoile tout.",
     book: "RÉSERVER",
     subtitle8: "Nos circuits",
+    content10:
+    "Votre retour sur terre, à Cargèse, se fait en douceur, au rythme des chants corses.",
   },
   calanque: {
     title: "Les Calanques de Piana",
@@ -367,6 +370,7 @@ const fr = {
     content:
       "Avant de rentrer, un moment unique s’offre à vous : les derniers feux du crépuscule enveloppent les roches abruptes qui vous entourent pour leur donner une teinte plus rougeoyante que jamais. Sur le Sacha, ce moment unique se déguste toujours avec un bon verre de vin Corse. C’est Jean-Baptiste qui invite ! Le soleil se fait peu à peu avaler par la mer, elle qui vous berce avec ses paisibles clapotis.",
     content2: "instant magique de contemplation et de détente… ",
+    content3: "Avant de rentrer, un moment unique s’offre à vous : les derniers feux du crépuscule enveloppent les roches abruptes qui vous entourent pour leur donner une teinte plus rougeoyante que jamais. Sur le Sacha, ce moment unique se déguste toujours avec un bon verre de vin Corse. C’est Jean-Baptiste qui invite ! Le soleil se fait peu à peu avaler par la mer, elle qui vous berce avec ses paisibles clapotis dans un instant magique de contemplation et de détente… "
   },
   engage: {
     title: "Nos engagements",

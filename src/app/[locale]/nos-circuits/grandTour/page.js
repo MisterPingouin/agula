@@ -396,6 +396,12 @@ export default function GrandTourPage({ params }) {
             </p>
           </div>
         </div>
+        {/* Section Both - Votre retour... */}
+        <p className="font-title text-center text-25px md:text-30px lg:text-35px leading-29px md:leading-40px lg:leading-50px w-full md:w-[600px] lg:w-[1100px] my-6 md:my-8 lg:my-10">
+          {t("content10")}
+        </p>
+
+
         {/* Composant GrandTourSunset */}
         <div className="w-full">
           <GrandTour locale={locale} />

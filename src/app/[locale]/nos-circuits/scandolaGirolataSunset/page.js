@@ -318,7 +318,7 @@ export default function ScandolaPage({ params }) {
                   {t1("title2")}
                 </p>
                 <p className="font-content text-15px leading-23px self-start mt-6 md:hidden">
-                  {t1("content")}
+                  {t1("content3")}
                 </p>
                 <Image
                   src="/images/sunset.svg"

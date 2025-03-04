@@ -415,7 +415,7 @@ export default function GrandTourSunsetPage({ params }) {
           {t1("title2")}
         </p>
         <p className="font-content text-15px leading-23px self-start mt-6 md:hidden">
-          {t1("content")}
+          {t1("content3")}
         </p>
         <Image
           src="/images/sunset.svg"
@@ -497,6 +497,11 @@ export default function GrandTourSunsetPage({ params }) {
             priority
           />
         </div>
+
+                {/* Section Both - Votre retour... */}
+                <p className="font-title text-center text-25px md:text-30px lg:text-35px leading-29px md:leading-40px lg:leading-50px w-full md:w-[600px] lg:w-[1100px] my-6 md:my-8 lg:my-10">
+          {t("content10")}
+        </p>
 
         {/* Composant GrandTourSunset */}
         <div className="w-full">

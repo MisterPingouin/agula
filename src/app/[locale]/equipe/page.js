@@ -267,7 +267,7 @@ export default function EquipePage() {
         </div>
         <div className="flex justify-center items-center w-1/2 mx-auto gap-10 mt-10">
           <Image
-            src={imagePaths.claireImage || "/images/claire.webp"}
+            src={imagePaths.claireImage || "/images/gallery1.webp"}
             alt="Claire Desktop"
             width={234}
             height={299}

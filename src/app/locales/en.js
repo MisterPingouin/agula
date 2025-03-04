@@ -57,7 +57,7 @@ const en = {
     subtitle11: "For two",
     subtitle12: "With friends",
     content4:
-      "Want to spend a special moment with your partner, family, friends or even colleagues? To make your own itinerary? To choose your swimming stops? Privatize our boat with skipper for a day or half a day. Create your à la carte formula by contacting our team. You will have the quote on simple request. For any privatization, a platter of local products (charcuterie, cheese and a bottle) is offered to accompany your outing.",
+      "Want to spend a special moment with your partner, family, friends or even colleagues? To make your own itinerary? To choose your swimming stops? Privatize our boat with skipper for a day or half a day. Create your à la carte formula by contacting our team. You will have the quote on simple request. For any privatization, a platter of local products (charcuterie, cheese and a bottle of Corsican wine) is offered to accompany your outing.",
     privatization_button: "PRIVATIZATION",
     content5:
       "And if you are lucky enough, during your walk, you may come across a slightly more distant member of our crew…",
@@ -223,6 +223,7 @@ const en = {
     content4:
       "privatization of the boat with skipper is limited to 12 passengers.",
     subtitle3: "Nos circuits en privatif",
+    subtitle4: "For any privatization, a platter of local products (charcuterie, cheese and a bottle of Corsican wine) is offered to accompany your outing."
   },
   faq: {
     question1: "Do I need to book in advance?",
@@ -310,6 +311,8 @@ const en = {
       "The sublime Scandola nature reserve. Listed as a UNESCO world heritage site, it can only be visited by boat. Now is the time to explore its faults, admire its biodiversity, understand its need for preservation. Jean-Baptiste reveals everything to you.",
     book: "BOOK",
     subtitle8: "Our tours",
+    content10:
+    "Your return to land in Cargèse is gentle and accompanied by the rhythms of Corsican songs.",
   },
   calanque: {
     title: "The Calanques of Piana",
@@ -362,6 +365,7 @@ const en = {
     content:
       "Before heading back, a unique moment awaits you: the last lights of dusk wrap around the steep rocks surrounding you, giving them a more glowing hue than ever. On the Sacha, this unique moment is always enjoyed with a good glass of Corsican wine. Jean-Baptiste is inviting! The sun is gradually swallowed by the sea, which gently lulls you with its peaceful ripples.",
     content2: "a magical moment of contemplation and relaxation…",
+    content3: "Before heading back, a unique moment awaits you: the last lights of dusk wrap around the steep rocks surrounding you, giving them a more glowing hue than ever. On the Sacha, this unique moment is always enjoyed with a good glass of Corsican wine. Jean-Baptiste is inviting! The sun is gradually swallowed by the sea, which gently lulls you with its peaceful ripples in a magical moment of contemplation and relaxation…",
   },
   engage: {
     title: "Our commitments",
