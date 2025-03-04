@@ -64,8 +64,8 @@ export default function ScandolaPage({ params }) {
         <p className="font-content font-bold text-15px leading-tight md:leading-tight lg:leading-none text-center mt-2">
           {t("subtitle1")}
         </p>
-        <p className="font-content text-15px leading-tight font-bold text-center">
-          {t("subtitle2")}
+        <p className="font-content text-15px leading-tight font-bold text-center lg:max-w-[1000px]">
+          {t1("scandolasunsetprogram")}
         </p>
       </div>
 
@@ -111,7 +111,7 @@ export default function ScandolaPage({ params }) {
                />
 
         <p className="font-content text-15px leading-25px text-center w-full md:w-[700px] lg:w-[880px] px-8 my-4">
-          {t("content")}
+          {t1("scandolasunsetparcour")}
         </p>
 
         <Link href={localLink("/reservation")} className="cursor-pointer">

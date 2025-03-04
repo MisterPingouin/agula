@@ -74,38 +74,38 @@ const fr = {
     grandTour: {
       title: "Le Grand Tour",
       description:
-        "Capu Rossu - Calanques de Piana (baignade 10 min) - Golfe de Porto - Girolata (arrêt 30 min) - Scandola",
+        "Visite des tours génoises - Capu Rossu - Calanques de Piana (baignade 10 min) - Golfe de Porto - Girolata (arrêt 30 min) - Scandola",
       price: "Adultes : 80€ - Enfants : 70€",
       duration: "Durée : 3h45",
     },
     calanquesPiana: {
       title: "Les Calanques de Piana",
-      description: "Capu Rossu - Calanques de Piana (baignade 10 min)",
+      description: "Visite des tours génoises - Capu Rossu - Calanques de Piana (baignade 10 min)",
       price: "Adultes : 48€ - Enfants : 43€",
       duration: "Durée : 1h45",
     },
     scandolaGirolata: {
       title: "Scandola Girolata",
-      description: "Scandola - Girolata (arrêt 30 min)",
+      description: "Visite des tours génoises - Scandola - Girolata (arrêt 30 min)",
       price: "Adultes : 68€ - Enfants : 63€",
       duration: "Durée : 2h45",
     },
     grandTourSunset: {
       title: "Le Grand Tour sunset",
       description:
-        "Capu Rossu - Calanques de Piana (baignade 10 min) - Golfe de Porto - Girolata (arrêt 30 min) - Scandola",
+        "Visite des tours génoises - Capu Rossu - Calanques de Piana (baignade 10 min) - Golfe de Porto - Girolata (arrêt 30 min) - Coucher de soleil accompagné d’un apéritif de vin Corse",
       price: "Adultes : 80€ - Enfants : 70€",
       duration: "Durée : 3h45",
     },
     calanquesPianaSunset: {
       title: "Les Calanques de Piana sunset",
-      description: "Capu Rossu - Calanques de Piana (baignade 10 min)",
+      description: "Visite des tours génoises - Capu Rossu - Calanques de Piana (baignade 10 min) - Coucher de soleil accompagné d’un apéritif de vin Corse",
       price: "Adultes : 48€ - Enfants : 43€",
       duration: "Durée : 1h45",
     },
     scandolaGirolataSunset: {
       title: "Scandola Girolata sunset",
-      description: "Scandola - Girolata (arrêt 30 min)",
+      description: "Visite des tours génoises - Scandola - Girolata (arrêt 30 min) - Coucher de soleil accompagné d’un apéritif de vin Corse",
       price: "Adultes : 68€ - Enfants : 63€",
       duration: "Durée : 2h45",
     },
@@ -290,11 +290,11 @@ const fr = {
     subtitle1:
       "Rendez-vous sur le port de Cargèse pour monter à bord du Sacha.",
     subtitle2:
-      "Au programme : Visite des tours génoises, découverte du Capu Rossu, des Calanques de Piana et de ses grottes avec arrêt baignade de 10 min ! Golfe de Porto, Capu Sininu, arrêt de 30 min au Village de Girolata, réserve de Scandola",
+      "Au programme : Visite des tours génoises, découverte du Capu Rossu, des Calanques de Piana et de ses grottes avec arrêt baignade de 10 min (masque et tuba fournis) ! Golfe de Porto, Capu Sininu, arrêt de 30 min au Village de Girolata ( variable selon période ), réserve naturelle de Scandola et de ses failles. Le sens de votre balade peut changer selon les conditions météorologiques",
     price: "Adultes : 80€ - Enfants : 70€",
     time: "Durée : 3h45",
     content:
-      "Départ port de Cargèse > Capu Rossu > Calanques de Piana (baignade 10 min) > Golfe de Porto > Girolata (arrêt 30 min) > Scandola > Retour port Cargèse",
+      "Départ port de Cargèse >  Visite des tours génoises > Capu Rossu > Calanques de Piana (baignade 10 min) > Golfe de Porto > Girolata (arrêt 30 min) > Scandola > Retour port Cargèse",
     subtitle3: "Direction les",
     subtitle4: "Calanques de Piana",
     content2:
@@ -324,11 +324,11 @@ const fr = {
     subtitle1:
       "Rendez-vous sur le port de Cargèse pour monter à bord du Sacha.",
     subtitle2:
-      "Au programme : découverte du Capu Rossu et des calanques de Piana !",
+      "Au programme : Visite des tours Génoises, découverte du Capu Rossu, des Calanques de Piana et de ses grottes avec un arrêt baignade de 10 minutes (masque et tuba fournis ). Le sens de votre balade peut changer selon les conditions météorologiques.",
     price: "Adultes : 48€ - Enfants : 43€",
     time: "Durée : 1h45",
     content:
-      "Départ port de Cargèse > Capu Rossu - Calanques de Piana (baignade 10 min) - Golfe de Porto - Girolata (arrêt 30 min) – Scandola > Retour port Cargèse",
+      "Départ du port de Cargèse > Visites des Tours Génoises > Capu Rossu > Calanque de Piana ( baignade 10 minutes ) > Retour au port de Cargèse",
     subtitle3: "Se faufiler dans ses grottes",
     content2:
       "Le bateau se faufile dans ses grottes saisissantes et fait un arrêt dans une jolie petite crique, uniquement accessible par la mer. Son eau évoque une piscine naturelle où avez la possibilité de vous baigner, selon les conditions météorologiques (arrêt baignade 10 minutes). Un plongeon dans l’eau cristalline au milieu de falaises hérissées, cela ne s’oublie pas !",
@@ -346,11 +346,11 @@ const fr = {
     subtitle1:
       "Rendez-vous sur le port de Cargèse pour monter à bord du Sacha.",
     subtitle2:
-      "Au programme : visite de la réserve naturelle de Scandola et du village de Girolata !",
+      "Au programme : Visite des tours génoises , réserve naturelle de Scandola et de ses failles, escale de 30 minutes ( variable selon période ) au petit village de Girolata. Le sens de votre balade peut changer selon les conditions météorologiques.",
     price: "Adultes : 68€ - Enfants : 63€",
     time: "Durée : 2h45",
     content:
-      "Départ port de Cargèse > Visite des tours Génoises -> Visite des failles de la réserve de Scandola - Escale Girolata (arrêt 30 min) > Retour port Cargèse",
+      "Départ port de Cargèse > Visite des tours Génoises > Visite des failles de la réserve de Scandola > Escale Girolata (arrêt 30 min) > Retour port Cargèse",
     subtitle3: "Comment reconnaître Scandola ?",
     content2:
       "Ce bijou classé au patrimoine mondial de l’Unesco est un massif colossal de porphyre, pierre magmatique dans les teintes pourpre et or, façonné par les assauts du vent et le ressac de la mer, surmonté d’une végétation dense et entouré d’une eau translucide. D’environ 900 hectares terrestres et 1000 hectares marins, cet environnement protégé abrite des milliers d’espèces animales comme le balbuzard, l’aigle royal ou encore le « molosse », la plus grande chauve-souris d’Europe.",
@@ -368,6 +368,12 @@ const fr = {
     calanque: "Les Calanques de Piana Sunset",
     scandola: "Scandola Girolata Sunset",
     grandtour: "Le Grand Tour Sunset",
+    grandtoursunsetprogram: "Au programme : Visite des tours génoises, découverte du Capu Rossu, des Calanques de Piana et de ses grottes avec arrêt baignade de 10 min (masque et tuba fournis) ! Golfe de Porto, Capu Sininu, arrêt de 30 min au Village de Girolata ( variable selon période ), réserve naturelle de Scandola et de ses failles, coucher de soleil accompagné d’un apéritif de vin Corse. Le sens de votre balade peut changer selon les conditions météorologiques",
+    grandtoursunsetparcour: "Départ port de Cargèse >  Visite des tours génoises > Capu Rossu > Calanques de Piana (baignade 10 min) > Golfe de Porto > Girolata (arrêt 30 min) > Scandola > Coucher de soleil accompagné d’un apéritif de vin Corse > Retour port Cargèse",
+    calanquesunsetprogram: "Au programme : Visite des tours Génoises, découverte du Capu Rossu, des Calanques de Piana et de ses grottes avec un arrêt baignade de 10 minutes (masque et tuba fournis ), coucher de soleil accompagné d’un apéritif de vin Corse. Le sens de votre balade peut changer selon les conditions météorologiques.", 
+    calanquesunsetparcour: "Départ du port de Cargèse > Visites des Tours Génoises > Capu Rossu > Calanque de Piana ( baignade 10 minutes ) > Coucher de soleil accompagné d’un apéritif de vin Corse > Retour au port de Cargèse",
+    scandolasunsetprogram:  "Au programme : Visite des tours génoises , réserve naturelle de Scandola et de ses failles, escale de 30 minutes ( variable selon période ) au petit village de Girolata, coucher de soleil accompagné d’un apéritif de vin Corse. Le sens de votre balade peut changer selon les conditions météorologiques.",
+    scandolasunsetparcour: "Départ port de Cargèse > Visite des tours Génoises > Visite des failles de la réserve de Scandola > Escale Girolata (arrêt 30 min) > Coucher de soleil accompagné d’un apéritif de vin Corse > Retour port Cargèse",
     title1: "Un moment unique",
     title2: "s’offre à vous",
     content:

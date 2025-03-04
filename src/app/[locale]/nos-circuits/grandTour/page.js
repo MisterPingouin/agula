@@ -62,7 +62,7 @@ export default function GrandTourPage({ params }) {
         <p className="font-content font-bold text-15px leading-tight md:leading-tight lg:leading-none text-center mt-2">
           {t("subtitle1")}
         </p>
-        <p className="font-content text-15px leading-tight lg:leading-normal font-bold text-center">
+        <p className="font-content text-15px leading-tight lg:leading-normal font-bold text-center lg:max-w-[1000px]">
           {t("subtitle2")}
         </p>
       </div>

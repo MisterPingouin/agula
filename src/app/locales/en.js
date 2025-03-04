@@ -73,38 +73,38 @@ const en = {
     grandTour: {
       title: "The Grand Tour",
       description:
-        "Capu Rossu - Calanques de Piana (10 min swim) - Porto Gulf - Girolata (30 min stop) - Scandola",
+        "Visit to the Genoese towers - Capu Rossu - Calanques de Piana (10 min swim) - Porto Gulf - Girolata (30 min stop) - Scandola",
       price: "Adults: €80 - Children: €70",
       duration: "Duration: 3h45",
     },
     calanquesPiana: {
       title: "The Calanques of Piana",
-      description: "Capu Rossu - Calanques de Piana (10 min swim)",
+      description: "Visit to the Genoese towers - Capu Rossu - Calanques de Piana (10 min swim)",
       price: "Adults: €48 - Children: €43",
       duration: "Duration: 1h45",
     },
     scandolaGirolata: {
       title: "Scandola Girolata",
-      description: "Scandola - Girolata (30 min stop)",
+      description: "Visit to the Genoese towers - Scandola - Girolata (30 min stop)",
       price: "Adults: €68 - Children: €63",
       duration: "Duration: 2h45",
     },
     grandTourSunset: {
       title: "The Grand Tour sunset",
       description:
-        "Capu Rossu - Calanques de Piana (10 min swim) - Porto Gulf - Girolata (30 min stop) - Scandola",
+        "Visit to the Genoese towers - Capu Rossu - Calanques de Piana (10 min swim) - Porto Gulf - Girolata (30 min stop) - Sunset accompanied by an aperitif of Corsican wine",
       price: "Adults: €80 - Children: €70",
       duration: "Duration: 3h45",
     },
     calanquesPianaSunset: {
       title: "The Calanques of Piana sunset",
-      description: "Capu Rossu - Calanques de Piana (10 min swim)",
+      description: "Visit to the Genoese towers - Capu Rossu - Calanques de Piana (10 min swim) - Sunset accompanied by an aperitif of Corsican wine",
       price: "Adults: €48 - Children: €43",
       duration: "Duration: 1h45",
     },
     scandolaGirolataSunset: {
       title: "Scandola Girolata sunset",
-      description: "Scandola - Girolata (30 min stop)",
+      description: "Visit to the Genoese towers - Scandola - Girolata (30 min stop) - Sunset accompanied by an aperitif of Corsican wine",
       price: "Adults: €68 - Children: €63",
       duration: "Duration: 2h45",
     },
@@ -323,7 +323,7 @@ const en = {
     price: "Adults: €45 - Children: €35",
     time: "Duration: 1h45",
     content:
-      "Departure from Cargèse port > Capu Rossu - Calanques of Piana (10 min swim) - Porto Gulf - Girolata (30 min stop) – Scandola > Return to Cargèse port",
+      "Departure from Cargèse port > Capu Rossu > Calanques of Piana (10 min swim) > Porto Gulf > Girolata (30 min stop) > Scandola > Return to Cargèse port",
     subtitle3: "Sneak into its caves",
     content2:
       "The boat sneaks into its stunning caves and stops at a charming little cove, accessible only by sea. Its water resembles a natural swimming pool where you can take a dip, depending on weather conditions (10-minute swimming stop). A dive into the crystal-clear waters surrounded by jagged cliffs is unforgettable!",
@@ -344,7 +344,7 @@ const en = {
     price: "Adults: €65 - Children: €55",
     time: "Duration: 2h45",
     content:
-      "Departure from Cargèse port > Visit of the Genoese towers -> Visit of the faults of the Scandola Reserve - Stopover in Girolata (30 min stop) > Return to Cargèse port",
+      "Departure from Cargèse port > Visit of the Genoese towers > Visit of the faults of the Scandola Reserve > Stopover in Girolata (30 min stop) > Return to Cargèse port",
     subtitle3: "How to recognize Scandola?",
     content2:
       "This jewel, classified as a UNESCO World Heritage Site, is a colossal massif of porphyry, a magmatic rock with purple and gold hues, shaped by the assaults of wind and sea swells, topped with dense vegetation and surrounded by translucent waters. Covering approximately 900 hectares of land and 1000 hectares of sea, this protected environment is home to thousands of animal species, such as the osprey, the golden eagle, and the 'mastiff bat,' the largest bat in Europe.",
@@ -362,6 +362,12 @@ const en = {
     calanque: "The Calanques of Piana Sunset",
     scandola: "Scandola Girolata Sunset",
     grandtour: "The Grand Tour Sunset",
+    grandtoursunsetprogram: "On the program: Visit to the Genoese towers, discovery of the Capu Rossu, the Calanques de Piana and its caves with a 10-minute swimming stop (mask and snorkel provided)! Gulf of Porto, Capu Sininu, 30-minute stop at the Village of Girolata (variable depending on the period), Scandola nature reserve and its faults, sunset accompanied by an aperitif of Corsican wine. The direction of your walk may change depending on the conditions meteorological",
+    grandtoursunsetparcour: "Departure from Cargèse port > Visit to the Genoese towers > Capu Rossu > Calanques de Piana (swimming 10 min) > Gulf of Porto > Girolata (stop 30 min) > Scandola > Sunset accompanied by an aperitif of Corsican wine > Return to Cargèse port",
+    calanquesunsetprogram: "On the program: Visit to the Genoese towers, discovery of the Capu Rossu, the Calanques de Piana and its caves with a 10-minute swimming stop (mask and snorkel provided), sunset accompanied by an aperitif of Corsican wine. The direction of your walk may change depending on the weather conditions.",
+    calanquesunsetparcour: "Departure from the port of Cargèse > Visits to the Genoese Towers > Capu Rossu > Calanque de Piana (swimming 10 minutes) > Sunset accompanied by an aperitif of Corsican wine > Return to the port of Cargèse",
+    scandolasunsetprogram: "On the program: Visit to the Genoese towers, Scandola nature reserve and its faults, 30-minute stopover (variable depending on period) at the small village of Girolata, sunset accompanied by an aperitif of Corsican wine. The direction of your walk may change depending on the weather conditions.",
+    scandolasunsetparcour: "Departure from Cargèse port > Visit to the Genoese towers > Visit to the faults of the Scandola reserve > Girolata stopover (30 min stop) > Sunset accompanied by an aperitif of Corsican wine > Return to Cargèse port",
     title1: "A unique moment",
     title2: "awaits you",
     content:
