@@ -56,8 +56,11 @@ export default function ChooseSection() {
     </p>
   </div>
 </div>
-      <p className="px-5 text-15px leading-23px font-content pt-2 pb-2">
+      <p className="px-5 text-15px leading-23px font-content pt-2">
         {t("content")}
+      </p>
+      <p className="px-5 text-15px leading-23px font-content pb-2">
+        {t("content1")}
       </p>
       </section>
             <div className="md:hidden flex items-center justify-center mt-5">
@@ -114,8 +117,9 @@ export default function ChooseSection() {
               height={533}
               className="z-0 mt-16"
             />
-            <div className="absolute bottom-[60px] right-[110px] text-white  text-content text-15px space-y-4 z-40">
-              <p className="w-[380px] leading-23px">{t('content')}</p>
+            <div className="absolute bottom-[-40px] right-[110px] text-white  text-content text-15px space-y-4 z-40">
+              <p className="w-[400px] leading-23px">{t('content')}</p>
+              <p className="w-[400px] leading-23px">{t('content1')}</p>
               <Link href={localLink("/nos-circuits")} className="cursor-pointer">
                 <button className="px-14 py-2 text-white text-20px mt-8 bg-blue-3 font-content font-semibold">
                   {t("circuits_button")}

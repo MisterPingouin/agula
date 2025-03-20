@@ -115,7 +115,7 @@ export default function EmbarkSection() {
               className="z-0 mt-16"
             />
             <div className="absolute bottom-[60px] right-[110px] text-white  text-content text-15px space-y-4 z-40">
-              <p className="w-[380px] leading-23px">{t('content')}</p>
+              <p className="w-[380px] leading-23px">{t('content2')}</p>
               <Link href={localLink("/bateau")} className="cursor-pointer">
                 <button className="px-14 py-2 text-white text-20px mt-8 bg-blue-3 font-content font-semibold">
                   {t("boat_button")}

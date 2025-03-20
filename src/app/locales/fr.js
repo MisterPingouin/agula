@@ -39,13 +39,14 @@ const fr = {
     subtitle3: "et inoubliable",
     circuits_button: "NOS CIRCUITS",
     content:
-      "Jean-Baptiste CAPODIMACCI, petit-fils et fils de pêcheur, a grandi avec la mer. Il connaît les passages secrets que seul un enfant du pays peut découvrir. Avec lui, plongez au cœur des paysages spectaculaires de sa région natale : la réserve naturelle de Scandola, le village de Girolata, les calanques de Piana… En journée ou au coucher du soleil, choisissez le circuit qui vous ressemble.",
+      "Jean-Baptiste CAPODIMACCI, fils et petit-fils de pêcheurs, a grandi avec la mer. Il connaît chaque crique, chaque grotte et les passages secrets que seul un enfant du pays peut découvrir.",
+    content1:"Aujourd’hui, il vit de cette tradition familiale et partage également sa passion pour la beauté sauvage. À bord de son bateau, il vous invite à explorer les paysages spectaculaires de sa région natale. Avec lui, plongez entre les falaises rouges des calanques de Piana, observez la biodiversité de la réserve naturelle de Scandola, classée au patrimoine mondial de l’Unesco, posez les pieds à Girolata sans faire une randonnée de 4 heures… bref, profitez des privilèges offerts uniquement par cette traversée en mer mythique, que vous soyez en famille, entre amis ou en amoureux ! Pour une atmosphère aussi magique que romantique, choisissez une balade au coucher du soleil…",
     title2: "Embarquez",
     subtitle4: "Bienvenue",
     subtitle5: "à bord",
     subtitle6: "du Sacha",
     content2:
-      "Ce semi-rigide de 9 mètres, capable d’accueillir jusqu’à 12 personnes, offre une atmosphère intimiste et conviviale. Il est idéal pour naviguer au cœur des plus beaux sites de nos côtes. Manié avec précaution par son capitaine expérimenté, il a l’habitude de se faufiler dans les grottes, côtoyer les failles et pénétrer dans les petites criques.",
+      "Votre promenade aura lieu à bord du bateau de Jean-Baptiste, le « Sacha ». Ce semi-rigide, capable d’accueillir jusqu’à 12 personnes, est toujours entretenu avec soin. Sa capacité restreinte favorise une atmosphère intime et conviviale, tandis que ses moteurs modernes et silencieux offrent une expérience de navigation paisible et confortable. Pour vivre un moment encore plus privilégié, vous pouvez choisir la privatisation de la traversée. Pour toutes nos balades des coupes-vents, des masques et des tubas sont mis à votre disposition sur le bateau.",
     boat_button: "NOTRE BATEAU",
     title3: "Rencontrez",
     subtitle7: "Une équipe",
@@ -62,9 +63,9 @@ const fr = {
       "Envie de passer un moment privilégié en amoureux, en famille, entre amis ou même entre collègues ? De faire votre propre itinéraire ? De choisir vos arrêts baignade ? Privatisez notre bateau avec skipper pour une journée ou une demi-journée. Réaliser votre formule à la carte en contactant notre équipe. Vous aurez le devis sur simple demande . Pour toute privatisation, un plateau de produits locaux (charcuterie, fromage et une bouteille de vin Corse) est offert pour accompagner votre sortie.",
     privatization_button: "PRIVATISATION",
     content5:
-      "Et si vous avez la chance, lors de votre promenade, vous pouvez croiser un membre un peu plus éloigné de notre équipage…",
+      "Et si vous avez la chance, le matin, vous croiserez peut-être Thierry, le papa de Jean-Baptiste, à son retour de pêche.",
     content6:
-      "Il s’agit de Thierry, le papa de Jean-Baptiste, à son retour de pêche. Vous pouvez admirer ses prises du jour : dentis, chapons, dorades, langoustes, araignées… et bien sûr immortaliser le moment avec quelques photos.",
+      "Vous pourrez admirer ses prises du jour : dentis, chapons, dorades, langoustes, araignées… et bien sûr immortaliser le moment avec quelques photos.",
   },
   menu: {
     close: "Fermer",
@@ -717,9 +718,9 @@ const fr = {
     title: "Pourquoi réserver sur notre Site Officiel?",
     line1: "C'est le moment où jamais pour réserver!",
     line2:
-      "Bénéficiez d’une remise exceptionnelle de -10% sur votre promenade en mer.",
+      "Bénéficiez d’une remise exceptionnelle de -15% sur votre promenade en mer.",
     line3: "Afin d’en profiter, rendez-vous dans la rubrique « réserver »",
-    validity: "Valable jusqu’au 31/07/2026",
+    validity: "Valable jusqu’au 31/05/2025",
     close_button: "Fermer",
     enabled: true,
   },

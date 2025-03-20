@@ -38,14 +38,14 @@ const en = {
     subtitle2: "fascinating",
     subtitle3: "and unforgettable",
     circuits_button: "OUR TOURS",
-    content:
-      "Jean-Baptiste CAPODIMACCI, grandson and son of a fisherman, grew up with the sea. He knows the secret passages that only a local child can discover. With him, immerse yourself in the heart of the spectacular landscapes of his native region: the Scandola nature reserve, the village of Girolata, the coves of Piana… During the day or at sunset, choose the circuit that suits you.",
+   Content:
+"Jean-Baptiste Capodimacci, son and grandson of fishermen, grew up with the sea. He knows every cove, every cave, and the secret passages that only a local boy can discover.",
+      content1:"Today, he lives off this family tradition and also shares his passion for wild beauty. Aboard his boat, he invites you to explore the spectacular landscapes of his native region. With him, dive between the red cliffs of the Calanques de Piana, observe the biodiversity of the Scandola nature reserve, a UNESCO World Heritage Site, set foot in Girolata without a 4-hour hike... in short, enjoy the privileges offered only by this legendary sea crossing, whether you are with family, friends or your loved one! For an atmosphere as magical as it is romantic, choose a sunset trip...",
     title2: "Embark",
     subtitle4: "Welcome",
     subtitle5: "on board",
     subtitle6: "of Sacha",
-    content2:
-      "This 9 meter semi-rigid, capable of accommodating up to 12 people, offers an intimate and friendly atmosphere. It is ideal for sailing through the heart of the most beautiful sites on our coasts. Handled with care by its experienced captain, it is used to sneaking into caves, skirting faults and penetrating small coves.",
+    content2: "Your trip will take place aboard Jean-Baptiste's boat, the Sacha. This semi-rigid boat, capable of accommodating up to 12 people, is always meticulously maintained. Its limited capacity fosters an intimate and friendly atmosphere, while its modern, quiet engines offer a peaceful and comfortable sailing experience. For an even more special experience, you can opt for a private trip. For all our trips, windbreakers, masks, and snorkels are available on the boat.",
     boat_button: "OUR BOAT",
     title3: "Meet",
     subtitle7: "A team",
@@ -62,9 +62,9 @@ const en = {
       "Want to spend a special moment with your partner, family, friends or even colleagues? To make your own itinerary? To choose your swimming stops? Privatize our boat with skipper for a day or half a day. Create your à la carte formula by contacting our team. You will have the quote on simple request. For any privatization, a platter of local products (charcuterie, cheese and a bottle of Corsican wine) is offered to accompany your outing.",
     privatization_button: "PRIVATIZATION",
     content5:
-      "And if you are lucky enough, during your walk, you may come across a slightly more distant member of our crew…",
+     "And if you're lucky, in the morning you might run into Thierry, Jean-Baptiste's dad, when he comes back from fishing.",
     content6:
-      "This is Thierry, Jean-Baptiste's dad, on his return from fishing. You can admire his catch of the day: dents, capons, sea bream, lobsters, spiders... and of course immortalize the moment with a few photos.",
+      "You can admire the day's catch: dentex, capons, sea bream, lobsters, spider crabs, and more, and of course, immortalize the moment with a few photos.",
   },
   menu: {
     close: "Close",
@@ -704,9 +704,9 @@ const en = {
   popup: {
     title: "Why book on our Official Website?",
     line1: "It's now or never to book",
-    line2: "Benefit from a special 10% discount on your sea trip.",
+    line2: "Benefit from a special 15% discount on your sea trip.",
     line3: "To take advantage of it, go to the “book” section",
-    validity: "Valid until 07/31/2024",
+    validity: "Valid until 05/31/2025",
     close_button: "Close",
     enabled: true,
   },
