@@ -14,6 +14,7 @@ const en = {
     gallery: "Gallery",
     book: "BOOK",
     accueil: "Home",
+    acceuil: "Home",
     contact: "Contact",
   },
   home: {
