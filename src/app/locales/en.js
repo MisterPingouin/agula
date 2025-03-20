@@ -706,7 +706,7 @@ const en = {
     line1: "It's now or never to book",
     line2: "Benefit from a special 15% discount on your sea trip.",
     line3: "To take advantage of it, go to the “book” section",
-    validity: "Valid until 05/31/2025",
+    validity: "Valid until 04/31/2025",
     close_button: "Close",
     enabled: true,
   },

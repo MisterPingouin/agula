@@ -720,7 +720,7 @@ const fr = {
     line2:
       "Bénéficiez d’une remise exceptionnelle de -15% sur votre promenade en mer.",
     line3: "Afin d’en profiter, rendez-vous dans la rubrique « réserver »",
-    validity: "Valable jusqu’au 31/05/2025",
+    validity: "Valable jusqu’au 31/04/2025",
     close_button: "Fermer",
     enabled: true,
   },
