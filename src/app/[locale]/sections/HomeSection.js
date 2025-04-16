@@ -8,30 +8,26 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const HomeSection = () => {
-  // Contexte de langue (comme avant)
+  // Contexte de langue
   const { locale, setLocale } = useI18n();
   const localLink = useLocalLink();
 
-  // Hooks pour gérer le texte de la page Home (header, titre, etc.)
-  // Comme d’habitude via useScopedI18n.
-  // => Laisse ceci pour tout le contenu « home » et « navigation ».
+  // Hooks pour la traduction
   const t = useScopedI18n("home");
   const t1 = useScopedI18n("navigation");
 
-  // État pour l'image d'accueil (inchangé)
+  // État pour l'image d'accueil
   const [homeImage, setHomeImage] = useState("/images/1500x950-lagula.webp");
 
-  // === POPUP : on fetch dynamiquement /api/admin/get-content pour récupérer data.popup ===
+  // === POP-UP : on récupère data.popup depuis /api/admin/get-content ===
   const [showPopup, setShowPopup] = useState(false);
   const [popupData, setPopupData] = useState({});
 
   useEffect(() => {
-    // On va chercher la config pop-up en temps réel
     const fetchPopupConfig = async () => {
       try {
-        // On utilise la locale actuelle pour coller à la langue choisie
         const response = await fetch(`/api/admin/get-content?locale=${locale}`, {
-          cache: "no-store", // on évite le cache pour lire les changements en direct
+          cache: "no-store",
         });
 
         if (!response.ok) {
@@ -40,17 +36,12 @@ const HomeSection = () => {
         }
 
         const data = await response.json();
-        const popup = data.popup || {}; // l'objet popup dans fr.js/en.js
+        const popup = data.popup || {};
         setPopupData(popup);
 
-        // Vérifier si la pop-up est activée
+        // Si la pop-up est activée, on l'affiche
         if (popup.enabled) {
-          // Vérifier si l'utilisateur a déjà fermé la pop-up
-          const popupClosed = localStorage.getItem("popupClosed");
-          // Si pas de clé "popupClosed", on affiche la pop-up
-          if (!popupClosed) {
-            setShowPopup(true);
-          }
+          setShowPopup(true);
         } else {
           setShowPopup(false);
         }
@@ -62,13 +53,12 @@ const HomeSection = () => {
     fetchPopupConfig();
   }, [locale]);
 
-  // Méthode pour fermer la pop-up
+  // Méthode pour fermer la pop-up (ne mémorise plus rien dans localStorage)
   const handleClosePopup = () => {
-    localStorage.setItem("popupClosed", "true");
     setShowPopup(false);
   };
 
-  // === Récupération de l'image d'accueil comme avant ===
+  // Récupération de l'image d'accueil
   useEffect(() => {
     const fetchHomeImage = async () => {
       try {
@@ -88,7 +78,7 @@ const HomeSection = () => {
     fetchHomeImage();
   }, []);
 
-  // Fonction pour changer la langue (FR <-> EN)
+  // Changer la langue
   const changeLanguage = (lang) => {
     setLocale(lang);
     localStorage.setItem("locale", lang);
@@ -128,7 +118,9 @@ const HomeSection = () => {
               </button>
 
               {/* Contenu de la pop-up (pris via popupData) */}
-              <h2 className="text-20px font-title mb-6 leading-tight md:text-25px">{popupData.title}</h2>
+              <h2 className="text-20px font-title mb-6 leading-tight md:text-25px">
+                {popupData.title}
+              </h2>
               <p className="mb-2 font-content text-13px md:text-15px">{popupData.line1}</p>
               <p className="mb-2 font-content text-13px md:text-15px">{popupData.line2}</p>
               <p className="mb-4 font-content text-13px md:text-15px">{popupData.line3}</p>
@@ -139,11 +131,11 @@ const HomeSection = () => {
       </AnimatePresence>
       {/* == Fin pop-up == */}
 
-      {/* Barre du haut (desktop), inchangée */}
+      {/* Barre du haut (desktop) */}
       <div className="hidden lg:flex relative z-50 justify-center self-start">
         <div className="flex flex-col">
-          <div className="flex items-center self-end gap-2 pt-4 text-white ">
-            {/* Boutons FR / EN fonctionnels */}
+          <div className="flex items-center self-end gap-2 pt-4 text-white">
+            {/* Boutons FR / EN */}
             <button
               onClick={() => changeLanguage("fr")}
               className={`text-15px font-title ${locale === "fr" ? "font-bold" : ""}`}
@@ -229,6 +221,7 @@ const HomeSection = () => {
         </div>
       </div>
 
+      {/* Contenu principal */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white md:-top-32 leading-none">
         <h1 className="text-35px font-bold font-title">{t("title")}</h1>
         <p className="text-32px mx-4 font-light font-title leading-40px">{t("description")}</p>
@@ -266,7 +259,7 @@ const HomeSection = () => {
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-      ></motion.div>
+      />
 
       <div className="hidden lg:flex absolute bottom-0 w-full justify-center items-center py-4">
         <Image
