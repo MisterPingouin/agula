@@ -1,103 +1,53 @@
 import { NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { readLocaleData, writeLocaleData } from "@/lib/localesFileStore";
 
-// Empêche le cache et force le runtime Node
+export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
-// Configuration pour savoir quel fichier correspond à chaque locale
-const localesConfig = {
-  fr: { fileName: "fr.js", variableName: "fr" },
-  en: { fileName: "en.js", variableName: "en" },
-};
+function safeBool(v) {
+  return v === true;
+}
 
 export async function POST(req) {
-  try {
-    // Récupère le body JSON
-    const {
-      subtitle2,
-      content3,
-      subtitle3,
-      content4,
-      popupEnabled,
-      popupTitle,
-      popupLine1,
-      popupLine2,
-      popupLine3,
-      popupValidity,
-      locale,
-    } = await req.json();
+  const session = await getServerSession(authOptions);
+  if (!session?.user) {
+    return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
+  }
 
-    // Vérifie que la locale demandée est valide
-    if (!locale || !localesConfig[locale]) {
+  try {
+    const body = await req.json();
+    const locale = body?.locale;
+
+    if (!locale) {
       return NextResponse.json({ message: "Locale invalide" }, { status: 400 });
     }
 
-    // Détermine le chemin absolu du fichier .js à modifier
-    const localeFilePath = path.join(
-      process.cwd(),
-      "src",
-      "app",
-      "locales",
-      localesConfig[locale].fileName
-    );
+    const data = readLocaleData(locale);
 
-    console.log("Chemin du fichier de localisation :", localeFilePath);
+    // Équipe
+    data.equipe = data.equipe || {};
+    data.equipe.subtitle2 = body.subtitle2 ?? "";
+    data.equipe.content3 = body.content3 ?? "";
+    data.equipe.subtitle3 = body.subtitle3 ?? "";
+    data.equipe.content4 = body.content4 ?? "";
 
-    // Lit le contenu brut du fichier
-    let localeDataContent = fs.readFileSync(localeFilePath, "utf-8");
+    // Pop-up
+    data.popup = data.popup || {};
+    data.popup.enabled = safeBool(body.popupEnabled);
+    data.popup.title = body.popupTitle ?? "";
+    data.popup.line1 = body.popupLine1 ?? "";
+    data.popup.line2 = body.popupLine2 ?? "";
+    data.popup.line3 = body.popupLine3 ?? "";
+    data.popup.validity = body.popupValidity ?? "";
 
-    // Supprime la ligne "export default fr/en;"
-    localeDataContent = localeDataContent.replace(/export\s+default\s+\w+;/, "").trim();
+    writeLocaleData(locale, data);
 
-    // Convertit le code JS en un objet
-    let localeData;
-    try {
-      localeData = new Function(`
-        "use strict";
-        ${localeDataContent}
-        return ${localesConfig[locale].variableName};
-      `)();
-    } catch (error) {
-      console.error("Erreur lors du chargement des données de localisation :", error);
-      return NextResponse.json(
-        { message: "Erreur de lecture du fichier de localisation" },
-        { status: 500 }
-      );
-    }
-
-    // === Mise à jour du contenu (exemple : équipe) ===
-    localeData.equipe.subtitle2 = subtitle2;
-    localeData.equipe.content3 = content3;
-    localeData.equipe.subtitle3 = subtitle3;
-    localeData.equipe.content4 = content4;
-
-    // === Mise à jour de la pop-up ===
-    if (!localeData.popup) {
-      localeData.popup = {};
-    }
-    localeData.popup.enabled = popupEnabled || false;
-    localeData.popup.title = popupTitle || "";
-    localeData.popup.line1 = popupLine1 || "";
-    localeData.popup.line2 = popupLine2 || "";
-    localeData.popup.line3 = popupLine3 || "";
-    localeData.popup.validity = popupValidity || "";
-
-    // Reconstruit le fichier en y remettant un export default
-    const updatedContent = `
-const ${localesConfig[locale].variableName} = ${JSON.stringify(localeData, null, 2)};
-
-export default ${localesConfig[locale].variableName};
-`;
-
-    // Ecrit sur le disque
-    fs.writeFileSync(localeFilePath, updatedContent, "utf-8");
-    console.log("Fichier mis à jour avec succès");
-
-    return NextResponse.json({ message: "Contenu mis à jour avec succès" });
+    return NextResponse.json({ message: "Contenu mis à jour avec succès" }, { status: 200 });
   } catch (error) {
-    console.error("Erreur lors de la mise à jour du contenu :", error);
-    return NextResponse.json({ message: "Erreur serveur", error: error.message }, { status: 500 });
+    console.error("update-content error:", error);
+    return NextResponse.json({ message: "Erreur serveur" }, { status: 500 });
   }
 }

@@ -9,67 +9,68 @@ export default function EquipePage() {
 
   const [equipeData, setEquipeData] = useState({});
   const [imagePaths, setImagePaths] = useState({});
+  const [loading, setLoading] = useState(true);
 
-  // Récupération du texte
+  // ✅ Récupération du texte (PUBLIC)
   useEffect(() => {
+    const controller = new AbortController();
+
     const fetchEquipeData = async () => {
       try {
-        const response = await fetch(`/api/admin/get-content?locale=${locale}`, {
+        setLoading(true);
+        const response = await fetch(`/api/get-content?locale=${locale}`, {
           cache: "no-store",
+          signal: controller.signal,
         });
-        if (response.ok) {
-          const allData = await response.json();
-          setEquipeData(allData.equipe || {});
-        } else {
-          console.error("Erreur lors de la récupération du contenu (équipe)");
+
+        if (!response.ok) {
+          console.error("Erreur get-content (équipe) status:", response.status);
+          setEquipeData({});
+          return;
         }
+
+        const allData = await response.json();
+        setEquipeData(allData.equipe || {});
       } catch (error) {
-        console.error("Erreur de connexion (équipe):", error);
+        if (error?.name !== "AbortError") {
+          console.error("Erreur de connexion (équipe):", error);
+        }
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchEquipeData();
+    return () => controller.abort();
   }, [locale]);
 
-  // Déclare la fonction fetchImagePaths pour pouvoir la rappeler
+  // Images
   const fetchImagePaths = useCallback(async () => {
     try {
-      const response = await fetch("/api/get-image-paths", {
-        cache: "no-store",
-      });
+      const response = await fetch("/api/get-image-paths", { cache: "no-store" });
       if (response.ok) {
         const data = await response.json();
         setImagePaths(data);
       } else {
-        console.error("Erreur lors de la récupération des chemins d'images");
+        console.error("Erreur get-image-paths status:", response.status);
       }
     } catch (error) {
       console.error("Erreur de connexion (images):", error);
     }
   }, []);
 
-  // Fetch initial des images
   useEffect(() => {
     fetchImagePaths();
   }, [fetchImagePaths]);
 
-  // Écoute l’événement imageUpdated pour re-fetch automatiquement
   useEffect(() => {
-    const handleImageUpdated = () => {
-      fetchImagePaths();
-    };
-
+    const handleImageUpdated = () => fetchImagePaths();
     window.addEventListener("imageUpdated", handleImageUpdated);
-
-    return () => {
-      window.removeEventListener("imageUpdated", handleImageUpdated);
-    };
+    return () => window.removeEventListener("imageUpdated", handleImageUpdated);
   }, [fetchImagePaths]);
 
-  // Si aucune donnée, on peut afficher un mini-chargement
-  if (!equipeData.title) {
-    return <div>Chargement...</div>;
-  }
+  if (loading) return <div>Chargement...</div>;
+  if (!equipeData?.title) return <div>Contenu indisponible</div>;
 
   return (
     <main className="flex flex-col justify-center items-center text-black mt-[80px]">
@@ -97,7 +98,6 @@ export default function EquipePage() {
         </p>
 
         {/* Section "Jean Baptiste" */}
-        {/* Mobile */}
         <Image
           src={imagePaths.jeanBaptisteImage || "/images/jeanbaptiste.webp"}
           alt="Jean Baptiste"
@@ -114,7 +114,6 @@ export default function EquipePage() {
           {equipeData.content}
         </p>
 
-        {/* Tablette */}
         <div className="hidden md:flex lg:hidden gap-20 justify-center items-center mt-8">
           <Image
             src={imagePaths.jeanBaptisteImage || "/images/jeanbaptiste.webp"}
@@ -135,7 +134,6 @@ export default function EquipePage() {
           </div>
         </div>
 
-        {/* Desktop */}
         <div className="hidden lg:flex gap-20 justify-center items-center mt-8">
           <Image
             src={imagePaths.jeanBaptisteImage || "/images/jeanbaptiste.webp"}
@@ -156,7 +154,6 @@ export default function EquipePage() {
           </div>
         </div>
 
-        {/* Flèche vers le bas */}
         <Image
           src="/images/arrowdownblack.svg"
           alt="arrow down black"
@@ -178,8 +175,7 @@ export default function EquipePage() {
         </p>
       </div>
 
-      {/* Section "Equipe" – Gérald et Claire */}
-      {/* Mobile */}
+      {/* Gérald & Claire */}
       <div className="flex flex-col bg-green-4 w-full gap-2 px-10 py-12 text-white md:hidden">
         <Image
           src={imagePaths.geraldImage || "/images/gerald.webp"}
@@ -205,7 +201,6 @@ export default function EquipePage() {
         <p className="font-content text-15px leading-23px">{equipeData.content4}</p>
       </div>
 
-      {/* Tablette */}
       <div className="hidden md:flex lg:hidden flex-col bg-green-4 w-full gap-2 px-10 py-12 text-white">
         <div className="flex justify-center items-center w-full gap-10">
           <Image
@@ -217,12 +212,8 @@ export default function EquipePage() {
             priority
           />
           <div className="flex flex-col">
-            <h3 className="font-title text-30px font-bold">
-              {equipeData.subtitle2}
-            </h3>
-            <p className="font-content text-15px leading-23px mb-8">
-              {equipeData.content3}
-            </p>
+            <h3 className="font-title text-30px font-bold">{equipeData.subtitle2}</h3>
+            <p className="font-content text-15px leading-23px mb-8">{equipeData.content3}</p>
           </div>
         </div>
         <div className="flex justify-center items-center w-full gap-10 mt-10">
@@ -235,17 +226,12 @@ export default function EquipePage() {
             priority
           />
           <div className="flex flex-col">
-            <h3 className="font-title text-30px font-bold">
-              {equipeData.subtitle3}
-            </h3>
-            <p className="font-content text-15px leading-23px">
-              {equipeData.content4}
-            </p>
+            <h3 className="font-title text-30px font-bold">{equipeData.subtitle3}</h3>
+            <p className="font-content text-15px leading-23px">{equipeData.content4}</p>
           </div>
         </div>
       </div>
 
-      {/* Desktop */}
       <div className="hidden lg:flex flex-col bg-green-4 w-full gap-2 px-10 py-8 text-white">
         <div className="flex justify-center items-center w-1/2 mx-auto gap-10">
           <Image
@@ -257,17 +243,13 @@ export default function EquipePage() {
             priority
           />
           <div className="flex flex-col">
-            <h3 className="font-title text-35px font-bold">
-              {equipeData.subtitle2}
-            </h3>
-            <p className="font-content text-15px leading-23px mb-8">
-              {equipeData.content3}
-            </p>
+            <h3 className="font-title text-35px font-bold">{equipeData.subtitle2}</h3>
+            <p className="font-content text-15px leading-23px mb-8">{equipeData.content3}</p>
           </div>
         </div>
         <div className="flex justify-center items-center w-1/2 mx-auto gap-10 mt-10">
           <Image
-            src={imagePaths.claireImage || "/images/gallery1.webp"}
+            src={imagePaths.claireImage || "/images/claire.webp"}
             alt="Claire Desktop"
             width={234}
             height={299}
@@ -275,12 +257,8 @@ export default function EquipePage() {
             priority
           />
           <div className="flex flex-col">
-            <h3 className="font-title text-35px font-bold">
-              {equipeData.subtitle3}
-            </h3>
-            <p className="font-content text-15px leading-23px">
-              {equipeData.content4}
-            </p>
+            <h3 className="font-title text-35px font-bold">{equipeData.subtitle3}</h3>
+            <p className="font-content text-15px leading-23px">{equipeData.content4}</p>
           </div>
         </div>
       </div>
@@ -294,7 +272,6 @@ export default function EquipePage() {
         priority
       />
 
-      {/* content5 / content6 */}
       <p className="block md:hidden font-title text-center text-25px leading-29px px-10 mb-6">
         {equipeData.content5}
       </p>
@@ -318,7 +295,7 @@ export default function EquipePage() {
       <div className="flex justify-center items-center gap-2 mb-12">
         <Image
           src="/images/chance1.webp"
-          alt="fish"
+          alt="chance 1"
           width={356}
           height={454}
           className="hidden lg:block object-cover h-auto"
@@ -326,7 +303,7 @@ export default function EquipePage() {
         />
         <Image
           src="/images/chance2.webp"
-          alt="fish"
+          alt="chance 2"
           width={356}
           height={454}
           className="hidden lg:block object-cover h-auto"
@@ -334,7 +311,7 @@ export default function EquipePage() {
         />
         <Image
           src="/images/chance3.webp"
-          alt="fish"
+          alt="chance 3"
           width={356}
           height={454}
           className="object-cover h-auto"
