@@ -278,7 +278,7 @@ const fr = {
     content:
       "Fils et petit-fils de pêcheurs cargésiens, Jean-Baptiste a monté la compagnie l’Agula Marina croisières. Sa volonté est de partager sa passion pour la beauté sauvage de sa région natale. Depuis tout petit, il explore la mer. Il en connaît chaque crique, chaque grotte, chaque sillon. Son plus grand plaisir est de faire découvrir tous les secrets cachés des paysages spectaculaires qui font de cette étendue un patrimoine classé : histoires, biodiversité, flore… À bord de son bateau, le Sacha, il vous transporte dans une nouvelle dimension.",
     content2:
-      "Jean-Baptiste a également suivi la tradition familiale en faisant de la pêche son métier. Lorsqu’il est pris par cette activité, il transmet le gouvernail à Gérald.",
+      "Jean-Baptiste a également suivi la tradition familiale en faisant de la pêche son métier. Lorsqu’il est pris par cette activité, il transmet le gouvernail.",
     subtitle2: "Gérald",
     content3:
       "Marin aguerri. Très fin pilote, c’est lui qui vous emmène le plus souvent faire la traversée. Avec lui, vous vous faufilez partout ! Il vous guide avec décontraction et humour en vous dévoilant toutes les informations sur l’environnement qu’il aime tant. C’est un capitaine de choix !",
